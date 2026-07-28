@@ -1,0 +1,693 @@
+[
+    {
+        "q": "¿Qué es un alimento alterado según el manual?",
+        "o": [
+            "Es aquel que ha sufrido cambios en su composición o características organolépticas",
+            "Es un alimento que contiene obligatoriamente bacterias patógenas letales",
+            "Es un alimento que ha recibido exclusivamente contaminación por metales pesados"
+        ],
+        "a": "Es aquel que ha sufrido cambios en su composición o características organolépticas",
+        "r": "Capítulo 2: Un alimento alterado es aquel que ha sufrido cambios en su composición o en sus características organolépticas."
+    },
+    {
+        "q": "¿La zona de temperatura comprendida entre los 5 y 65 grados Celsius se conoce como zona de peligro de temperatura?",
+        "o": [
+            "Verdadero",
+            "Falso"
+        ],
+        "a": "Verdadero",
+        "r": "Capítulo 2 y 4: Las temperaturas que van de 5 a 65 grados Celsius permiten el crecimiento de bacterias, por lo que es llamada Zona de Peligro de Temperatura."
+    },
+    {
+        "q": "¿Cuál es la temperatura aproximada a la que se multiplican de forma óptima la mayoría de las bacterias patógenas?",
+        "o": [
+            "37 grados Celsius",
+            "5 grados Celsius",
+            "100 grados Celsius"
+        ],
+        "a": "37 grados Celsius",
+        "r": "Capítulo 2: La temperatura óptima de desarrollo para la mayoría de las patógenas está en el entorno de los 37 grados Celsius."
+    },
+    {
+        "q": "¿Las bajas temperaturas de congelación a menos 18 grados Celsius matan por completo a las bacterias y virus presentes en los alimentos?",
+        "o": [
+            "Falso",
+            "Verdadero"
+        ],
+        "a": "Falso",
+        "r": "Capítulo 3: El congelamiento no mata las bacterias ni a los virus, sino que los mantiene aletargados."
+    },
+    {
+        "q": "¿Qué método se recomienda para la desinfección correcta de frutas y verduras que se consumen crudas?",
+        "o": [
+            "Sumergirlas durante media hora en una solución de una cucharada sopera de hipoclorito de sodio en 5 litros de agua",
+            "Lavarlas únicamente con agua tibia sin ningún tipo de aditivo ni enjuague posterior",
+            "Exponerlas directamente a temperaturas de congelación extrema durante 48 horas"
+        ],
+        "a": "Sumergirlas durante media hora en una solución de una cucharada sopera de hipoclorito de sodio en 5 litros de agua",
+        "r": "Capítulo 3: Luego se sumergen durante media hora en una solución de una cucharada sopera de hipoclorito de sodio en 5 litros de agua."
+    },
+    {
+        "q": "¿El lavado de manos debe realizarse obligatoriamente después de ir al baño, tocar basura o manipular carnes crudas?",
+        "o": [
+            "Verdadero",
+            "Falso"
+        ],
+        "a": "Verdadero",
+        "r": "Capítulo 5: Las manos deben lavarse al tocar basuras, manipular dinero, tocarse el cabello, al taparse la boca al toser y siempre luego de ir al baño."
+    },
+    {
+        "q": "¿Qué significa la sigla TACC en relación a la enfermedad celíaca?",
+        "o": [
+            "Trigo, Avena, Cebada o Centeno",
+            "Temperatura, Acidez, Calor y Conservación",
+            "Tóxicos, Aditivos, Contaminantes y Calidad"
+        ],
+        "a": "Trigo, Avena, Cebada o Centeno",
+        "r": "Capítulo 8: El gluten es una proteína contenida en los cereales Trigo, Avena, Cebada o Centeno comúnmente conocidas con la sigla TACC."
+    },
+    {
+        "q": "¿Los POES se definen como procedimientos estandarizados que describen las tareas de limpieza y desinfección?",
+        "o": [
+            "Verdadero",
+            "Falso"
+        ],
+        "a": "Verdadero",
+        "r": "Capítulo 7: Los POES se definen como procedimientos estandarizados que describen las tareas de limpieza y desinfección."
+    },
+    {
+        "q": "¿A qué temperatura mínima debe alcanzar el centro frío de un alimento al ser recalentado antes de servirlo?",
+        "o": [
+            "74 grados Celsius durante al menos 30 segundos",
+            "50 grados Celsius durante 5 minutos",
+            "65 grados Celsius de forma inmediata"
+        ],
+        "a": "74 grados Celsius durante al menos 30 segundos",
+        "r": "Capítulo 6: Asegurarse que el centro frío alcance los 74 grados Celsius durante al menos 30 segundos antes de servirlos."
+    },
+    {
+        "q": "¿Está permitido secar los utensilios y cubiertos con repasadores de tela para darles mayor brillo?",
+        "o": [
+            "Falso",
+            "Verdadero"
+        ],
+        "a": "Falso",
+        "r": "Capítulo 3 y 6: Dejar secar al aire en escurridores. No secar con repasadores, ni repasar los cubiertos y vasos para dar brillo."
+    },
+    {
+        "q": "¿Qué se entiende por contaminación cruzada en el ámbito de la manipulación de alimentos?",
+        "o": [
+            "El traspaso de microorganismos patógenos desde alimentos crudos o superficies contaminadas hacia alimentos listos para el consumo",
+            "La mezcla accidental de diferentes tipos de azúcares y sales refinadas dentro de una misma preparación",
+            "El cambio en el color natural de las verduras debido a una exposición prolongada a la luz solar directa"
+        ],
+        "a": "El traspaso de microorganismos patógenos desde alimentos crudos o superficies contaminadas hacia alimentos listos para el consumo",
+        "r": "Capítulo 3: La contaminación cruzada es el traspaso de microorganismos patógenos de un alimento a otro, generalmente de alimentos crudos a cocidos o listos para consumir."
+    },
+    {
+        "q": "¿Es correcto utilizar una misma tabla de picar y el mismo cuchillo para cortar carne cruda y luego vegetales sin previo lavado y desinfección?",
+        "o": [
+            "Falso",
+            "Verdadero"
+        ],
+        "a": "Falso",
+        "r": "Capítulo 3: Nunca se deben utilizar los mismos utensilios (tablas, cuchillos) para alimentos crudos y cocidos sin antes lavarlos y desinfectarlos rigurosamente."
+    },
+    {
+        "q": "¿Cuál es la forma correcta de descongelar un alimento de manera segura según las buenas prácticas de manipulación?",
+        "o": [
+            "En la heladera (refrigeración), en el microondas si se va a cocinar inmediatamente, o directamente durante la cocción",
+            "Dejarlo sobre la mesada de la cocina a temperatura ambiente durante todo el día hasta que se ablande",
+            "Sumergirlo en agua caliente corriente hasta que recupere su temperatura normal"
+        ],
+        "a": "En la heladera (refrigeración), en el microondas si se va a cocinar inmediatamente, o directamente durante la cocción",
+        "r": "Capítulo 4: Los métodos seguros de descongelación son: en la heladera, en el horno de microondas o como parte de la cocción misma."
+    },
+    {
+        "q": "¿Está permitido volver a congelar un alimento que ya ha sido descongelado previamente?",
+        "o": [
+            "Falso",
+            "Verdadero"
+        ],
+        "a": "Falso",
+        "r": "Capítulo 4: No se debe volver a congelar un alimento que ya ha sido descongelado, a menos que se haya cocinado previamente."
+    },
+    {
+        "q": "¿Qué función principal cumplen los microorganismos benéficos en la industria alimentaria?",
+        "o": [
+            "Se utilizan en procesos de fermentación para la elaboración de productos como yogur, queso y pan",
+            "Provocan de forma inevitable infecciones graves e intoxicaciones masivas en los consumidores",
+            "Aumentan de manera descontrolada la zona de peligro de temperatura en los alimentos secos"
+        ],
+        "a": "Se utilizan en procesos de fermentación para la elaboración de productos como yogur, queso y pan",
+        "r": "Capítulo 1: Existen microorganismos benéficos que se utilizan en la industria para la producción de alimentos como el pan, el queso y el yogur."
+    },
+    {
+        "q": "¿Qué son las ETA según los manuales de bromatología e inocuidad alimentaria?",
+        "o": [
+            "Enfermedades Transmitidas por Alimentos",
+            "Estándares Técnicos de Almacenamiento",
+            "Esquemas de Temperatura y Acidez"
+        ],
+        "a": "Enfermedades Transmitidas por Alimentos",
+        "r": "Capítulo 1: Las ETA (Enfermedades Transmitidas por Alimentos) son aquellas enfermedades originadas por la ingestión de alimentos y/o agua que contienen agentes contaminantes."
+    },
+    {
+        "q": "¿Cuál de los siguientes síntomas se asocia comúnmente con la aparición de una Enfermedad Transmitida por Alimentos (ETA)?",
+        "o": [
+            "Vómitos, diarrea, dolor abdominal y fiebre",
+            "Crecimiento acelerado de las uñas y cabello",
+            "Pérdida temporal de la visión periférica nocturna"
+        ],
+        "a": "Vómitos, diarrea, dolor abdominal y fiebre",
+        "r": "Capítulo 1: Los síntomas más comunes de las ETA incluyen náuseas, vómitos, dolores abdominales, diarrea y fiebre."
+    },
+    {
+        "q": "¿Qué característica define a los alimentos perecederos?",
+        "o": [
+            "Aquellos que requieren condiciones especiales de temperatura (refrigeración o congelación) ya que se descomponen con facilidad",
+            "Aquellos que tienen una vida útil extremadamente larga a temperatura ambiente sin sufrir ningún tipo de alteración",
+            "Los productos fabricados exclusivamente a base de cereales secos y legumbres embolsadas"
+        ],
+        "a": "Aquellos que requieren condiciones especiales de temperatura (refrigeración o congelación) ya que se descomponen con facilidad",
+        "r": "Capítulo 2: Los alimentos perecederos son aquellos que, por su composición, favorecen el crecimiento microbiano y requieren cadena de frío."
+    },
+    {
+        "q": "¿Qué acción se debe tomar con las latas deconserva que presenten abolladuras profundas, estén infladas o tengan fugas?",
+        "o": [
+            "Descartarlas de inmediato ya que pueden contener toxinas peligrosas como la del botulismo",
+            "Consumirlas con total tranquilidad si el producto dentro de la lata no huele mal",
+            "Abrirlas y hervirlas durante al menos 10 segundos para neutralizar cualquier defecto"
+        ],
+        "a": "Descartarlas de inmediato ya que pueden contener toxinas peligrosas como la del botulismo",
+        "r": "Capítulo 4: Las latas abolladas, infladas o oxidadas deben ser descartadas porque pueden representar un grave riesgo de botulismo."
+    },
+    {
+        "q": "¿Es obligatorio el uso de cofia o red para el cabello por parte de los manipuladores de alimentos?",
+        "o": [
+            "Verdadero",
+            "Falso"
+        ],
+        "a": "Verdadero",
+        "r": "Capítulo 5: El personal debe utilizar ropa protectora clara, calzado cerrado y cabello totalmente recogido mediante cofia, red o gorro."
+    },
+    {
+        "q": "¿Qué indica el principio de rotación de stock PEPS (FIFO en inglés)?",
+        "o": [
+            "Primero en entrar, primero en salir: utilizar los productos más antiguos antes que los recién adquiridos",
+            "Prohibir el almacenamiento de productos perecederos durante más de una semana calendario",
+            "Pesar estrictamente porciones iguales y simétricas antes de introducirlas en las cámaras de frío"
+        ],
+        "a": "Primero en entrar, primero en salir: utilizar los productos más antiguos antes que los recién adquiridos",
+        "r": "Capítulo 4: El sistema PEPS (Primeros en Entrar, Primeros en Salir) garantiza que los alimentos más antiguos sean los primeros en utilizarse."
+    },
+    {
+        "q": "¿Se permite el uso de joyas, anillos, pulseras o relojes mientras se manipulan alimentos?",
+        "o": [
+            "Falso",
+            "Verdadero"
+        ],
+        "a": "Falso",
+        "r": "Capítulo 5: No se debe usar anillos, pulseras, relojes ni aretes durante la manipulación de alimentos, ya que acumulan suciedad y microorganismos."
+    },
+    {
+        "q": "¿Qué se debe hacer si un manipulador de alimentos presenta heridas abiertas, cortes o infecciones en las manos?",
+        "o": [
+            "Cubrirlas con un apósito impermeable y un guante limpio, o reasignarlo a tareas donde no entre en contacto directo con los alimentos",
+            "Continuar trabajando con normalidad siempre y cuando la herida no sangre de manera abundante sobre los platos",
+            "Aplicar alcohol en gel directamente sobre la lesión y dejar secar al aire libre sin protección adicional"
+        ],
+        "a": "Cubrirlas con un apósito impermeable y un guante limpio, o reasignarlo a tareas donde no entre en contacto directo con los alimentos",
+        "r": "Capítulo 5: Las heridas deben estar protegidas con vendajes impermeables y guantes; de lo contrario, el trabajador debe ser apartado de la manipulación directa."
+    },
+    {
+        "q": "¿Cuál es la finalidad principal de la limpieza y desinfección de las superficies en contacto con los alimentos?",
+        "o": [
+            "Eliminar la suciedad visible y reducir la carga microbiana a niveles seguros para evitar la contaminación",
+            "Únicamente mejorar la estética visual y el brillo de las mesadas de acero inoxidable",
+            "Aumentar artificialmente la vida útil de los utensilios de plástico mediante procesos de corrosión controlada"
+        ],
+        "a": "Eliminar la suciedad visible y reducir la carga microbiana a niveles seguros para evitar la contaminación",
+        "r": "Capítulo 7: La limpieza elimina la suciedad visible y la desinfección reduce los microorganismos a niveles seguros."
+    },
+    {
+        "q": "¿Por qué es una mala práctica utilizar esponjas de lana de acero desgastadas o trapos sucios en la cocina?",
+        "o": [
+            "Porque acumulan una gran cantidad de bacterias y pueden dejar residuos metálicos o partículas contaminantes en los utensilios",
+            "Porque reducen drásticamente la temperatura ambiente del agua y congelan las cañerías del lavatorio",
+            "Porque aumentan el costo operativo general del establecimiento de forma innecesaria"
+        ],
+        "a": "Porque acumulan una gran cantidad de bacterias y pueden dejar residuos metálicos o partículas contaminantes en los utensilios",
+        "r": "Capítulo 7: Los trapos sucios y las esponjas acumulan microorganismos patógenos y facilitan la contaminación cruzada."
+    },
+    {
+        "q": "¿Qué precauciones se deben tomar respecto al almacenamiento de productos químicos de limpieza junto a los alimentos?",
+        "o": [
+            "Deben guardarse en un área completamente separada, debidamente rotulada y lejos de los alimentos para evitar intoxicaciones",
+            "Pueden almacenarse en las mismas estanterías siempre que estén ubicados en los estantes inferiores",
+            "Se pueden trasvasar a envases de bebidas y alimentos vacíos para identificarlos con mayor facilidad en la cocina"
+        ],
+        "a": "Deben guardarse en un área completamente separada, debidamente rotulada y lejos de los alimentos para evitar intoxicaciones",
+        "r": "Capítulo 6: Los productos químicos de limpieza deben almacenarse separados de los alimentos y en sus envases originales debidamente rotulados."
+    },
+    {
+        "q": "¿Qué indica la presencia de plagas (como roedores o insectos) en un establecimiento elaborador de alimentos?",
+        "o": [
+            "Un grave riesgo de contaminación biológica y falta de cumplimiento de las normas de higiene y saneamiento",
+            "Un proceso natural e inevitable que no afecta la inocuidad de los platos preparados",
+            "La presencia exclusiva de alimentos secos en buen estado de conservación dentro de las bodegas"
+        ],
+        "a": "Un grave riesgo de contaminación biológica y falta de cumplimiento de las normas de higiene y saneamiento",
+        "r": "Capítulo 7: Las plagas transportan microorganismos patógenos, por lo que su presencia representa un riesgo inaceptable para la inocuidad."
+    },
+    {
+        "q": "¿Por qué no se debe fumar, comer o masticar chicle mientras se manipulan alimentos?",
+        "o": [
+            "Porque se pueden transferir microorganismos de la boca a las manos y de estas a los alimentos",
+            "Porque interrumpe el ritmo de trabajo y disminuye la velocidad de corte de los vegetales",
+            "Porque genera un exceso de vapor de agua en el ambiente de la cocina industrial"
+        ],
+        "a": "Porque se pueden transferir microorganismos de la boca a las manos y de estas a los alimentos",
+        "r": "Capítulo 5: Está prohibido fumar, comer, beber o masticar chicle durante la manipulación para evitar transferir saliva y gérmenes."
+    },
+    {
+        "q": "¿Cuál es la temperatura máxima recomendada para mantener los alimentos refrigerados en la heladera?",
+        "o": [
+            "Menor o igual a 5 grados Celsius",
+            "Entre 15 y 20 grados Celsius",
+            "Exactamente a 35 grados Celsius"
+        ],
+        "a": "Menor o igual a 5 grados Celsius",
+        "r": "Capítulo 4: Las heladeras y cámaras frigoríficas deben mantenerse a una temperatura igual o inferior a los 5 grados Celsius."
+    },
+    {
+        "q": "¿Qué se debe verificar antes de comprar un producto alimenticio envasado en un comercio?",
+        "o": [
+            "Que el envase esté íntegro, cuente con la fecha de vencimiento vigente y tenga los datos de habilitación y rotulado bromatológico",
+            "Que su precio sea el más económico del mercado sin importar el estado de la etiqueta",
+            "Que el empaque tenga colores llamativos y fotografías grandes impresas en la portada"
+        ],
+        "a": "Que el envase esté íntegro, cuente con la fecha de vencimiento vigente y tenga los datos de habilitación y rotulado bromatológico",
+        "r": "Capítulo 2 y 4: Se debe comprobar la integridad del envase, la fecha de duración y el rotulado legal antes de adquirir cualquier alimento."
+    },
+    {
+        "q": "¿Qué acción se debe realizar inmediatamente después de manipular carne, pollo o pescado crudos en la mesada de trabajo?",
+        "o": [
+            "Limpiar y desinfectar rigurosamente la superficie y los utensilios utilizados para evitar la contaminación cruzada",
+            "Limpiar superficialmente con un trapo seco para retirar los restos de humedad visibles",
+            "Continuar picando verduras sobre la misma tabla para aprovechar los jugos naturales de la carne"
+        ],
+        "a": "Limpiar y desinfectar rigurosamente la superficie y los utensilios utilizados para evitar la contaminación cruzada",
+        "r": "Capítulo 3 y 7: Tras manipular alimentos crudos, se deben lavar, enjuagar y desinfectar las superficies y utensilios antes de usarlos con otros alimentos."
+    },
+    {
+        "q": "¿Por qué es fundamental que los manipuladores de alimentos utilicen calzado cerrado y de suela antideslizante?",
+        "o": [
+            "Para prevenir accidentes laborales por resbalones y proteger los pies de la caída de objetos pesados o líquidos calientes",
+            "Para cumplir únicamente con una norma estética exigida por la gerencia de marketing del local",
+            "Para aumentar la temperatura corporal general del trabajador durante las jornadas en cámaras frigoríficas"
+        ],
+        "a": "Para prevenir accidentes laborales por resbalones y proteger los pies de la caída de objetos pesados o líquidos calientes",
+        "r": "Capítulo 5: El calzado debe ser cerrado, cómodo y con suela antideslizante para evitar accidentes y proteger al trabajador."
+    },
+    {
+        "q": "¿Qué se debe hacer con los alimentos preparados que han permanecido durante varias horas a temperatura ambiente dentro de la zona de peligro?",
+        "o": [
+            "Descartarlos de inmediato, ya que el crecimiento bacteriano pudo haber generado toxinas peligrosas para la salud",
+            "Calentarlos a fuego fuerte durante un minuto para eliminar por completo cualquier tipo de riesgo",
+            "Guardarlos directamente en la heladera para consumirlos durante el transcurso de la próxima semana"
+        ],
+        "a": "Descartarlos de inmediato, ya que el crecimiento bacteriano pudo haber generado toxinas peligrosas para la salud",
+        "r": "Capítulo 2 y 4: Los alimentos cocidos que permanecen en la zona de peligro por más de dos horas deben ser descartados por seguridad."
+    },
+    {
+        "q": "¿Cuál es la función principal de los aditivos autorizados en la industria alimentaria cuando son empleados correctamente?",
+        "o": [
+            "Contribuir a la conservación, mejorar características físicas o tecnológicas, sin encubrir alteraciones ni engañar al consumidor",
+            "Reemplazar por completo la necesidad de mantener la cadena de frío en los productos perecederos",
+            "Disimular de manera definitiva la presencia de ingredientes vencidos o en estado de descomposición"
+        ],
+        "a": "Contribuir a la conservación, mejorar características físicas o tecnológicas, sin encubrir alteraciones ni engañar al consumidor",
+        "r": "Capítulo 2: Los aditivos alimentarios se utilizan bajo normas estrictas para mejorar la conservación o el aspecto, prohibiendo engaños al consumidor."
+    },
+    {
+        "q": "¿Qué información obligatoria debe contener como mínimo la etiqueta de un alimento fraccionado o preparado para su comercialización?",
+        "o": [
+            "Denominación del producto, fecha de elaboración, fecha de vencimiento e identificación del lote o responsable",
+            "Únicamente el logotipo de la empresa fabricante y el número de teléfono de atención al cliente",
+            "El listado de los precios sugeridos de venta al público en los distintos supermercados"
+        ],
+        "a": "Denominación del producto, fecha de elaboración, fecha de vencimiento e identificación del lote o responsable",
+        "r": "Capítulo 4 y 8: Todo alimento fraccionado debe estar debidamente rotulado con nombre, fechas de elaboración y vencimiento, y datos de origen."
+    },
+    {
+        "q": "¿Qué tipo de agua se debe emplear obligatoriamente en todas las etapas de la elaboración y lavado de alimentos?",
+        "o": [
+            "Agua potable segura, libre de contaminantes químicos y microorganismos patógenos",
+            "Agua de pozo cruda sin ningún tipo de filtración ni control bacteriológico previo",
+            "Agua de lluvia recolectada directamente en tanques abiertos al aire libre"
+        ],
+        "a": "Agua potable segura, libre de contaminantes químicos y microorganismos patógenos",
+        "r": "Capítulo 3 y 6: El agua utilizada en la industria alimentaria y en la cocina debe ser potable y cumplir con los análisis fisicoquímicos y bacteriológicos."
+    },
+    {
+        "q": "¿Por qué los alimentos ricos en proteínas (como carnes, leche, huevos y derivados) son considerados de alto riesgo?",
+        "o": [
+            "Porque ofrecen un medio nutritivo excelente y un nivel de humedad que favorece la rápida multiplicación de bacterias",
+            "Porque se descomponen de manera instantánea al entrar en contacto con la luz artificial de los comercios",
+            "Porque contienen de forma natural altas concentraciones de conservantes químicos sintéticos"
+        ],
+        "a": "Porque ofrecen un medio nutritivo excelente y un nivel de humedad que favorece la rápida multiplicación de bacterias",
+        "r": "Capítulo 2: Los alimentos de alto riesgo o perecederos son ricos en proteínas y agua, facilitando la multiplicación microbiana si no hay frío."
+    },
+    {
+        "q": "¿Qué medida higiénica se debe adoptar con los huevos frescos antes de ser almacenados o utilizados en una preparación culinaria?",
+        "o": [
+            "Conservarlos en su estuche o envase original en refrigeración y evitar lavarlos antes de guardarlos para no dañar su cutícula protectora",
+            "Lavarlos con abundante agua caliente y jabón neutro antes de introducirlos en el sector de alimentos listos para consumir",
+            "Sumergirlas en vinagre puro durante 10 minutos para disolver completamente la cáscara calcárea"
+        ],
+        "a": "Conservarlos en su estuche o envase original en refrigeración y evitar lavarlos antes de guardarlos para no dañar su cutícula protectora",
+        "r": "Capítulo 3 y 4: Los huevos no deben lavarse antes de almacenarse ya que se elimina su cutícula protectora natural, facilitando el ingreso de gérmenes."
+    },
+    {
+        "q": "¿Qué representa el concepto de 'Inocuidad de los Alimentos' en los servicios de alimentación?",
+        "o": [
+            "La garantía de que los alimentos no causarán daño al consumidor cuando sean preparados y/o consumidos",
+            "La certeza absoluta de que un plato mantendrá su temperatura caliente durante más de 24 horas",
+            "La ausencia total de cualquier tipo de nutriente calórico en los alimentos elaborados para dietas"
+        ],
+        "a": "La garantía de que los alimentos no causarán daño al consumidor cuando sean preparados y/o consumidos",
+        "r": "Capítulo 1: La inocuidad alimentaria es la garantía de que los alimentos no causarán daño a la salud del consumidor cuando se preparen o consuman."
+    },
+    {
+        "q": "¿Cuál es el procedimiento correcto para desechar los residuos orgánicos y basuras en una cocina profesional?",
+        "o": [
+            "Utilizar recipientes con tapas accionadas por pedal, revestidos con bolsas plásticas resistentes y vaciarlos periódicamente",
+            "Acumularlos en cajas de cartón abiertas sobre la mesada de trabajo hasta el final de la jornada laboral",
+            "Arrojarlos directamente en las piletas de lavado de vajilla para aprovechar el flujo constante de agua"
+        ],
+        "a": "Utilizar recipientes con tapas accionadas por pedal, revestidos con bolsas plásticas resistentes y vaciarlos periódicamente",
+        "r": "Capítulo 6 y 7: Los tachos de basura deben tener tapa accionada por pedal, estar limpios y mantenerse alejados de las zonas de elaboración."
+    },
+    {
+        "q": "¿Qué prácticas de higiene personal básica debe cumplir un manipulador antes de comenzar sus labores?",
+        "o": [
+            "Realizar un correcto lavado de manos con agua y jabón, uñas cortas y limpias, y ropa protectora limpia",
+            "Aplicar perfume en aerosol sobre la chaqueta y utilizar guantes sin necesidad de lavar las manos",
+            "Lavar únicamente los antebrazos con alcohol medicinal y mantener el cabello suelto"
+        ],
+        "a": "Realizar un correcto lavado de manos con agua y jabón, uñas cortas y limpias, y ropa protectora limpia",
+        "r": "Capítulo 5: El personal debe presentarse con aseo personal, uñas cortas sin esmalte, manos limpias y ropa de trabajo impecable."
+    },
+    {
+        "q": "¿Qué riesgo implica la presencia de insectos voladores (como moscas) en las áreas donde se procesan alimentos?",
+        "o": [
+            "Actúan como vectores mecánicos que transportan microorganismos patógenos desde la basura y suciedad hacia los alimentos",
+            "Consumen el exceso de humedad ambiental sin causar ningún tipo de alteración biológica",
+            "Contribuyen a la aireación natural de las salas de cocción sin representar ningún peligro sanitario"
+        ],
+        "a": "Actúan como vectores mecánicos que transportan microorganismos patógenos desde la basura y suciedad hacia los alimentos",
+        "r": "Capítulo 7: Las moscas y otros insectos son portadores de gérmenes patógenos que contaminan los alimentos al posarse sobre ellos."
+    },
+    {
+        "q": "¿Cuál es el propósito de realizar controles periódicos de salud (libreta sanitaria o carnet de manipulador) al personal?",
+        "o": [
+            "Garantizar que los trabajadores no padezcan enfermedades transmisibles por alimentos ni sean portadores de afecciones riesgosas",
+            "Verificar únicamente el nivel de estudios secundarios alcanzados por el empleado",
+            "Calcular de forma exacta las horas trabajadas en el área de empaquetado y distribución"
+        ],
+        "a": "Garantizar que los trabajadores no padezcan enfermedades transmisibles por alimentos ni sean portadores de afecciones riesgosas",
+        "r": "Capítulo 5: El control médico y la libreta sanitaria aseguran que el manipulador no padezca enfermedades que pueda transmitir a los alimentos."
+    },
+    {
+        "q": "¿Cómo deben organizarse los alimentos dentro de una heladera para evitar la contaminación cruzada vertical?",
+        "o": [
+            "Los alimentos listos para consumir y cocidos en los estantes superiores, y los alimentos crudos en los estantes inferiores",
+            "Todos los productos juntos sin distinción de origen para optimizar el espacio disponible",
+            "Las carnes crudas en el estante más alto para que sus jugos goteen sobre las verduras frescas"
+        ],
+        "a": "Los alimentos listos para consumir y cocidos en los estantes superiores, y los alimentos crudos en los estantes inferiores",
+        "r": "Capítulo 3 y 4: En la heladera, los alimentos cocidos o listos para comer van arriba y los crudos abajo para evitar que los jugos contaminen otros productos."
+    },
+    {
+        "q": "¿Qué se debe hacer con los productos alimenticios que se encuentran vencidos en las estanterías de un comercio o cocina?",
+        "o": [
+            "Identificarlos claramente, retirarlos de la zona de uso o venta y proceder a su descarte inmediato",
+            "Aplicarles una nueva etiqueta con una fecha de vencimiento extendida por dos semanas más",
+            "Mezclarlos con lotes frescos para disimular su fecha de caducidad original"
+        ],
+        "a": "Identificarlos claramente, retirarlos de la zona de uso o venta y proceder a su descarte inmediato",
+        "r": "Capítulo 4: Los alimentos vencidos deben ser separados, identificados como no aptos y descartados para prevenir intoxicaciones."
+    },
+    {
+        "q": "¿Por qué es importante mantener limpias las campanas y extractores de humo en una cocina comercial?",
+        "o": [
+            "Para evitar la acumulación de grasa que puede obstruir la ventilación o convertirse en un riesgo de incendio",
+            "Para reducir el consumo eléctrico de los artefactos de refrigeración",
+            "Para eliminar por completo la necesidad de limpiar las mesadas de trabajo diarias"
+        ],
+        "a": "Para evitar la acumulación de grasa que puede obstruir la ventilación o convertirse en un riesgo de incendio",
+        "r": "Capítulo 7: La acumulación de grasa en campanas y conductos representa un peligro latente de incendio y falta de higiene ambiental."
+    },
+    {
+        "q": "¿Qué precauciones se deben seguir al manipular hielo destinado a enfriar bebidas o alimentos?",
+        "o": [
+            "Debe ser elaborado con agua potable, manipulado con utensilios limpios (palitas o pinzas) y nunca con las manos o vasos",
+            "Puede tomarse directamente con las manos limpias siempre que el operario use guantes de látex",
+            "Debe almacenarse en recipientes abiertos cerca de la zona de lavado de pisos"
+        ],
+        "a": "Debe ser elaborado con agua potable, manipulado con utensilios limpios (palitas o pinzas) y nunca con las manos o vasos",
+        "r": "Capítulo 3 y 6: El hielo es considerado un alimento; debe hacerse con agua potable y manipularse exclusivamente con utensilios higiénicos."
+    },
+    {
+        "q": "¿Qué significa que un alimento sea considerado 'contaminado' según las normativas bromatológicas?",
+        "o": [
+            "Que contiene sustancias extrañas, agentes biológicos, químicos o físicos en cantidades superiores a las permitidas",
+            "Que ha perdido parte de su valor comercial debido a un cambio en el diseño del empaque",
+            "Que ha sido elaborado utilizando exclusivamente ingredientes de origen orgánico nacional"
+        ],
+        "a": "Que contiene sustancias extrañas, agentes biológicos, químicos o físicos en cantidades superiores a las permitidas",
+        "r": "Capítulo 2: Un alimento contaminado es aquel que contiene elementos extraños o microorganismos en niveles perjudiciales para la salud."
+    },
+    {
+        "q": "¿Cuál es la manera correcta de lavar los vegetales de hoja (como lechuga o espinaca) antes de consumirlos?",
+        "o": [
+            "Hoja por hoja bajo chorro de agua potable para retirar la tierra, y luego desinfectar con la solución clorada indicada",
+            "Sumergir el paquete entero sin abrir directamente en agua tibia durante cinco minutos",
+            "Pasarles un paño seco para retirar el polvo superficial visible"
+        ],
+        "a": "Hoja por hoja bajo chorro de agua potable para retirar la tierra, y luego desinfectar con la solución clorada indicada",
+        "r": "Capítulo 3: Las verduras de hoja deben lavarse hoja por hoja con agua potable para eliminar restos de tierra y luego desinfectarse."
+    },
+    {
+        "q": "¿Por qué no se deben utilizar utensilios de madera (como cucharas o tablas) en la manipulación intensiva de alimentos perecederos?",
+        "o": [
+            "Porque la madera es un material poroso que absorbe humedad y restos orgánicos, facilitando el refugio y crecimiento de bacterias",
+            "Porque alteran de manera irreversible el color natural de las preparaciones dulces",
+            "Porque se disuelven al entrar en contacto con soluciones desinfectantes a base de cloro"
+        ],
+        "a": "Porque la madera es un material poroso que absorbe humedad y restos orgánicos, facilitando el refugio y crecimiento de bacterias",
+        "r": "Capítulo 6 y 7: Los utensilios de madera no son recomendados debido a su porosidad, ya que retienen humedad y favorecen la proliferación microbiana."
+    },
+    {
+        "q": "¿Qué acción se debe tomar inmediatamente si se detecta un corte prolongado de energía eléctrica que afecta a las cámaras de frío y heladeras?",
+        "o": [
+            "Mantener las puertas de los equipos cerradas el mayor tiempo posible para conservar la temperatura interna y evaluar el estado de los alimentos",
+            "Abrir todas las puertas de inmediato para ventilar los productos y evitar que se humedezcan",
+            "Trasladar todos los alimentos perecederos a la luz del sol para acelerar su descongelación segura"
+        ],
+        "a": "Mantener las puertas de los equipos cerradas el mayor tiempo posible para conservar la temperatura interna y evaluar el estado de los alimentos",
+        "r": "Capítulo 4: Ante un corte de luz, se deben mantener cerradas las heladeras para preservar el frío el mayor tiempo posible."
+    },
+    {
+        "q": "¿Por qué se prohíbe el uso de envases de cartón o cajas corrugadas dentro de las cámaras frigoríficas y zonas de almacenamiento primario?",
+        "o": [
+            "Porque absorben humedad, acumulan hongos, atraen plagas y pueden contaminar las instalaciones y productos",
+            "Porque reducen la capacidad visual de los estantes de acero inoxidable",
+            "Porque alteran el registro digital de la temperatura ambiente del termómetro"
+        ],
+        "a": "Porque absorben humedad, acumulan hongos, atraen plagas y pueden contaminar las instalaciones y productos",
+        "r": "Capítulo 6 y 7: Las cajas de cartón no deben ingresar a zonas de almacenamiento húmedas o de elaboración porque albergan plagas y suciedad."
+    },
+    {
+        "q": "¿Qué se debe tener en cuenta al desinfectar superficies con soluciones cloradas (hipoclorito de sodio)?",
+        "o": [
+            "Preparar la dilución diariamente con agua fría o a temperatura ambiente, ya que el cloro pierde eficacia con el tiempo y el calor",
+            "Mezclar el cloro puro con detergentes industriales concentrados para potenciar su efecto limpiador de forma instantánea",
+            "Guardar la mezcla preparada en botellas transparentes expuestas directamente a la luz solar"
+        ],
+        "a": "Preparar la dilución diariamente con agua fría o a temperatura ambiente, ya que el cloro pierde eficacia con el tiempo y el calor",
+        "r": "Capítulo 7: Las soluciones de cloro deben prepararse diariamente y con agua fría, pues el calor y el paso del tiempo disminuyen su efectividad."
+    },
+    {
+        "q": "¿Cuál es el riesgo principal de almacenar alimentos cocidos y crudos en un mismo recipiente o plato?",
+        "o": [
+            "Se produce contaminación cruzada directa, transfiriendo microorganismos patógenos de los ingredientes crudos a los ya cocidos",
+            "Se acelera de manera natural el proceso de fermentación láctea del plato",
+            "Se modifica únicamente la consistencia física de la salsa de acompañamiento"
+        ],
+        "a": "Se produce contaminación cruzada directa, transfiriendo microorganismos patógenos de los ingredientes crudos a los ya cocidos",
+        "r": "Capítulo 3: Mezclar alimentos crudos y cocidos en un mismo recipiente genera una grave contaminación cruzada directa."
+    },
+    {
+        "q": "¿Por qué es obligatorio que los desagües y rejillas de piso en una cocina industrial se mantengan limpios y con sus respectivos sifones?",
+        "o": [
+            "Para evitar el ingreso de plagas, roedores y malos olores provenientes del sistema de cañerías",
+            "Para impedir que el agua potable se mezcle con los productos de limpieza comerciales",
+            "Para garantizar que la temperatura del suelo se mantenga siempre dentro de la zona segura"
+        ],
+        "a": "Para evitar el ingreso de plagas, roedores y malos olores provenientes del sistema de cañerías",
+        "r": "Capítulo 6 y 7: Las rejillas de desagüe deben limpiarse periódicamente y contar con tapas o sifones para prevenir el acceso de plagas y olores."
+    },
+    {
+        "q": "¿Qué procedimiento se debe seguir al recibir mercadería perecedera en un establecimiento gastronómico?",
+        "o": [
+            "Controlar inmediatamente la temperatura de recepción, la integridad de los envases y las fechas de vencimiento antes de ingresarla al depósito",
+            "Guardar los paquetes directamente en los estantes sin revisar los rótulos para optimizar el tiempo de entrega del proveedor",
+            "Dejar las cajas a temperatura ambiente en la entrada del local hasta el final de la jornada"
+        ],
+        "a": "Controlar inmediatamente la temperatura de recepción, la integridad de los envases y las fechas de vencimiento antes de ingresarla al depósito",
+        "r": "Capítulo 4: Al recibir mercadería, es obligatorio verificar las condiciones de transporte, temperaturas, estado de envases y fechas."
+    },
+    {
+        "q": "¿Qué característica deben poseer las paredes, techos y pisos de un local elaborador de alimentos para cumplir con las normas de saneamiento?",
+        "o": [
+            "Deben ser de materiales impermeables, no absorbentes, lavables y de colores claros que faciliten la limpieza",
+            "Deben estar tapizados con madera rústica tratada para absorber la humedad ambiental",
+            "Deben ser porosos para permitir la evaporación rápida de los líquidos derramados"
+        ],
+        "a": "Deben ser de materiales impermeables, no absorbentes, lavables y de colores claros que faciliten la limpieza",
+        "r": "Capítulo 6: Las superficies de las salas de elaboración (pisos, paredes, techos) deben ser lisas, impermeables, lavables y sin grietas."
+    },
+    {
+        "q": "¿Por qué no se debe utilizar pintura descascarada o paredes con humedad en las áreas de preparación de alimentos?",
+        "o": [
+            "Porque la pintura caída puede desprenderse contaminando físicamente los platos y la humedad favorece la aparición de hongos",
+            "Porque reducen la iluminación artificial del local de forma permanente",
+            "Porque provocan un aumento instantáneo en la cuenta de servicios eléctricos"
+        ],
+        "a": "Porque la pintura caída puede desprenderse contaminando físicamente los platos y la humedad favorece la aparición de hongos",
+        "r": "Capítulo 6 y 7: Las paredes en mal estado con desprendimientos o humedad generan riesgos de contaminación física y biológica."
+    },
+    {
+        "q": "¿Qué se debe hacer si un operario de cocina experimenta síntomas de diarrea o vómitos durante su turno de trabajo?",
+        "o": [
+            "Informar de inmediato al responsable, suspender sus tareas de manipulación y retirarse para recibir atención médica",
+            "Tomar un medicamento analgésico y continuar trabajando utilizando dos pares de guantes descartables",
+            "Trasladarse a la zona de lavado de vajilla para evitar el contacto con los alimentos elaborados"
+        ],
+        "a": "Informar de inmediato al responsable, suspender sus tareas de manipulación y retirarse para recibir atención médica",
+        "r": "Capítulo 5: Todo manipulador con síntomas de enfermedad gastrointestinal debe ser apartado de inmediato de las tareas de manipulación."
+    },
+    {
+        "q": "¿Cuál es la función del sistema de ventilación adecuada en los locales donde se procesan alimentos?",
+        "o": [
+            "Renovar el aire, evitar la concentración excesiva de calor, vapor de humo y prevenir la condensación de humedad en techos",
+            "Enfriar los alimentos calientes colocados directamente frente a las corrientes de aire",
+            "Reemplazar por completo el uso de desinfectantes en las paredes y mesadas"
+        ],
+        "a": "Renovar el aire, evitar la concentración excesiva de calor, vapor de humo y prevenir la condensación de humedad en techos",
+        "r": "Capítulo 6: La ventilación adecuada previene la condensación de vapor, la acumulación de calor y asegura la calidad del aire ambiental."
+    },
+    {
+        "q": "¿Cuál es la secuencia cronológica correcta para realizar el lavado y desinfección manual de los utensilios de cocina?",
+        "o": [
+            "1. Retirar restos sólidos, 2. Lavar con agua y detergente, 3. Enjuagar con agua limpia, 4. Sumergir en solución desinfectante, 5. Dejar secar al aire libre",
+            "1. Sumergir en solución desinfectante, 2. Secar con repasador de tela, 3. Lavar con agua y detergente, 4. Enjuagar, 5. Guardar directamente",
+            "1. Lavar con agua y detergente, 2. Secar con repasador, 3. Aplicar desinfectante sin enjuagar, 4. Retirar restos sólidos superficiales"
+        ],
+        "a": "1. Retirar restos sólidos, 2. Lavar con agua y detergente, 3. Enjuagar con agua limpia, 4. Sumergir en solución desinfectante, 5. Dejar secar al aire libre",
+        "r": "Capítulo 3, 6 y 7: La secuencia correcta de higiene incluye limpieza inicial, lavado con detergente, enjuague, desinfección y secado al aire."
+    },
+    {
+        "q": "¿Cuál es el orden secuencial adecuado para el lavado de manos correcto de un manipulador antes de ingresar al área de trabajo?",
+        "o": [
+            "1. Mojarse las manos con agua, 2. Aplicar jabón y frotar palmas, dorsos, espacios interdigitales y uñas durante 20 segundos, 3. Enjuagar con agua, 4. Secar con toalla descartable, 5. Cerrar la canilla usando la misma toalla",
+            "1. Aplicar alcohol en gel sobre manos secas, 2. Frotar rápidamente durante 5 segundos, 3. Secar con un repasador de uso múltiple",
+            "1. Enjuagar las manos con agua fría, 2. Aplicar detergente industrial, 3. Secar al aire sin enjuagar los restos de espuma"
+        ],
+        "a": "1. Mojarse las manos con agua, 2. Aplicar jabón y frotar palmas, dorsos, espacios interdigitales y uñas durante 20 segundos, 3. Enjuagar con agua, 4. Secar con toalla descartable, 5. Cerrar la canilla usando la misma toalla",
+        "r": "Capítulo 5: El procedimiento de lavado de manos exige mojar, enjabonar concienzudamente por 20 segundos, enjuagar y secar con papel descartable."
+    },
+    {
+        "q": "¿Qué pasos secuenciales se deben seguir para descongelar un alimento de forma segura dentro de la heladera?",
+        "o": [
+            "1. Retirar el alimento del freezer, 2. Colocarlo en un recipiente hondo para contener los líquidos de exudación, 3. Ubicarlo en el estante inferior de la heladera hasta su total descongelación, 4. Cocinar inmediatamente",
+            "1. Sacar del freezer, 2. Dejar el paquete sobre la mesada a temperatura ambiente hasta que se ablande, 3. Lavarlo con agua caliente corriente",
+            "1. Sumergir el alimento congelado en agua tibia durante toda la noche, 2. Volver a congelar si no se utiliza"
+        ],
+        "a": "1. Retirar el alimento del freezer, 2. Colocarlo en un recipiente hondo para contener los líquidos de exudación, 3. Ubicarlo en el estante inferior de la heladera hasta su total descongelación, 4. Cocinar inmediatamente",
+        "r": "Capítulo 3 y 4: La descongelación en heladera requiere ubicación en estantes bajos con contención de líquidos para evitar contaminación cruzada."
+    },
+    {
+        "q": "¿Cuál es la secuencia operativa correcta al recibir un lote de alimentos perecederos en el establecimiento?",
+        "o": [
+            "1. Verificar la documentación y el rotulado, 2. Medir la temperatura del transporte y del producto, 3. Comprobar la integridad de los envases y fechas de vencimiento, 4. Ingresar rápidamente a la zona de almacenamiento",
+            "1. Guardar la mercadería directamente en los estantes del depósito, 2. Revisar las facturas al final de la semana, 3. Descartar los envases rotos",
+            "1. Dejar la mercadería en la entrada del local a temperatura ambiente, 2. Abrir los paquetes para probar el sabor, 3. Lavar con cloro"
+        ],
+        "a": "1. Verificar la documentación y el rotulado, 2. Medir la temperatura del transporte y del producto, 3. Comprobar la integridad de los envases y fechas de vencimiento, 4. Ingresar rápidamente a la zona de almacenamiento",
+        "r": "Capítulo 4: El control de recepción exige verificar rótulos, temperaturas y estado de envases antes de su almacenamiento formal."
+    },
+    {
+        "q": "¿Qué secuencia se debe aplicar para preparar una solución de hipoclorito de sodio para la desinfección de superficies limpias?",
+        "o": [
+            "1. Verificar la concentración del envase de lavandina, 2. Medir la cantidad exacta de agua fría según la proporción recomendada, 3. Agregar la lavandina y mezclar suavemente, 4. Utilizar la solución preparada en el día",
+            "1. Mezclar lavandina pura con detergente concentrado en un balde, 2. Exponer al sol directo durante 4 horas para activar el calor, 3. Guardar en botella transparente",
+            "1. Calentar agua a punto de ebullición, 2. Añadir cloro concentrado, 3. Dejar reposar destapado hasta el día siguiente"
+        ],
+        "a": "1. Verificar la concentración del envase de lavandina, 2. Medir la cantidad exacta de agua fría según la proporción recomendada, 3. Agregar la lavandina y mezclar suavemente, 4. Utilizar la solución preparada en el día",
+        "r": "Capítulo 7: Las diluciones de cloro deben prepararse con agua fría a partir de la concentración comercial y renovarse diariamente."
+    },
+    {
+        "q": "¿Qué se debe hacer de forma obligatoria al preparar alimentos libres de gluten (para celíacos) para evitar la contaminación cruzada?",
+        "o": [
+            "1. Utilizar utensilios, superficies y equipos perfectamente limpios y exclusivos o sanitizados previamente, 2. Almacenar los ingredientes TACC separados de los libres de gluten, 3. Elaborar primero los productos libres de gluten antes de manipular harinas con tacc",
+            "1. Mezclar las harinas comunes con las libres de gluten en un mismo recipiente para optimizar el rendimiento, 2. Utilizar el mismo horno sin limpiar",
+            "1. Cocinar los alimentos celíacos junto con las pastas comunes para ahorrar tiempo de cocción"
+        ],
+        "a": "1. Utilizar utensilios, superficies y equipos perfectamente limpios y exclusivos o sanitizados previamente, 2. Almacenar los ingredientes TACC separados de los libres de gluten, 3. Elaborar primero los productos libres de gluten antes de manipular harinas con tacc",
+        "r": "Capítulo 8: Para elaborar alimentos libres de gluten se requiere estricta separación de espacios, uso de utensilios limpios y elaboración prioritaria para evitar contaminación cruzada con TACC."
+    },
+    {
+        "q": "¿Qué significa el símbolo oficial de 'Sin TACC' (un círculo con una barra cruzada sobre una espiga) en los envases de alimentos?",
+        "o": [
+            "Que el producto ha sido analizado y está certificado como libre de las proteínas del trigo, avena, cebada y centeno, siendo apto para celíacos",
+            "Que el alimento contiene un porcentaje reducido de gluten apto para consumo diario moderado",
+            "Que el contenido ha sido elaborado exclusivamente con cereales integrales orgánicos"
+        ],
+        "a": "Que el producto ha sido analizado y está certificado como libre de las proteínas del trigo, avena, cebada y centeno, siendo apto para celíacos",
+        "r": "Capítulo 8: El logotipo oficial Sin TACC garantiza que el alimento es apto para celíacos tras superar controles analíticos de ausencia de gluten."
+    },
+    {
+        "q": "¿Cuál es la secuencia lógica correcta para la limpieza y desinfección de una línea de trabajo donde se elaboraron productos con TACC antes de pasar a alimentos libres de gluten?",
+        "o": [
+            "1. Retirar restos gruesos de harina y polvo ambiental, 2. Lavar con agua caliente y detergente todas las superficies y utensilios, 3. Enjuagar con agua potable, 4. Aplicar solución desinfectante, 5. Dejar secar por completo",
+            "1. Pasar un trapo seco para quitar el exceso de polvo, 2. Comenzar inmediatamente con la receta libre de gluten",
+            "1. Rociar alcohol puro sobre la harina acumulada y barrer con escoba"
+        ],
+        "a": "1. Retirar restos gruesos de harina y polvo ambiental, 2. Lavar con agua caliente y detergente todas las superficies y utensilios, 3. Enjuagar con agua potable, 4. Aplicar solución desinfectante, 5. Dejar secar por completo",
+        "r": "Capítulo 7 y 8: El cambio de producción de TACC a libre de gluten exige una secuencia rigurosa de remoción de polvo, lavado, enjuague y desinfección total."
+    },
+    {
+        "q": "¿Por qué las personas con celiaquía deben evitar estrictamente el consumo de trazas mínimas de gluten en su dieta diaria?",
+        "o": [
+            "Porque incluso cantidades microscópicas de gluten provocan daño e inflamación en la mucosa del intestino delgado, afectando la absorción de nutrientes",
+            "Porque altera de manera instantánea el nivel de azúcar en la sangre provocando mareos temporales",
+            "Porque genera alergias respiratorias agudas similares al asma estacional"
+        ],
+        "a": "Porque incluso cantidades microscópicas de gluten provocan daño e inflamación en la mucosa del intestino delgado, afectando la absorción de nutrientes",
+        "r": "Capítulo 8: En la celiaquía, pequeñas cantidades de gluten dañan lasvellosidades intestinales, por lo que las trazas por contaminación cruzada son altamente perjudiciales."
+    },
+    {
+        "q": "¿Cómo deben almacenarse los ingredientes y productos terminados libres de gluten en las alacenas o depósitos de un establecimiento gastronómico?",
+        "o": [
+            "En estantes superiores y en envases herméticamente cerrados y debidamente identificados, completamente alejados de cualquier contacto con harinas con TACC",
+            "En los estantes inferiores, ubicados directamente debajo de los sacos de harina de trigo común",
+            "En cajones de cartón abiertos compartidos con panificados tradicionales"
+        ],
+        "a": "En estantes superiores y en envases herméticamente cerrados y debidamente identificados, completamente alejados de cualquier contacto con harinas con TACC",
+        "r": "Capítulo 8: Los productos libres de gluten deben guardarse en estantes altos, cerrados e identificados para prevenir la caída de polvo o partículas de TACC."
+    }
+]

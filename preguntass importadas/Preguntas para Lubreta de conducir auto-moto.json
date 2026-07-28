@@ -1,0 +1,1495 @@
+[
+  {
+    "q": "¿Cuál es la edad mínima para obtener la licencia de conducir de categoría A en Uruguay?",
+    "o": [
+      "16 años",
+      "18 años",
+      "21 años"
+    ],
+    "a": "18 años",
+    "r": "Página 8, Categorías de Permisos Vigentes, Categoría A: Edad Mínima 18 años."
+  },
+  {
+    "q": "¿Es obligatorio para todo vehículo automotor circular con la luz baja encendida permanentemente, a cualquier hora del día o de la noche, en Uruguay?",
+    "o": [
+      "Verdadero",
+      "Falso"
+    ],
+    "a": "Verdadero",
+    "r": "Página 27, numeral 4. LAS LUCES. También citado en la Ley N° 18191, Artículo 30 en la página 29."
+  },
+  {
+    "q": "¿Qué tipo de vehículos autoriza a conducir la Licencia de Conducir Categoría G2?",
+    "o": [
+      "Ciclomotores de hasta 50cc sin cambios",
+      "Motocicletas y ciclomotores de hasta 200cc",
+      "Motocicletas sin límite de cilindrada"
+    ],
+    "a": "Motocicletas y ciclomotores de hasta 200cc",
+    "r": "Página 8, Categorías de Permisos Vigentes."
+  },
+  {
+    "q": "¿El consumo de alcohol es compatible con la conducción de vehículos si la concentración es baja?",
+    "o": [
+      "Verdadero",
+      "Falso"
+    ],
+    "a": "Falso",
+    "r": "Página 16: 'El alcohol, a cualquier concentración en sangre, no es compatible con la conducción de vehículos...'"
+  },
+  {
+    "q": "Según los estudios citados en el manual, ¿cuál es el porcentaje de siniestros de tránsito en los que el factor humano es el responsable exclusivo?",
+    "o": [
+      "Entre el 20.5% y el 40.2%",
+      "Entre el 57.1% y el 76.5%",
+      "Más del 95%"
+    ],
+    "a": "Entre el 57.1% y el 76.5%",
+    "r": "Página 13: '...el factor humano es el responsable exclusivo de entre el 57.1% y el 76.5% de los siniestros.'"
+  },
+  {
+    "q": "¿Está permitido utilizar el teléfono celular mientras se conduce, incluso utilizando el sistema \"manos libres\"?",
+    "o": [
+      "Verdadero",
+      "Falso"
+    ],
+    "a": "Falso",
+    "r": "Página 90: 'Está prohibido utilizar el teléfono celular mientras se conduce; el sistema \"manos libres\" igualmente distrae su atención...'"
+  },
+  {
+    "q": "¿A qué distancia obligatoria se deben colocar las balizas portátiles en carretera si el vehículo queda inmovilizado?",
+    "o": [
+      "A no menos de 30m",
+      "A no menos de 50m",
+      "A no menos de 100m"
+    ],
+    "a": "A no menos de 50m",
+    "r": "Página 113: '...es obligatorio colocar balizas portátiles a no menos de 50m delante y detrás del mismo...'"
+  },
+  {
+    "q": "¿Cuál es la regla nemotécnica sugerida en el manual para mantener una distancia segura en ruta (regla de los segundos)?",
+    "o": [
+      "Regla de los 2 segundos",
+      "Regla de los 3 segundos",
+      "Regla de los 5 segundos"
+    ],
+    "a": "Regla de los 3 segundos",
+    "r": "Página 113: 'Una distancia segura... es aplicar la regla de los 3 segundos...'"
+  },
+  {
+    "q": "¿Es obligatorio el uso del cinturón de seguridad para los pasajeros de los asientos traseros en autos y camionetas en Uruguay?",
+    "o": [
+      "Verdadero",
+      "Falso"
+    ],
+    "a": "Verdadero",
+    "r": "Página 33, Ley 18191 Artículo 31: 'Por el conductor y los pasajeros de los asientos delanteros, así como por los pasajeros que ocupen los asientos traseros de autos y camionetas.'"
+  },
+  {
+    "q": "¿Qué porcentaje de probabilidad de sobrevivir a un atropellamiento tiene un peatón si el vehículo lo impacta a 60 km/h?",
+    "o": [
+      "Más del 90%",
+      "Alrededor del 75%",
+      "Menos del 50%"
+    ],
+    "a": "Menos del 50%",
+    "r": "Página 79: '...y menos del 50% cuando el vehículo circula a 45 km/h o más.'"
+  },
+  {
+    "q": "En una intersección no regulada, ¿quién tiene la preferencia de paso?",
+    "o": [
+      "El vehículo que circula a mayor velocidad",
+      "El vehículo que se aproxima por la derecha",
+      "El vehículo de mayor tamaño"
+    ],
+    "a": "El vehículo que se aproxima por la derecha",
+    "r": "Página 64: 'En las otras, la preferencia de paso la tendrá el vehículo que se aproxime por la derecha.' También página 101."
+  },
+  {
+    "q": "¿Cuál es la velocidad máxima permitida en zona urbana en Uruguay, salvo excepciones señalizadas?",
+    "o": [
+      "30 km/h",
+      "45 km/h",
+      "60 km/h"
+    ],
+    "a": "45 km/h",
+    "r": "Página 90: 'La velocidad máxima de circulación en zona urbana es de 45 km/h...'"
+  },
+  {
+    "q": "¿Se debe quitar el casco a un conductor de moto accidentado para facilitar su respiración?",
+    "o": [
+      "Verdadero",
+      "Falso"
+    ],
+    "a": "Falso",
+    "r": "Página 56: 'No le quite el casco a un conductor siniestrado pues puede ocasionarle lesiones graves...'"
+  },
+  {
+    "q": "¿Qué elementos de seguridad son obligatorios para una bicicleta que circula en la vía pública?",
+    "o": [
+      "Frenos, timbre y luces",
+      "Frenos, espejos y casco",
+      "Frenos, espejos, timbre, faro y reflectantes"
+    ],
+    "a": "Frenos, espejos, timbre, faro y reflectantes",
+    "r": "Página 74: 'Las bicicletas, motos... deberán contar con: Frenos... Espejos... Timbre... Faro y reflectantes...'"
+  },
+  {
+    "q": "¿Qué significa una señal de tránsito luminosa con luz amarilla o ámbar continua?",
+    "o": [
+      "Detención obligatoria",
+      "Precaución para detenerse, a menos que no sea seguro",
+      "Avanzar con precaución"
+    ],
+    "a": "Precaución para detenerse, a menos que no sea seguro",
+    "r": "Página 108, Artículo 36, C)."
+  },
+    {
+    "q": "¿Está permitido cruzar la línea continua amarilla simple pintada sobre la calzada para adelantar a otro vehículo?",
+    "o": [
+      "Sí, siempre que no venga nadie de frente",
+      "Sí, si el vehículo de adelante circula a muy baja velocidad",
+      "No, está prohibido"
+    ],
+    "a": "No, está prohibido",
+    "r": "Página 100: 'Línea continua... prohíbe a los conductores atravesarla...'"
+  },
+  {
+    "q": "Al aproximarse a una rotonda sin señalización específica, ¿quién tiene la preferencia de paso?",
+    "o": [
+      "El vehículo que ya circula dentro de la rotonda",
+      "El vehículo que se dispone a entrar a la rotonda",
+      "El vehículo de mayor porte"
+    ],
+    "a": "El vehículo que ya circula dentro de la rotonda",
+    "r": "Página 65: '...tendrá prioridad de paso el que circula por la rotonda sobre el que intenta ingresar a ella...'"
+  },
+  {
+    "q": "¿Cuál es la función principal del sistema ABS (Anti-lock Braking System) en un vehículo?",
+    "o": [
+      "Reducir la distancia de frenado en cualquier superficie",
+      "Evitar que las ruedas se bloqueen y permitir la dirección durante una frenada de emergencia",
+      "Aumentar la potencia del motor para acelerar más rápido"
+    ],
+    "a": "Evitar que las ruedas se bloqueen y permitir la dirección durante una frenada de emergencia",
+    "r": "Página 47: '...evita que las ruedas se bloqueen... permitiendo mantener el control de la dirección...'"
+  },
+  {
+    "q": "¿A qué distancia mínima lateral se debe rebasar a un ciclista en zona urbana, según la normativa?",
+    "o": [
+      "0.5 metros",
+      "1.0 metro",
+      "1.5 metros"
+    ],
+    "a": "1.5 metros",
+    "r": "Página 74: 'Al sobrepasar a una bicicleta... se deberá mantener una distancia lateral de seguridad de 1,5m como mínimo.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma triangular con el vértice hacia abajo y fondo blanco con borde rojo?",
+    "o": [
+      "Pare",
+      "Ceda el paso",
+      "Prohibido el paso"
+    ],
+    "a": "Ceda el paso",
+    "r": "Página 97: 'Señales de Prioridad. Ceda el paso.'"
+  },
+  {
+    "q": "¿Qué efecto produce el consumo de bebidas energizantes mezcladas con alcohol al conducir?",
+    "o": [
+      "Anulan los efectos del alcohol",
+      "Reducen la somnolencia pero el deterioro psicomotor persiste",
+      "Mejoran la capacidad de reacción"
+    ],
+    "a": "Reducen la somnolencia pero el deterioro psicomotor persiste",
+    "r": "Página 20: '...pueden enmascarar los síntomas de la embriaguez sin disminuir el deterioro psicomotor producido por el alcohol.'"
+  },
+  {
+    "q": "¿En qué situación está permitido hacer uso de la bocina dentro de una zona urbana?",
+    "o": [
+      "Para saludar a un conocido",
+      "Para apurar a un vehículo detenido en un semáforo",
+      "Para prevenir un siniestro inminente"
+    ],
+    "a": "Para prevenir un siniestro inminente",
+    "r": "Página 91: 'Está prohibido el uso de la bocina... excepto para evitar un siniestro.'"
+  },
+  {
+    "q": "¿Qué significa una señal de tránsito luminosa con luz roja intermitente?",
+    "o": [
+      "Precaución, detenerse si es necesario",
+      "Detención obligatoria y luego avanzar si la vía está libre",
+      "Avanzar rápidamente antes de que cambie a verde"
+    ],
+    "a": "Detención obligatoria y luego avanzar si la vía está libre",
+    "r": "Página 108: 'Rojo intermitente: Obliga a los conductores a detener su vehículo antes de la línea de detención...'"
+  },
+  {
+    "q": "¿Cuál es la forma correcta de abordar un cruce peatonal o \"cebra\" no semaforizado?",
+    "o": [
+      "El peatón tiene prioridad si ya puso un pie sobre la calzada",
+      "El vehículo tiene prioridad si ya inició el cruce",
+      "El vehículo debe detenerse y dar preferencia al peatón que se disponga a cruzar"
+    ],
+    "a": "El vehículo debe detenerse y dar preferencia al peatón que se disponga a cruzar",
+    "r": "Página 104: '...los conductores de vehículos deberán detenerse y ceder el paso a los peatones que se encuentren esperando para cruzar...' (Ley 19824)."
+  },
+  {
+    "q": "¿Qué indica la luz de giro (intermitente) izquierda encendida en un vehículo que circula en carretera?",
+    "o": [
+      "Que va a estacionar a la izquierda",
+      "Que va a girar o adelantar",
+      "Que habilita al vehículo de atrás a adelantarlo"
+    ],
+    "a": "Que va a girar o adelantar",
+    "r": "Página 61: '...las luces direccionales tienen por finalidad indicar la intención de cambiar de dirección o de carril.'"
+  },
+  {
+    "q": "¿Es obligatorio el uso del cinturón de seguridad para una mujer embarazada mientras conduce?",
+    "o": [
+      "Sí, utilizando el cinturón de forma correcta sin presionar el abdomen",
+      "No, está exenta por su estado",
+      "Solo si el médico lo indica expresamente"
+    ],
+    "a": "Sí, utilizando el cinturón de forma correcta sin presionar el abdomen",
+    "r": "Página 33: '...es obligatorio para todos los ocupantes de un vehículo...' (Se recomienda que la banda inferior pase por debajo de la panza, sobre la pelvis)."
+  },
+  {
+    "q": "¿Qué tipo de neumático es el más adecuado para circular en condiciones de lluvia intensa y evitar el 'aquaplaning'?",
+    "o": [
+      "Neumáticos lisos para mayor agarre",
+      "Neumáticos con la profundidad de dibujo legal adecuada",
+      "Neumáticos con presión superior a la recomendada"
+    ],
+    "a": "Neumáticos con la profundidad de dibujo legal adecuada",
+    "r": "Página 43: 'La profundidad del dibujo de los neumáticos... es vital para evacuar el agua y evitar el aquaplaning.'"
+  },
+  {
+    "q": "¿Qué maniobra está prohibida inmediatamente antes o sobre la cima de una cuesta o loma sin visibilidad?",
+    "o": [
+      "Cambiar de marcha",
+      "Adelantar a otro vehículo",
+      "Encender las luces"
+    ],
+    "a": "Adelantar a otro vehículo",
+    "r": "Página 101: 'No se debe adelantar... En las curvas, cimas o pendientes de la vía...'"
+  },
+  {
+    "q": "¿Qué función cumple el apoyacabezas en un vehículo y cómo debe ajustarse?",
+    "o": [
+      "Es un elemento de confort y debe quedar a la altura del cuello",
+      "Es un elemento de seguridad para evitar el 'latigazo' cervical y su parte superior debe quedar a la altura de la cabeza/ojos",
+      "Es un elemento decorativo sin función de seguridad"
+    ],
+    "a": "Es un elemento de seguridad para evitar el 'latigazo' cervical y su parte superior debe quedar a la altura de la cabeza/ojos",
+    "r": "Página 37: '...la parte superior del mismo debe quedar a la altura de la cabeza (no de la nuca), preferentemente a la altura de los ojos.'"
+  },
+  {
+    "q": "En un cruce ferroviario sin barreras ni luces, ¿cuál es la conducta obligatoria antes de cruzar?",
+    "o": [
+      "Cruzar rápidamente para evitar el tren",
+      "Reducir la velocidad y observar a ambos lados",
+      "Detener la marcha obligatoriamente, mirar y escuchar, y asegurarse de que no viene el tren"
+    ],
+    "a": "Detener la marcha obligatoriamente, mirar y escuchar, y asegurarse de que no viene el tren",
+    "r": "Página 116: '...los conductores deberán detener su vehículo antes de las vías, cerciorarse de que no se aproxima un tren...'"
+  },
+    {
+    "q": "¿Cuál es la distancia mínima de seguridad que se debe mantener respecto al vehículo que circula adelante en condiciones normales de visibilidad y pavimento seco, según la Ley 18191?",
+    "o": [
+      "Una distancia equivalente a lo que el vehículo recorre en 1 segundo",
+      "Una distancia equivalente a lo que el vehículo recorre en 3 segundos",
+      "Una distancia prudente y razonable que permita detenerse en caso de frenado brusco"
+    ],
+    "a": "Una distancia prudente y razonable que permita detenerse en caso de frenado brusco",
+    "r": "Página 61, Ley 18191 Art. 43: '...deberá guardar una distancia prudente y reglamentaria... que le permita detener su vehículo en forma segura, evitando la colisión...(Nota: Aunque el manual sugiere la regla de los 3s en la pág. 113, la definición legal genérica es 'prudente y razonable')."
+  },
+  {
+    "q": "¿Qué indica una señalización horizontal consistente en una línea transversal blanca continua antes de una cebra o intersección?",
+    "o": [
+      "Línea de borde de calzada",
+      "Línea de detención obligatoria",
+      "Línea de comienzo de zona de adelantamiento"
+    ],
+    "a": "Línea de detención obligatoria",
+    "r": "Página 102: 'Línea de detención. Es una línea transversal continua... que indica el lugar donde los vehículos deben detenerse...'"
+  },
+  {
+    "q": "¿Está permitido estacionar un vehículo sobre una rampa diseñada para la accesibilidad de personas con discapacidad?",
+    "o": [
+      "Sí, por un tiempo breve",
+      "No, está totalmente prohibido",
+      "Solo si se dejan las balizas encendidas"
+    ],
+    "a": "No, está totalmente prohibido",
+    "r": "Página 69: 'Está prohibido estacionar... En rampas de ascenso y descenso para discapacitados...'"
+  },
+  {
+    "q": "¿Cuál es la medida correcta para verificar la profundidad del dibujo de los neumáticos?",
+    "o": [
+      "En el centro de la banda de rodamiento",
+      "En los laterales del neumático",
+      "En cualquier punto de la superficie"
+    ],
+    "a": "En el centro de la banda de rodamiento",
+    "r": "Página 43: 'Para realizar esta medición se utilizará el centro de la banda de rodamiento.'"
+  },
+  {
+    "q": "En vías de doble sentido de circulación con dos carriles (uno por sentido), ¿días de lluvia, está permitido utilizar el carril izquierdo para circular permanentemente?",
+    "o": [
+      "Sí, para ir más rápido",
+      "No, el carril izquierdo es solo para adelantamiento",
+      "Sí, si el carril derecho está mojado"
+    ],
+    "a": "No, el carril izquierdo es solo para adelantamiento",
+    "r": "Página 60: 'En vías de doble sentido... se debe circular por el carril de la derecha...' (El carril izquierdo se usa para rebasar)."
+  },
+  {
+    "q": "¿Qué debe hacer un conductor al escuchar la sirena de un vehículo de emergencia (bomberos, policía, ambulancia) en servicio?",
+    "o": [
+      "Acelerar para despejar el camino rápidamente",
+      "Mantener su carril y velocidad",
+      "Correrse hacia la derecha y detenerse si es necesario para facilitar el paso"
+    ],
+    "a": "Correrse hacia la derecha y detenerse si es necesario para facilitar el paso",
+    "r": "Página 66: '...cederán el paso... desplazándose hacia la derecha de la calzada o deteniéndose si fuere necesario...'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y una bicicleta negra en el centro?",
+    "o": [
+      "Estacionamiento exclusivo para bicicletas",
+      "Vía exclusiva para bicicletas (ciclovía)",
+      "Circulación prohibida para bicicletas"
+    ],
+    "a": "Circulación prohibida para bicicletas",
+    "r": "Página 99: 'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿En qué momento del día es más crítica la fatiga en la conducción, coincidiendo con los ritmos biológicos del sueño?",
+    "o": [
+      "Mediodía y tarde",
+      "Madrugada (03:00 a 05:00) y tarde (14:00 a 16:00)",
+      "Noche (20:00 a 22:00)"
+    ],
+    "a": "Madrugada (03:00 a 05:00) y tarde (14:00 a 16:00)",
+    "r": "Página 22: 'Las horas más críticas son la madrugada (entre las 3 y las 5 de la mañana) y la primera hora de la tarde (entre las 14 y las 16 horas).'"
+  },
+  {
+    "q": "¿Cuál es la sanción principal por conducir bajo los efectos del alcohol, superando los límites legales establecidos?",
+    "o": [
+      "Solo una multa económica",
+      "Retirada de la licencia de conducir y multa",
+      "Amonestación verbal"
+    ],
+    "a": "Retirada de la licencia de conducir y multa",
+    "r": "Página 16: '...se procederá a la aplicación de multas y retiro del permiso de conducir.(Ley 19360)."
+  },
+  {
+    "q": "¿Qué representa una señal de balizamiento de color rojo y blanco a franjas oblicuas?",
+    "o": [
+      "Inicio de obra",
+      "Obstáculo en la vía o zona de peligro",
+      "Fin de zona de peligro"
+    ],
+    "a": "Obstáculo en la vía o zona de peligro",
+    "r": "Página 109: 'Balizamiento... Los colores rojo y blanco indican peligro u obstáculo.'"
+  },
+  {
+    "q": "Al estacionar en paralelo a la acera en una pendiente descendente (cuesta abajo), ¿cómo deben quedar orientadas las ruedas delanteras?",
+    "o": [
+      "Rectas paralelos al cordón",
+      "Giradas hacia el cordón (derecha)",
+      "Giradas hacia la calzada (izquierda)"
+    ],
+    "a": "Giradas hacia el cordón (derecha)",
+    "r": "Página 70: '...en bajada, las ruedas delanteras deben girarse hacia el cordón.'"
+  },
+  {
+    "q": "¿Qué tipo de adelantamiento está prohibido, incluso si no viene nadie de frente y la línea es discontinua?",
+    "o": [
+      "Adelantar a un camión",
+      "Adelantar por la derecha, salvo excepciones",
+      "Adelantar en una recta"
+    ],
+    "a": "Adelantar por la derecha, salvo excepciones",
+    "r": "Página 62: 'El adelantamiento se efectuará por la izquierda...(Adelantar por la derecha está prohibido salvo casos específicos como vehículos que van a girar a la izquierda)."
+  },
+  {
+    "q": "¿Cuál es la velocidad máxima permitida para circular en una rotonda ubicada en zona urbana, salvo señalización en contrario?",
+    "o": [
+      "45 km/h",
+      "60 km/h",
+      "75 km/h"
+    ],
+    "a": "45 km/h",
+    "r": "Página 90: 'La velocidad máxima de circulación en zona urbana es de 45 km/h...(Las rotondas urbanas no son excepción genérica)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma rectangular, fondo azul y el símbolo internacional de auxilio (cruz blanca o símbolo de media luna roja) a la vista?",
+    "o": [
+      "Puesto de primeros auxilios",
+      "Hospital",
+      "Farmacia"
+    ],
+    "a": "Puesto de primeros auxilios",
+    "r": "Página 98: 'Señales de Información. Auxilios.'"
+  },
+  {
+    "q": "¿Es obligatorio el uso de chaleco reflectante de alta visibilidad para los motociclistas en Uruguay?",
+    "o": [
+      "Sí, es obligatorio en todo momento",
+      "No, es solo una recomendación",
+      "Sí, es obligatorio para circular en rutas nacionales"
+    ],
+    "a": "Sí, es obligatorio para circular en rutas nacionales",
+    "r": "Página 75: '...los conductores y acompañantes de motos... deberán utilizar... chaleco reflectante o bandas reflectantes... para circular en rutas nacionales.'"
+  },
+    {
+    "q": "¿Qué indica la señalización horizontal de flechas de selección de carril pintadas en el pavimento?",
+    "o": [
+      "Son indicativas, se puede seguir recto aunque la flecha indique giro",
+      "Obligan a seguir la dirección indicada por la flecha si se circula por ese carril",
+      "Advierten sobre la proximidad de un cruce peligroso"
+    ],
+    "a": "Obligan a seguir la dirección indicada por la flecha si se circula por ese carril",
+    "r": "Página 102: 'Flechas direccionales... indican a los conductores la dirección que deben seguir.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al observar la luz amarilla intermitente de un semáforo en un cruce?",
+    "o": [
+      "Detenerse obligatoriamente y esperar a que cambie",
+      "Avanzar con precaución, cediendo el paso si corresponde",
+      "Acelerar para pasar antes de que se apague"
+    ],
+    "a": "Avanzar con precaución, cediendo el paso si corresponde",
+    "r": "Página 108: 'Luz amarilla o ámbar intermitente: ...permite el paso... debiendo los conductores hacerlo con precaución...'"
+  },
+  {
+    "q": "¿En qué situación está permitido conducir utilizando auriculares conectados a reproductores de sonido?",
+    "o": [
+      "Solo si el volumen es bajo",
+      "Solo en motocicletas para escuchar indicaciones de GPS",
+      "Está prohibido en todos los casos para conductores de cualquier vehículo"
+    ],
+    "a": "Está prohibido en todos los casos para conductores de cualquier vehículo",
+    "r": "Página 90: 'Está prohibido... La conducción de vehículos utilizando auriculares...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo azul, borde blanco y una flecha blanca curva indicando giro a la izquierda?",
+    "o": [
+      "Advertencia de curva peligrosa a la izquierda",
+      "Sentido obligatorio de giro a la izquierda",
+      "Prohibido girar a la izquierda"
+    ],
+    "a": "Sentido obligatorio de giro a la izquierda",
+    "r": "Página 99: 'Señales de Reglamentación. De sentido de circulación.'"
+  },
+  {
+    "q": "¿Cuál es la principal causa de los siniestros viales por 'factor vehículo' relacionada con el mantenimiento?",
+    "o": [
+      "Fallas en el sistema de dirección",
+      "Fallas en el sistema de frenado y neumáticos",
+      "Fallas en el sistema de iluminación"
+    ],
+    "a": "Fallas en el sistema de frenado y neumáticos",
+    "r": "Página 42: 'Las fallas mecánicas más comunes que inciden en los accidentes son las de frenos y neumáticos.'"
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal discontinua doble en el centro de la calzada?",
+    "o": [
+      "Que está prohibido adelantar en ambos sentidos",
+      "Que se puede adelantar, pero con extrema precaución",
+      "Que la línea puede ser reversible, cambiando su sentido según los semáforos o señales"
+    ],
+    "a": "Que la línea puede ser reversible, cambiando su sentido según los semáforos o señales",
+    "r": "Página 101: 'Línea discontinua doble: ...delimita carriles reversibles.'"
+  },
+  {
+    "q": "¿Está permitido estacionar un vehículo a menos de 5 metros de una esquina o intersección?",
+    "o": [
+      "Sí, en cualquier circunstancia",
+      "No, está prohibido",
+      "Sí, si el cordón está pintado de blanco"
+    ],
+    "a": "No, está prohibido",
+    "r": "Página 68: 'Está prohibido estacionar... A menos de 5m de la esquina...'"
+  },
+  {
+    "q": "¿Qué función cumplen los 'catadióptricos' o reflectantes obligatorios en los vehículos?",
+    "o": [
+      "Emitir luz propia para iluminar la vía",
+      "Reflejar la luz de otros vehículos para hacer visible la presencia del propio",
+      "Mejorar la adherencia del vehículo en curvas"
+    ],
+    "a": "Reflejar la luz de otros vehículos para hacer visible la presencia del propio",
+    "r": "Página 27: Define las luces y elementos reflectantes (catadióptricos) como necesarios para hacerse ver."
+  },
+  {
+    "q": "¿Cuál es la acción correcta si un vehículo intenta adelantarnos en ruta y percibimos que no logrará completar la maniobra a tiempo?",
+    "o": [
+      "Acelerar para no facilitarle el adelantamiento",
+      "Mantener la velocidad y no hacer nada",
+      "Reducir la velocidad y facilitar el rebase para evitar el siniestro"
+    ],
+    "a": "Reducir la velocidad y facilitar el rebase para evitar el siniestro",
+    "r": "Página 62: 'El conductor del vehículo que va a ser adelantado deberá... disminuir la velocidad si fuere preciso para facilitar el adelantamiento.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma octogonal con fondo rojo y letras blancas que dicen \"PARE\"?",
+    "o": [
+      "Ceda el paso si hay vehículos circulando",
+      "Detención obligatoria antes de la línea de pare y ceder el paso a quien circula por la vía transversal",
+      "Reducir la velocidad y mirar"
+    ],
+    "a": "Detención obligatoria antes de la línea de pare y ceder el paso a quien circula por la vía transversal",
+    "r": "Página 97: 'Señales de Prioridad. Pare.'"
+  },
+  {
+    "q": "¿Qué efecto tiene la velocidad excesiva o inadecuada en el campo visual del conductor?",
+    "o": [
+      "Aumenta el campo visual, permitiendo ver más elementos laterales",
+      "Reduce el campo visual ('efecto túnel'), dificultando la percepción de peligros laterales",
+      "No afecta la amplitud del campo visual"
+    ],
+    "a": "Reduce el campo visual ('efecto túnel'), dificultando la percepción de peligros laterales",
+    "r": "Página 83: 'A mayor velocidad, menor campo visual... (efecto túnel).'"
+  },
+  {
+    "q": "¿Cuál es la documentación obligatoria que siempre debe llevar el conductor al circular, además de la licencia?",
+    "o": [
+      "Cédula de identidad, título de propiedad del vehículo y recibo de compra",
+      "Libreta de propiedad (Certificado de Registro), Seguro Obligatorio (SOA) vigente y constancia de domicilio",
+      "Libreta de propiedad, Seguro Obligatorio (SOA) y constancia de revisión técnica al día (si aplica)"
+    ],
+    "a": "Libreta de propiedad, Seguro Obligatorio (SOA) y constancia de revisión técnica al día (si aplica)",
+    "r": "Página 9: 'Documentación obligatoria para circular.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma rectangular, fondo amarillo y el símbolo de un camión volcando o piedras cayendo?",
+    "o": [
+      "Prohibido el paso de camiones",
+      "Zona de carga y descarga",
+      "Peligro por desprendimientos o caída de piedras en la vía"
+    ],
+    "a": "Peligro por desprendimientos o caída de piedras en la vía",
+    "r": "Página 105: 'Señales de Advertencia de Peligro.'"
+  },
+  {
+    "q": "¿Está permitido el uso de la luz larga (antiniebla o carretera) dentro de la ciudad?",
+    "o": [
+      "Sí, para ver mejor la señalización",
+      "No, salvo que esté expresamente permitido en vías muy oscuras",
+      "No, está prohibido su uso para no encandilar a otros usuarios"
+    ],
+    "a": "No, está prohibido su uso para no encandilar a otros usuarios",
+    "r": "Página 28: '...se prohíbe el uso de la luz larga en zonas urbanas o vías suficientemente iluminadas.(Se debe usar luz corta)."
+  },
+  {
+    "q": "¿Qué representa una señalización horizontal consistente en una cuadrícula de líneas amarillas pintadas en el medio de una intersección?",
+    "o": [
+      "Zona de estacionamiento para motos",
+      "Área de cruce exclusivo para peatones",
+      "Área que no se debe bloquear, prohibido detenerse o quedar varado en ella"
+    ],
+    "a": "Área que no se debe bloquear, prohibido detenerse o quedar varado en ella",
+    "r": "Página 103: 'Marca de intersección. ...indica el área de la intersección que no debe ser obstruida.'"
+  },
+    {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el número \"60\" en negro en el centro?",
+    "o": [
+      "Velocidad mínima obligatoria de 60 km/h",
+      "Velocidad máxima permitida de 60 km/h",
+      "Fin de zona de 60 km/h"
+    ],
+    "a": "Velocidad máxima permitida de 60 km/h",
+    "r": "Página 98: 'Señales de Reglamentación. Velocidad máxima.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al aproximarse a un cruce ferroviario a nivel con barreras que están comenzando a descender?",
+    "o": [
+      "Acelerar para cruzar antes de que bajen del todo",
+      "Detener la marcha obligatoriamente antes de la barrera",
+      "Rodear las barreras si hay espacio y cruzar"
+    ],
+    "a": "Detener la marcha obligatoriamente antes de la barrera",
+    "r": "Página 116: '...es obligatorio detener la marcha... ante la inminencia del cierre de las barreras...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma romboidal, fondo amarillo y el símbolo de un semáforo en negro?",
+    "o": [
+      "Proximidad de intersección regulada por semáforos",
+      "Semáforo fuera de servicio",
+      "Inicio de zona urbana"
+    ],
+    "a": "Proximidad de intersección regulada por semáforos",
+    "r": "Página 106: 'Señales de Advertencia de Peligro. Semáforo.'"
+  },
+  {
+    "q": "¿Está permitido estacionar en doble fila momentáneamente para ascender o descender pasajeros?",
+    "o": [
+      "Sí, por un máximo de 2 minutos",
+      "No, está prohibido en todos los casos",
+      "Sí, si se dejan las balizas encendidas"
+    ],
+    "a": "No, está prohibido en todos los casos",
+    "r": "Página 68: 'Está prohibido estacionar... En doble fila.'"
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal mixta (una continua y una discontinua paralelas) en el centro de la calzada?",
+    "o": [
+      "Se puede adelantar desde ambos carriles",
+      "Se prohíbe el adelantamiento desde ambos carriles",
+      "Se permite adelantar solo desde el carril adyacente a la línea discontinua"
+    ],
+    "a": "Se permite adelantar solo desde el carril adyacente a la línea discontinua",
+    "r": "Página 101: 'Línea mixta... el conductor solo podrá realizar adelantamiento si la línea discontinua está de su lado.'"
+  },
+  {
+    "q": "¿Cuál es la finalidad de la realización de la Inspección Técnica Vehicular (ITV) obligatoria?",
+    "o": [
+      "Recaudar impuestos para el Estado",
+      "Verificar que el vehículo cumpla condiciones mínimas de seguridad y medio ambiente",
+      "Asegurar que todos los vehículos sean nuevos"
+    ],
+    "a": "Verificar que el vehículo cumpla condiciones mínimas de seguridad y medio ambiente",
+    "r": "Página 42: '...tiene como objetivo verificar que los vehículos cumplan con las condiciones técnicas de seguridad y de emisión de contaminantes.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo azul y una flecha blanca recta indicando hacia arriba?",
+    "o": [
+      "Dirección permitida, solo se puede seguir de frente",
+      "Sentido único de circulación",
+      "Fin de la calle de doble sentido"
+    ],
+    "a": "Sentido único de circulación",
+    "r": "Página 99: 'Señales de Reglamentación. De sentido de circulación.(Nota: aunque implica dirección única, la categoría oficial es de sentido)."
+  },
+  {
+    "q": "En una vía multicarril (tres o más carriles por sentido), ¿cuál es la norma general de circulación?",
+    "o": [
+      "Circular por el carril que se prefiera",
+      "Circular por el carril de la derecha, dejando los izquierdos para adelantamiento",
+      "Circular por el carril central para mayor seguridad"
+    ],
+    "a": "Circular por el carril de la derecha, dejando los izquierdos para adelantamiento",
+    "r": "'En las vías multicarril... se debe circular por el carril de la derecha...' (Los otros son para rebasar)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma triangular, fondo amarillo, borde rojo y el símbolo de una \"X\" negra (cruce de caminos)?",
+    "o": [
+      "Prohibido girar en el cruce",
+      "Peligro por intersección con prioridad a la derecha según norma general",
+      "Cruce ferroviario sin barreras"
+    ],
+    "a": "Peligro por intersección con prioridad a la derecha según norma general",
+    "r": "'Señales de Advertencia de Peligro. Intersección.'"
+  },
+  {
+    "q": "¿Está permitido el uso de neumáticos con clavos (esporones) para circular en todo el territorio nacional uruguayo?",
+    "o": [
+      "Sí, durante todo el año",
+      "No, está prohibido su uso",
+      "Sí, en períodos y zonas determinadas por el MTOP debido a condiciones de hielo"
+    ],
+    "a": "Sí, en períodos y zonas determinadas por el MTOP debido a condiciones de hielo",
+    "r": "'El uso de neumáticos con clavos... está reglamentado... pudiendo ser autorizados por el MTOP en determinadas circunstancias.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y la silueta de un peatón en negro tachada con una línea roja?",
+    "o": [
+      "Zona de cruce de peatones",
+      "Prohibido el paso de peatones",
+      "Preferencia de paso para peatones"
+    ],
+    "a": "Prohibido el paso de peatones",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al incorporarse a una vía de circulación (por ejemplo, desde una vía de servicio o garaje)?",
+    "o": [
+      "Tener prioridad de paso por salir de la derecha",
+      "Ceder el paso a todos los vehículos que circulan por la vía a la que se incorpora",
+      "Incorporarse rápidamente obligando a los demás a frenar"
+    ],
+    "a": "Ceder el paso a todos los vehículos que circulan por la vía a la que se incorpora",
+    "r": "'...el que se incorpora a la circulación... deberá ceder el paso a los vehículos que circulen por dicha vía...'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma rectangular, fondo verde y la inscripción \"MONTEVIDEO 50 km\"?",
+    "o": [
+      "Límite de velocidad a 50 km",
+      "Distancia que falta para llegar a Montevideo",
+      "Tiempo estimado de viaje a Montevideo"
+    ],
+    "a": "Distancia que falta para llegar a Montevideo",
+    "r": "'Señales de Información. Destino y distancias.'"
+  },
+  {
+    "q": "¿Qué efecto produce el cansancio o la fatiga en la capacidad de reacción de un conductor ante un imprevisto?",
+    "o": [
+      "Aumenta la velocidad de reacción",
+      "No afecta la capacidad de reacción",
+      "Disminuye la atención y aumenta el tiempo de reacción"
+    ],
+    "a": "Disminuye la atención y aumenta el tiempo de reacción",
+    "r": "'La fatiga... aumenta el tiempo de reacción ante un imprevisto...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo azul, borde blanco y el símbolo de una flecha blanca indicando giro a la derecha antes de la señal?",
+    "o": [
+      "Advertencia de curva peligrosa a la derecha",
+      "Giro a la derecha antes de la señal (sentido obligatorio)",
+      "Prohibido girar a la derecha"
+    ],
+    "a": "Giro a la derecha antes de la señal (sentido obligatorio)",
+    "r": "'Señales de Reglamentación. De sentido de circulación.(Flecha indicando giro anticipado).'"
+  },  {
+    "q": "¿Qué indica una señal vertical de forma romboidal, fondo amarillo y el símbolo de una \"S\" negra (curva y contracurva)?",
+    "o": [
+      "Prohibido girar en \"U\"",
+      "Peligro por sucesión de curvas peligrosas, la primera a la derecha (o izquierda según el símbolo)",
+      "Incorporación de tráfico desde la derecha"
+    ],
+    "a": "Peligro por sucesión de curvas peligrosas, la primera a la derecha (o izquierda según el símbolo)",
+    "r": "'Señales de Advertencia de Peligro. Curva y contracurva.'"
+  },
+  {
+    "q": "¿Está permitido el uso de neumáticos recauchutados (recapados) en el eje directriz (delantero) de un vehículo de transporte de pasajeros?",
+    "o": [
+      "Sí, en cualquier condición",
+      "No, está prohibido",
+      "Sí, si son nuevos"
+    ],
+    "a": "No, está prohibido",
+    "r": "'...prohibiéndose el uso de neumáticos reconstruidos (recapados) en el eje directriz de los vehículos destinados al transporte de pasajeros.'"
+  },
+  {
+    "q": "¿Cuál es la función principal de la válvula EGR (Exhaust Gas Recirculation) en los motores diésel modernos?",
+    "o": [
+      "Aumentar la potencia del motor",
+      "Reducir las emisiones de óxidos de nitrógeno (NOx)",
+      "Disminuir el consumo de combustible"
+    ],
+    "a": "Reducir las emisiones de óxidos de nitrógeno (NOx)",
+    "r": "'La recirculación de gases de escape (EGR) es una técnica utilizada en motores diésel... para reducir las emisiones de NOx...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo marrón y el símbolo de una carpa o una torre (monumento) a la vista?",
+    "o": [
+      "Prohibido acampar",
+      "Zona de interés turístico, cultural o recreativo",
+      "Área de descanso exclusiva para camiones"
+    ],
+    "a": "Zona de interés turístico, cultural o recreativo",
+    "r": "'Señales de Información. De servicios.(Específicamente, símbolos turísticos o de interés)."
+  },
+  {
+    "q": "¿Qué conducta debe adoptar el conductor si, al realizar un adelantamiento en ruta, percibe que no logrará finalizar la maniobra de forma segura por la aparición de un vehículo de frente?",
+    "o": [
+      "Acelerar al máximo para intentar pasar rápido",
+      "Frenar bruscamente para detenerse en el carril contrario",        
+      "Intentar volver a su carril detrás del vehículo adelantado, frenando si es necesario"
+    ],
+    "a": "Intentar volver a su carril detrás del vehículo adelantado, frenando si es necesario",
+    "r": "'Si calcula mal la maniobra... trate de volver a su carril... frene si es preciso para colocarse detrás del vehículo que intentaba adelantar.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de una flecha blanca curva hacia la derecha tachada con una línea roja?",
+    "o": [
+      "Obligatorio girar a la izquierda",
+      "Prohibido girar a la derecha",
+      "Sentido único a la derecha"
+    ],
+    "a": "Prohibido girar a la derecha",
+    "r": "'Señales de Reglamentación. De prohibición de giro.'"
+  },
+  {
+    "q": "¿Cuál es la profundidad mínima legal del dibujo de los neumáticos para vehículos livianos en Uruguay?",
+    "o": [
+      "1.0 mm",
+      "1.6 mm",
+      "2.0 mm"
+    ],
+    "a": "1.6 mm",
+    "r": "'La profundidad del dibujo... no debe ser inferior a 1.6 mm para vehículos livianos.'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y la inscripción \"AUTOPISTA\" o \"AUTO-RUTA\"? ",
+    "o": [
+      "Fin de zona de velocidad mínima",
+      "Comienzo de autopista, con normas especiales de circulación",
+      "Advertencia de cruce con autopista"
+    ],
+    "a": "Comienzo de autopista, con normas especiales de circulación",
+    "r": "'Señales de Información. Autopista.'"
+  },
+  {
+    "q": "¿Está permitido estacionar en paralelo a la acera en una pendiente ascendente (cuesta arriba) con cordón, sin dejar las ruedas orientadas hacia la calzada?",
+    "o": [
+      "Sí, en cualquier caso",
+      "No, deben quedar orientadas hacia el centro de la calzada (izquierda)",
+      "Sí, si el vehículo tiene freno de mano automático"
+    ],
+    "a": "No, deben quedar orientadas hacia el centro de la calzada (izquierda)",
+    "r": "'...en subida, con cordón, las ruedas delanteras deben girarse hacia el centro de la calzada.'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo azul, borde blanco y el número \"30\" en blanco en el centro?",
+    "o": [
+      "Velocidad máxima permitida de 30 km/h",
+      "Velocidad mínima obligatoria de 30 km/h",
+      "Fin de zona de velocidad mínima"
+    ],
+    "a": "Velocidad mínima obligatoria de 30 km/h",
+    "r": "'Señales de Reglamentación. Velocidad mínima.'"
+  },
+  {
+    "q": "¿Cuál es la distancia mínima de seguridad que se debe mantener respecto al vehículo que circula adelante cuando las condiciones climáticas son adversas (lluvia, niebla)?",
+    "o": [
+      "La misma distancia que en condiciones normales",
+      "Reducir la velocidad y aumentar considerablemente la distancia de seguridad",
+      "Depende de la prisa del conductor"
+    ],
+    "a": "Reducir la velocidad y aumentar considerablemente la distancia de seguridad",
+    "r": "'...cuando las condiciones meteorológicas son adversas... aumente la distancia de seguridad.'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma romboidal, fondo amarillo y el símbolo de una \"T\" negra (intersección en T)?",
+    "o": [
+      "Intersección con vía a la derecha con prioridad",
+      "Fin de la vía",
+      "Peligro por intersección en forma de T, indicando la vía principal y la secundaria"
+    ],
+    "a": "Peligro por intersección en forma de T, indicando la vía principal y la secundaria",
+    "r": "'Señales de Advertencia de Peligro. Intersección en T.'"
+  },
+  {
+    "q": "¿Está permitido circular con un vehículo que emite humos visibles de color negro o azulado de forma excesiva?",
+    "o": [
+      "Sí, es normal en vehículos antiguos",
+      "No, está prohibido por contaminación ambiental y posible falla mecánica",
+      "Sí, si el vehículo está en regla con el SOA"
+    ],
+    "a": "No, está prohibido por contaminación ambiental y posible falla mecánica",
+    "r": "'La emisión de humos negros y azules... está prohibida...' (Señala deficiencias en la combustión o desgaste)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un camión tachado con una línea roja?",
+    "o": [
+      "Zona de carga y descarga de camiones",
+      "Prohibido el paso de camiones",
+      "Exclusivo para camiones"
+    ],
+    "a": "Prohibido el paso de camiones",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al aproximarse a un paso a nivel ferroviario sin barreras ni señalización luminosa, después de haberse detenido y verificado que no viene el tren?",
+    "o": [
+      "Cruzar rápidamente en primera marcha",
+      "Cruzar con precaución y sin detenerse sobre las vías",
+      "Acelerar para pasar lo antes posible"
+    ],
+    "a": "Cruzar con precaución y sin detenerse sobre las vías",
+    "r": "'...una vez verificado que no se aproxima un tren, el conductor deberá efectuar el cruce rápidamente, sin detenerse sobre las mismas.(Rápidamente se refiere a no demorarse, no a exceso de velocidad)."
+  },
+    {
+    "q": "¿Cuál es la función principal del catalizador en el sistema de escape de un vehículo?",
+    "o": [
+      "Aumentar la potencia del motor",
+      "Reducir los gases contaminantes nocivos antes de ser expulsados",
+      "Silenciar el ruido del motor"
+    ],
+    "a": "Reducir los gases contaminantes nocivos antes de ser expulsados",
+    "r": "'El convertidor catalítico... transforma los gases tóxicos en inofensivos o menos nocivos.'"
+  },
+  {
+    "q": "¿Está permitido utilizar la luz larga (carretera) al cruzarse con otro vehículo de frente en ruta durante la noche?",
+    "o": [
+      "Sí, si el otro vehículo también la lleva encendida",
+      "No, se debe cambiar a luz corta (cruce) para no encandilar",
+      "Sí, brevemente para saludar"
+    ],
+    "a": "No, se debe cambiar a luz corta (cruce) para no encandilar",
+    "r": "'...se debe cambiar a luz corta... para no deslumbrar a los conductores que circulan en sentido contrario...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un vehículo agrícola tachado con una línea roja?",
+    "o": [
+      "Zona exclusiva para maquinaria agrícola",
+      "Prohibido el paso de vehículos agrícolas",
+      "Advertencia de cruce de maquinaria agrícola"
+    ],
+    "a": "Prohibido el paso de vehículos agrícolas",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al observar la señal de Ceda el Paso en una intersección?",
+    "o": [
+      "Detenerse siempre, aunque no venga nadie",
+      "Reducir la velocidad y detenerse si es necesario para dejar pasar a quien circula por la vía preferencial",
+      "Acelerar para cruzar antes que los demás"
+    ],
+    "a": "Reducir la velocidad y detenerse si es necesario para dejar pasar a quien circula por la vía preferencial",
+    "r": "'Ceda el paso: ...el conductor debe reducir la velocidad y, de ser preciso, detenerse para ceder el paso...' (Señales de Prioridad)."
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal continua doble en el centro de la calzada?",
+    "o": [
+      "Que se puede adelantar en ambos sentidos con precaución",
+      "Que está prohibido el adelantamiento en ambos sentidos",
+      "Que se puede adelantar solo si el vehículo de adelante va muy lento"
+    ],
+    "a": "Que está prohibido el adelantamiento en ambos sentidos",
+    "r": "'Línea continua doble... prohíbe a los conductores de ambos sentidos atravesarla...'"
+  },
+  {
+    "q": "¿Cuál es el objetivo del sistema de control de tracción (TCS) en un vehículo?",
+    "o": [
+      "Evitar que las ruedas patinen al acelerar, mejorando la adherencia",
+      "Reducir la velocidad máxima del vehículo",
+      "Aumentar la potencia en las curvas"
+    ],
+    "a": "Evitar que las ruedas patinen al acelerar, mejorando la adherencia",
+    "r": "'Control de Tracción (TCS)... impide que las ruedas patinen al acelerar...' (Sistemas de seguridad activa)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de una \"E\" mayúscula blanca dentro de un cuadrado azul?",
+    "o": [
+      "Entrada prohibida",
+      "Estacionamiento permitido",
+      "Salida de emergencia"
+    ],
+    "a": "Estacionamiento permitido",
+    "r": "'Señales de Información. Estacionamiento.(Símbolo universal de parking/estacionamiento)."
+  },
+  {
+    "q": "¿Está permitido circular con neumáticos que presentan \"talones\" o desgaste irregular excesivo en la banda de rodamiento?",
+    "o": [
+      "Sí, es normal por el uso",
+      "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+      "Sí, si la profundidad del dibujo es la correcta"
+    ],
+    "a": "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+    "r": "Menciona la importancia del buen estado de los neumáticos y su desgaste uniforme para la seguridad.(El desgaste irregular es causal de rechazo en ITV y peligroso)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de una motocicleta tachada con una línea roja?",
+    "o": [
+      "Exclusivo para motocicletas",
+      "Prohibido el paso de motocicletas",
+      "Zona de estacionamiento de motos"
+    ],
+    "a": "Prohibido el paso de motocicletas",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al incorporarse a una rotonda desde una vía de acceso?",
+    "o": [
+      "Tener prioridad de paso por entrar desde la derecha",
+      "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+      "Entrar rápidamente sin mirar"
+    ],
+    "a": "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+    "r": "'...tendrá prioridad de paso el que circula por la rotonda sobre el que intenta ingresar a ella...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de un tenedor y un cuchillo cruzados en blanco?",
+    "o": [
+      "Cruce de peatones",
+      "Restaurante o lugar para comer",
+      "Área de picnic"
+    ],
+    "a": "Restaurante o lugar para comer",
+    "r": "'Señales de Información. De servicios.(Símbolo universal)."
+  },
+  {
+    "q": "¿Está permitido estacionar en un lugar reservado para vehículos de personas con discapacidad si se tiene la tarjeta correspondiente pero no se es la persona titular de la misma?",
+    "o": [
+      "Sí, si la persona titular va en el vehículo",
+      "No, el uso de la tarjeta es personal e intransferible",
+      "Sí, cualquier familiar puede usarla"
+    ],
+    "a": "No, el uso de la tarjeta es personal e intransferible",
+    "r": "'...debiendo exhibir la tarjeta correspondiente, la cual es personal e intransferible...(Reglamentación de uso de espacios reservados)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el número \"100\" en negro en el centro, en una ruta nacional?",
+    "o": [
+      "Velocidad mínima obligatoria de 100 km/h",
+      "Velocidad máxima permitida de 100 km/h",
+      "Fin de zona de 100 km/h"
+    ],
+    "a": "Velocidad máxima permitida de 100 km/h",
+    "r": "'Señales de Reglamentación. Velocidad máxima.(Generalmente para rutas nacionales)."
+  },
+  {
+    "q": "¿Cuál es la principal consecuencia del 'efecto túnel' provocado por la velocidad excesiva?",
+    "o": [
+      "Mejora la visión periférica",
+      "Reduce el campo visual, impidiendo ver peligros laterales",
+      "Aumenta la profundidad de campo"
+    ],
+    "a": "Reduce el campo visual, impidiendo ver peligros laterales",
+    "r": "'A mayor velocidad, menor campo visual... (efecto túnel).'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma triangular, fondo amarillo, borde rojo y el símbolo de un avión negro en el centro?",
+    "o": [
+      "Aeropuerto cercano con posible ruido bajo",
+      "Prohibido el sobrevuelo de aviones",
+      "Zona de aterrizaje de emergencia"
+    ],
+    "a": "Aeropuerto cercano con posible ruido bajo",
+    "r": "'Señales de Advertencia de Peligro. Aeropuerto.(Advierta sobre la presencia de aeronaves a baja altura o ruido)."
+  },
+    {
+    "q": "¿Cuál es la función principal del sistema ESP (Control Electrónico de Estabilidad) en un vehículo?",
+    "o": [
+      "Ayudar a arrancar en pendientes",
+      "Ayudar al conductor a mantener la trayectoria del vehículo en situaciones de riesgo (subviraje o sobreviraje)",
+      "Limitar la velocidad máxima del vehículo"
+    ],
+    "a": "Ayudar al conductor a mantener la trayectoria del vehículo en situaciones de riesgo (subviraje o sobreviraje)",
+    "r": "'Control Electrónico de Estabilidad (ESP)... actúa frenando selectivamente las ruedas para corregir la trayectoria...(Sistemas de seguridad activa)."
+  },
+  {
+    "q": "¿Está permitido el uso de luces antiniebla traseras en condiciones normales de visibilidad?",
+    "o": [
+      "Sí, para mejorar la visibilidad propia",
+      "No, pueden molestar y encandilar a los conductores que vienen detrás",
+      "Sí, si se llevan también las luces de posición"
+    ],
+    "a": "No, pueden molestar y encandilar a los conductores que vienen detrás",
+    "r": "'La luz antiniebla trasera... sólo deberá utilizarse cuando las condiciones de visibilidad sean muy reducidas...(Su uso indebido es sancionable)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un ciclista en negro tachado con una línea roja?",
+    "o": [
+      "Exclusivo para bicicletas",
+      "Prohibido el paso de bicicletas",
+      "Zona de cruce de ciclistas"
+    ],
+    "a": "Prohibido el paso de bicicletas",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al aproximarse a un cruce señalizado con la señal de Pare?",
+    "o": [
+      "Reducir la velocidad y pasar si no viene nadie",
+      "Detener completamente el vehículo, ceder el paso a quien circula por la vía transversal y reanudar la marcha solo cuando sea seguro",
+      "Acelerar para pasar antes que los demás"
+    ],
+    "a": "Detener completamente el vehículo, ceder el paso a quien circula por la vía transversal y reanudar la marcha solo cuando sea seguro",
+    "r": "'Pare: ...el conductor debe detener obligatoriamente su vehículo ante la línea de detención... y ceder el paso...(Señales de Prioridad)."
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal discontinua en el centro de la calzada?",
+    "o": [
+      "Prohibido adelantar en ambos sentidos",
+      "Se permite adelantar, con las precauciones necesarias",
+      "Delimita carriles con sentido único"
+    ],
+    "a": "Se permite adelantar, con las precauciones necesarias",
+    "r": "'Línea discontinua... permite a los conductores atravesarla para efectuar adelantamientos...'"
+  },
+  {
+    "q": "¿Cuál es el objetivo del sistema ASR (Regulación Antideslizamiento) o Control de Tracción en un vehículo?",
+    "o": [
+      "Evitar que las ruedas motrices patinen al acelerar sobre superficies resbaladizas",
+      "Reducir la distancia de frenado",
+      "Aumentar la velocidad máxima"
+    ],
+    "a": "Evitar que las ruedas motrices patinen al acelerar sobre superficies resbaladizas",
+    "r": "'Regulación Antideslizamiento (ASR)... impide que las ruedas patinen al acelerar...' (Sistemas de seguridad activa). (A menudo integrado con el ABS/ESP)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de una \"i\" blanca minúscula dentro de un cuadrado azul?",
+    "o": [
+      "Intersección peligrosa",
+      "Información turística o general para el conductor",
+      "Inicio de zona de peaje"
+    ],
+    "a": "Información turística o general para el conductor",
+    "r": "'Señales de Información. De información general.(Símbolo universal de información)."
+  },
+  {
+    "q": "¿Está permitido circular con neumáticos que presentan grietas profundas o deformaciones visibles en los flancos?",
+    "o": [
+      "Sí, si la profundidad del dibujo es correcta",
+      "No, indica deterioro estructural grave y riesgo de reventón",
+      "Sí, si se rellenan con sellador"
+    ],
+    "a": "No, indica deterioro estructural grave y riesgo de reventón",
+    "r": "Menciona la importancia del buen estado de los neumáticos para la seguridad.(Grietas profundas son causales de rechazo en ITV y peligrosas)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un peatón y una bicicleta juntos en negro?",
+    "o": [
+      "Vía exclusiva para peatones y bicicletas",
+      "Prohibido el paso de peatones y bicicletas",
+      "Vía compartida por peatones y bicicletas (ej. ciclovía compartida)"
+    ],
+    "a": "Vía compartida por peatones y bicicletas (ej. ciclovía compartida)",
+    "r": "'Señales de Reglamentación. De circulación.(Símbolo de uso compartido)."
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al circular detrás de un vehículo de transporte escolar que se detiene y enciende las luces intermitentes de emergencia?",
+    "o": [
+      "Adelantarlo con precaución",
+      "Detenerse y no adelantarlo mientras dure la detención y ascenso/descenso de niños",
+      "Tocar bocina para que reanude la marcha"
+    ],
+    "a": "Detenerse y no adelantarlo mientras dure la detención y ascenso/descenso de niños",
+    "r": "'...los conductores que se aproximen o alcancen a un vehículo de transporte escolar... deberán detenerse y no adelantarlo...' (Reglamentación específica para escolares)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de una flecha blanca indicando salida hacia la derecha?",
+    "o": [
+      "Incorporación a la derecha",
+      "Salida de la vía (ej. autopista)",
+      "Prohibido girar a la derecha"
+    ],
+    "a": "Salida de la vía (ej. autopista)",
+    "r": "'Señales de Información. De dirección y salida.'"
+  },
+  {
+    "q": "¿Está permitido estacionar en una parada de ómnibus debidamente señalizada, aunque sea por unos segundos?",
+    "o": [
+      "Sí, si no hay ómnibus a la vista",
+      "No, está prohibido en todos los casos",
+      "Sí, si se dejan las balizas encendidas"
+    ],
+    "a": "No, está prohibido en todos los casos",
+    "r": "'Está prohibido estacionar... En las paradas de los vehículos de transporte colectivo...'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el número \"90\" en negro en el centro, en una ruta nacional?",
+    "o": [
+      "Velocidad mínima obligatoria de 90 km/h",
+      "Velocidad máxima permitida de 90 km/h",
+      "Fin de zona de 90 km/h"
+    ],
+    "a": "Velocidad máxima permitida de 90 km/h",
+    "r": "'Señales de Reglamentación. Velocidad máxima.(Límite genérico para muchas rutas nacionales fuera de zonas pobladas)."
+  },
+  {
+    "q": "¿Cuál es la causa principal de la pérdida de adherencia conocida como 'aquaplaning'?",
+    "o": [
+      "Exceso de velocidad en curva",
+      "Neumáticos con dibujo insuficiente sobre calzada mojada",
+      "Frenada brusca en seco"
+    ],
+    "a": "Neumáticos con dibujo insuficiente sobre calzada mojada",
+    "r": "'La profundidad del dibujo de los neumáticos... es vital para evacuar el agua y evitar el aquaplaning.'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma triangular, fondo amarillo, borde rojo y el símbolo de un ciclista negro en el centro?",
+    "o": [
+      "Exclusivo para ciclistas",
+      "Prohibido el paso de ciclistas",
+      "Peligro por proximidad de cruce de ciclistas o zona frecuentada por ellos"
+    ],
+    "a": "Peligro por proximidad de cruce de ciclistas o zona frecuentada por ellos",
+    "r": "'Señales de Advertencia de Peligro. Ciclistas.(Advierta sobre la posible presencia de ciclistas en la vía)."
+  },
+    {
+    "q": "¿Cuál es la función principal del sistema ABS (Anti-lock Braking System) en un vehículo durante una frenada de emergencia?",
+    "o": [
+      "Reducir la distancia de frenado en cualquier superficie",
+      "Evitar que las ruedas se bloqueen, permitiendo mantener el control de la dirección",
+      "Aumentar la potencia de frenado en un 50%"
+    ],
+    "a": "Evitar que las ruedas se bloqueen, permitiendo mantener el control de la dirección",
+    "r": "'El sistema ABS... evita que las ruedas se bloqueen... permitiendo mantener el control de la dirección.'"
+  },
+  {
+    "q": "¿Está permitido el uso de la luz larga (carretera) dentro de una zona urbana suficientemente iluminada?",
+    "o": [
+      "Sí, para ver mejor la señalización",
+      "No, está prohibido su uso en zonas urbanas o vías iluminadas para no encandilar",
+      "Sí, si no hay peatones cerca"
+    ],
+    "a": "No, está prohibido su uso en zonas urbanas o vías iluminadas para no encandilar",
+    "r": "'...se prohíbe el uso de la luz larga en zonas urbanas o vías suficientemente iluminadas.'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un ómnibus tachado con una línea roja?",
+    "o": [
+      "Exclusivo para ómnibus",
+      "Prohibido el paso de ómnibus",
+      "Parada de ómnibus"
+    ],
+    "a": "Prohibido el paso de ómnibus",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al aproximarse a un cruce señalizado con la señal de Ceda el Paso?",
+    "o": [
+      "Detenerse siempre, aunque no venga nadie",
+      "Reducir la velocidad y detenerse si es preciso para dejar pasar a quien circula por la vía preferencial",
+      "Acelerar para cruzar antes que los demás"
+    ],
+    "a": "Reducir la velocidad y detenerse si es preciso para dejar pasar a quien circula por la vía preferencial",
+    "r": "'Ceda el paso: ...el conductor debe reducir la velocidad y, de ser preciso, detenerse para ceder el paso...' (Señales de Prioridad)."
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal continua simple en el centro de la calzada?",
+    "o": [
+      "Que se puede adelantar en ambos sentidos con precaución",
+      "Que está prohibido adelantar y atravesar la línea",
+      "Delimita carriles con sentido reversible"
+    ],
+    "a": "Que está prohibido adelantar y atravesar la línea",
+    "r": "'Línea continua... prohíbe a los conductores atravesarla...'"
+  },
+  {
+    "q": "¿Cuál es el objetivo del sistema ESP (Control Electrónico de Estabilidad) en un vehículo?",
+    "o": [
+      "Ayudar a arrancar en pendientes",
+      "Ayudar al conductor a mantener la trayectoria del vehículo en situaciones de riesgo (subviraje o sobreviraje)",
+      "Limitar la velocidad máxima"
+    ],
+    "a": "Ayudar al conductor a mantener la trayectoria del vehículo en situaciones de riesgo (subviraje o sobreviraje)",
+    "r": "'Control Electrónico de Estabilidad (ESP)... actúa frenando selectivamente las ruedas para corregir la trayectoria...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de un surtidor de combustible blanco en un cuadrado azul?",
+    "o": [
+      "Estacionamiento exclusivo",
+      "Estación de servicio o combustible cercana",
+      "Taller mecánico"
+    ],
+    "a": "Estación de servicio o combustible cercana",
+    "r": "'Señales de Información. De servicios.(Símbolo universal)."
+  },
+  {
+    "q": "¿Está permitido circular con neumáticos que presentan \"talones\" o desgaste irregular excesivo en la banda de rodamiento?",
+    "o": [
+      "Sí, si la profundidad del dibujo es la correcta",
+      "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+      "Sí, es normal por el uso"
+    ],
+    "a": "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+    "r": "Menciona la importancia del buen estado de los neumáticos y su desgaste uniforme para la seguridad.(El desgaste irregular es causal de rechazo en ITV y peligroso)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un camión tachado con una línea roja?",
+    "o": [
+      "Zona de carga y descarga",
+      "Prohibido el paso de camiones",
+      "Exclusivo para camiones"
+    ],
+    "a": "Prohibido el paso de camiones",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al incorporarse a una rotonda desde una vía de acceso?",
+    "o": [
+      "Tener prioridad de paso por entrar desde la derecha",
+      "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+      "Entrar rápidamente sin mirar"
+    ],
+    "a": "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+    "r": "'...tendrá prioridad de paso el que circula por la rotonda sobre el que intenta ingresar a ella...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de una cama blanca en un cuadrado azul?",
+    "o": [
+      "Cruce de peatones",
+      "Hotel o alojamiento cercano",
+      "Área de descanso"
+    ],
+    "a": "Hotel o alojamiento cercano",
+    "r": "'Señales de Información. De servicios.(Símbolo universal)."
+  },
+  {
+    "q": "¿Está permitido estacionar en una parada de ómnibus debidamente señalizada, aunque sea por unos segundos para descenso de pasajeros?",
+    "o": [
+      "Sí, si no hay ómnibus a la vista",
+      "No, está prohibido en todos los casos",
+      "Sí, si se dejan las balizas encendidas"
+    ],
+    "a": "No, está prohibido en todos los casos",
+    "r": "'Está prohibido estacionar... En las paradas de los vehículos de transporte colectivo...'"
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el número \"60\" en negro en el centro, en zona urbana?",
+    "o": [
+      "Velocidad mínima obligatoria de 60 km/h",
+      "Velocidad máxima permitida de 60 km/h (si está señalizado excepcionalmente)",
+      "Fin de zona de 60 km/h"
+    ],
+    "a": "Velocidad máxima permitida de 60 km/h (si está señalizado excepcionalmente)",
+    "r": "'Señales de Reglamentación. Velocidad máxima.(La velocidad máxima genérica en urbana es 45, pero puede señalizarse otra distinta)."
+  },
+  {
+    "q": "¿Cuál es la principal consecuencia del 'efecto túnel' provocado por la velocidad excesiva?",
+    "o": [
+      "Mejora la visión periférica",
+      "Reduce el campo visual, impidiendo ver peligros laterales",
+      "Aumenta la profundidad de campo"
+    ],
+    "a": "Reduce el campo visual, impidiendo ver peligros laterales",
+    "r": "'A mayor velocidad, menor campo visual... (efecto túnel).'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma triangular, fondo amarillo, borde rojo y el símbolo de un semáforo negro en el centro?",
+    "o": [
+      "Semáforo fuera de servicio",
+      "Peligro por proximidad de intersección regulada por semáforos",
+      "Exclusivo para vehículos con semáforo"
+    ],
+    "a": "Peligro por proximidad de intersección regulada por semáforos",
+    "r": "'Señales de Advertencia de Peligro. Semáforo.'"
+  },  {
+    "q": "¿Cuál es la función principal del catalizador en el sistema de escape de un vehículo?",
+    "o": [
+      "Aumentar la potencia del motor",
+      "Reducir los gases contaminantes nocivos antes de ser expulsados",
+      "Silenciar el ruido del motor"
+    ],
+    "a": "Reducir los gases contaminantes nocivos antes de ser expulsados",
+    "r": "'El convertidor catalítico... transforma los gases tóxicos en inofensivos o menos nocivos.'"
+  },
+  {
+    "q": "¿Está permitido utilizar la luz larga (carretera) al cruzarse con otro vehículo de frente en ruta durante la noche?",
+    "o": [
+      "Sí, si el otro vehículo también la lleva encendida",
+      "No, se debe cambiar a luz corta (cruce) para no encandilar",
+      "Sí, brevemente para saludar"
+    ],
+    "a": "No, se debe cambiar a luz corta (cruce) para no encandilar",
+    "r": "'...se debe cambiar a luz corta... para no deslumbrar a los conductores que circulan en sentido contrario...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de un vehículo agrícola tachado con una línea roja?",
+    "o": [
+      "Zona exclusiva para maquinaria agrícola",
+      "Prohibido el paso de vehículos agrícolas",
+      "Advertencia de cruce de maquinaria agrícola"
+    ],
+    "a": "Prohibido el paso de vehículos agrícolas",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al observar la señal de Ceda el Paso en una intersección?",
+    "o": [
+      "Detenerse siempre, aunque no venga nadie",
+      "Reducir la velocidad y detenerse si es necesario para dejar pasar a quien circula por la vía preferencial",
+      "Acelerar para cruzar antes que los demás"
+    ],
+    "a": "Reducir la velocidad y detenerse si es necesario para dejar pasar a quien circula por la vía preferencial",
+    "r": "'Ceda el paso: ...el conductor debe reducir la velocidad y, de ser preciso, detenerse para ceder el paso...' (Señales de Prioridad)."
+  },
+  {
+    "q": "¿Qué indica una línea longitudinal continua doble en el centro de la calzada?",
+    "o": [
+      "Que se puede adelantar en ambos sentidos con precaución",
+      "Que está prohibido el adelantamiento en ambos sentidos",
+      "Que se puede adelantar solo si el vehículo de adelante va muy lento"
+    ],
+    "a": "Que está prohibido el adelantamiento en ambos sentidos",
+    "r": "'Línea continua doble... prohíbe a los conductores de ambos sentidos atravesarla...'"
+  },
+  {
+    "q": "¿Cuál es el objetivo del sistema de control de tracción (TCS) en un vehículo?",
+    "o": [
+      "Evitar que las ruedas patinen al acelerar, mejorando la adherencia",
+      "Reducir la velocidad máxima del vehículo",
+      "Aumentar la potencia en las curvas"
+    ],
+    "a": "Evitar que las ruedas patinen al acelerar, mejorando la adherencia",
+    "r": "'Control de Tracción (TCS)... impide que las ruedas patinen al acelerar...' (Sistemas de seguridad activa)."
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de una \"E\" mayúscula blanca dentro de un cuadrado azul?",
+    "o": [
+      "Entrada prohibida",
+      "Estacionamiento permitido",
+      "Salida de emergencia"
+    ],
+    "a": "Estacionamiento permitido",
+    "r": "'Señales de Información. Estacionamiento.(Símbolo universal de parking/estacionamiento)."
+  },
+  {
+    "q": "¿Está permitido circular con neumáticos que presentan \"talones\" o desgaste irregular excesivo en la banda de rodamiento?",
+    "o": [
+      "Sí, es normal por el uso",
+      "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+      "Sí, si la profundidad del dibujo es la correcta"
+    ],
+    "a": "No, indica problemas de suspensión, alineación o presión, y afecta la seguridad",
+    "r": "Menciona la importancia del buen estado de los neumáticos y su desgaste uniforme para la seguridad.(El desgaste irregular es causal de rechazo en ITV y peligroso)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el símbolo de una motocicleta tachada con una línea roja?",
+    "o": [
+      "Exclusivo para motocicletas",
+      "Prohibido el paso de motocicletas",
+      "Zona de estacionamiento de motos"
+    ],
+    "a": "Prohibido el paso de motocicletas",
+    "r": "'Señales de Reglamentación. Prohibición de paso.'"
+  },
+  {
+    "q": "¿Cuál es la conducta correcta al incorporarse a una rotonda desde una vía de acceso?",
+    "o": [
+      "Tener prioridad de paso por entrar desde la derecha",
+      "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+      "Entrar rápidamente sin mirar"
+    ],
+    "a": "Ceder el paso a los vehículos que ya circulan dentro de la rotonda",
+    "r": "'...tendrá prioridad de paso el que circula por la rotonda sobre el que intenta ingresar a ella...'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma rectangular, fondo azul y el símbolo de un tenedor y un cuchillo cruzados en blanco?",
+    "o": [
+      "Cruce de peatones",
+      "Restaurante o lugar para comer",
+      "Área de picnic"
+    ],
+    "a": "Restaurante o lugar para comer",
+    "r": "'Señales de Información. De servicios.(Símbolo universal)."
+  },
+  {
+    "q": "¿Está permitido estacionar en un lugar reservado para vehículos de personas con discapacidad si se tiene la tarjeta correspondiente pero no se es la persona titular de la misma?",
+    "o": [
+      "Sí, si la persona titular va en el vehículo",
+      "No, el uso de la tarjeta es personal e intransferible",
+      "Sí, cualquier familiar puede usarla"
+    ],
+    "a": "No, el uso de la tarjeta es personal e intransferible",
+    "r": "'...debiendo exhibir la tarjeta correspondiente, la cual es personal e intransferible..(Reglamentación de uso de espacios reservados)."
+  },
+  {
+    "q": "¿Qué indica una señal vertical de forma circular, fondo blanco, borde rojo y el número \"100\" en negro en el centro, en una ruta nacional?",
+    "o": [
+      "Velocidad mínima obligatoria de 100 km/h",
+      "Velocidad máxima permitida de 100 km/h",
+      "Fin de zona de 100 km/h"
+    ],
+    "a": "Velocidad máxima permitida de 100 km/h",
+    "r": "'Señales de Reglamentación. Velocidad máxima.(Generalmente para rutas nacionales)."
+  },
+  {
+    "q": "¿Cuál es la principal consecuencia del 'efecto túnel' provocado por la velocidad excesiva?",
+    "o": [
+      "Mejora la visión periférica",
+      "Reduce el campo visual, impidiendo ver peligros laterales",
+      "Aumenta la profundidad de campo"
+    ],
+    "a": "Reduce el campo visual, impidiendo ver peligros laterales",
+    "r": "'A mayor velocidad, menor campo visual... (efecto túnel).'"
+  },
+  {
+    "q": "¿Qué representa una señal vertical de forma triangular, fondo amarillo, borde rojo y el símbolo de un avión negro en el centro?",
+    "o": [
+      "Aeropuerto cercano con posible ruido bajo",
+      "Prohibido el sobrevuelo de aviones",
+      "Zona de aterrizaje de emergencia"
+    ],
+    "a": "Aeropuerto cercano con posible ruido bajo",
+    "r": "'Señales de Advertencia de Peligro. Aeropuerto.(Advierta sobre la presencia de aeronaves a baja altura o ruido)."
+  }
+]

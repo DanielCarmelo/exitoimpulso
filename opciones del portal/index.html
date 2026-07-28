@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal - ÉxitoImpulso</title>
+    <!-- AQUÍ AGREGAS EL ICONO -->
+    <link rel="shortcut icon" href="../assets/img/logo2.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Librería para generar PDFs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            display: block;
+            background-color: #f3f4f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: white;
+            padding: 15px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .navbar h2 { margin: 0; color: #1f2937; }
+        .navbar-actions { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px;
+            height: 100%; /* Ocupa toda la altura de la navbar */
+        }
+        .navbar-actions button { 
+            border: none; 
+            padding: 0 20px; /* Sin padding vertical */
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: 600;
+            font-size: 14px;
+            height: 42px; /* Altura estricta */
+            line-height: 42px; /* Centra el texto verticalmente */
+            box-sizing: border-box;
+            white-space: nowrap; /* Evita que el texto salte a otra línea */
+            display: inline-block;
+        }
+        .btn-ludico { background: #1E3A8A; color: white; }
+        .btn-ludico:hover { background: #1e40af; }
+        .btn-logout { 
+            background: #dc2626; 
+            color: white; 
+            margin-top: 0 !important; /* ESTO ARREGLA EL DESALINEO */
+        }
+        .btn-logout:hover { background: #b91c1c; }
+
+        .dashboard-container { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; }
+        
+        /* Tarjetas de Estadísticas */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #3b82f6; }
+        .stat-card h3 { margin: 0 0 10px 0; color: #6b7280; font-size: 14px; text-transform: uppercase; }
+        .stat-card .value { font-size: 32px; font-weight: bold; color: #1f2937; margin: 0; }
+        .stat-card.promedio { border-left-color: #f59e0b; }
+        .stat-card.mejor { border-left-color: #16a34a; }
+
+        /* Caja de Tips */
+        .tips-container { margin-bottom: 30px; }
+        .tip-card {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border-left: 5px solid #3b82f6;
+            padding: 20px; border-radius: 10px;
+            display: flex; align-items: center; gap: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            opacity: 1;
+        }
+        .tip-card.fade-out { opacity: 0; transform: translateY(-10px); }
+        .tip-icon { font-size: 24px; }
+        .tip-card h4 { margin: 0 0 5px 0; color: #1e3a8a; font-size: 16px;}
+        .tip-card p { margin: 0; color: #1f2937; font-size: 14px; }
+
+        /* Contenido Principal en 2 columnas */
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; } }
+
+        .section-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .section-card h3 { margin: 0 0 20px 0; color: #374151; font-size: 1.2rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; }
+
+        /* Botones de Categorías */
+        .botones-categorias { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .btn-categoria { 
+            background: #e5e7eb; color: #374151; border: none; 
+            padding: 10px 20px; border-radius: 20px; cursor: pointer; 
+            font-weight: 600; transition: 0.2s; font-size: 14px;
+        }
+        .btn-categoria:hover { background: #d1d5db; }
+        .btn-categoria.active { background: #2563eb; color: white; }
+
+        .exam-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 10px; background: #fff;}
+        .exam-item:hover { background: #f9fafb; }
+        .exam-item button { background: #2563eb; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: 600; }
+        .exam-item button:hover { background: #1d4ed8; }
+
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; font-size: 14px; color: #4b5563; }
+        th { color: #374151; font-weight: 600; }
+        .aprobado { color: #16a34a; font-weight: bold; }
+        .reprobado { color: #dc2626; font-weight: bold; }
+        
+        /* Botón descarga PDF en tabla */
+        .btn-pdf-tabla { 
+            background: #dc2626; color: white; border: none; 
+            padding: 6px 12px; border-radius: 4px; cursor: pointer; 
+            font-size: 12px; font-weight: 600; 
+        }
+        .btn-pdf-tabla:hover { background: #b91c1c; }
+
+        /* Contenedor oculto de tamaño 0x0 (Soluciona el bug del PDF en blanco) */
+        #pdf-wrapper {
+            position: fixed; top: 0; left: 0; width: 0; height: 0; 
+            overflow: hidden; z-index: -9999;
+        }
+        #template-pdf {
+            width: 719px; 
+            padding: 40px; 
+            background: white; 
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid #1e3a8a; 
+            border-radius: 10px;
+        }        
+        .pdf-header { text-align: center; margin-bottom: 30px; }
+        .pdf-header h1 { color: #1e3a8a; margin: 0; font-size: 32px; }
+        .pdf-header p { color: #6b7280; margin: 5px 0 0 0; }
+        .pdf-logo { width: 120px; height: auto; margin-bottom: 10px; }
+        
+        .pdf-body { text-align: center; margin: 40px 0; }
+        .pdf-body h2 { text-transform: uppercase; color: #374151; letter-spacing: 1px; }
+        .pdf-body p { font-size: 18px; color: #1f2937; }
+        .pdf-score { margin: 20px auto; width: 200px; padding: 20px; border: 2px dashed #3b82f6; border-radius: 10px; }
+        .pdf-score h1 { font-size: 48px; margin: 0; color: #1e3a8a; }
+        
+        .pdf-signature { text-align: right; margin-top: 40px; padding-right: 40px; }
+        .pdf-stamp { width: 150px; height: auto; opacity: 0.9; }
+        
+        .pdf-footer { text-align: center; margin-top: 20px; color: #6b7280; font-size: 12px; border-top: 1px solid #e5e7eb; padding-top: 20px; }
+
+        /* Modal Juegos */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-content-games { background: #fff; padding: 40px; border-radius: 16px; width: 90%; max-width: 600px; text-align: center; position: relative; transform: translateY(-20px); transition: transform 0.3s ease; }
+        .modal-overlay.active .modal-content-games { transform: translateY(0); }
+        .modal-content-games h2 { color: #1E3A8A; margin-bottom: 10px; font-size: 1.8rem; }
+        .games-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; }
+        .game-card { background: #F8FAFC; border: 1px solid #E2E8F0; padding: 20px; border-radius: 12px; text-decoration: none; color: #1E3A8A; transition: 0.3s; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .game-card:hover { background: #EFF6FF; transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #F97316; }
+        .game-card .game-icon { font-size: 2.5rem; margin-bottom: 10px; }
+        .game-card h4 { font-size: 1.1rem; margin: 0; }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; color: #94A3B8; cursor: pointer; border: none; background: transparent; line-height: 1; }
+        .close-modal:hover { color: #dc2626; }
+
+        /* Slider de Noticias */
+        .noticias-slider-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 30px; /* Separación de la caja de tips */
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: #1f2937; /* Fondo mientras carga la imagen */
+        }
+        .noticia-item {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            opacity: 0;
+            transform: translateX(100%); /* Empieza fuera de la pantalla a la derecha */
+        }
+        /* Clase que dispara la animación */
+        .noticia-item.animar {
+            animation: slideStopFade forwards; /* La duración se la daremos con JS */
+        }
+        .noticia-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .noticia-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .noticia-overlay h4 { margin: 0 0 5px 0; font-size: 1.2rem; }
+        .noticia-overlay p { margin: 0; font-size: 0.9rem; color: #d1d5db; }
+
+        /* La animación mágica */
+        @keyframes slideStopFade {
+            0% { transform: translateX(100%); opacity: 0; }
+            15% { transform: translateX(0); opacity: 1; } /* Llega a la izquierda y aparece */
+            85% { transform: translateX(0); opacity: 1; } /* Se detiene por unos segundos */
+            100% { transform: translateX(0); opacity: 0; } /* Se desvanece */
+        }
+
+        @media (max-width: 768px) {
+            .games-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2 id="bienvenida">Cargando...</h2>
+        <div class="navbar-actions">
+            <button class="btn-ludico" onclick="abrirModalJuegos()">Espacio Lúdico</button>
+            <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <!-- Estadísticas -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Simuladores Rendidos</h3>
+                <p class="value" id="stat-total">0</p>
+            </div>
+            <div class="stat-card promedio">
+                <h3>Promedio General</h3>
+                <p class="value" id="stat-promedio">0%</p>
+            </div>
+            <div class="stat-card mejor">
+                <h3>Mejor Resultado</h3>
+                <p class="value" id="stat-mejor">0%</p>
+            </div>
+        </div>
+
+        <!-- Caja de Tips Desvanecibles -->
+        <div class="tips-container">
+            <div id="tip-box" class="tip-card">
+                <span class="tip-icon">💡</span>
+                <div>
+                    <h4 id="tip-title">Cargando tips...</h4>
+                    <p id="tip-text">Preparando información para tu estudio.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider de Noticias -->
+        <div class="noticias-slider-container">
+            <div id="noticia-box" class="noticia-item">
+                <img id="noticia-img" src="" alt="Noticia">
+                <div class="noticia-overlay">
+                    <h4 id="noticia-titulo"></h4>
+                    <p id="noticia-texto"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <!-- Columna Izquierda: Exámenes Disponibles -->
+            <div>
+                <div class="section-card">
+                    <h3>Opciones de Simuladores de Exámenes</h3>
+                    <div id="botones-categorias" class="botones-categorias"></div>
+                    <div id="lista-examenes">
+                        <p>Selecciona una categoría...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Historial -->
+            <div>
+                <div class="section-card">
+                    <h3>Historial de Resultados</h3>
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Examen</th>
+                                    <th>Fecha</th>
+                                    <th>Nota</th>
+                                    <th>Comprobante</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-historial">
+                                <tr><td colspan="4">Aún no has rendido exámenes.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor oculto para el PDF -->
+    <div id="pdf-wrapper">
+        <div id="template-pdf">
+            <div class="pdf-header">
+                <img src="../assets/img/logo.png" alt="Logo ÉxitoImpulso" class="pdf-logo">
+                <h1>ÉxitoImpulso</h1>
+                <p>Plataforma de Preparación y Simuladores</p>
+            </div>
+            <div class="pdf-body">
+                <h2>Comprobante de Simulacro</h2>
+                <p>Se certifica que <strong id="pdf-user">Usuario</strong></p>
+                <p>ha rendido el simulacro: <br><strong id="pdf-exam">Examen</strong></p>
+                <div class="pdf-score">
+                    <p style="margin:0; color:#6b7280; font-size:14px;">RESULTADO</p>
+                    <h1 id="pdf-score">0%</h1>
+                    <p id="pdf-correct" style="margin:5px 0 0 0; color:#6b7280;">0 de 0 correctas</p>
+                </div>
+            </div>
+            <div class="pdf-signature">
+                <img src="../assets/img/firma_sello.png" alt="Firma y Sello" class="pdf-stamp">
+            </div>
+            <!-- QR de Verificación -->
+            <div style="text-align: center; margin-top: 30px;">
+                <img id="pdf-qr-img" src="" alt="Código QR de Verificación" style="width: 80px; height: 80px;">
+                <p style="font-size: 10px; color: #6b7280; margin-top: 5px;">Escanea para verificar la autenticidad</p>
+            </div>
+            <div class="pdf-footer">
+                <p>Fecha: <span id="pdf-date">--</span></p>
+                <p>Este documento es un comprobante de práctica y no tiene validez oficial.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL ESPACIO LÚDICO -->
+    <div id="modalJuegos" class="modal-overlay">
+        <div class="modal-content-games">
+            <button class="close-modal" onclick="cerrarModalJuegos()">&times;</button>
+            <h2>🚀 Espacio Lúdico</h2>
+            <p style="color: #475569;">Tómate un descanso. Elige un juego para relajar la mente:</p>
+            <div class="games-grid">
+                <!-- Nota: Como estamos en "opciones del portal/", subimos un nivel con ../ para llegar a la carpeta juegos/ -->
+                <a href="../juegos/truco/index.html" class="game-card">
+                    <span class="game-icon">🃏</span>
+                    <h4>Truco Uruguayo</h4>
+                </a>
+                <a href="../juegos/trivia/index.html" class="game-card">
+                    <span class="game-icon">❓</span>
+                    <h4>Trivia General</h4>
+                </a>
+                <a href="../juegos/memoria/index.html" class="game-card">
+                    <span class="game-icon">🧩</span>
+                    <h4>Memoria de Señales</h4>
+                </a>
+                <a href="../juegos/ahorcado/index.html" class="game-card">
+                    <span class="game-icon">🔤</span>
+                    <h4>Palabra del Día</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let todosLosExamenes = [];
+        let nombreUsuarioGlobal = ""; 
+        let tipsData = [];
+        let tipIndex = 0;
+        let noticiasData = [];
+        let noticiaIndex = 0;
+        let noticiaTimer; // Variable para controlar el tiempo dinámico
+
+        fetch('/api/auth/validarSesion.php')
+            .then(res => res.json())
+            .then(data => {
+                if (data.logueado) {
+                    nombreUsuarioGlobal = data.nombre;
+                    document.getElementById('bienvenida').innerText = 'Bienvenido, ' + data.nombre;
+                    cargarExamenes();
+                    cargarHistorial();
+                    cargarTipsYNoticias();
+                } else {
+                    window.location.href = '../ingreso/index.html';
+                }
+            });
+
+        function cargarExamenes() {
+            fetch('/api/examenes/listar.php')
+                .then(res => res.json())
+                .then(data => {
+                    if (data.data && data.data.length > 0) {
+                        todosLosExamenes = data.data;
+                        const categorias = [...new Set(data.data.map(ex => ex.categoria))];
+                        const contBtns = document.getElementById('botones-categorias');
+                        contBtns.innerHTML = '';
+                        
+                        categorias.forEach((cat, index) => {
+                            contBtns.innerHTML += `<button class="btn-categoria ${index === 0 ? 'active' : ''}" onclick="filtrarExamenes('${cat}', this)">${cat}</button>`;
+                        });
+
+                        if (categorias.length > 0) {
+                            filtrarExamenes(categorias[0], document.querySelector('.btn-categoria'));
+                        }
+                    } else {
+                        document.getElementById('lista-examenes').innerHTML = '<p>No hay exámenes disponibles actualmente.</p>';
+                    }
+                });
+        }
+
+        function filtrarExamenes(categoria, btn) {
+            document.querySelectorAll('.btn-categoria').forEach(b => b.classList.remove('active'));
+            if(btn) btn.classList.add('active');
+
+            const cont = document.getElementById('lista-examenes');
+            cont.innerHTML = '';
+            const examenesFiltrados = todosLosExamenes.filter(ex => ex.categoria === categoria);
+
+            if (examenesFiltrados.length > 0) {
+                examenesFiltrados.forEach(ex => {
+                    cont.innerHTML += `
+                        <div class="exam-item">
+                            <div>
+                                <strong>${ex.titulo}</strong><br>
+                                <small style="color:#6b7280;">${ex.tiempo_limite_segundos > 0 ? (ex.tiempo_limite_segundos/60)+' min' : 'Sin límite'}</small>
+                            </div>
+                            <button onclick="iniciarExamen(${ex.id})">Comenzar</button>
+                        </div>
+                    `;
+                });
+            } else {
+                cont.innerHTML = '<p>No hay exámenes en esta categoría.</p>';
+            }
+        }
+
+        function cargarHistorial() {
+            fetch('/api/examenes/historial.php')
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById('stat-total').innerText = data.stats.total;
+                    document.getElementById('stat-promedio').innerText = data.stats.promedio + '%';
+                    document.getElementById('stat-mejor').innerText = data.stats.mejor + '%';
+
+                    const tbody = document.getElementById('tabla-historial');
+                    tbody.innerHTML = '';
+                    if (data.historial && data.historial.length > 0) {
+                        data.historial.forEach(h => {
+                            const fecha = new Date(h.fecha).toLocaleDateString('es-UY');
+                            const claseNota = h.puntaje >= 60 ? 'aprobado' : 'reprobado';
+                            
+                            let btnComprobante = '-';
+                            if (h.puntaje >= 60) {
+                                const tituloSeguro = h.examen_titulo.replace(/'/g, "\\'");
+                                btnComprobante = `<button class="btn-pdf-tabla" onclick="generarPDFHistorial('${tituloSeguro}', ${h.puntaje}, ${h.correctas}, ${h.total_preguntas}, '${fecha}', '${h.codigo_verificacion}')">PDF</button>`;
+                            }
+
+                            tbody.innerHTML += `
+                                <tr>
+                                    <td>${h.examen_titulo}</td>
+                                    <td>${fecha}</td>
+                                    <td class="${claseNota}">${h.puntaje}%</td>
+                                    <td>${btnComprobante}</td>
+                                </tr>
+                            `;
+                        });
+                    } else {
+                        tbody.innerHTML = '<tr><td colspan="4">Aún no has rendido exámenes.</td></tr>';
+                    }
+                });
+        }
+
+        function generarPDFHistorial(tituloExamen, puntaje, correctas, total, fecha, codigo) {
+            document.getElementById('pdf-user').innerText = nombreUsuarioGlobal;
+            document.getElementById('pdf-exam').innerText = tituloExamen;
+            document.getElementById('pdf-score').innerText = puntaje + '%';
+            document.getElementById('pdf-correct').innerText = correctas + ' de ' + total + ' correctas';
+            document.getElementById('pdf-date').innerText = fecha;
+
+            const urlVerificacion = `https://exitoimpulso.uy/verificar/?codigo=${codigo}`;
+            document.getElementById('pdf-qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(urlVerificacion)}`;
+
+            const element = document.getElementById('template-pdf');
+            const opt = {
+                margin: 10,
+                filename: 'Comprobante_' + tituloExamen + '.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, allowTaint: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            setTimeout(() => {
+                html2pdf().set(opt).from(element).save();
+            }, 1000);
+        }
+
+        // ==========================================
+        // TIPS Y NOTICIAS (JSON)
+        // ==========================================
+        function cargarTipsYNoticias() {
+            fetch('/api/portal/tips_noticias.php')
+                .then(res => res.json())
+                .then(data => {
+                    if (data.tips && data.tips.length > 0) {
+                        tipsData = data.tips;
+                        mostrarTip();
+                        setInterval(cambiarTip, 12000);
+                    }
+
+                    if (data.noticias && data.noticias.length > 0) {
+                        noticiasData = data.noticias;
+                        mostrarNoticia(); // Mostrar la primera
+                    }
+                });
+        }
+
+        function mostrarTip() {
+            const tip = tipsData[tipIndex];
+            document.getElementById('tip-title').innerText = tip.titulo;
+            document.getElementById('tip-text').innerText = tip.texto;
+        }
+
+        function cambiarTip() {
+            const box = document.getElementById('tip-box');
+            box.classList.add('fade-out');
+            setTimeout(() => {
+                tipIndex = (tipIndex + 1) % tipsData.length;
+                mostrarTip();
+                box.classList.remove('fade-out');
+            }, 1000);
+        }    
+
+        function mostrarNoticia() {
+            const noticia = noticiasData[noticiaIndex];
+            const box = document.getElementById('noticia-box');
+            
+            document.getElementById('noticia-img').src = noticia.imagen;
+            document.getElementById('noticia-titulo').innerText = noticia.titulo;
+            document.getElementById('noticia-texto').innerText = noticia.texto;
+            
+            const duracion = noticia.duracion || 6; // Por defecto 6s
+
+            box.style.animationDuration = duracion + 's';
+
+            box.classList.remove('animar');
+            void box.offsetWidth; // Fuerza al navegador a reflow
+            box.classList.add('animar');
+
+            clearTimeout(noticiaTimer); // Limpiar el temporizador anterior
+            noticiaTimer = setTimeout(() => {
+                cambiarNoticia();
+            }, duracion * 1000);
+        }
+
+        function cambiarNoticia() {
+            noticiaIndex = (noticiaIndex + 1) % noticiasData.length;
+            mostrarNoticia();
+        }
+
+        function iniciarExamen(id) {
+            window.location.href = '../simulador/index.html?id=' + id;
+        }
+
+        function cerrarSesion() {
+            fetch('/api/auth/logout.php')
+                .then(res => res.json())
+                .then(() => window.location.href = '../index.html');
+        }
+
+        // Lógica del Modal Lúdico
+        function abrirModalJuegos() {
+            document.getElementById('modalJuegos').classList.add('active');
+        }
+
+        function cerrarModalJuegos() {
+            document.getElementById('modalJuegos').classList.remove('active');
+        }
+
+        // Cerrar modal si se hace clic fuera de la caja
+        document.getElementById('modalJuegos').addEventListener('click', function(e) {
+            if (e.target === this) cerrarModalJuegos();
+        });
+    </script>
+</body>
+</html>

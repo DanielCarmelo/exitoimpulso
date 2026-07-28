@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Contraseña - ÉxitoImpulso</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Establecer Nueva Contraseña</h2>
+        <div id="mensaje" class="mensaje-error"></div>
+        
+        <form id="formCambiar">
+            <input type="password" id="password" placeholder="Nueva contraseña" required>
+            <input type="password" id="confirm_password" placeholder="Confirmar contraseña" required>
+            <button type="submit">Guardar Nueva Contraseña</button>
+        </form>
+    </div>
+
+    <script>
+        // Obtener el token de la URL (?token=xxxx)
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token');
+
+        if (!token) {
+            document.getElementById('mensaje').textContent = 'Error: No se proporcionó un token válido.';
+            document.getElementById('mensaje').style.display = 'block';
+            document.getElementById('formCambiar').style.display = 'none';
+        }
+
+        document.getElementById('formCambiar').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const mensajeDiv = document.getElementById('mensaje');
+            mensajeDiv.style.display = 'none';
+            mensajeDiv.className = '';
+
+            const password = document.getElementById('password').value;
+            const confirm_password = document.getElementById('confirm_password').value;
+
+            try {
+                const response = await fetch('http://localhost/ExitoImpulso/api/auth/cambiarPassword.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ token: token, password: password, confirm_password: confirm_password })
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    mensajeDiv.textContent = result.message + " Redirigiendo...";
+                    mensajeDiv.classList.add('mensaje-success');
+                    mensajeDiv.style.display = 'block';
+                    setTimeout(() => { window.location.href = '../ingreso/index.html'; }, 3000);
+                } else {
+                    mensajeDiv.textContent = result.error || 'Ocurrió un error.';
+                    mensajeDiv.classList.add('mensaje-error');
+                    mensajeDiv.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

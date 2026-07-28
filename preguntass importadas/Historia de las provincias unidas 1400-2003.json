@@ -1,0 +1,1622 @@
+[
+  {
+    "q": "¿En qué año se fundó el Imperio romano de Oriente y cayó Constantinopla?",
+    "o": ["1453", "1492", "1516"],
+    "a": "1453",
+    "r": "La historia moderna comienza con la destrucción del Imperio romano de Oriente y la caída de Constantinopla en poder de los turcos en 1453."
+  },
+  {
+    "q": "¿Los Estados generales en Francia y las Cortes en España gozaron de grandes prerrogativas para compartir el Poder Legislativo?",
+    "o": ["Verdadero", "Falso"],
+    "a": "Verdadero",
+    "r": "En Francia los Estados generales, como en España las Cortes, gozaron de grandes prerrogativas al iniciarse la integración del poder político en mano de los reyes."
+  },
+  {
+    "q": "¿En qué año se estableció el establecimiento de los correos en Francia como progreso de la administración pública?",
+    "o": ["1481", "1474", "1492"],
+    "a": "1481",
+    "r": "La administración pública empezó a organizarse con el establecimiento de los correos realizado en Francia el año 1481."
+  },
+  {
+    "q": "¿Por la muerte de qué rey subió al trono de Castilla doña Isabel I en diciembre de 1474?",
+    "o": ["Enrique IV el Impotente", "Don Juan II", "Don Fernando de Aragón"],
+    "a": "Enrique IV el Impotente",
+    "r": "Por muerte de su hermano Enrique IV el Impotente, subió al trono de Castilla doña Isabel I en diciembre de 1474."
+  },
+  {
+    "q": "¿En qué año se convocaron las célebres Cortes de Toledo donde dieron principio las grandes reformas en España?",
+    "o": ["1480", "1492", "1502"],
+    "a": "1480",
+    "r": "En el año 1480 se convocaron las célebres Cortes de Toledo, en las cuales dieron principio las grandes reformas."
+  },
+  {
+    "q": "¿La creación de la Santa Hermandad en España empleaba un procedimiento sumarísimo aplicando la última pena dentro de las 24 horas?",
+    "o": ["Verdadero", "Falso"],
+    "a": "Verdadero",
+    "r": "La Santa Hermandad, cuyos tribunales empleaban un procedimiento sumarísimo, aplicando la última pena dentro de las 24 horas de cometido el delito."
+  },
+  {
+    "q": "¿En qué fecha exacta entraban victoriosos los Reyes Católicos en Granada tras una capitulación?",
+    "o": ["2 de Enero de 1492", "31 de Marzo de 1492", "17 de Abril de 1492"],
+    "a": "2 de Enero de 1492",
+    "r": "El 2 de Enero de 1492 entraban victoriosos los Reyes Católicos en Granada, rendida mediante una capitulación."
+  },
+  {
+    "q": "¿El famoso decreto de expulsión de los judíos de los dominios españoles se publicó el 31 de marzo de 1492?",
+    "o": ["Verdadero", "Falso"],
+    "a": "Verdadero",
+    "r": "El 31 de marzo, publicaron los Reyes Católicos el famoso decreto de expulsión de los judíos."
+  },
+  {
+    "q": "¿A cuántos individuos privó de población en España la medida de la expulsión de los judíos?",
+    "o": ["200,000 individuos", "120,000 individuos", "500,000 individuos"],
+    "a": "200,000 individuos",
+    "r": "Esta impolítica medida privó a España de una población de 200,000 individuos, de la clase más ilustrada, rica y laboriosa."
+  },
+  {
+    "q": "¿En qué fecha se expidió la pragmática en Sevilla que mandaba bautizar a los moros no bautizados o salir de España?",
+    "o": ["14 de Febrero de 1502", "2 de Enero de 1492", "31 de Marzo de 1492"],
+    "a": "14 de Febrero de 1502",
+    "r": "El edicto tuvo digna continuación con la pragmática expedida en Sevilla 10 años más tarde el 14 de Febrero de 1502."
+  },
+  {
+    "q": "¿A quién le cupo la gloria de doblar el Cabo de las tempestades al finalizar el siglo XV?",
+    "o": ["Bartolomé Díaz", "Vasco de Gama", "Cristóbal Colón"],
+    "a": "Bartolomé Díaz",
+    "r": "Cabíndole esta gloria al finalizar aquel período a Bartolomé Díaz, que al conseguir doblar el Cabo de las tempestades halló la solución del problema."
+  },
+  {
+    "q": "¿En qué año se firmó el Tratado de Tordesillas entre España y Portugal para repartirse el dominio de los mares?",
+    "o": ["7 de Junio de 1494", "3 de Agosto de 1492", "24 de Noviembre de 1514"],
+    "a": "7 de Junio de 1494",
+    "r": "Firmaron en Tordesillas el 7 de Junio de 1494 un tratado por el cual se repartían el dominio de los mares."
+  },
+  {
+    "q": "¿Qué navegante, navegando en la zona de Portugal, fue arrojado por una tempestad a las costas del Brasil en el año 1500?",
+    "o": ["Álvarez de Cabral", "Vasco de Gama", "Américo Vespucio"],
+    "a": "Álvarez de Cabral",
+    "r": "Navegando dentro de la zona de éstos el año 1500 Álvarez de Cabral, sorprendido por una tempestad, fue arrojado a las costas del Brasil."
+  },
+  {
+    "q": "¿Quién llegó a Calcuta por el sur de África en el año 1498 abriendo la ruta marítima para los portugueses?",
+    "o": ["Vasco de Gama", "Bartolomé Díaz", "Américo Vespucio"],
+    "a": "Vasco de Gama",
+    "r": "Vasco de Gama había conseguido doblar el cabo y llegar a Calcuta el año 1498."
+  },
+  {
+    "q": "¿Quién recayó por primera vez en el empleo de Piloto Mayor de Castilla creado en mayo de 1508?",
+    "o": ["Américo Vespucio", "Juan Díaz de Solís", "Vicente Yañes Pinzón"],
+    "a": "Américo Vespucio",
+    "r": "La creación del empleo de Piloto Mayor de Castilla recayó por primera vez en Américo Vespucio en Mayo de 1508."
+  },
+  {
+    "q": "¿En qué fecha firmó Juan Díaz de Solís su nuevo contrato con el rey para una tercera expedición?",
+    "o": ["24 de Noviembre de 1514", "8 de Octubre de 1515", "2 de Febrero de 1516"],
+    "a": "24 de Noviembre de 1514",
+    "r": "Firmó con Solís el 24 de Noviembre de 1514 un nuevo contrato por el cual se obligaba a costear los gastos de una tercera expedición."
+  },
+  {
+    "q": "¿En qué fecha zarpó del puerto de Lepe la nueva y última expedición de Juan Díaz de Solís?",
+    "o": ["8 de Octubre de 1515", "24 de Noviembre de 1514", "2 de Febrero de 1516"],
+    "a": "8 de Octubre de 1515",
+    "r": "El 8 de Octubre de 1515 zarpó del puerto de Lepe la nueva y última expedición de Solís."
+  },
+  {
+    "q": "¿Qué nombre dio Juan Díaz de Solís al puerto de Maldonado al llegar el 2 de febrero de 1516?",
+    "o": ["Nuestra Señora de la Candelaria", "San Salvador", "Mar Dulce"],
+    "a": "Nuestra Señora de la Candelaria",
+    "r": "El 2 de Febrero siguiente echó las anclas en el puerto de Maldonado, al que llamó Nuestra Señora de la Candelaria."
+  },
+  {
+    "q": "¿Cómo bautizó Solís al Río de la Plata al hallar sus aguas dulces tras internarse en el estuario?",
+    "o": ["Mar Dulce", "Río de Solís", "Río de la Plata"],
+    "a": "Mar Dulce",
+    "r": "Internándose en el estuario, y hallando sus aguas dulces, bautizóle Solís con el nombre de Mar Dulce."
+  },
+  {
+    "q": "¿Cuál es el nombre de la tercera expedición que zarpó del puerto de Sanlúcar de Barrameda el 2 de septiembre de 1519 al mando de Magallanes?",
+    "o": ["Primera expedición de circunnavegación", "Expedición del Río de la Plata", "Expedición a las Indias"],
+    "a": "Primera expedición de circunnavegación",
+    "r": "Capítulo IV: Primer viaje de circunnavegación. Zarpó Magallanes desde el puerto de Sanlúcar de Barrameda el 2 de Septiembre de 1519."
+  },
+  {
+    "q": "¿Qué nombre puso Magallanes al mar del Sur descubierto por Balboa en el año 1513?",
+    "o": ["Océano Pacífico", "Océano Atlántico", "Mar Dulce"],
+    "a": "Océano Pacífico",
+    "r": "Estrecho de su nombre, en cuyas aguas entró para salir poco después a las del Pacífico, nombre que puso al mismo mar del Sur."
+  },
+  {
+    "q": "¿Cómo se llamaba la única nave que logró dar la vuelta al mundo regresando a España en septiembre de 1522?",
+    "o": ["Victoria", "Trinidad", "Concepción"],
+    "a": "Victoria",
+    "r": "Una sola estaba destinada a dar por primera vez la vuelta al mundo, llevando ésta en su nombre Victoria."
+  },
+  {
+    "q": "¿En qué año se creó el virreinato del Río de la Plata?",
+    "o": ["1776", "1543", "1661"],
+    "a": "1776",
+    "r": "No tuvieron los virreinatos sino cuatro, a saber: el de Méjico, Nueva Granada, Perú y Río de la Plata, creado recién este último en el año 1776."
+  },
+  {
+    "q": "¿En qué año se estableció el Consulado de Indias para arreglar diferencias entre cargadores?",
+    "o": ["1543", "1503", "1525"],
+    "a": "1543",
+    "r": "El Consulado de Indias, establecido desde 1543, era una institución particular al comercio de América."
+  },
+  {
+    "q": "¿Cuál era la única autoridad colonial que no emanaba directamente de la metrópoli sino que sus miembros eran vecinos locales?",
+    "o": ["Los Cabildos o Ayuntamientos", "La Real Audiencia", "El Consejo de Indias"],
+    "a": "Los Cabildos o Ayuntamientos",
+    "r": "La única autoridad que no emanaba directamente de la metrópoli en esta absorción absoluta a los derechos de los naturales del suelo, eran los Cabildos o Ayuntamientos."
+  },
+  {
+    "q": "¿Cómo se denominaba al Cabildo cuando sesionaba solo sin la presencia del vecindario?",
+    "o": ["Cabildo cerrado", "Cabildo abierto", "Ayuntamiento general"],
+    "a": "Cabildo cerrado",
+    "r": "Cuando el cabildo sesionaba solo, se decía cabildo cerrado, y cuando el vecindario era admitido a sus deliberaciones, se llamaba cabildo abierto."
+  },
+  {
+    "q": "¿En qué fecha firmó Sebastián Gaboto su contrato con el rey para una expedición a las Molucas?",
+    "o": ["4 de Marzo de 1525", "3 de Abril de 1526", "24 de Noviembre de 1525"],
+    "a": "4 de Marzo de 1525",
+    "r": "Se obtuvo mediante el contrato de costumbre con el rey, el 4 de Marzo de 1525."
+  },
+  {
+    "q": "¿Cómo se llamó el fortín que levantó Sebastián Gaboto en la desembocadura del río San Salvador en mayo de 1527?",
+    "o": ["Fuerte de San Salvador", "Fuerte de Sancti Spiritus", "Puerto de San Gabriel"],
+    "a": "Fuerte de San Salvador",
+    "r": "Resolvió elevar allí un fortín, al que bautizó con el mismo nombre que el río que acababa de descubrir: San Salvador."
+  },
+  {
+    "q": "¿En qué fecha firmó don Pedro de Mendoza el contrato con el emperador Carlos V para su expedición al Río de la Plata?",
+    "o": ["24 de Mayo de 1534", "1 de Septiembre de 1534", "12 de Septiembre de 1537"],
+    "a": "24 de Mayo de 1534",
+    "r": "El 24 de Mayo de 1534 don Pedro de Mendoza firmaba un contrato con este soberano."
+  },
+  {
+    "q": "¿Quién fue elegido gobernador interino del Río de la Plata por los colonos en agosto de 1537?",
+    "o": ["Domingo Martínez de Irala", "Alvar Núñez Cabeza de Vaca", "Juan de Ayolas"],
+    "a": "Domingo Martínez de Irala",
+    "r": "Proceden los colonos a la elección de Gobernador, recayendo este cargo en el mismo Irala (Agosto de 1537)."
+  },
+  {
+    "q": "¿Qué expedición zarpó en el año 1526 bajo el mando de Sebastián Gaboto tras firmar su contrato con el rey?",
+    "o": ["Expedición a las Molucas", "Primera circunnavegación", "Expedición del Río de la Plata"],
+    "a": "Expedición a las Molucas",
+    "r": "Sebastián Gaboto zarpó en 1526 con el objetivo inicial de dirigirse a las Molucas, desviándose posteriormente hacia el Río de la Plata."
+  },
+  {
+    "q": "¿Cómo se llamó el fuerte que Sebastián Gaboto fundó internándose por el río Paraná en 1527?",
+    "o": ["Fuerte de Sancti Spiritus", "Fuerte de San Salvador", "Puerto de San Gabriel"],
+    "a": "Fuerte de Sancti Spiritus",
+    "r": "Gaboto mandó construir el fuerte de Sancti Spiritus en la confluencia de los ríos Paraná y Carcarañá en 1527."
+  },
+  {
+    "q": "¿Quién fue el marino veneciano que participó en la expedición de Gaboto y dejó crónicas detalladas de la región?",
+    "o": ["Alonso de Santa Cruz", "Francisco del Puerto", "Melgiore Ramusio"],
+    "a": "Melgiore Ramusio",
+    "r": "Las crónicas de los viajes y exploraciones recopiladas por autores como Ramusio documentaron los sucesos de Gaboto en América."
+  },
+  {
+    "q": "¿Qué marino español acompañó a Gaboto como segundo jefe y participó en las exploraciones del río Paraguay?",
+    "o": ["Gregorio Caro", "Juan de Ayolas", "Alvar Núñez Cabeza de Vaca"],
+    "a": "Gregorio Caro",
+    "r": "Gregorio Caro quedó al mando de parte de las fuerzas en los fuertes establecidos por Gaboto durante su exploración fluvial."
+  },
+  {
+    "q": "¿Qué nombre recibió el primer asentamiento fundado por Pedro de Mendoza en febrero de 1536?",
+    "o": ["Puerto de Nuestra Señora del Buen Ayre", "Asunción del Paraguay", "Corpus Christi"],
+    "a": "Puerto de Nuestra Señora del Buen Ayre",
+    "r": "Pedro de Mendoza fundó el puerto de Nuestra Señora del Buen Ayre el 2 de febrero de 1536."
+  },
+  {
+    "q": "¿Qué lugarteniente de Pedro de Mendoza fue enviado a explorar el río Paraná y fundó Corpus Christi en 1536?",
+    "o": ["Juan de Ayolas", "Domingo Martínez de Irala", "Ulrico Schmidl"],
+    "a": "Juan de Ayolas",
+    "r": "Juan de Ayolas fue comisionado por Mendoza para avanzar por el río arriba, fundando el establecimiento de Corpus Christi."
+  },
+  {
+    "q": "¿Qué cronista alemán formó parte de la expedición de Pedro de Mendoza y dejó un valioso relato de la conquista?",
+    "o": ["Ulrico Schmidl", "Hans Staden", "Bernardo de Balbuena"],
+    "a": "Ulrico Schmidl",
+    "r": "El mercenario y cronista alemán Ulrico Schmidl narró detalladamente las penurias y eventos de la fundación de Buenos Aires y Asunción."
+  },
+  {
+    "q": "¿En qué año se fundó oficialmente la ciudad de Asunción del Paraguay por los expedicionarios españoles?",
+    "o": ["1537", "1541", "1536"],
+    "a": "1537",
+    "r": "La ciudad de Asunción fue establecida formalmente en agosto de 1537 tras el repliegue de los colonos desde Buenos Aires."
+  },
+  {
+    "q": "¿Quién asumió como segundo adelantado del Río de la Plata llegando a su gobernación en 1542?",
+    "o": ["Alvar Núñez Cabeza de Vaca", "Juan de Garay", "Ortíz de Zárate"],
+    "a": "Alvar Núñez Cabeza de Vaca",
+    "r": "Alvar Núñez Cabeza de Vaca llegó como segundo adelantado en 1542, intentando aplicar nuevas directrices reales y reorganizar la colonia."
+  },
+  {
+    "q": "¿Qué accidente geográfico descubrió Alvar Núñez Cabeza de Vaca en su marcha terrestre hacia Asunción?",
+    "o": ["Las cataratas del Iguazú", "Las cataratas del Niágara", "El Salto del Guairá"],
+    "a": "Las cataratas del Iguazú",
+    "r": "Durante su travesía por tierra desde la costa brasileña hasta Asunción, Cabeza de Vaca avistó las cataratas del Iguazú."
+  },
+  {
+    "q": "¿Qué medida adoptó Alvar Núñez Cabeza de Vaca que generó un fuerte descontento entre los antiguos pobladores y seguidores de Irala?",
+    "o": ["Restringir el servicio personal excesivo de los indígenas", "Obligar a abandonar Asunción", "Prohibir el comercio con los nativos"],
+    "a": "Restringir el servicio personal excesivo de los indígenas",
+    "r": "Las ordenanzas de Cabeza de Vaca para proteger a los indígenas y limitar su explotación provocaron una rebelión de los encomenderos locales."
+  },
+  {
+    "q": "¿En qué año destituyeron los colonos asuncenos a Alvar Núñez Cabeza de Vaca para reponer a Irala en el mando?",
+    "o": ["1544", "1547", "1550"],
+    "a": "1544",
+    "r": "En abril de 1544, los partidarios de Irala apresaron a Cabeza de Vaca y lo enviaron de regreso a España bajo cargos de abuso de autoridad."
+  },
+  {
+    "q": "¿Qué nombre recibió la sublevación contra la autoridad real en Asunción liderada por los criollos y pobladores descontentos en 1580?",
+    "o": ["La revuelta de los comuneros", "La rebelión de Irala", "El movimiento de Acaray"],
+    "a": "La revuelta de los comuneros",
+    "r": "Los conflictos políticos y de autoridad en Paraguay derivaron en tensiones institucionales tempranas conocidas como antecedentes comuneros."
+  },
+  {
+    "q": "¿Qué expedición partió desde Perú al mando de Ñuflo de Chaves para explorar las regiones orientales fundando Santa Cruz de la Sierra?",
+    "o": ["Fundación de Santa Cruz de la Sierra", "Entrada al Chaco", "Expedición a los Césares"],
+    "a": "Fundación de Santa Cruz de la Sierra",
+    "r": "Ñuflo de Chaves fundó Santa Cruz de la Sierra en 1561, vinculando administrativamente la región con el Tucumán y Asunción."
+  },
+  {
+    "q": "¿Quién fue nombrado primer obispo del Río de la Plata tomando posesión de su sede en Asunción en el siglo XVI?",
+    "o": ["Fray Pedro de la Torre", "Fray Juan de los Barrios", "Fray Bartolomé de las Casas"],
+    "a": "Fray Pedro de la Torre",
+    "r": "Fray Pedro de la Torre asumió como el primer obispo de la diócesis del Río de la Plata creada en la ciudad de Asunción."
+  },
+  {
+    "q": "¿Qué gobernador interino impulsó la segunda y definitiva fundación de la ciudad de Buenos Aires?",
+    "o": ["Juan de Garay", "Hernandarias", "Zárate"],
+    "a": "Juan de Garay",
+    "r": "Juan de Garay, actuando bajo las órdenes del adelantado Juan Ortiz de Zárate, fundó la Trinidad y el puerto de Buenos Aires en 1580."
+  },
+  {
+    "q": "¿En qué fecha exacta fundó Juan de Garay la ciudad de la Santísima Trinidad y puerto de Santa María de los Buenos Aires?",
+    "o": ["11 de Junio de 1580", "2 de Febrero de 1536", "14 de Abril de 1573"],
+    "a": "11 de Junio de 1580",
+    "r": "Juan de Garay llevó a cabo la fundación de Buenos Aires el 11 de junio de 1580 con pobladores provenientes de Asunción."
+  },
+  {
+    "q": "¿Qué ciudad estratégica había fundado previamente Juan de Garay a las orillas del río Paraná en 1573?",
+    "o": ["Santa Fe de la Vera Cruz", "Corrientes", "Concepción del Bermejo"],
+    "a": "Santa Fe de la Vera Cruz",
+    "r": "Juan de Garay fundó Santa Fe en 1573 para asegurar las comunicaciones fluviales entre Asunción y el Atlántico."
+  },
+  {
+    "q": "¿Qué ciudad fue fundada en 1588 por Juan Torres de Vera y Aragón en la confluencia de los ríos Paraná y Paraguay?",
+    "o": ["San Juan de Vera de las Siete Corrientes", "Concepción del Bermejo", "Santiago de Jerez"],
+    "a": "San Juan de Vera de las Siete Corrientes",
+    "r": "Corrientes fue fundada en 1588 para servir como apostadero y punto de control en la navegación fluvial."
+  },
+  {
+    "q": "¿Quién fue el primer gobernador criollo de la provincia del Río de la Plata a principios del siglo XVII?",
+    "o": ["Hernando Arias de Saavedra (Hernandarias)", "Domingo Martínez de Irala", "Martín Suárez de Toledo"],
+    "a": "Hernando Arias de Saavedra (Hernandarias)",
+    "r": "Hernandarias asumió la gobernación en múltiples ocasiones, destacándose por su gestión administrativa y fomento ganadero."
+  },
+  {
+    "q": "¿Qué iniciativa económica impulsó Hernandarias introduciendo ganado vacuno y caballar en la banda oriental y el litoral?",
+    "o": ["La introducción de vaquerías", "El monopolio del estanco", "La creación de las misiones"],
+    "a": "La introducción de vaquerías",
+    "r": "Hernandarias fomentó la riqueza pecuaria introduciendo ganado que dio origen a las famosas vaquerías en las pampas y la Banda Oriental."
+  },
+  {
+    "q": "¿Qué orden religiosa inició la evangelización y organización de las famosas reducciones jesuíticas en la región del Guayrá y Paraná?",
+    "o": ["Compañía de Jesús", "Orden de los Dominicos", "Orden de los Franciscanos"],
+    "a": "Compañía de Jesús",
+    "r": "Los jesuitas, encabezados por sacerdotes como Cataldino y Maceta, fundaron las reducciones para proteger y catequizar a los indígenas."
+  },
+  {
+    "q": "¿Cómo se denominaban los ataques de los bandeirantes portugueses desde San Pablo contra las reducciones jesuíticas?",
+    "o": ["Malocas", "Bandeiras", "Encomiendas"],
+    "a": "Malocas",
+    "r": "Las malocas eran incursiones armadas de los paulistas destinadas a saquear las misiones y capturar indígenas para venderlos como esclavos."
+  },
+  {
+    "q": "¿En qué año debieron trasladarse las reducciones guaraníes hacia el sur debido a la presión constante de los bandeirantes?",
+    "o": ["1631-1632", "1590-1600", "1680-1690"],
+    "a": "1631-1632",
+    "r": "Ante los ataques destructivos de los bandeirantes, los jesuitas y los indios guaraníes relocalizaron los pueblos hacia el sur del río Paraná."
+  },
+  {
+    "q": "¿Qué gobernador portugués fundó la Colonia del Sacramento en la Banda Oriental en 1680 frente a Buenos Aires?",
+    "o": ["Manuel Lobo", "Álvarez de Cabral", "Vasco da Gama"],
+    "a": "Manuel Lobo",
+    "r": "Manuel Lobo estableció la Colonia del Sacramento en 1680, generando un foco permanente de contrabando y conflicto luso-español."
+  },
+  {
+    "q": "¿Qué autoridad española organizó la expulsión temporal de los portugueses de la Colonia del Sacramento poco después de su fundación?",
+    "o": ["José de Garro", "Hernandarias", "Bruno Mauricio de Zabala"],
+    "a": "José de Garro",
+    "r": "El gobernador de Buenos Aires José de Garro organizó las milicias que tomaron por asalto la Colonia del Sacramento en 1680."
+  },
+  {
+    "q": "¿Qué gobernador de Buenos Aires fundó la ciudad de San Felipe de Montevideo en 1726 para frenar el avance portugués?",
+    "o": ["Bruno Mauricio de Zabala", "Pedro de Cevallos", "Agustín de Jáuregui"],
+    "a": "Bruno Mauricio de Zabala",
+    "r": "Bruno Mauricio de Zabala ejecutó la fundación de Montevideo en 1726 consolidando la presencia española en la Banda Oriental."
+  },
+  {
+    "q": "¿Qué tratado internacional de 1750 intentó resolver los litigios limítrofes coloniales mediante el polémico intercambio de la Colonia del Sacramento por los Siete Pueblos de las Misiones?",
+    "o": ["Tratado de Madrid", "Tratado de Tordesillas", "Tratado de San Ildefonso"],
+    "a": "Tratado de Madrid",
+    "r": "El Tratado de Madrid (1750) redefinió fronteras, provocando la resistencia armada de los indígenas en la llamada Guerra Guaranítica."
+  },
+  {
+    "q": "¿Qué conflicto bélico estalló en las misiones orientales entre 1754 y 1756 como rechazo al traslado estipulado por el Tratado de Madrid?",
+    "o": ["Guerra Guaranítica", "Guerra de los Comuneros", "Guerra del Brasil"],
+    "a": "Guerra Guaranítica",
+    "r": "Los indios reducidos se levantaron en armas contra las tropas conjuntas de España y Portugal en la denominada Guerra Guaranítica."
+  },
+  {
+    "q": "¿Qué importante Real Cédula firmó el rey Carlos III en 1778 liberando el comercio entre la metrópoli y sus colonias americanas?",
+    "o": ["Reglamento de Libre Comercio", "Decreto de Expulsión", "Pragmática Sanción"],
+    "a": "Reglamento de Libre Comercio",
+    "r": "El Reglamento y Aranceles Reales para el Comercio Libre de España a Indias de 1778 dinamizó significativamente la economía del puerto de Buenos Aires."
+  },
+  {
+    "q": "¿Qué expedición zarpó en el año 1526 bajo el mando de Sebastián Gaboto tras firmar su contrato con el rey?",
+    "o": ["Expedición a las Molucas", "Primera circunnavegación", "Expedición del Río de la Plata"],
+    "a": "Expedición a las Molucas",
+    "r": "Sebastián Gaboto zarpó en 1526 con el objetivo inicial de dirigirse a las Molucas, desviándose posteriormente hacia el Río de la Plata."
+  },
+  {
+    "q": "¿Cómo se llamó el fuerte que Sebastián Gaboto fundó internándose por el río Paraná en 1527?",
+    "o": ["Fuerte de Sancti Spiritus", "Fuerte de San Salvador", "Puerto de San Gabriel"],
+    "a": "Fuerte de Sancti Spiritus",
+    "r": "Gaboto mandó construir el fuerte de Sancti Spiritus en la confluencia de los ríos Paraná y Carcarañá en 1527."
+  },
+  {
+    "q": "¿Quién fue el marino veneciano que participó en la expedición de Gaboto y dejó crónicas detalladas de la región?",
+    "o": ["Alonso de Santa Cruz", "Francisco del Puerto", "Melgiore Ramusio"],
+    "a": "Melgiore Ramusio",
+    "r": "Las crónicas de los viajes y exploraciones recopiladas por autores como Ramusio documentaron los sucesos de Gaboto en América."
+  },
+  {
+    "q": "¿Qué marino español acompañó a Gaboto como segundo jefe y participó en las exploraciones del río Paraguay?",
+    "o": ["Gregorio Caro", "Juan de Ayolas", "Alvar Núñez Cabeza de Vaca"],
+    "a": "Gregorio Caro",
+    "r": "Gregorio Caro quedó al mando de parte de las fuerzas en los fuertes establecidos por Gaboto durante su exploración fluvial."
+  },
+  {
+    "q": "¿Qué nombre recibió el primer asentamiento fundado por Pedro de Mendoza en febrero de 1536?",
+    "o": ["Puerto de Nuestra Señora del Buen Ayre", "Asunción del Paraguay", "Corpus Christi"],
+    "a": "Puerto de Nuestra Señora del Buen Ayre",
+    "r": "Pedro de Mendoza fundó el puerto de Nuestra Señora del Buen Ayre el 2 de febrero de 1536."
+  },
+  {
+    "q": "¿Qué lugarteniente de Pedro de Mendoza fue enviado a explorar el río Paraná y fundó Corpus Christi en 1536?",
+    "o": ["Juan de Ayolas", "Domingo Martínez de Irala", "Ulrico Schmidl"],
+    "a": "Juan de Ayolas",
+    "r": "Juan de Ayolas fue comisionado por Mendoza para avanzar por el río arriba, fundando el establecimiento de Corpus Christi."
+  },
+  {
+    "q": "¿Qué cronista alemán formó parte de la expedición de Pedro de Mendoza y dejó un valioso relato de la conquista?",
+    "o": ["Ulrico Schmidl", "Hans Staden", "Bernardo de Balbuena"],
+    "a": "Ulrico Schmidl",
+    "r": "El mercenario y cronista alemán Ulrico Schmidl narró detalladamente las penurias y eventos de la fundación de Buenos Aires y Asunción."
+  },
+  {
+    "q": "¿En qué año se fundó oficialmente la ciudad de Asunción del Paraguay por los expedicionarios españoles?",
+    "o": ["1537", "1541", "1536"],
+    "a": "1537",
+    "r": "La ciudad de Asunción fue establecida formalmente en agosto de 1537 tras el repliegue de los colonos desde Buenos Aires."
+  },
+  {
+    "q": "¿Quién asumió como segundo adelantado del Río de la Plata llegando a su gobernación en 1542?",
+    "o": ["Alvar Núñez Cabeza de Vaca", "Juan de Garay", "Ortíz de Zárate"],
+    "a": "Alvar Núñez Cabeza de Vaca",
+    "r": "Alvar Núñez Cabeza de Vaca llegó como segundo adelantado en 1542, intentando aplicar nuevas directrices reales y reorganizar la colonia."
+  },
+  {
+    "q": "¿Qué accidente geográfico descubrió Alvar Núñez Cabeza de Vaca en su marcha terrestre hacia Asunción?",
+    "o": ["Las cataratas del Iguazú", "Las cataratas del Niágara", "El Salto del Guairá"],
+    "a": "Las cataratas del Iguazú",
+    "r": "Durante su travesía por tierra desde la costa brasileña hasta Asunción, Cabeza de Vaca avistó las cataratas del Iguazú."
+  },
+  {
+    "q": "¿Qué medida adoptó Alvar Núñez Cabeza de Vaca que generó un fuerte descontento entre los antiguos pobladores y seguidores de Irala?",
+    "o": ["Restringir el servicio personal excesivo de los indígenas", "Obligar a abandonar Asunción", "Prohibir el comercio con los nativos"],
+    "a": "Restringir el servicio personal excesivo de los indígenas",
+    "r": "Las ordenanzas de Cabeza de Vaca para proteger a los indígenas y limitar su explotación provocaron una rebelión de los encomenderos locales."
+  },
+  {
+    "q": "¿En qué año destituyeron los colonos asuncenos a Alvar Núñez Cabeza de Vaca para reponer a Irala en el mando?",
+    "o": ["1544", "1547", "1550"],
+    "a": "1544",
+    "r": "En abril de 1544, los partidarios de Irala apresaron a Cabeza de Vaca y lo enviaron de regreso a España bajo cargos de abuso de autoridad."
+  },
+  {
+    "q": "¿Qué nombre recibió la sublevación contra la autoridad real en Asunción liderada por los criollos y pobladores descontentos en 1580?",
+    "o": ["La revuelta de los comuneros", "La rebelión de Irala", "El movimiento de Acaray"],
+    "a": "La revuelta de los comuneros",
+    "r": "Los conflictos políticos y de autoridad en Paraguay derivaron en tensiones institucionales tempranas conocidas como antecedentes comuneros."
+  },
+  {
+    "q": "¿Qué expedición partió desde Perú al mando de Ñuflo de Chaves para explorar las regiones orientales fundando Santa Cruz de la Sierra?",
+    "o": ["Fundación de Santa Cruz de la Sierra", "Entrada al Chaco", "Expedición a los Césares"],
+    "a": "Fundación de Santa Cruz de la Sierra",
+    "r": "Ñuflo de Chaves fundó Santa Cruz de la Sierra en 1561, vinculando administrativamente la región con el Tucumán y Asunción."
+  },
+  {
+    "q": "¿Quién fue nombrado primer obispo del Río de la Plata tomando posesión de su sede en Asunción en el siglo XVI?",
+    "o": ["Fray Pedro de la Torre", "Fray Juan de los Barrios", "Fray Bartolomé de las Casas"],
+    "a": "Fray Pedro de la Torre",
+    "r": "Fray Pedro de la Torre asumió como el primer obispo de la diócesis del Río de la Plata creada en la ciudad de Asunción."
+  },
+  {
+    "q": "¿Qué gobernador interino impulsó la segunda y definitiva fundación de la ciudad de Buenos Aires?",
+    "o": ["Juan de Garay", "Hernandarias", "Zárate"],
+    "a": "Juan de Garay",
+    "r": "Juan de Garay, actuando bajo las órdenes del adelantado Juan Ortiz de Zárate, fundó la Trinidad y el puerto de Buenos Aires en 1580."
+  },
+  {
+    "q": "¿En qué fecha exacta fundó Juan de Garay la ciudad de la Santísima Trinidad y puerto de Santa María de los Buenos Aires?",
+    "o": ["11 de Junio de 1580", "2 de Febrero de 1536", "14 de Abril de 1573"],
+    "a": "11 de Junio de 1580",
+    "r": "Juan de Garay llevó a cabo la fundación de Buenos Aires el 11 de junio de 1580 con pobladores provenientes de Asunción."
+  },
+  {
+    "q": "¿Qué ciudad estratégica había fundado previamente Juan de Garay a las orillas del río Paraná en 1573?",
+    "o": ["Santa Fe de la Vera Cruz", "Corrientes", "Concepción del Bermejo"],
+    "a": "Santa Fe de la Vera Cruz",
+    "r": "Juan de Garay fundó Santa Fe en 1573 para asegurar las comunicaciones fluviales entre Asunción y el Atlántico."
+  },
+  {
+    "q": "¿Qué ciudad fue fundada en 1588 por Juan Torres de Vera y Aragón en la confluencia de los ríos Paraná y Paraguay?",
+    "o": ["San Juan de Vera de las Siete Corrientes", "Concepción del Bermejo", "Santiago de Jerez"],
+    "a": "San Juan de Vera de las Siete Corrientes",
+    "r": "Corrientes fue fundada en 1588 para servir como apostadero y punto de control en la navegación fluvial."
+  },
+  {
+    "q": "¿Quién fue el primer gobernador criollo de la provincia del Río de la Plata a principios del siglo XVII?",
+    "o": ["Hernando Arias de Saavedra (Hernandarias)", "Domingo Martínez de Irala", "Martín Suárez de Toledo"],
+    "a": "Hernando Arias de Saavedra (Hernandarias)",
+    "r": "Hernandarias asumió la gobernación en múltiples ocasiones, destacándose por su gestión administrativa y fomento ganadero."
+  },
+  {
+    "q": "¿Qué iniciativa económica impulsó Hernandarias introduciendo ganado vacuno y caballar en la banda oriental y el litoral?",
+    "o": ["La introducción de vaquerías", "El monopolio del estanco", "La creación de las misiones"],
+    "a": "La introducción de vaquerías",
+    "r": "Hernandarias fomentó la riqueza pecuaria introduciendo ganado que dio origen a las famosas vaquerías en las pampas y la Banda Oriental."
+  },
+  {
+    "q": "¿Qué orden religiosa inició la evangelización y organización de las famosas reducciones jesuíticas en la región del Guayrá y Paraná?",
+    "o": ["Compañía de Jesús", "Orden de los Dominicos", "Orden de los Franciscanos"],
+    "a": "Compañía de Jesús",
+    "r": "Los jesuitas, encabezados por sacerdotes como Cataldino y Maceta, fundaron las reducciones para proteger y catequizar a los indígenas."
+  },
+  {
+    "q": "¿Cómo se denominaban los ataques de los bandeirantes portugueses desde San Pablo contra las reducciones jesuíticas?",
+    "o": ["Malocas", "Bandeiras", "Encomiendas"],
+    "a": "Malocas",
+    "r": "Las malocas eran incursiones armadas de los paulistas destinadas a saquear las misiones y capturar indígenas para venderlos como esclavos."
+  },
+  {
+    "q": "¿En qué año debieron trasladarse las reducciones guaraníes hacia el sur debido a la presión constante de los bandeirantes?",
+    "o": ["1631-1632", "1590-1600", "1680-1690"],
+    "a": "1631-1632",
+    "r": "Ante los ataques destructivos de los bandeirantes, los jesuitas y los indios guaraníes relocalizaron los pueblos hacia el sur del río Paraná."
+  },
+  {
+    "q": "¿Qué gobernador portugués fundó la Colonia del Sacramento en la Banda Oriental en 1680 frente a Buenos Aires?",
+    "o": ["Manuel Lobo", "Álvarez de Cabral", "Vasco da Gama"],
+    "a": "Manuel Lobo",
+    "r": "Manuel Lobo estableció la Colonia del Sacramento en 1680, generando un foco permanente de contrabando y conflicto luso-español."
+  },
+  {
+    "q": "¿Qué autoridad española organizó la expulsión temporal de los portugueses de la Colonia del Sacramento poco después de su fundación?",
+    "o": ["José de Garro", "Hernandarias", "Bruno Mauricio de Zabala"],
+    "a": "José de Garro",
+    "r": "El gobernador de Buenos Aires José de Garro organizó las milicias que tomaron por asalto la Colonia del Sacramento en 1680."
+  },
+  {
+    "q": "¿Qué gobernador de Buenos Aires fundó la ciudad de San Felipe de Montevideo en 1726 para frenar el avance portugués?",
+    "o": ["Bruno Mauricio de Zabala", "Pedro de Cevallos", "Agustín de Jáuregui"],
+    "a": "Bruno Mauricio de Zabala",
+    "r": "Bruno Mauricio de Zabala ejecutó la fundación de Montevideo en 1726 consolidando la presencia española en la Banda Oriental."
+  },
+  {
+    "q": "¿Qué tratado internacional de 1750 intentó resolver los litigios limítrofes coloniales mediante el polémico intercambio de la Colonia del Sacramento por los Siete Pueblos de las Misiones?",
+    "o": ["Tratado de Madrid", "Tratado de Tordesillas", "Tratado de San Ildefonso"],
+    "a": "Tratado de Madrid",
+    "r": "El Tratado de Madrid (1750) redefinió fronteras, provocando la resistencia armada de los indígenas en la llamada Guerra Guaranítica."
+  },
+  {
+    "q": "¿Qué conflicto bélico estalló en las misiones orientales entre 1754 y 1756 como rechazo al traslado estipulado por el Tratado de Madrid?",
+    "o": ["Guerra Guaranítica", "Guerra de los Comuneros", "Guerra del Brasil"],
+    "a": "Guerra Guaranítica",
+    "r": "Los indios reducidos se levantaron en armas contra las tropas conjuntas de España y Portugal en la denominada Guerra Guaranítica."
+  },
+  {
+    "q": "¿Qué importante Real Cédula firmó el rey Carlos III en 1778 liberando el comercio entre la metrópoli y sus colonias americanas?",
+    "o": ["Reglamento de Libre Comercio", "Decreto de Expulsión", "Pragmática Sanción"],
+    "a": "Reglamento de Libre Comercio",
+    "r": "El Reglamento y Aranceles Reales para el Comercio Libre de España a Indias de 1778 dinamizó significativamente la economía del puerto de Buenos Aires."
+  },
+  {
+    "q": "¿Qué tratado firmado en 1777 fijó los límites definitivos entre los dominios de España y Portugal en América tras las campañas de Pedro de Cevallos?",
+    "o": ["Tratado de San Ildefonso", "Tratado de Utrecht", "Tratado de París"],
+    "a": "Tratado de San Ildefonso",
+    "r": "El Tratado de San Ildefonso de 1777 ratificó la soberanía española sobre la Colonia del Sacramento a cambio de concesiones territoriales en el sur."
+  },
+  {
+    "q": "¿Qué virrey del Río de la Plata creó las primeras intendencias en el territorio mediante la Real Ordenanza de Intendentes de 1782?",
+    "o": ["Juan José de Vértiz y Salcedo", "Pedro de Cevallos", "Rafael de Sobremonte"],
+    "a": "Juan José de Vértiz y Salcedo",
+    "r": "Vértiz aplicó el régimen de intendencias para mejorar la administración fiscal, política y militar del virreinato."
+  },
+  {
+    "q": "¿Cómo se llamaba la institución creada en 1794 en Buenos Aires encargada de fomentar la agricultura, el comercio y la industria local?",
+    "o": ["Consulado de Comercio de Buenos Aires", "Real Audiencia", "Cabildo Eclesiástico"],
+    "a": "Consulado de Comercio de Buenos Aires",
+    "r": "El Real Consulado de Comercio de Buenos Aires tuvo entre sus secretarios a figuras destacadas como Manuel Belgrano."
+  },
+  {
+    "q": "¿Quién fue el célebre abogado e intelectual criollo que asumió la secretaría del Consulado de Comercio en 1794?",
+    "o": ["Manuel Belgrano", "Mariano Moreno", "Juan José Castelli"],
+    "a": "Manuel Belgrano",
+    "r": "Manuel Belgrano impulsó desde su labor en el Consulado ideas innovadoras sobre educación técnica, agricultura y libertad de comercio."
+  },
+  {
+    "q": "¿Qué publicación periódica fundada en 1801 difundió las primeras ideas económicas y científicas en el Río de la Plata?",
+    "o": ["El Telégrafo Mercantil", "La Gazeta de Buenos Aires", "El Semanario de Agricultura"],
+    "a": "El Telégrafo Mercantil",
+    "r": "Fundado por Francisco Antonio Cabello y Mesa, El Telégrafo Mercantil fue el pionero del periodismo rioplatense."
+  },
+  {
+    "q": "¿Qué marino británico comandó la primera de las Invasiones Inglesas al Río de la Plata en el año 1806?",
+    "o": ["William Carr Beresford", "Sir Home Popham", "John Whitelocke"],
+    "a": "Sir Home Popham",
+    "r": "Sir Home Popham propuso y ejecutó la toma inicial de Buenos Aires en 1806 junto a las fuerzas de Beresford."
+  },
+  {
+    "q": "¿Qué virrey huyó hacia Córdoba llevándose los fondos del virreinato ante la llegada de las tropas británicas en 1806?",
+    "o": ["Rafael de Sobremonte", "Gabriel de Avilés", "Joaquín del Pino"],
+    "a": "Rafael de Sobremonte",
+    "r": "La huida de Sobremonte hacia el interior debilitó su autoridad y precipitó la creación de milicias urbanas criollas."
+  },
+  {
+    "q": "¿Qué militar criollo organizó la reconquista de Buenos Aires expulsando a los invasores británicos en agosto de 1806?",
+    "o": ["Santiago de Liniers", "Cornelio Saavedra", "Manuel Belgrano"],
+    "a": "Santiago de Liniers",
+    "r": "Liniers lideró la resistencia y la reconquista de la ciudad con apoyo de tropas urbanas y milicias voluntarias."
+  },
+  {
+    "q": "¿Cómo se denominó popularmente a la asamblea convocada tras la reconquista para decidir las medidas defensivas y de gobierno?",
+    "o": ["Cabildo Abierto", "Junta de Guerra", "Asamblea General"],
+    "a": "Cabildo Abierto",
+    "r": "El Cabildo Abierto de septiembre de 1806 suspendió temporalmente a Sobremonte en las funciones militares."
+  },
+  {
+    "q": "¿Qué cuerpo militar destacado se formó con voluntarios criollos tras las Invasiones Inglesas, eligiendo a Cornelio Saavedra como su jefe?",
+    "o": ["Regimiento de Patricios", "Cuerpo de Arribeños", "Batería de Voluntarios"],
+    "a": "Regimiento de Patricios",
+    "r": "El histórico Cuerpo de Patricios se convirtió en la milicia criolla más poderosa e influyente de Buenos Aires."
+  },
+  {
+    "q": "¿Quién comandó las fuerzas británicas en la segunda invasión de 1807 sufriendo una categórica derrota en las calles de Buenos Aires?",
+    "o": ["John Whitelocke", "William Carr Beresford", "Samuel Auchmuty"],
+    "a": "John Whitelocke",
+    "r": "Las tropas de Whitelocke fueron repelidas casa por casa por los vecinos y milicias durante julio de 1807."
+  },
+  {
+    "q": "¿Qué título militar extraordinario recibió Santiago de Liniers de parte de la Corona española tras las defensas exitosas de Buenos Aires?",
+    "o": ["Virrey del Río de la Plata", "Capitán General", "Conde de Buenos Aires"],
+    "a": "Virrey del Río de la Plata",
+    "r": "Ante la destitución de Sobremonte, la Junta de España y el reconocimiento popular elevaron a Liniers al cargo de virrey interino."
+  },
+  {
+    "q": "¿Qué líder realista encabezó en Montevideo el levantamiento contra el virrey Liniers en el año 1808?",
+    "o": ["Francisco Javier de Elío", "Gaspar de Vigodet", "Bernardo de Velasco"],
+    "a": "Francisco Javier de Elío",
+    "r": "Elío formó una Junta de Gobierno autónoma en Montevideo desconociendo la autoridad de Liniers debido a sus orígenes franceses."
+  },
+  {
+    "q": "¿Qué nombre recibió el fallido golpe de Estado absolutista perpetrado por Martín de Álzaga contra el virrey Liniers en enero de 1809?",
+    "o": ["La asonada de Álzaga", "La revolución de los orilleros", "El motín de los cuarteles"],
+    "a": "La asonada de Álzaga",
+    "r": "Álzaga intentó deponer a Liniers mediante un cabildo abierto, pero las milicias criollas de Saavedra impidieron el golpe."
+  },
+  {
+    "q": "¿Quién fue el último virrey de carácter regular enviado desde la metrópoli que asumió en julio de 1809?",
+    "o": ["Baltasar Hidalgo de Cisneros", "Joaquín del Pino", "Rafael de Sobremonte"],
+    "a": "Baltasar Hidalgo de Cisneros",
+    "r": "Cisneros reemplazó a Liniers para pacificar las tensiones políticas y restaurar el orden institucional de la monarquía."
+  },
+  {
+    "q": "¿Qué célebre memorial redactó Mariano Moreno en el año 1809 defendiendo el libre comercio y los intereses de los hacendados?",
+    "o": ["Representación de los Hacendados", "Plan de Operaciones", "La Gazeta Mercantil"],
+    "a": "Representación de los Hacendados",
+    "r": "Moreno argumentó jurídicamente y económicamente a favor de la apertura comercial para aliviar la crisis del fisco y de los productores."
+  },
+  {
+    "q": "¿Qué revolución independentista estalló en el Alto Perú el 25 de mayo de 1809 acaudillada por Bernardo de Monteagudo y Jaime Zudáñez?",
+    "o": ["Revolución de Chuquisaca", "Revolución de La Paz", "Revolución de Cochabamba"],
+    "a": "Revolución de Chuquisaca",
+    "r": "La destitución del presidente de la Audiencia en Chuquisaca marcó uno de los gritos libertarios iniciales en Sudamérica."
+  },
+  {
+    "q": "¿Qué junta insurreccional se formó en La Paz el 16 de julio de 1809 bajo la dirección de Pedro Domingo Murillo?",
+    "o": ["Junta Tuitiva", "Junta Gubernativa", "Junta de Gobierno Provisorio"],
+    "a": "Junta Tuitiva",
+    "r": "La Junta Tuitiva proclamó abiertamente la independencia y el autogobierno antes de ser violentamente reprimida por los realistas."
+  },
+  {
+    "q": "¿Qué noticia proveniente de Europa precipitó la crisis definitiva en el virreinato del Río de la Plata en mayo de 1810?",
+    "o": ["La caída de la Junta Central de Sevilla ante los franceses", "La coronación de Napoleón Bonaparte", "La firma del Tratado de Fontainebleau"],
+    "a": "La caída de la Junta Central de Sevilla ante los franceses",
+    "r": "La noticia de que la metrópoli había caído en manos de Napoleón despojó de legitimidad a las autoridades virreinales."
+  },
+  {
+    "q": "¿Qué político y abogado criollo fue el principal estratega civil en las jornadas de mayo de 1810 en Buenos Aires?",
+    "o": ["Juan José Paso", "Manuel Dorrego", "Feliciano Chiclana"],
+    "a": "Juan José Paso",
+    "r": "Juan José Paso tuvo un rol jurídico clave argumentando sobre la caducidad de la soberanía y la retroversión de los poderes al pueblo."
+  },
+  {
+    "q": "¿En qué fecha exacta se constituyó la Primera Junta de Gobierno autónomo en Buenos Aires?",
+    "o": ["25 de Mayo de 1810", "22 de Mayo de 1810", "18 de Julio de 1810"],
+    "a": "25 de Mayo de 1810",
+    "r": "La destitución formal de Cisneros y la asunción de la Primera Junta se consolidaron el 25 de mayo de 1810."
+  },
+  {
+    "q": "¿Quién fue designado como el primer secretario de guerra de la Primera Junta de Gobierno?",
+    "o": ["Mariano Moreno", "Juan José Castelli", "Manuel Alberti"],
+    "a": "Mariano Moreno",
+    "r": "Mariano Moreno imprimió un carácter revolucionario y radical a la gestión de la Junta desde su secretaría."
+  },
+  {
+    "q": "¿Qué exvirrey y líder realista organizó la contrarrevolución en Córdoba siendo fusilado en agosto de 1810?",
+    "o": ["Santiago de Liniers", "Baltasar Hidalgo de Cisneros", "Francisco Javier de Elío"],
+    "a": "Santiago de Liniers",
+    "r": "Liniers intentó articular la resistencia realista desde el interior, pero sus fuerzas fueron derrotadas y sus líderes ejecutados."
+  },
+  {
+    "q": "¿Quién comandó la Primera Expedición Auxiliadora al Alto Perú enviada por la Junta para derrotar a los realistas?",
+    "o": ["Juan José Castelli", "Manuel Belgrano", "José de San Martín"],
+    "a": "Juan José Castelli",
+    "r": "Castelli lideró el Ejército del Norte en su avance victorioso inicial que culminó en la batalla de Suipacha."
+  },
+  {
+    "q": "¿Qué resonante victoria patriota en el Alto Perú el 7 de noviembre de 1810 consolidó el dominio inicial de la expedición auxiliar?",
+    "o": ["Batalla de Suipacha", "Batalla de Huaqui", "Batalla de Salta"],
+    "a": "Batalla de Suipacha",
+    "r": "El triunfo en Suipacha permitió a las fuerzas revolucionarias controlar temporalmente las provincias altoperuanas."
+  },
+  {
+    "q": "¿Qué decreto redactado por Castelli en Tiahuanaco en 1811 abolió la servidumbre y los tributos obligatorios de los indígenas?",
+    "o": ["Decreto de emancipación indígena", "Ley de enfiteusis", "Estatuto provisional"],
+    "a": "Decreto de emancipación indígena",
+    "r": "Castelli proclamó la igualdad jurídica y la libertad de los nativos americanos en el marco de los ideales revolucionarios."
+  },
+  {
+    "q": "¿Qué trágica derrota militar en junio de 1811 marcó el colapso de la posición patriota en el Alto Perú?",
+    "o": ["Batalla de Huaqui", "Batalla de Sipe Sipe", "Batalla de Vilcapugio"],
+    "a": "Batalla de Huaqui",
+    "r": "La derrota de Huaqui desarticuló el ejército de Castelli y obligó a la retirada patriota hacia territorio jujeño."
+  },
+  {
+    "q": "¿Cómo se denominó al órgano de gobierno ampliado que incorporó a los diputados del interior a finales de 1810?",
+    "o": ["Junta Grande", "Asamblea del Año XIII", "Congreso de Tucumán"],
+    "a": "Junta Grande",
+    "r": "La incorporación de los representantes provinciales amplió el ejecutivo transformándolo en la llamada Junta Grande."
+  },
+  {
+    "q": "¿Qué cuerpo ejecutivo restringido de tres miembros reemplazó a la Junta Grande en septiembre de 1811 tras crearse el Cabildo?",
+    "o": ["Primer Triunvirato", "Segundo Triunvirato", "Directorio"],
+    "a": "Primer Triunvirato",
+    "r": "El Primer Triunvirato centralizó el poder político y militar, apartando temporalmente a las provincias de la toma de decisiones directas."
+  },
+  {
+    "q": "¿Qué sociedad secreta patriota fundada por San Martín, Zapiola y Alvear arribó a Buenos Aires a principios de 1812 para impulsar la independencia?",
+    "o": ["Logia Lautaro", "Sociedad Patriótica", "Carbonarios del Plata"],
+    "a": "Logia Lautaro",
+    "r": "La Logia Lautaro operó con disciplina militar y política para transformar radicalmente la orientación del gobierno revolucionario."
+  },
+  {
+    "q": "¿Qué importante creación militar ideó y abanderó Manuel Belgrano en febrero de 1812 a las orillas del río Paraná?",
+    "o": ["La bandera nacional", "El cuerpo de granaderos", "La caballería ligera"],
+    "a": "La bandera nacional",
+    "r": "Belgrano diseñó e izó por primera vez la bandera celeste y blanca en las barrancas de Rosario en febrero de 1812."
+  },
+  {
+    "q": "¿Qué trascendental maniobra defensiva ordenó Manuel Belgrano al pueblo oriental y jujeño ante el avance realista en 1812?",
+    "o": ["El Éxodo Jujeño", "La retirada táctica de Tucumán", "El repliegue a Córdoba"],
+    "a": "El Éxodo Jujeño",
+    "r": "El Éxodo Jujeño consistió en la retirada general de la población y la quema de recursos para no dejar víveres al enemigo."
+  },
+  {
+    "q": "¿Qué decisiva victoria patriota logró Manuel Belgrano el 24 de septiembre de 1812 frenando el avance realista sobre el norte?",
+    "o": ["Batalla de Tucumán", "Batalla de Salta", "Batalla de Las Piedras"],
+    "a": "Batalla de Tucumán",
+    "r": "La heroica victoria en Tucumán salvó a la revolución de un colapso inminente en el norte argentino."
+  },
+  {
+    "q": "¿Qué brillante triunfo obtuvo Manuel Belgrano en febrero de 1813 logrando la rendición total del ejército realista comandado por Pío Tristán?",
+    "o": ["Batalla de Salta", "Batalla de Vilcapugio", "Batalla de Ayohuma"],
+    "a": "Batalla de Salta",
+    "r": "En Salta, Belgrano consolidó su mayor éxito militar obligando a la capitulación de las tropas enemigas."
+  },
+  {
+    "q": "¿Cómo se llamaron las derrotas sufridas por Belgrano a fines de 1813 en el Alto Perú ante Joaquín de la Pezuela?",
+    "o": ["Vilcapugio y Ayohuma", "Sipe Sipe y Huaqui", "Suipacha y Las Piedras"],
+    "a": "Vilcapugio y Ayohuma",
+    "r": "Los descalabros en Vilcapugio y Ayohuma debilitaron severamente al Ejército del Norte."
+  },
+  {
+    "q": "¿Qué revolución destituyó al Primer Triunvirato en octubre de 1812 exigiendo la inmediata convocatoria a una Asamblea General Constituyente?",
+    "o": ["La revolución del 8 de octubre de 1812", "El motín de las trancas", "La asonada de Alzaga"],
+    "a": "La revolución del 8 de octubre de 1812",
+    "r": "La presión conjunta de la Logia Lautaro y los Patricios derrocó al Triunvirato instalando un nuevo poder ejecutivo."
+  },
+  {
+    "q": "¿Quiénes integraron el Segundo Triunvirato surgido tras el movimiento cívico-militar de octubre de 1812?",
+    "o": ["Paso, Rodríguez Peña y Alvarez Jonte", "Saavedra, Campana y Chiclana", "Moreno, Castelli y Alberti"],
+    "a": "Paso, Rodríguez Peña y Alvarez Jonte",
+    "r": "El Segundo Triunvirato asumió con el mandato imperativo de convocar al congreso soberano de los pueblos."
+  },
+  {
+    "q": "¿Cómo se denominó oficialmente la gran asamblea constituyente inaugurada en enero de 1813 en Buenos Aires?",
+    "o": ["Asamblea del Año XIII", "Soberano Congreso Constituyente", "Junta General de Provincias"],
+    "a": "Asamblea del Año XIII",
+    "r": "La Asamblea del Año XIII introdujo profundas reformas institucionales, aunque no declaró formalmente la independencia."
+  },
+  {
+    "q": "¿Qué símbolos patrios instituyó oficialmente la Asamblea del Año XIII durante sus sesiones?",
+    "o": ["El Himno Nacional y el Escudo", "La escarapela y el poncho", "El estandarte real y la banda"],
+    "a": "El Himno Nacional y el Escudo",
+    "r": "La Asamblea consagró los emblemas patrios soberanos, dando oficialidad a la marcha patriótica de Vicente López y Planes."
+  },
+  {
+    "q": "¿Qué célebre disposición humanitaria sancionó la Asamblea del Año XIII respecto a los hijos de esclavos nacidos en el territorio?",
+    "o": ["La libertad de vientres", "La manumisión total e inmediata", "El indulto general de castas"],
+    "a": "La libertad de vientres",
+    "r": "La ley de libertad de vientres declaró libres a los niños nacidos de madres esclavas a partir de enero de 1813."
+  },
+  {
+    "q": "¿Qué régimen ejecutivo unipersonal se creó en 1814 para centralizar la conducción de la guerra y la política revolucionaria?",
+    "o": ["El Directorio", "El Protectorado", "El Consulado General"],
+    "a": "El Directorio",
+    "r": "Ante las graves crisis bélicas, la Asamblea disolvió el Triunvirato y concentró el poder ejecutivo en un Director Supremo."
+  },
+  {
+    "q": "¿Quién fue el primer Director Supremo de las Provincias Unidas del Río de la Plata elegido en 1814?",
+    "o": [" Gervasio Antonio de Posadas", "Carlos María de Alvear", "Juan Martín de Pueyrredón"],
+    "a": " Gervasio Antonio de Posadas",
+    "r": "Posadas inauguró el período directorial respaldado fuertemente por la Logia Lautaro."
+  },
+  {
+    "q": "¿Qué brillante marino criollo organizó la escuadra naval que logró expulsar definitivamente a los realistas del apostadero de Montevideo en 1814?",
+    "o": ["Guillermo Brown", "Hipólito Bouchard", "Ángel Justiniano Carranza"],
+    "a": "Guillermo Brown",
+    "r": "Guillermo Brown obtuvo categóricas victorias navales en aguas del Río de la Plata culminando con la rendición de Montevideo."
+  },
+  {
+    "q": "¿En qué fecha se rindió la plaza realista de Montevideo ante las fuerzas combinadas patriotas de tierra y mar?",
+    "o": ["20 de Junio de 1814", "17 de Mayo de 1813", "5 de Octubre de 1815"],
+    "a": "20 de Junio de 1814",
+    "r": "La caída de Montevideo en junio de 1814 eliminó el bastión realista del litoral oriental."
+  },
+  {
+    "q": "¿Qué líder oriental federal comenzó a disputar fuertemente la hegemonía política a la centralista Buenos Aires a partir de 1811-1814?",
+    "o": ["José Gervasio Artigas", "Fructuoso Rivera", "Manuel Oribe"],
+    "a": "José Gervasio Artigas",
+    "r": "Artigas lideró la revolución oriental y promovió el federalismo regional frente a las tendencias unitarias del Directorio."
+  },
+  {
+    "q": "¿Cómo se llamaron los diputados enviados por Artigas a la Asamblea del Año XIII que fueron rechazados por cuestiones reglamentarias?",
+    "o": ["Los diputados de la Banda Oriental", "Los delegados del Chaco", "Los congresales del Litoral"],
+    "a": "Los diputados de la Banda Oriental",
+    "r": "El rechazo de los diputados orientales y sus Instrucciones particulares agudizó la ruptura entre Artigas y Buenos Aires."
+  },
+  {
+    "q": "¿Qué nombre recibió la confederación impulsada por Artigas que agrupaba a las provincias del litoral contra el centralismo directorial?",
+    "o": ["La Unión de los Pueblos Libres", "La Liga del Norte", "La Confederación Argentina"],
+    "a": "La Unión de los Pueblos Libres",
+    "r": "Artigas constituyó la Liga de los Pueblos Libres, abanderando los principios de autonomía provincial y federalismo."
+  },
+  {
+    "q": "¿Qué militar y estratega asumió el mando del deshecho Ejército del Norte tras las derrotas en el Alto Perú, organizando la defensa en Salta y Jujuy?",
+    "o": ["Martín Miguel de Güemes", "Euston Eustaquio Díaz Vélez", "Manuel Dorrego"],
+    "a": "Martín Miguel de Güemes",
+    "r": "Güemes organizó la célebre guerra de guerrillas conocida como la Guerra Gaucha en la frontera norte."
+  },
+  {
+    "q": "¿Qué táctica militar popular implementaron las milicias de gauchos comandadas por Güemes para desgastar a los ejércitos realistas?",
+    "o": ["Guerra de recursos y hostigamiento", "Sitio prolongado por hambre", "Batallas campales frontales"],
+    "a": "Guerra de recursos y hostigamiento",
+    "r": "Los gauchos de Güemes neutralizaron sucesivas invasiones españolas mediante ataques sorpresivos de movilidad extrema."
+  },
+  {
+    "q": "¿Qué célebre general cuyano ideó el plan continental para liberar a Chile y Perú cruzando la cordillera de los Andes?",
+    "o": ["José de San Martín", "Juan Gregorio de Las Heras", "Tomás de Guido"],
+    "a": "José de San Martín",
+    "r": "San Martín comprendió que la vía directa por el Alto Perú era infructuosa y proyectó la campaña anfibia a través de Chile."
+  },
+  {
+    "q": "¿Qué cargo gubernamental estratégico asumió San Martín en 1814 para preparar la base militar de su campaña en Cuyo?",
+    "o": ["Gobernador Intendente de Cuyo", "Director Supremo de la Nación", "Comandante del Ejército de Reserva"],
+    "a": "Gobernador Intendente de Cuyo",
+    "r": "Desde la gobernación de Cuyo en Mendoza, San Martín concentró todos los recursos humanos y materiales para el ejército libertador."
+  },
+  {
+    "q": "¿Cómo se llamó el cuerpo de élite de caballería creado por San Martín en Mendoza para la campaña emancipadora?",
+    "o": ["Regimiento de Granaderos a Caballo", "Batallón de Cazadores de los Andes", "Escuadrón de Dragones Patriotas"],
+    "a": "Regimiento de Granaderos a Caballo",
+    "r": "Los Granaderos a Caballo constituyeron la fuerza disciplinada de choque que debutó victoriosa en el combate de San Lorenzo."
+  },
+  {
+    "q": "¿En qué fecha exacta se declaró formalmente la independencia de las Provincias Unidas en Sudamérica?",
+    "o": ["9 de Julio de 1816", "25 de Mayo de 1810", "31 de Enero de 1813"],
+    "a": "9 de Julio de 1816",
+    "r": "El Congreso de Tucumán proclamó la independencia nacional de España el 9 de julio de 1816."
+  },
+  {
+    "q": "¿Qué ciudad albergó las deliberaciones del congreso constituyente que declaró la independencia en 1816?",
+    "o": ["San Miguel de Tucumán", "Córdoba del Tucumán", "Santiago del Estero"],
+    "a": "San Miguel de Tucumán",
+    "r": "El Congreso se reunió en la histórica casa de Francisca Bazán de Laguna en Tucumán para unificar a las provincias divididas."
+  },
+  {
+    "q": "¿Quién fue designado Director Supremo de las Provincias Unidas durante las sesiones del Congreso de Tucumán en 1816?",
+    "o": ["Juan Martín de Pueyrredón", "Antonio González Balcarce", "José Rondeau"],
+    "a": "Juan Martín de Pueyrredón",
+    "r": "Pueyrredón brindó un firme respaldo logístico e institucional a los preparativos finales del Plan Continental de San Martín."
+  },
+  {
+    "q": "¿En qué año comenzó la epopeya del Cruce de los Andes por parte del Ejército Libertador comandado por José de San Martín?",
+    "o": ["Enero de 1817", "Enero de 1815", "Febrero de 1818"],
+    "a": "Enero de 1817",
+    "r": "El cruce de la cordillera andina por múltiples columnas simultáneas se ejecutó en los primeros meses de 1817."
+  },
+  {
+    "q": "¿Qué gran victoria militar obtuvo San Martín al ingresar a Chile derrotando a los realistas en febrero de 1817?",
+    "o": ["Batalla de Chacabuco", "Batalla de Maipú", "Batalla de Cancha Rayada"],
+    "a": "Batalla de Chacabuco",
+    "r": "El triunfo en Chacabuco abrió las puertas de Santiago y permitió la instauración del gobierno patriota en Chile."
+  },
+  {
+    "q": "¿Qué decisiva batalla librada en abril de 1818 consolidó definitivamente la independencia de la república de Chile?",
+    "o": ["Batalla de Maipú", "Batalla de Chacabuco", "Combate de San Lorenzo"],
+    "a": "Batalla de Maipú",
+    "r": "La victoria de Maipú aniquiló las últimas resistencias principales del ejército realista en territorio chileno."
+  },
+  {
+    "q": "¿Qué puerto peruano zarpó la expedición libertadora comandada por San Martín hacia el norte en el año 1820?",
+    "o": ["Puerto de Valparaíso", "Puerto del Callao", "Bahía de Paracas"],
+    "a": "Puerto de Valparaíso",
+    "r": "La flota patriota zarpó desde Chile con rumbo a las costas peruanas para culminar la emancipación sudamericana."
+  },
+  {
+    "q": "¿Cómo se llamó el acuerdo militar y político firmado en 1822 donde San Martín y Simón Bolívar se entrevistaron para definir el destino final de la independencia americana?",
+    "o": ["Entrevista de Guayaquil", "Congreso de Panamá", "Pacto de Lima"],
+    "a": "Entrevista de Guayaquil",
+    "r": "La histórica entrevista de Guayaquil en julio de 1822 reunió a los dos grandes libertadores de América del Sur."
+  },
+  {
+    "q": "¿Qué batalla librada el 1 de febrero de 1820 enfrentó a los caudillos federales del Litoral contra las fuerzas del Directorio?",
+    "o": ["Batalla de Cepeda", "Batalla de Cañada de la Cruz", "Batalla de Pavón"],
+    "a": "Batalla de Cepeda",
+    "r": "La batalla de Cepeda en 1820 derrotó al régimen directorial y disolvió las autoridades nacionales centrales."
+  },
+  {
+    "q": "¿Cómo se denominó el período de inestabilidad política y autonomía absoluta de las provincias que siguió tras la caída del Directorio en 1820?",
+    "o": ["La Anarquía del Año XX", "La época de la Confederación", "La Década Infame"],
+    "a": "La Anarquía del Año XX",
+    "r": "La caída del poder central dio lugar a la llamada Anarquía del Año XX, donde cada provincia asumió su propio gobierno."
+  },
+  {
+    "q": "¿Qué tratado firmado en febrero de 1820 selló la paz entre Buenos Aires y los caudillos federales Estanislao López y Francisco Ramírez?",
+    "o": ["Tratado del Pilar", "Tratado de Benegas", "Pacto Federal"],
+    "a": "Tratado del Pilar",
+    "r": "El Tratado del Pilar sentó las bases para un futuro sistema federal entre las provincias firmantes y Buenos Aires."
+  },
+  {
+    "q": "¿Qué caudillo entrerriano impulsó el efímero proyecto autónomo de la República Entreriana a principios de la década de 1820?",
+    "o": ["Francisco Ramírez", "Justo José de Urquiza", "Efraín Garmendia"],
+    "a": "Francisco Ramírez",
+    "r": "Francisco Ramírez organizó la República Entreriana antes de enfrentarse militarmente con Artigas y morir en combate."
+  },
+  {
+    "q": "¿Qué gobernador porteño impulsó profundas reformas institucionales, educativas y eclesiásticas durante la llamada 'feliz experiencia' de Buenos Aires?",
+    "o": ["Martín Rodríguez", "Juan Gregorio de Las Heras", "Bernardino Rivadavia"],
+    "a": "Martín Rodríguez",
+    "r": "Durante el gobierno de Martín Rodríguez, con Bernardino Rivadavia como ministro, se llevaron a cabo trascendentales reformas."
+  },
+  {
+    "q": "¿Qué institución educativa superior se fundó en Buenos Aires en el año 1821 bajo los auspicios de la administración de Martín Rodríguez?",
+    "o": ["Universidad de Buenos Aires", "Colegio Nacional de Buenos Aires", "Universidad de San Carlos"],
+    "a": "Universidad de Buenos Aires",
+    "r": "La Universidad de Buenos Aires (UBA) fue creada formalmente el 12 de agosto de 1821."
+  },
+  {
+    "q": "¿Qué empréstito extranjero contrajo el gobierno de Buenos Aires con la banca británica Baring Brothers en 1824?",
+    "o": ["Empréstito Baring", "Crédito de Londres", "Préstamo Continental"],
+    "a": "Empréstito Baring",
+    "r": "El empréstito con la casa Baring Brothers endeudó a la provincia de Buenos Aires por décadas y llegó ínfimo a destino."
+  },
+  {
+    "q": "¿Qué congreso general se inauguró en Buenos Aires en diciembre de 1824 con el propósito de dictar una constitución nacional?",
+    "o": ["Congreso General de 1824", "Asamblea del Año XIII", "Congreso de Tucumán"],
+    "a": "Congreso General de 1824",
+    "r": "El Congreso de 1824 retomó la tarea constitucional en medio de tensiones entre unitarios y federales."
+  },
+  {
+    "q": "¿Quién fue elegido como el primer Presidente de las Provincias Unidas del Río de la Plata en febrero de 1826?",
+    "o": ["Bernardino Rivadavia", "Vicente López y Planes", "Manuel Dorrego"],
+    "a": "Bernardino Rivadavia",
+    "r": "Bernardino Rivadavia asumió la primera presidencia nacional en un contexto de guerra externa y fuerte rechazo provincial."
+  },
+  {
+    "q": "¿Qué guerra internacional estalló en 1825 como consecuencia de la cruzada de los Treinta y Tres Orientales y la reincorporación de la Banda Oriental?",
+    "o": ["Guerra del Brasil", "Guerra de la Triple Alianza", "Guerra Grande"],
+    "a": "Guerra del Brasil",
+    "r": "El conflicto bélico con el Imperio del Brasil movilizó los recursos de las Provincias Unidas en defensa de la Banda Oriental."
+  },
+  {
+    "q": "¿Quién lideró a los Treinta y Tres Orientales que desembarcaron en las costas orientales en abril de 1825 para iniciar la liberación de su territorio?",
+    "o": ["Juan Antonio Lavalleja", "Fructuoso Rivera", "Manuel Oribe"],
+    "a": "Juan Antonio Lavalleja",
+    "r": "Juan Antonio Lavalleja comandó la heroica expedición de los Treinta y Tres Orientales para expulsar a los brasileños."
+  },
+  {
+    "q": "¿Qué brillante victoria naval obtuvo el almirante Guillermo Brown frente a la escuadra imperial brasileña en febrero de 1826?",
+    "o": ["Combate de Juncal", "Batalla de Los Pozos", "Combate de Quilmes"],
+    "a": "Combate de Juncal",
+    "r": "La escuadra patriota al mando de Brown destruyó a la flota brasileña en las aguas del delta en el Combate de Juncal."
+  },
+  {
+    "q": "¿Qué resonante victoria terrestre obtuvieron las fuerzas patriotas al mando de Carlos María de Alvear frente al ejército brasileño en febrero de 1827?",
+    "o": ["Batalla de Ituzaingó", "Batalla de Sarandí", "Batalla de Juncal"],
+    "a": "Batalla de Ituzaingó",
+    "r": "Ituzaingó constituyó el triunfo militar clave de las Provincias Unidas durante la campaña terrestre de la guerra."
+  },
+  {
+    "q": "¿Qué tratado preliminar de paz firmado en 1828 reconoció la independencia del Estado Oriental del Uruguay?",
+    "o": ["Convención Preliminar de Paz", "Tratado de Río de Janeiro", "Pacto de Montevideo"],
+    "a": "Convención Preliminar de Paz",
+    "r": "La Convención Preliminar de Paz de 1828 puso fin a la guerra con el Brasil creando un estado tapón independiente."
+  },
+  {
+    "q": "¿Qué líder federal y gobernador de Buenos Aires fue derrocado y fusilado por el general Juan Lavalle en diciembre de 1828?",
+    "o": ["Manuel Dorrego", "Juan Manuel de Rosas", "Estanislao López"],
+    "a": "Manuel Dorrego",
+    "r": "El derrocamiento y fusilamiento de Manuel Dorrego por orden de Lavalle desató una sangrienta guerra civil entre unitarios y federales."
+  },
+  {
+    "q": "¿Qué caudillo federal de la provincia de Santa Fe se alió con Juan Manuel de Rosas para derrotar a las fuerzas unitarias de Lavalle en 1829?",
+    "o": ["Estanislao López", "Facundo Quiroga", "Juan Bautista Bustos"],
+    "a": "Estanislao López",
+    "r": "Estanislao López combinó fuerzas con Rosas para restablecer el orden federal en la provincia porteña."
+  },
+  {
+    "q": "¿Con qué nombre se conoció el primer gobierno de Juan Manuel de Rosas en Buenos Aires tras asumir el poder en diciembre de 1829?",
+    "o": ["La Restauración de las Leyes", "La Confederación Argentina", "El Orden Provisional"],
+    "a": "La Restauración de las Leyes",
+    "r": "Rosas asumió el gobierno bajo el lema de la Restauración de las Leyes y dotado de facultades extraordinarias."
+  },
+  {
+    "q": "¿Qué pacto interprovincial firmado en 1831 constituyó la base institucional y jurídica de la Confederación Argentina por más de dos décadas?",
+    "o": ["Pacto Federal", "Acuerdo de San Nicolás", "Tratado del Cuadrilátero"],
+    "a": "Pacto Federal",
+    "r": "El Pacto Federal de 1831 unió a Buenos Aires, Santa Fe, Entre Ríos y Corrientes en una alianza político-militar ofensiva y defensiva."
+  },
+  {
+    "q": "¿Qué famoso caudillo riojano comandó los ejércitos federales en el interior contra las incursiones de la Liga Unitaria del general José María Paz?",
+    "o": ["Facundo Quiroga", "Ángel Vicente Peñaloza", "Juan Felipe Ibarra"],
+    "a": "Facundo Quiroga",
+    "r": "Facundo Quiroga lideró la resistencia federal en las provincias cuyanas y del noroeste, derrotando finalmente a la Liga Unitaria."
+  },
+  {
+    "q": "¿Qué importante expedición militar condujo Juan Manuel de Rosas al sur de la provincia de Buenos Aires entre 1833 y 1834 para asegurar las fronteras?",
+    "o": ["Campaña al Desierto", "Conquista del Chaco", "Expedición a Salinas"],
+    "a": "Campaña al Desierto",
+    "r": "La autodenominada Expedición al Desierto de Rosas buscó pacificar la frontera sur y ampliar los territorios bajo dominio criollo."
+  },
+  {
+    "q": "¿En qué año asumió Juan Manuel de Rosas su segundo período de gobierno en Buenos Aires, marcando el inicio de su prolongada hegemonía?",
+    "o": ["1835", "1831", "1840"],
+    "a": "1835",
+    "r": "Tras el asesinato de Facundo Quiroga, Rosas retornó al poder en 1835 con la suma del poder público otorgada por la legislatura."
+  },
+  {
+    "q": "¿Qué potencia europea bloqueó el puerto de Buenos Aires entre 1838 y 1840 para presionar a la política comercial de Rosas?",
+    "o": ["Francia", "Gran Bretaña", "Imperio Ruso"],
+    "a": "Francia",
+    "r": "El bloqueo francés de 1838 buscó obtener privilegios comerciales y protestar por el trato a ciudadanos galos."
+  },
+  {
+    "q": "¿Qué nombre recibió la sublevación de terratenientes y opositores contra el régimen de Rosas en el sur de Buenos Aires en 1839?",
+    "o": ["Revolución de los Libres del Sur", "Rebelión de los Hacendados", "Revuelta del Talar"],
+    "a": "Revolución de los Libres del Sur",
+    "r": "Los Libres del Sur articularon una conspiración contra Rosas que fue severamente aplastada en la batalla de Chascomús."
+  },
+  {
+    "q": "¿Qué célebre marino británico y francés comandó la fuerza combinada que protagonizó el bloqueo anglo-francés del Río de la Plata en la década de 1840?",
+    "o": ["Comodoro Samuel Hotham y Capitán François Tréhouart", "John Whitelocke y William Beresford", "Sir Home Popham y Manuel Lobo"],
+    "a": "Comodoro Samuel Hotham y Capitán François Tréhouart",
+    "r": "Las flotas anglo-francesas intentaron abrir los ríos interiores a la navegación comercial desafiando la soberanía de Rosas."
+  },
+  {
+    "q": "¿En qué heroico combate fluvial celebrado en noviembre de 1845 las fuerzas de la Confederación resistieron a la flota anglo-francesa?",
+    "o": ["Combate de la Vuelta de Obligado", "Combate de San Lorenzo", "Batalla de Juncal"],
+    "a": "Combate de Obligado",
+    "r": "La defensa de la Vuelta de Obligado simbolizó la resistencia soberana frente a las potencias imperiales europeas."
+  },
+  {
+    "q": "¿Qué tratado firmó Gran Bretaña en 1849 reconociendo la soberanía argentina sobre sus ríos interiores y poniendo fin al bloqueo?",
+    "o": ["Tratado Arana-Southern", "Tratado de Paz y Amistad", "Tratado de Límites"],
+    "a": "Tratado Arana-Southern",
+    "r": "El ministro Felipe Arana selló el acuerdo con Gran Bretaña que supuso un gran triunfo diplomático para el régimen rosista."
+  },
+  {
+    "q": "¿Qué caudillo entrerriano se pronunció contra Juan Manuel de Rosas a principios de 1851, rompiendo la hegemonía porteña?",
+    "o": ["Justo José de Urquiza", "Ricardo López Jordán", "Leandro N. Alem"],
+    "a": "Justo José de Urquiza",
+    "r": "El Pronunciamiento de Urquiza en mayo de 1851 abrió el camino para la conformación de una gran alianza contra Rosas."
+  },
+  {
+    "q": "¿Cómo se denominó la coalición militar integrada por Entre Ríos, Corrientes, Brasil y Uruguay que marchó contra Rosas?",
+    "o": ["Ejército Grande", "Ejército Unido Libertador", "Coalición del Norte"],
+    "a": "Ejército Grande",
+    "r": "El Ejército Grande al mando de Urquiza cruzó el río Paraná para enfrentar a las fuerzas de Buenos Aires."
+  },
+  {
+    "q": "¿En qué decisiva batalla librada en febrero de 1852 fue derrotado definitivamente Juan Manuel de Rosas?",
+    "o": ["Batalla de Caseros", "Batalla de Pavón", "Batalla de Cepeda"],
+    "a": "Batalla de Caseros",
+    "r": "La batalla de Caseros del 3 de febrero de 1852 selló la caída política de Rosas y su exilio en Inglaterra."
+  },
+  {
+    "q": "¿Qué acuerdo político histórico firmaron los gobernadores provinciales en mayo de 1852 para convocar a un congreso constituyente en Santa Fe?",
+    "o": ["Acuerdo de San Nicolás", "Pacto de San José de Flores", "Protocolo de Palermo"],
+    "a": "Acuerdo de San Nicolás",
+    "r": "El Acuerdo de San Nicolás sentó las bases institucionales para sancionar la Constitución Nacional de 1853."
+  },
+  {
+    "q": "¿Qué importante provincia argentina decidió mantenerse separada de la Confederación tras la sanción de la Constitución de 1853?",
+    "o": ["Buenos Aires", "Córdoba", "Corrientes"],
+    "a": "Buenos Aires",
+    "r": "La provincia de Buenos Aires rechazó la Constitución de 1853 y se mantuvo como un estado independiente durante gran parte de la década de 1850."
+  },
+  {
+    "q": "¿Quién fue el primer presidente constitucional de la Confederación Argentina elegido en 1854 con sede de gobierno en Paraná?",
+    "o": ["Justo José de Urquiza", "Santiago Derqui", "Bartolomé Mitre"],
+    "a": "Justo José de Urquiza",
+    "r": "Justo José de Urquiza asumió la presidencia de la Confederación Argentina con capital transitoria en la ciudad de Paraná."
+  },
+  {
+    "q": "¿Cómo se llamó el pacto firmado en 1859 que permitió la reincorporación formal de la provincia de Buenos Aires a la Confederación tras una reforma constitucional?",
+    "o": ["Pacto de San José de Flores", "Acuerdo de San Nicolás", "Tratado del Pilar"],
+    "a": "Pacto de San José de Flores",
+    "r": "El Pacto de San José de Flores de 1859 estableció los términos para que Buenos Aires aceptara la Constitución nacional."
+  },
+  {
+    "q": "¿Qué decisiva batalla militar de 1861 librada en la provincia de Santa Fe enfrentó al ejército de la Confederación con las fuerzas porteñas de Bartolomé Mitre?",
+    "o": ["Batalla de Pavón", "Batalla de Cepeda", "Batalla de Caseros"],
+    "a": "Batalla de Pavón",
+    "r": "La batalla de Pavón en 1861 alteró el equilibrio político nacional, permitiendo que el liderazgo porteño pasara a controlar el gobierno central."
+  },
+  {
+    "q": "¿Quién asumió la presidencia de la nación reunificada tras la victoria de Pavón y la retirada del presidente Santiago Derqui?",
+    "o": ["Bartolomé Mitre", "Domingo Faustino Sarmiento", "Adolfo Alsina"],
+    "a": "Bartolomé Mitre",
+    "r": "Bartolomé Mitre fue designado presidente constitucional de la República Argentina unificada a partir de 1862."
+  },
+  {
+    "q": "¿Qué ciudad fue designada como capital provisional de la República tras la unificación institucional bajo el mitrismo?",
+    "o": ["Buenos Aires", "Paraná", "Rosario"],
+    "a": "Buenos Aires",
+    "r": "Buenos Aires continuó operando como el centro político y económico del país bajo la presidencia de Mitre."
+  },
+  {
+    "q": "¿Qué devastador conflicto bélico internacional enfrentó a la Argentina, Brasil y Uruguay contra el Paraguay entre 1865 y 1870?",
+    "o": ["Guerra de la Triple Alianza", "Guerra del Chaco", "Guerra del Brasil"],
+    "a": "Guerra de la Triple Alianza",
+    "r": "La Guerra de la Triple Alianza movilizó a los ejércitos de la región en un conflicto de proporciones devastadoras para el Paraguay."
+  },
+  {
+    "q": "¿Qué presidente sucedió a Bartolomé Mitre en el año 1868, impulsando fuertemente la educación pública y la radicación de escuelas?",
+    "o": ["Domingo Faustino Sarmiento", "Nicolás Avellaneda", "Julio Argentino Roca"],
+    "a": "Domingo Faustino Sarmiento",
+    "r": "Domingo Faustino Sarmiento asumió la presidencia en 1868, priorizando la modernización educativa y cultural del país."
+  },
+  {
+    "q": "¿Qué importante levantamiento federal en el interior lideró el caudillo Ricardo López Jordán en Entre Ríos a partir de 1870?",
+    "o": ["La rebelión jordanista", "La revolución de los colorados", "El levantamiento de los libres"],
+    "a": "La rebelión jordanista",
+    "r": "Ricardo López Jordán encabezó una violenta insurrección federal contra la intervención y el centralismo del gobierno nacional."
+  },
+  {
+    "q": "¿Qué presidente asumió el cargo en 1874 debiendo enfrentar una revolución armada impulsada por Bartolomé Mitre?",
+    "o": ["Nicolás Avellaneda", "Adolfo Alsina", "Carlos Tejedor"],
+    "a": "Nicolás Avellaneda",
+    "r": "Nicolás Avellaneda asumió la presidencia en medio de cuestionadas elecciones y sofocó la sublevación mitrista de 1874."
+  },
+  {
+    "q": "¿Qué célebre ley económica promulgó el gobierno de Nicolás Avellaneda en 1876 para fomentar la colonización agrícola y la llegada de inmigrantes?",
+    "o": ["Ley de Avellaneda (Ley de Inmigración y Colonización)", "Ley de Enfiteusis", "Ley de Aduanas"],
+    "a": "Ley de Inmigración y Colonización",
+    "r": "La Ley Avellaneda reguló y facilitó el flujo migratorio europeo y el asentamiento de colonos en tierras fiscales."
+  },
+  {
+    "q": "¿Qué ministro de Guerra ideó y comenzó a ejecutar el plan sistemático para el avance militar sobre los territorios indígenas pampeanos en 1878?",
+    "o": ["Adolfo Alsina", "Julio Argentino Roca", "Benjamín Victorica"],
+    "a": "Adolfo Alsina",
+    "r": "Adolfo Alsina proyectó la construcción de una gran zanja defensiva y el avance gradual sobre las tolderías."
+  },
+  {
+    "q": "¿Qué general militar continuó la campaña bélica hacia el sur tras la muerte de Alsina, logrando la ocupación masiva de la Patagonia en 1879?",
+    "o": ["Julio Argentino Roca", "Conrado Villegas", "Eduardo Racedo"],
+    "a": "Julio Argentino Roca",
+    "r": "Julio Argentino Roca comandó la llamada Conquista del Desierto de 1879, incorporando vastos territorios a la soberanía efectiva del Estado."
+  },
+  {
+    "q": "¿Cómo se resolvió finalmente el largo litigio por la capitalización de la provincia de Buenos Aires en el año 1880?",
+    "o": ["Federalización de la ciudad de Buenos Aires", "Traslado de la capital a Rosario", "Independencia de la provincia"],
+    "a": "Federalización de la ciudad de Buenos Aires",
+    "r": "La ley de federalización de 1880 separó la ciudad de Buenos Aires de su provincia, convirtiéndola en capital federal de la República."
+  },
+  {
+    "q": "¿Qué general asumió la presidencia de la Nación en octubre de 1880 inaugurando un largo período de predominio político conservador?",
+    "o": ["Julio Argentino Roca", "Miguel Juárez Celman", "Carlos Pellegrini"],
+    "a": "Julio Argentino Roca",
+    "r": "Julio A. Roca asumió la primera magistratura respaldado por el Partido Autonomista Nacional (PAN)."
+  },
+  {
+    "q": "¿Qué trascendental ley laica de educación primaria obligatoria, gratuita y gradual se sancionó bajo la presidencia de Roca en 1884?",
+    "o": ["Ley 1420", "Ley Sáenz Peña", "Ley Ricchieri"],
+    "a": "Ley 1420",
+    "r": "La sanción de la Ley 1420 marcó un hito fundamental en la alfabetización y la laicización escolar del Estado argentino."
+  },
+  {
+    "q": "¿Qué ley de registro civil y matrimonio civil se aprobó en 1884 generando fuertes debates con la Iglesia Católica?",
+    "o": ["Ley de Matrimonio Civil", "Ley de Cultos", "Ley de Radicación"],
+    "a": "Ley de Matrimonio Civil",
+    "r": "La instauración del matrimonio civil obligó a la secularización de los registros familiares en todo el país."
+  },
+  {
+    "q": "¿Qué presidente sucedió a Julio A. Roca en 1886, cuyo gobierno terminó envuelto en una grave crisis económica y financiera?",
+    "o": ["Miguel Juárez Celman", "Carlos Pellegrini", "Luis Sáenz Peña"],
+    "a": "Miguel Juárez Celman",
+    "r": "Miguel Juárez Celman impulsó el modelo del 'Unicato', concentrando el poder político hasta el estallido de la crisis de 1890."
+  },
+  {
+    "q": "¿Cómo se denominó al movimiento cívico y armado liderado por Leandro N. Alem que estalló en julio de 1890 contra el gobierno de Juárez Celman?",
+    "o": ["Revolución del Parque", "Revolución Radical", "Motín de los Libres"],
+    "a": "Revolución del Parque",
+    "r": "La Revolución del Parque de 1890 aglutinó a la oposición cívica y militar, provocando la renuncia del presidente Juárez Celman."
+  },
+  {
+    "q": "¿Qué vicepresidente asumió el poder tras la renuncia de Juárez Celman para estabilizar la economía y las finanzas nacionales?",
+    "o": ["Carlos Pellegrini", "José Evaristo Uriburu", "Manuel Quintana"],
+    "a": "Carlos Pellegrini",
+    "r": "Carlos Pellegrini asumió la presidencia en 1890, fundando el Banco de la Nación Argentina y saneando la crisis monetaria."
+  },
+  {
+    "q": "¿Qué importante partido político moderno fundó Leandro N. Alem en julio de 1891 tras la crisis y la agitación institucional?",
+    "o": ["Unión Cívica Radical", "Partido Socialista", "Partido Demócrata Progresista"],
+    "a": "Unión Cívica Radical",
+    "r": "La Unión Cívica Radical (UCR) nació como expresión política opositora al régimen conservador y en defensa de la pureza del sufragio."
+  },
+  {
+    "q": "¿Qué célebre ley electoral de carácter secreto y obligatorio se sancionó en 1912 bajo la presidencia de Roque Sáenz Peña?",
+    "o": ["Ley Sáenz Peña", "Ley Palacios", "Ley de Enlistamiento"],
+    "a": "Ley Sáenz Peña",
+    "r": "La Ley Sáenz Peña garantizó el voto secreto, obligatorio y universal para varones, poniendo fin al fraude institucional conservador."
+  },
+  {
+    "q": "¿Quién fue el primer presidente electo bajo los nuevos comicios limpios de la Ley Sáenz Peña en 1916?",
+    "o": ["Hipólito Yrigoyen", "Marcelo T. de Alvear", "Victorino de la Plaza"],
+    "a": "Hipólito Yrigoyen",
+    "r": "Hipólito Yrigoyen asumió la presidencia en 1916, marcando el primer acceso del radicalismo al poder nacional."
+  },
+  {
+    "q": "¿Qué movimiento de reforma universitaria estudiantil estalló en 1918 exigiendo la autonomía y la modernización académica en el país?",
+    "o": ["La Reforma Universitaria de Córdoba", "El Mayo Universitario", "La Rebelión Académica"],
+    "a": "La Reforma Universitaria",
+    "r": "El grito de la Reforma Universitaria de 1918 en Córdoba propugnó la democratización de la enseñanza superior en América Latina."
+  },
+  {
+    "q": "¿Qué trágicos sucesos de represión obrera ocurrieron en los talleres metalúrgicos Vasena en Buenos Aires a principios de enero de 1919?",
+    "o": ["La Semana Trágica", "Los sucesos de la Patagonia Trágica", "La masacre obrera"],
+    "a": "La Semana Trágica",
+    "r": "La represión a la huelga general en Buenos Aires durante la Semana Trágica dejó un saldo de cientos de muertos y heridos."
+  },
+  {
+    "q": "¿Qué conflicto de huelgas rurales reprimidas militarmente ocurrió en la provincia de Santa Cruz a principios de los años veinte?",
+    "o": ["La Patagonia Rebelde", "La rebelión rural", "El levantamiento patagónico"],
+    "a": "La Patagonia Rebelde",
+    "r": "Las huelgas de peones rurales en el sur argentino fueron violentamente reprimidas por el ejército al mando del coronel Varela."
+  },
+  {
+    "q": "¿Qué presidente de extracción radical sucedió a Yrigoyen en el año 1922, gobernando en un período de bonanza económica?",
+    "o": ["Marcelo T. de Alvear", "Agustín P. Justo", "Roberto M. Ortiz"],
+    "a": "Marcelo T. de Alvear",
+    "r": "Marcelo T. de Alvear asumió la presidencia en 1922, distanciándose políticamente del yrigoyenismo tradicional."
+  },
+  {
+    "q": "¿Qué importante empresa estatal energética se fundó en 1922 durante la administración de Alvear bajo la dirección de Enrique Mosconi?",
+    "o": ["Yacimientos Petrolíferos Fiscales (YPF)", "Gas del Estado", "Agua y Energía"],
+    "a": "YPF",
+    "r": "YPF se constituyó como la primera empresa petrolera estatal integrada de Latinoamérica orientada al autoabastecimiento."
+  },
+  {
+    "q": "¿Qué presidente constitucional fue derrocado por el primer golpe de Estado militar de la historia argentina moderna el 6 de septiembre de 1930?",
+    "o": ["Hipólito Yrigoyen", "José Félix Uriburu", "Agustín P. Justo"],
+    "a": "Hipólito Yrigoyen",
+    "r": "El golpe militar de 1930, encabezado por el general José Félix Uriburu, derrocó al segundo gobierno de Hipólito Yrigoyen."
+  },
+  {
+    "q": "¿Cómo se denominó al período político caracterizado por el fraude electoral sistemático y el predominio conservador iniciado tras los comicios de 1931?",
+    "o": ["La Década Infame", "La Restauración Conservadora", "El Régimen Concordado"],
+    "a": "La Década Infame",
+    "r": "El período de la Década Infame estuvo marcado por gobiernos conservadores sostenidos mediante el fraude patriótico y la crisis agroexportadora."
+  },
+  {
+    "q": "¿Qué tratado comercial bilateral firmaron la Argentina y el Reino Unido en 1933 para asegurar cuotas de exportación de carne a cambio de ventajas británicas?",
+    "o": ["Pacto Roca-Runciman", "Tratado Malbrán-Dillon", "Pacto de Londres"],
+    "a": "Pacto Roca-Runciman",
+    "r": "El Pacto Roca-Runciman fue duramente criticado por la oposición debido a las grandes concesiones económicas otorgadas a los intereses británicos."
+  },
+  {
+    "q": "¿Qué influyente senador conservador denunció públicamente la entrega económica y los negociados del pacto cárnico en la década de 1930?",
+    "o": ["Lisandro de la Torre", "Alfredo Palacios", "Federico Pinedo"],
+    "a": "Lisandro de la Torre",
+    "r": "Lisandro de la Torre lideró las investigaciones parlamentarias que derivaron en el trágico atentado dentro del recinto del Senado en 1935."
+  },
+  {
+    "q": "¿Qué senador santafecino fue asesinado a balazos en plena sesión del Congreso en 1935 cuando intentaba defender a Lisandro de la Torre?",
+    "o": ["Enzo Bordabehere", "Carlos Washington Lencinas", "Justo José de Urquiza"],
+    "a": "Enzo Bordabehere",
+    "r": "El asesinato de Enzo Bordabehere marcó uno de los episodios más violentos y oscuros de la política parlamentaria de la Década Infame."
+  },
+  {
+    "q": "¿Qué importante organismo de regulación económica y control de granos e industrias se creó a mediados de la década de 1930 para paliar la crisis?",
+    "o": ["Juntas Reguladoras de Producción", "Banco Central de la República Argentina", "Corporación de Transportes"],
+    "a": "Juntas Reguladoras de Producción",
+    "r": "Las Juntas Reguladoras intervinieron en la compra y venta de cosechas para evitar la ruina de los productores agropecuarios."
+  },
+  {
+    "q": "¿Qué institución bancaria central se fundó en la República Argentina en el año 1935 bajo la asesoría del economista británico Otto Niemeyer?",
+    "o": ["Banco Central de la República Argentina (BCRA)", "Banco Hipotecario Nacional", "Banco de la Provincia"],
+    "a": "Banco Central de la República Argentina",
+    "r": "El BCRA se creó para centralizar la emisión monetaria y regular el sistema financiero en medio de la crisis global."
+  },
+  {
+    "q": "¿Qué militar y político asumió la presidencia de la Nación en 1943 tras el golpe de Estado que derrocó al presidente Ramón Castillo?",
+    "o": ["General Arturo Rawson", "General Pedro Pablo Ramírez", "General Edelmiro J. Farrell"],
+    "a": "General Arturo Rawson",
+    "r": "El golpe del 4 de junio de 1943 puso fin al fraude de la Década Infame, siendo Rawson el primer presidente provisional de corta duración."
+  },
+  {
+    "q": "¿Qué destacado militar ocupó inicialmente la modesta Secretaría de Trabajo y Previsión a fines de 1943, desde donde construyó su base de poder político?",
+    "o": ["Coronel Juan Domingo Perón", "General Edelmiro J. Farrell", "Coronel Domingo Mercante"],
+    "a": "Coronel Juan Domingo Perón",
+    "r": "Desde la Secretaría de Trabajo y Previsión, Perón impulsó una legislación laboral sin precedentes que atrajo el apoyo masivo de los sindicatos."
+  },
+  {
+    "q": "¿Qué trascendental suceso de movilización popular obrera ocurrió el 17 de octubre de 1945 exigiendo la liberación de Juan Domingo Perón?",
+    "o": ["El Día de la Lealtad", "La Revolución de Octubre", "La Marcha de la Constitución"],
+    "a": "El Día de la Lealtad",
+    "r": "El 17 de octubre de 1945 se convirtió en la fecha fundacional del movimiento peronista con la masiva concentración en la Plaza de Mayo."
+  },
+  {
+    "q": "¿Quién triunfó en las elecciones presidenciales democráticas celebradas en febrero de 1946 con el apoyo del movimiento obrero?",
+    "o": ["Juan Domingo Perón", "José Tamborini", "Rodolfo Moreno"],
+    "a": "Juan Domingo Perón",
+    "r": "Perón ganó los comicios de 1946 al frente de la fórmula del Partido Laborista, derrotando a la Unión Democrática."
+  },
+  {
+    "q": "¿Qué destacada figura política y social impulsó la ayuda social masiva y los derechos cívicos de la mujer durante la primera presidencia de Perón?",
+    "o": ["Eva Perón", "Alicia Moreau de Justo", "Victoria Ocampo"],
+    "a": "Eva Perón",
+    "r": "Eva Perón lideró la Fundación Eva Perón y abanderó la lucha por el sufragio femenino en la Argentina."
+  },
+  {
+    "q": "¿Qué ley histórica impulsada por Evita se sancionó en 1947 otorgando el derecho al voto universal a las mujeres argentinas?",
+    "o": ["Ley 13010 (Voto Femenino)", "Ley Sáenz Peña", "Ley de Derechos Cívicos"],
+    "a": "Ley 13010",
+    "r": "La Ley 13010 consagró la igualdad de derechos políticos para hombres y mujeres en todo el territorio nacional."
+  },
+  {
+    "q": "¿Cómo se llamó el organismo estatal de comercialización exterior de granos y carnes creado durante el primer gobierno peronista?",
+    "o": ["IAPI (Instituto Argentino de Promoción del Intercambio)", "YPF", "AGUA"],
+    "a": "IAPI",
+    "r": "El IAPI monopolizó las exportaciones agropecuarias, capturando la renta agraria para financiar la industrialización y los planes sociales."
+  },
+  {
+    "q": "¿Qué nueva Constitución nacional se sancionó en el año 1949 incorporando los derechos sociales y la reelección presidencial?",
+    "o": ["Constitución de 1949", "Constitución de 1853", "Estatuto Fundamental"],
+    "a": "Constitución de 1949",
+    "r": "La Carta Magna de 1949 consagró constitucionalmente los derechos del trabajador, de la familia, de la ancianidad y de la educación."
+  },
+  {
+    "q": "¿En qué año se celebraron las primeras elecciones presidenciales en la Argentina donde las mujeres pudieron votar y ser elegidas?",
+    "o": ["1951", "1946", "1955"],
+    "a": "1951",
+    "r": "Los comicios de noviembre de 1951 marcaron el debut histórico del sufragio femenino a escala nacional, resultando reelecto Perón."
+  },
+  {
+    "q": "¿Qué fallido levantamiento militar contra el gobierno de Perón protagonizó el general Benjamín Menéndez en septiembre de 1951?",
+    "o": ["La intentona de Benjamín Menéndez", "La Revolución Libertadora", "El golpe de Valle"],
+    "a": "La intentona de Benjamín Menéndez",
+    "r": "El alzamiento militar de septiembre de 1951 fue sofocado rápidamente por la cúpula leal a las fuerzas armadas y al gobierno."
+  },
+  {
+    "q": "¿En qué fecha falleció Eva Perón, generando una profunda conmoción popular en todo el país?",
+    "o": ["26 de Julio de 1952", "17 de Octubre de 1951", "16 de Septiembre de 1955"],
+    "a": "26 de Julio de 1952",
+    "r": "La muerte de Eva Perón a los 33 años dejó un vacío emocional masivo en el movimiento obrero y el peronismo."
+  },
+  {
+    "q": "¿Qué trágico atentado terrorista con bombas perpetrado en junio de 1955 en la Plaza de Mayo dejó cientos de muertos y heridos?",
+    "o": ["El bombardeo a Plaza de Mayo", "La masacre de Trelew", "El atentado al Congreso"],
+    "a": "El bombardeo a Plaza de Mayo",
+    "r": "Aviones de la Aviación Naval y de la Fuerza Aérea bombardearon la Plaza de Mayo intentando asesinar al presidente Perón."
+  },
+  {
+    "q": "¿Cómo se denominó el golpe de Estado cívico-militar que derrocó al segundo gobierno de Juan Domingo Perón en septiembre de 1955?",
+    "o": ["Revolución Libertadora", "Revolución Argentina", "Revolución de Junio"],
+    "a": "Revolución Libertadora",
+    "r": "La autodenominada Revolución Libertadora, liderada por Eduardo Lonardi y Pedro Eugenio Aramburu, tomó el poder y proscribió al peronismo."
+  },
+  {
+    "q": "¿Qué general asumió inicialmente la presidencia de facto tras el golpe de 1955, siendo desplazado meses después por un sector más duro?",
+    "o": ["Eduardo Lonardi", "Pedro Eugenio Aramburu", "Isaac Rojas"],
+    "a": "Eduardo Lonardi",
+    "r": "Lonardi asumió bajo la proclama 'ni vencedores ni vencidos', pero su gestión fue reemplazada pronto por el sector de Aramburu."
+  },
+  {
+    "q": "¿Qué sangriento levantamiento peronista armado liderado por el general Juan José Valle contra la dictadura militar ocurrió en junio de 1956?",
+    "o": ["La sublevación de Valle", "El levantamiento de Tucumán", "La toma de los cuarteles"],
+    "a": "La sublevación de Valle",
+    "r": "El intento insurreccional del general Valle fue reprimido con fusilamientos clandestinos masivos decretados por la dictadura gobernante."
+  },
+  {
+    "q": "¿Qué decreto ley dictado por la dictadura de Aramburu prohibió nombrar a Perón y mencionar al partido peronista en la vida pública?",
+    "o": ["Decreto Ley 4161", "Decreto de proscripción", "Ley marcial permanente"],
+    "a": "Decreto Ley 4161",
+    "r": "El Decreto Ley 4161 criminalizó cualquier manifestación, símbolo o mención al peronismo bajo severas penas judiciales."
+  },
+  {
+    "q": "¿Qué reforma constitucional impulsó la dictadura militar en 1957 para anular la carta magna de 1949 y reponer la de 1853?",
+    "o": ["Convención Constituyente de 1957", "Reforma de Santa Fe", "Pacto de Olivos"],
+    "a": "Convención Constituyente de 1957",
+    "r": "La Convención de 1957 introdujo el célebre artículo 14 bis consagrando los derechos laborales básicos en el texto constitucional."
+  },
+  {
+    "q": "¿Quién resultó electo presidente de la Nación en las elecciones de 1958 bajo la proscripción del peronismo y mediante un pacto secreto con Perón?",
+    "o": ["Arturo Frondizi", "Arturo Illia", "Ricardo Balbín"],
+    "a": "Arturo Frondizi",
+    "r": "Arturo Frondizi ganó la presidencia en 1958 con votos peronistas tras acordar políticas de desarrollo económico y fin de la proscripción parcial."
+  },
+  {
+    "q": "¿Qué modelo económico y político impulsó la administración de Arturo Frondizi junto a su asesor Rogelio Frigerio?",
+    "o": ["El Desarrollismo", "La sustitución de importaciones clásica", "El librecambismo agrario"],
+    "a": "El Desarrollismo",
+    "r": "El desarrollismo apostó a la radicación de capitales extranjeros, la industria pesada, el petróleo y la petroquímica."
+  },
+  {
+    "q": "¿Qué trascendental plan económico y petrolero concretó el gobierno de Frondizi para lograr el autoabastecimiento energético?",
+    "o": ["Contratos petroleros con empresas extranjeras", "Nacionalización de YPF", "Expropiación minera"],
+    "a": "Contratos petroleros",
+    "r": "La firma de contratos con petroleras extranjeras generó intensos debates políticos y presiones castrenses constantes."
+  },
+  {
+    "q": "¿Qué presidente civil asumió en 1963 tras ganar unos comicios condicionados por nuevas proscripciones y constantes presiones militares?",
+    "o": ["Arturo Illia", "Arturo Frondizi", "José María Guido"],
+    "a": "Arturo Illia",
+    "r": "Arturo Illia asumió la presidencia al frente de la Unión Cívica Radical del Pueblo, impulsando una política económica nacionalista."
+  },
+  {
+    "q": "¿Qué populares leyes económicas y de medicamentos aprobó el gobierno de Arturo Illia en la primera mitad de los años sesenta?",
+    "o": ["Ley de Medicamentos (Ley Oñativia) y Ley del Salario Mínimo", "Ley de Arrendamientos", "Ley de Abastecimiento"],
+    "a": "Ley de Medicamentos",
+    "r": "La anulación de los contratos petroleros y la regulación farmacéutica de Oñativia enemistaron a Illia con corporaciones y militares."
+  },
+  {
+    "q": "¿Cómo se denominó la dictadura militar encabezada por Juan Carlos Onganía que derrocó al presidente Arturo Illia en junio de 1966?",
+    "o": ["Revolución Argentina", "Revolución Libertadora", "Proceso de Reorganización Nacional"],
+    "a": "Revolución Argentina",
+    "r": "La Revolución Argentina pretendió instaurar un régimen de tipo corporativo y permanente sin plazos electorales fijos."
+  },
+  {
+    "q": "¿Qué violenta represión estudiantil y docente en las universidades nacionales ocurrió en julio de 1966 bajo la dictadura de Onganía?",
+    "o": ["La Noche de los Bastones Largos", "El Cordobazo", "La masacre de la plata"],
+    "a": "La Noche de los Bastones Largos",
+    "r": "La intervención policial a las facultades destruyó laboratorios y provocó el exilio masivo de científicos e intelectuales argentinos."
+  },
+  {
+    "q": "¿Qué masiva pueblada obrera y estudiantil estalló en mayo de 1969 en la provincia de Córdoba contra la dictadura militar?",
+    "o": ["El Cordobazo", "El Rosariazo", "El Mendozazo"],
+    "a": "El Cordobazo",
+    "r": "El Cordobazo marcó el principio del fin para la dictadura de Onganía, debilitando su poder político y agitando la resistencia social."
+  },
+  {
+    "q": "¿Qué histórica pueblada obrera y popular sacudió a la ciudad de Rosario en mayo de 1969, poco antes del Cordobazo?",
+    "o": ["El Rosariazo", "El Viborazo", "El Tucumanazo"],
+    "a": "El Rosariazo",
+    "r": "Las masivas protestas estudiantiles y obreras en Rosario ante el asesinato del estudiante Juan José Cabral marcaron un hito de resistencia contra la dictadura."
+  },
+  {
+    "q": "¿Qué nueva rebelión popular estalló en Córdoba en marzo de 1971 acelerando la caída del dictador Roberto Marcelo Levingston?",
+    "o": ["El Viborazo", "El Mendozazo", "El Catamarqueño"],
+    "a": "El Viborazo",
+    "r": "La segunda gran pueblada cordobesa, conocida popularmente como el Viborazo, desestabilizó definitivamente a la facción militar gobernante."
+  },
+  {
+    "q": "¿Qué general militar asumió la presidencia de facto en 1971 con el mandato de convocar a elecciones y abrir una salida política negociada?",
+    "o": ["Alejandro Agustín Lanusse", "Juan Carlos Onganía", "Roberto Marcelo Levingston"],
+    "a": "Alejandro Agustín Lanusse",
+    "r": "Lanusse instrumentó el llamado Gran Acuerdo Nacional (GAN) intentando habilitar una salida electoral tutelada por los militares."
+  },
+  {
+    "q": "¿Qué trágica masacre de presos políticos ocurrió en la base naval de Trelew en agosto de 1972 durante el régimen de Lanusse?",
+    "o": ["La masacre de Trelew", "Los fusilamientos de José León Suárez", "La noche de los lápices"],
+    "a": "La masacre de Trelew",
+    "r": "El fusilamiento de diecinueve militantes de organizaciones armadas en la base aeronaval Almirante Zar conmocionó a la opinión pública nacional."
+  },
+  {
+    "q": "¿Quién fue el candidato presidencial del peronismo que triunfó en las elecciones de marzo de 1973 bajo el lema 'Cámpora al gobierno, Perón al poder'?",
+    "o": ["Héctor J. Cámpora", "Vicente Solano Lima", "Antonio Cafiero"],
+    "a": "Héctor J. Cámpora",
+    "r": "Cámpora asumió la presidencia tras el levantamiento de las proscripciones, abriendo una breve y convulsionada primavera política."
+  },
+  {
+    "q": "¿En qué fecha exacta retornó definitivamente a la Argentina Juan Domingo Perón tras casi dieciocho años de exilio?",
+    "o": ["20 de Junio de 1973", "17 de Octubre de 1972", "25 de Mayo de 1973"],
+    "a": "20 de Junio de 1973",
+    "r": "El regreso de Perón en junio de 1973 estuvo marcado por los trágicos enfrentamientos armados entre facciones internas del peronismo en Ezeiza."
+  },
+  {
+    "q": "¿Qué fórmula presidencial ganó las elecciones anticipadas de septiembre de 1973 consagrando el tercer mandato constitucional de Juan Domingo Perón?",
+    "o": ["Juan Domingo Perón y María Estela Martínez de Perón", "Héctor Cámpora y Vicente Solano Lima", "Ricardo Balbín y Fernando de la Rúa"],
+    "a": "Juan Domingo Perón y María Estela Martínez de Perón",
+    "r": "Perón asumió la presidencia acompañado por su esposa como vicepresidenta en medio de profundas tensiones políticas."
+  },
+  {
+    "q": "¿A qué fecha se produjo el fallecimiento del presidente Juan Domingo Perón, asumiendo la presidencia su vicepresidenta?",
+    "o": ["1 de Julio de 1974", "12 de Octubre de 1975", "24 de Marzo de 1976"],
+    "a": "1 de Julio de 1974",
+    "r": "La muerte de Perón en julio de 1974 dejó al país en una extrema vulnerabilidad institucional frente a la escalada de violencia política."
+  },
+  {
+    "q": "¿Cómo se denominó la organización parapolicial de ultraderecha creada y amparada desde el Ministerio de Bienestar Social durante el gobierno peronista?",
+    "o": ["Alianza Anticomunista Argentina (Triple A)", "Comando de Organización", "Concentración Nacional Universitaria"],
+    "a": "Triple A",
+    "r": "La Triple A, dirigida por José López Rega, operó mediante secuestros, atentados y asesinatos sistemáticos contra opositores y militantes."
+  },
+  {
+    "q": "¿Qué severo ajuste económico y devaluación ejecutado por el ministro Celestino Rodrigo a mediados de 1975 desató una aguda crisis inflacionaria y social?",
+    "o": ["El Rodrigazo", "El Plan Austral", "La tablita cambiaria"],
+    "a": "El Rodrigazo",
+    "r": "El plan de shock económico conocido como el Rodrigazo provocó una gigantesca pérdida salarial y masivas protestas gremiales."
+  },
+  {
+    "q": "¿Cómo se denominó el último y más sangriento golpe de Estado cívico-militar que derrocó a María Estela Martínez de Perón?",
+    "o": ["Proceso de Reorganización Nacional", "Revolución Argentina", "Revolución Libertadora"],
+    "a": "Proceso de Reorganización Nacional",
+    "r": "La Junta Militar integrada por Jorge Rafael Videla, Emilio Massera y Orlando Agosti tomó el poder el 24 de marzo de 1976."
+  },
+  {
+    "q": "¿Qué aberrante método sistemático de represión ilegal implementó la dictadura militar para aniquilar a la oposición política y social?",
+    "o": ["Desaparición forzada de personas", "Fusilamientos públicos masivos", "Deportaciones masivas al exterior"],
+    "a": "Desaparición forzada de personas",
+    "r": "La dictadura instaló centros clandestinos de detención y tortura, operando la desaparición sistemática de miles de ciudadanos."
+  },
+  {
+    "q": "¿Qué emblemático organismo de derechos humanos fundaron las madres de desaparecidos en la Plaza de Mayo durante la dictadura militar?",
+    "o": ["Madres de Plaza de Mayo", "Asamblea Permanente por los Derechos Humanos", "Centro de Estudios Legales y Sociales"],
+    "a": "Madres de Plaza de Mayo",
+    "r": "Las Madres y Abuelas de Plaza de Mayo iniciaron sus rondas públicas desafiando el estado de sitio para reclamar por sus hijos y nietos."
+  },
+  {
+    "q": "¿Qué país organizó y albergó la Copa Mundial de Fútbol de la FIFA en el año 1978 bajo la severa dictadura militar?",
+    "o": ["Argentina", "España", "México"],
+    "a": "Argentina",
+    "r": "La dictadura utilizó la realización del mundial de fútbol de 1978 como herramienta de propaganda internacional en plena vigencia de violaciones a los derechos humanos."
+  },
+  {
+    "q": "¿Qué grave conflicto limítrofe por el canal Beagle estuvo a punto de desencadenar una guerra entre Argentina y Chile a fines de 1978?",
+    "o": ["Conflicto del Beagle", "Guerra de la Patagonia", "Disputa de la Puna"],
+    "a": "Conflicto del Beagle",
+    "r": "La intervención mediadora del Papa Juan Pablo II logró evitar el conflicto armado austral entre ambas naciones hermanas."
+  },
+  {
+    "q": "¿Qué guerra soberana emprendió la Junta Militar argentina en abril de 1982 contra el Reino Unido por la recuperación de las islas del Atlántico Sur?",
+    "o": ["Guerra de Malvinas", "Guerra del Atlántico", "Conflicto de las Georgias"],
+    "a": "Guerra de Malvinas",
+    "r": "El desembarco militar en las Islas Malvinas en abril de 1982 movilizó a una generación de jóvenes soldados en un desigual conflicto bélico."
+  },
+  {
+    "q": "¿Qué presidente democrático asumió el poder el 10 de diciembre de 1983 poniendo fin al período de la última dictadura militar?",
+    "o": ["Raúl Alfonsín", "Carlos Menem", "Antonio Cafiero"],
+    "a": "Raúl Alfonsín",
+    "r": "Raúl Alfonsín asumió la presidencia tras ganar las elecciones de octubre de 1983 al frente de la Unión Cívica Radical."
+  },
+  {
+    "q": "¿Qué histórico juicio oral y público impulsó el gobierno de Raúl Alfonsín en 1985 para juzgar a las juntas militares de la dictadura?",
+    "o": ["El Juicio a las Juntas", "El proceso de Núremberg criollo", "El tribunal federal supremo"],
+    "a": "El Juicio a las Juntas",
+    "r": "El Juicio a las Juntas de 1985 constituyó un hecho inédito a nivel mundial donde la justicia civil juzgó a los comandantes de facto."
+  },
+  {
+    "q": "¿Cómo se denominó la comisión investigadora presidencial presidida por Ernesto Sábato que documentó los crímenes de la dictadura?",
+    "o": ["CONADEP (Comisión Nacional sobre la Desaparición de Personas)", "Comisión de Verdad y Justicia", "Tribunal de Derechos Humanos"],
+    "a": "CONADEP",
+    "r": "El informe final de la CONADEP, titulado 'Nunca Más', recopiló miles de testimonios sobre los horrores del terrorismo de estado."
+  },
+  {
+    "q": "¿Qué leyes de impunidad sancionó el Congreso bajo fuertes presiones militares durante los años finales del gobierno de Alfonsín?",
+    "o": ["Ley de Punto Final y Ley de Obediencia Debida", "Leyes de Pacificación Nacional", "Amnistía General"],
+    "a": "Ley de Punto Final y Ley de Obediencia Debida",
+    "r": "Las leyes de Punto Final (1986) y Obediencia Debida (1987) frenaron temporalmente el enjuiciamiento a mandos medios y superiores."
+  },
+  {
+    "q": "¿Cómo se llamó el levantamiento militar carapintada liderado por Aldo Rico en la Semana Santa de 1987 contra el poder democrático?",
+    "o": ["Alzamiento de Semana Santa", "Revuelta militar de Córdoba", "Motín de Campo de Mayo"],
+    "a": "Alzamiento de Semana Santa",
+    "r": "La sublevación militar de Semana Santa exigió el cese de los juicios castrenses, movilizando a miles de ciudadanos en defensa de la democracia."
+  },
+  {
+    "q": "¿Qué innovador plan de estabilización monetaria lanzó el gobierno de Alfonsín en junio de 1985 creando la moneda llamada Austral?",
+    "o": ["Plan Austral", "Plan Primavera", "Plan Convertibilidad"],
+    "a": "Plan Austral",
+    "r": "El Plan Austral logró frenar transitoriamente la inflación mediante la sustitución del peso argentino por una nueva moneda."
+  },
+  {
+    "q": "¿Qué crisis hiperinflacionaria precipitó la renuncia anticipada del presidente Raúl Alfonsín a mediados de 1989?",
+    "o": ["La crisis hiperinflacionaria de 1989", "El colapso bancario del 90", "La gran depresión bursátil"],
+    "a": "La crisis hiperinflacionaria",
+    "r": "La brutal escalada de precios y el desabastecimiento comercial obligaron a una transición presidencial adelantada a favor de Carlos Menem."
+  },
+  {
+    "q": "¿Quién asumió la presidencia de la Nación en julio de 1989 implementando un profundo programa de privatizaciones y alineamiento internacional?",
+    "o": ["Carlos Menem", "Eduardo Duhalde", "Fernando de la Rúa"],
+    "a": "Carlos Menem",
+    "r": "Carlos Menem gobernó durante una década aplicando reformas de mercado estructurales y privatizando las empresas estatales."
+  },
+  {
+    "q": "¿Qué ley económica de convertibilidad fijó la paridad cambiaria de uno a uno entre el peso y el dólar estadounidense en 1991?",
+    "o": ["Ley de Convertibilidad del Austral", "Ley de Estabilidad Monetaria", "Ley de Libre Cambio"],
+    "a": "Ley de Convertibilidad",
+    "r": "El plan económico diseñado por el ministro Domingo Cavallo erradicó la inflación durante varios años a costa de rigideces estructurales."
+  },
+  {
+    "q": "¿Qué trágicos atentados terroristas internacionales sufrió la Argentina contra objetivos comunitarios en Buenos Aires durante la década de 1990?",
+    "o": ["Atentados a la embajada de Israel (1992) y a la AMIA (1994)", "Ataque al Congreso y a la Casa Rosada", "Explosión del puerto y de la aduana"],
+    "a": "Atentados a la embajada de Israel y a la AMIA",
+    "r": "Los atentados terroristas contra la sede diplomática israelí y la mutual judía AMIA dejaron decenas de muertos e impunidad prolongada."
+  },
+  {
+    "q": "¿Qué pacto político clave firmaron Carlos Menem y Raúl Alfonsín en 1993 para viabilizar la reforma constitucional de 1994?",
+    "o": ["Pacto de Olivos", "Acuerdo de San José", "Pacto de la Moncloa"],
+    "a": "Pacto de Olivos",
+    "r": "El Pacto de Olivos habilitó la reforma de la Constitución Nacional en 1994, permitiendo la reelección presidencial consecutiva."
+  },
+  {
+    "q": "¿Qué presidente asumió la jefatura del Estado en diciembre de 1999 al frente de la alianza opositora entre la UCR y el Frepaso?",
+    "o": ["Fernando de la Rúa", "Eduardo Duhalde", "Néstor Kirchner"],
+    "a": "Fernando de la Rúa",
+    "r": "Fernando de la Rúa ganó los comicios de 1999 heredando una economía estancada por los efectos del modelo de convertibilidad."
+  },
+  {
+    "q": "¿Cómo se denominó la profunda crisis económica, social e institucional que provocó la caída del gobierno de Fernando de la Rúa en diciembre de 2001?",
+    "o": ["La crisis de diciembre de 2001 (El Corralito)", "El estallido fiscal", "La gran cesación de pagos"],
+    "a": "Crisis de diciembre de 2001",
+    "r": "Las restricciones bancarias conocidas como el 'corralito' y la represión policial derivaron en masivas protestas sociales y la renuncia presidencial."
+  },
+  {
+    "q": "¿Qué presidente asumió el cargo en mayo de 2003 impulsando la anulación de las leyes de impunidad y una política de derechos humanos activa?",
+    "o": ["Néstor Kirchner", "Adolfo Rodríguez Saá", "Eduardo Duhalde"],
+    "a": "Néstor Kirchner",
+    "r": "Néstor Kirchner asumió con un bajo porcentaje de votos, reorientando el perfil político, económico y judicial del país durante su mandato."
+  }
+]

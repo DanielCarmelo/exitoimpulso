@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador - ÉxitoImpulso</title>
+    <link rel="shortcut icon" href="../assets/img/logo2.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Librería para generar PDFs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        /* Spinner de carga */
+        .spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #1E3A8A;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .simulador-container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .timer { font-size: 24px; font-weight: bold; color: #dc2626; text-align: right; }
+        .question-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .option { display: block; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px; cursor: pointer; }
+        .option:hover { background: #f0f4ff; }
+        .option input { margin-right: 10px; }
+        
+        .nav-buttons { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 20px; }
+        .btn-nav { background: #2563eb; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .btn-nav:hover:not(:disabled) { background: #1d4ed8; }
+        .btn-nav:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-finalizar { background: #16a34a !important; }
+        .btn-finalizar:hover { background: #15803d !important; }
+        .btn-pdf { background: #dc2626 !important; }
+
+        /* Estilos de Corrección */
+        .opcion-correcta { background: #dcfce7; border: 1px solid #16a34a; padding: 10px; border-radius: 5px; margin-bottom: 8px; font-weight: bold; color: #166534; }
+        .opcion-incorrecta { background: #fee2e2; border: 1px solid #dc2626; padding: 10px; border-radius: 5px; margin-bottom: 8px; text-decoration: line-through; color: #991b1b; }
+        .opcion-normal { background: #f3f4f6; padding: 10px; border-radius: 5px; margin-bottom: 8px; color: #6b7280; }
+        .opcion-amarilla { background: #fef9c3; border: 1px solid #eab308; padding: 10px; border-radius: 5px; margin-bottom: 8px; font-weight: bold; color: #854d0e; }
+        .fundamento-box { background: #eff6ff; border-left: 4px solid #2563eb; padding: 15px; margin-top: 15px; border-radius: 0 5px 5px 0; font-size: 14px; color: #1e3a8a; }
+        .resumen-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; margin-bottom: 20px; }
+
+        /* Contenedor oculto para el PDF (SIN BORDES) */
+        #pdf-wrapper {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            width: 680px;
+            overflow: hidden;
+        }
+        #template-pdf {
+            width: 680px; 
+            padding: 40px; 
+            background: #ffffff; 
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }        
+
+        .pdf-header { text-align: center; margin-bottom: 20px; }
+        .pdf-header h1 { color: #1e3a8a; margin: 0; font-size: 32px; }
+        .pdf-header p { color: #6b7280; margin: 5px 0 0 0; }
+        .pdf-logo { width: 120px; height: auto; margin-bottom: 10px; }
+        
+        .pdf-body { text-align: center; margin: 20px 0; }
+        .pdf-body h2 { text-transform: uppercase; color: #374151; letter-spacing: 1px; }
+        .pdf-body p { font-size: 16px; color: #1f2937; }
+        .pdf-score { margin: 15px auto; width: 180px; padding: 15px; border: 2px dashed #3b82f6; border-radius: 10px; }
+        .pdf-score h1 { font-size: 42px; margin: 0; color: #1e3a8a; }
+        
+        .pdf-signature { text-align: right; margin-top: 20px; padding-right: 20px; }
+        .pdf-stamp { width: 120px; height: auto; opacity: 0.9; }
+
+        .pdf-qr-box { text-align: center; margin-top: 15px; }
+        .pdf-qr-box img { width: 70px; height: 70px; }
+        
+        .pdf-footer { text-align: center; margin-top: 15px; color: #6b7280; font-size: 11px; border-top: 1px solid #e5e7eb; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="simulador-container">
+        <!-- CABECERA DEL SIMULADOR (Logo, Examen y Usuario) -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 15px 20px; background: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="../assets/img/logo.png" alt="Logo" style="height: 40px;">
+                <h1 style="font-size: 24px; margin: 0;">
+                    <span style="color: #1E3A8A;">Éxito</span><span style="color: #F97316;">Impulso</span>
+                </h1>
+            </div>
+            <div style="text-align: right;">
+                <div id="sim-info-exam" style="font-weight: bold; color: #1f2937; font-size: 16px;">Cargando examen...</div>
+                <div id="sim-info-user" style="font-size: 14px; color: #6b7280;">Usuario: ...</div>
+            </div>
+        </div>
+
+        <!-- LOADER (Cargando examen) -->
+        <div id="loader-examen" style="text-align: center; padding: 60px 0;">
+            <div class="spinner"></div>
+            <h2 style="color: #1E3A8A; margin-top: 20px;">Generando examen...</h2>
+            <p style="color: #64748b;">Preparando las preguntas al azar, por favor espera.</p>
+        </div>
+
+        <!-- CONTENIDO DEL EXAMEN (Oculto al principio) -->
+        <div id="examen-contenido" style="display: none;">
+            <div class="timer" id="temporizador">120</div>
+            
+            <!-- ÁREA DINÁMICA (Aquí se cargan las preguntas, botones y resultados) -->
+            <div id="area-dinamica"></div>
+        </div>
+    </div>
+
+    <!-- Template para el PDF (Oculto hacia la izquierda) -->
+    <div id="pdf-wrapper" style="position: absolute; left: -9999px; top: 0; width: 700px; overflow: hidden;">
+        <div id="template-pdf" style="width: 680px; padding: 40px; background: #ffffff; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border: none;">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <img src="../assets/img/logo.png" alt="Logo ÉxitoImpulso" style="width: 120px; margin-bottom: 10px;">
+                <h1 style="color: #1e3a8a; margin: 0; font-size: 32px;">ÉxitoImpulso</h1>
+                <p style="color: #6b7280; margin: 5px 0 0 0;">Plataforma de Preparación y Simuladores</p>
+            </div>
+            <div style="text-align: center; margin: 20px 0;">
+                <h2 style="text-transform: uppercase; color: #374151; letter-spacing: 1px;">Comprobante de Simulacro</h2>
+                <p style="font-size: 16px; color: #1f2937;">Se certifica que <strong id="pdf-user">Usuario</strong></p>
+                <p style="font-size: 16px; color: #1f2937;">ha rendido el simulacro: <br><strong id="pdf-exam">Examen</strong></p>
+                <div style="margin: 15px auto; width: 180px; padding: 15px; border: 2px dashed #3b82f6; border-radius: 10px;">
+                    <p style="margin:0; color:#6b7280; font-size:14px;">RESULTADO</p>
+                    <h1 id="pdf-score" style="font-size: 42px; margin: 0; color: #1e3a8a;">0%</h1>
+                    <p id="pdf-correct" style="margin:5px 0 0 0; color:#6b7280;">0 de 0 correctas</p>
+                </div>
+            </div>
+            <div style="text-align: right; margin-top: 20px; padding-right: 20px;">
+                <img src="../assets/img/firma_sello.png" alt="Firma y Sello" style="width: 120px; opacity: 0.9;">
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <img id="pdf-qr-img" src="" alt="Código QR" style="width: 70px; height: 70px;">
+                <p style="font-size: 10px; color: #6b7280; margin-top: 5px;">Escanea para verificar la autenticidad</p>
+            </div>
+            <div style="text-align: center; margin-top: 15px; color: #6b7280; font-size: 11px; border-top: 1px solid #e5e7eb; padding-top: 10px;">
+                <p style="margin: 0;">Fecha: <span id="pdf-date">--</span></p>
+                <p style="margin: 0;">Este documento es un comprobante de práctica y no tiene validez oficial.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/simulador.js"></script>
+</body>
+</html>

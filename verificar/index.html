@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación - ÉxitoImpulso</title>
+    <link rel="shortcut icon" href="../assets/img/logo2.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .verify-card {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            border-top: 6px solid #1E3A8A;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .brand img {
+            height: 50px;
+        }
+        .brand h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        .blue { color: #1E3A8A; }
+        .orange { color: #F97316; }
+        
+        .verify-card h2 {
+            color: #374151;
+            font-size: 24px;
+            margin: 0;
+        }
+        .verify-card p.subtitle {
+            color: #6b7280;
+            margin: 5px 0 30px 0;
+            font-size: 16px;
+        }
+
+        /* Caja de Resultado (Válido/Inválido) */
+        .status-box {
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+        .status-valid {
+            background: #dcfce7;
+            border: 2px solid #16a34a;
+        }
+        .status-invalid {
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+        }
+        .status-box h3 {
+            font-size: 28px;
+            margin: 0 0 20px 0;
+        }
+        .status-valid h3 { color: #16a34a; }
+        .status-invalid h3 { color: #dc2626; }
+        
+        /* Datos del Usuario */
+        .data-row {
+            font-size: 18px;
+            color: #1f2937;
+            margin: 15px 0;
+            border-bottom: 1px dashed #d1d5db;
+            padding-bottom: 10px;
+        }
+        .data-row strong {
+            color: #6b7280;
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .data-row:last-child {
+            border-bottom: none;
+        }
+        .big-score {
+            font-size: 36px;
+            font-weight: 800;
+            color: #1E3A8A;
+        }
+    </style>
+</head>
+<body>
+    <div class="verify-card">
+        <div class="brand">
+            <img src="../assets/img/logo.png" alt="Logo" onerror="this.style.display='none'">
+            <h1><span class="blue">Éxito</span><span class="orange">Impulso</span></h1>
+        </div>
+        
+        <h2>Verificación de Comprobante</h2>
+        <p class="subtitle">Sistema Oficial de Certificados Digitales</p>
+        
+        <div id="resultado">
+            <div style="color: #6b7280; font-size: 18px;">Verificando código...</div>
+        </div>
+    </div>
+
+    <script>
+        // Leer el código de la URL (?codigo=XXXX)
+        const params = new URLSearchParams(window.location.search);
+        const codigo = params.get('codigo');
+
+        if (!codigo) {
+            document.getElementById('resultado').innerHTML = `
+                <div class="status-box status-invalid">
+                    <h3>❌ Error</h3>
+                    <p>No se proporcionó ningún código en la URL.</p>
+                </div>
+            `;
+        } else {
+            fetch(`/api/portal/verificar.php?codigo=${codigo}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('resultado').innerHTML = `
+                            <div class="status-box status-valid">
+                                <h3>✅ Certificado Válido</h3>
+                                <div class="data-row">
+                                    <strong>Usuario</strong>
+                                    ${data.usuario}
+                                </div>
+                                <div class="data-row">
+                                    <strong>Examen Rendido</strong>
+                                    ${data.examen}
+                                </div>
+                                <div class="data-row">
+                                    <strong>Fecha de Emisión</strong>
+                                    ${data.fecha}
+                                </div>
+                                <div class="data-row">
+                                    <strong>Nota Final</strong>
+                                    <span class="big-score">${data.puntaje}%</span>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        document.getElementById('resultado').innerHTML = `
+                            <div class="status-box status-invalid">
+                                <h3>❌ Certificado Inválido</h3>
+                                <p>El código de verificación no existe en nuestros registros.</p>
+                            </div>
+                        `;
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('resultado').innerHTML = `
+                        <div class="status-box status-invalid">
+                            <h3>❌ Error de Conexión</h3>
+                            <p>No se pudo conectar con el servidor.</p>
+                        </div>
+                    `;
+                });
+        }
+    </script>
+</body>
+</html>

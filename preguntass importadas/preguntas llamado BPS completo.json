@@ -1,0 +1,3290 @@
+const preguntas = [
+    { q: "¿Quién es considerado funcionario según el Estatuto?", o: ["Cualquier persona que trabaje allí", "Persona incorporada regularmente por designación del Directorio", "Solo cargos presupuestados"], a: "Persona incorporada regularmente por designación del Directorio", r: "Artículo 1: Define al funcionario como quien ingresa regularmente por designación del Directorio." },
+    { q: "¿Cuál es el plazo de revocación de ingreso?", o: ["3 meses", "6 meses", "12 meses"], a: "6 meses", r: "Artículo 3: Toda designación es precaria y revocable en un plazo de 6 meses." },
+    { q: "¿Cuántos años de ciudadanía legal se requieren para ingresar?", o: ["2 años", "3 años", "5 años"], a: "3 años", r: "Artículo 2: Se requiere ciudadanía natural o 3 años de ciudadanía legal." },
+    { q: "¿Es obligatorio haber sufragado en el último acto electoral?", o: ["Sí, sin excepciones", "Sí, salvo causas legales que eximan", "No es requisito"], a: "Sí, salvo causas legales que eximan", r: "Artículo 2: Es un requisito, salvo que existan causas legales que eximan de la obligación." },
+    { q: "¿Qué escalafón comprende los cargos de alta especialización?", o: ["Escalafón R", "Escalafón A", "Escalafón C"], a: "Escalafón R", r: "Artículo 13: El escalafón R (Gerencial) es para alta especialización y jerarquías." },
+    { q: "¿Qué escalafón es el Profesional Universitario?", o: ["Escalafón A", "Escalafón B", "Escalafón D"], a: "Escalafón A", r: "Artículo 13: El escalafón A requiere título universitario de al menos 4 años." },
+    { q: "¿Cuál es la duración mínima de estudios para el Escalafón A?", o: ["2 años", "3 años", "4 años"], a: "4 años", r: "Artículo 13: Los planes de estudio deben ser no inferiores a cuatro años." },
+    { q: "¿Cuál es la duración mínima para el Escalafón B?", o: ["2 años", "3 años", "4 años"], a: "2 años", r: "Artículo 13: El escalafón B requiere un mínimo de dos años de carrera universitaria." },
+    { q: "¿El escalafón C es el Administrativo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 13: El escalafón C comprende tareas de registro, clasificación y archivo de datos." },
+    { q: "¿Qué escalafón incluye tareas de limpieza y portería?", o: ["Escalafón E", "Escalafón F", "Escalafón D"], a: "Escalafón F", r: "Artículo 13: El escalafón F cubre servicios auxiliares como limpieza y vigilancia." },
+    { q: "¿El entrenamiento busca aumentar el conocimiento para un cargo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 9: El entrenamiento aumenta la habilidad para un cargo y función específica." },
+    { q: "¿La capacitación prepara para cargos de mayor jerarquía?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 10: La capacitación permite acceder a cargos de mayor jerarquía." },
+    { q: "¿El desarrollo profesional trasciende lo exigido por el cargo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 11: El desarrollo proporciona conocimientos que trascienden lo exigido por el cargo actual." },
+    { q: "¿Los funcionarios deben ser calificados anualmente?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 17: La calificación del desempeño debe ser anual." },
+    { q: "¿El ascenso es la selección del más apto?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 20: El ascenso es la selección para cada cargo del que mejor cumple los requisitos." },
+    { q: "¿Existe límite de 18 meses entre llamado y provisión?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 22: El plazo no puede exceder los 18 meses." },
+    { q: "¿Se permite integrar empresas con fines de lucro que se vinculen al BPS?", o: ["Sí", "No", "Solo si es asesoría"], a: "No", r: "Artículo 25: Está prohibido integrar empresas de giro similar a los cometidos del organismo." },
+    { q: "¿Es obligatorio declarar vínculos de parentesco?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 23: Es obligación declarar vínculos hasta el segundo grado de consanguinidad o afinidad." },
+    { q: "¿Se puede realizar proselitismo en horas de trabajo?", o: ["Sí", "No"], a: "No", r: "Artículo 31: Está prohibida toda actividad ajena a la función dirigida a fines proselitistas." },
+    { q: "¿El funcionario debe notificar cambios de domicilio en 48 horas?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 23: Los cambios deben comunicarse dentro de las 48 horas hábiles." },
+    { q: "¿Se puede solicitar dinero para acelerar un trámite?", o: ["Sí", "No"], a: "No", r: "Artículo 28: Está prohibido solicitar dádivas para acelerar o retardar actos del empleo." },
+    { q: "¿La huelga es un derecho gremial?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 45: Se declara la huelga como un derecho gremial." },
+    { q: "¿Se puede trasladar a un funcionario como sanción?", o: ["Sí", "No"], a: "No", r: "Artículo 39: Es improcedente el traslado como medida de sanción disciplinaria." },
+    { q: "¿La licencia anual mínima es de 20 días hábiles?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 54: Todo funcionario tiene derecho a 20 días hábiles de licencia anual mínima." },
+    { q: "¿El día del funcionario del BPS es el 28 de mayo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 56: Ese día se declara asueto para los funcionarios del BPS." },
+    { q: "¿El sumario es secreto?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 61: Todos los procedimientos disciplinarios son de carácter secreto." },
+    { q: "¿Se puede sancionar a alguien dos veces por el mismo hecho?", o: ["Sí", "No"], a: "No", r: "Artículo 60: Principio de 'non bis in ídem'; no se puede sancionar dos veces por el mismo hecho." },
+    { q: "¿La suspensión preventiva puede durar más de 6 meses?", o: ["Sí", "No"], a: "No", r: "Artículo 70: La suspensión preventiva no podrá exceder los seis meses." },
+    { q: "¿El Directorio aprueba los Reglamentos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 76: Los reglamentos son aprobados exclusivamente por el Directorio." },
+    { q: "¿Se permite la subrogación en caso de acefalía?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 32: La acefalía de un cargo de Jefatura o Gerencia da lugar a subrogación." },
+    { q: "¿La subrogación da derecho a diferencia de sueldo desde el primer día?", o: ["Sí", "No"], a: "No", r: "Artículo 32: Se percibe a partir de los 45 días, salvo resolución en contrario del Directorio." },
+    { q: "¿El funcionario tiene derecho a la protección de su independencia moral?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 33: Todo funcionario tiene derecho a la protección de su independencia moral y cívica." },
+    { q: "¿Tienen derecho a ser reconvertidos ante cambios tecnológicos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 38: Existe el derecho a ser reconvertido ante cambios organizacionales o tecnológicos." },
+    { q: "¿El legajo individual es secreto?", o: ["Verdadero", "Falso"], a: "Falso", r: "Artículo 48: El funcionario puede obtener vista de su legajo en cualquier momento." },
+    { q: "¿El funcionario puede obtener vista de su legajo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 48: El interesado puede requerir vista y copia autenticada de su legajo." },
+    { q: "¿La Administración debe defender al funcionario por actos del cargo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 50: En caso de detención por ejercicio regular del cargo, el Organismo asume su defensa." },
+    { q: "¿Existe una Comisión Bipartita permanente?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 74: Se crea para asesoramiento y consulta entre el BPS y ATSS." },
+    { q: "¿Las notificaciones deben ser solo presenciales?", o: ["Verdadero", "Falso"], a: "Falso", r: "Artículo 43: Pueden ser personales, por medios informáticos o cualquier medio idóneo." },
+    { q: "¿Los presupuestados tienen derecho a carrera administrativa?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 53: Los presupuestados tienen derecho explícito a la carrera administrativa." },
+    { q: "¿El traslado debe ser siempre por resolución fundada?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 39: El traslado debe realizarse por resolución fundada y por escrito." },
+    { q: "¿Se puede solicitar una orden por escrito ante dudas de responsabilidad?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 42: El funcionario tiene derecho a solicitar la orden por escrito." },
+    { q: "¿Es falta administrativa realizar gestiones para terceros?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 25: Está prohibido realizar gestiones administrativas para terceros fuera de la función." },
+    { q: "¿La omisión de informes de evaluación es falta administrativa?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 3: Los responsables omisos en los informes incurren en falta administrativa." },
+    { q: "¿El ingreso se realiza por concurso o sorteo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 4: El ingreso es mediante concurso o sorteo, salvo excepciones normativas." },
+    { q: "¿Se requiere aptitud física para ingresar?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 2: Se requiere Carné de Salud vigente." },
+    { q: "¿Es necesario declarar no tener otro cargo público?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 2: Se exige declaración jurada sobre ausencia de incompatibilidades." },
+    { q: "¿Está prohibido presentarse a licitaciones del organismo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 26: Queda prohibido a los funcionarios participar en licitaciones del Organismo." },
+    { q: "¿Existen excepciones para recibir reconocimientos protocolares?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 30: Se exceptúan reconocimientos de Gobiernos o entidades sin fines de lucro." },
+    { q: "¿Es falta grave la violación del secreto en procedimientos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 61: La violación del secreto administrativo se considera falta grave." },
+    { q: "¿Se puede destituir por ineptitud?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Artículo 73: La destitución puede proceder por ineptitud, omisión o delito." },
+  {
+    q: "¿Qué porcentaje del promedio mensual nominal recibe un trabajador mensual en su primer mes de subsidio por desempleo por causal de despido?",
+    o: ["50%", "40%", "66%", "57%"],
+    a: "66%",
+    r: "Primer mes 66%; segundo mes 57%; tercer mes 50%; cuarto mes 45%; quinto mes 42%; sexto mes 40%."
+  },
+  {
+    q: "El subsidio por desempleo genera aguinaldo y licencia para la persona trabajadora.",
+    o: ["Falso", "Verdadero"],
+    a: "Falso",
+    r: "El Subsidio por desempleo no genera aguinaldo ni licencia y tampoco se le aplica el descuento de Impuesto a la Renta de las Personas Físicas (IRPF)."
+  },
+  {
+    q: "¿Cuál es el período de cobertura general que establece la ley para el subsidio por maternidad?",
+    o: ["8 semanas", "14 semanas", "12 semanas", "16 semanas"],
+    a: "14 semanas",
+    r: "El período de amparo de este subsidio es de 98 días (14 semanas): 6 semanas antes de la fecha probable de parto y 8 semanas posteriores a ella."
+  },
+  {
+    q: "En casos de complejidad médica, la licencia por maternidad se puede extender hasta los seis meses de edad del recién nacido.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Casos de complejidad: Hasta los seis meses de edad."
+  },
+  {
+    q: "¿Cuántos días corridos en total se otorgan a partir de la fecha de parto por el subsidio por paternidad para trabajadores dependientes?",
+    o: ["10 días", "13 días", "30 días", "20 días"],
+    a: "20 días",
+    r: "A estos días se suman 17 días pagos por BPS de acuerdo a lo establecido por la Ley 19.161, totalizando 20 días corridos que se otorgan a partir de la fecha del parto."
+  },
+  {
+    q: "El goce del subsidio parental para cuidados es compatible con la percepción de cualquier subsidio por inactividad compensada.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El goce del subsidio parental es incompatible con la percepción de cualquier subsidio por inactividad compensada (subsidios por desempleo, enfermedad o subsidio transitorio pro incapacidad parcial) por parte de la misma persona."
+  },
+  {
+    q: "En los casos de adopción amparados por el Decreto-Ley 15.084, ¿de cuántos días es el período de licencia a partir de la fecha en que se ejerza la tenencia judicial?",
+    o: ["42 días", "20 días", "30 días", "50 días"],
+    a: "42 días",
+    r: "El período de licencia es de 42 días a partir de la fecha en que se ejerza la tenencia judicial."
+  },
+  {
+    q: "El pago del subsidio por enfermedad se abona a partir del primer día en los casos de internación.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El subsidio se abona a partir del cuarto día de certificación, salvo en los casos de internación, que comienza a pagarse desde el primer día."
+  },
+  {
+    q: "¿Cuál es el plazo máximo de amparo inicial del subsidio por enfermedad, el cual puede ser extendido por un período igual?",
+    o: ["6 meses", "2 años", "1 año", "3 años"],
+    a: "1 año",
+    r: "El período de amparo tiene un plazo máximo de un año que podrá ser extendido hasta un año más."
+  },
+  {
+    q: "La normativa establece que las empresas no tienen ninguna restricción ni penalidad para despedir a una persona que se encuentra certificada por enfermedad.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "La ley establece que las empresas no podrán despedir a la persona que se encuentra certificada o antes de que transcurran treinta días corridos desde su reincorporación; En caso contrario, deberá abonarle una indemnización equivalente al doble de lo habitual."
+  },
+  {
+    q: "¿Qué organismo dependiente del Ministerio de Salud Pública es el encargado de la administración del Seguro Nacional de Salud (SNS)?",
+    o: ["BPS", "Junasa", "ASSE", "Mides"],
+    a: "Junasa",
+    r: "La Junasa es la encargada de la administración del Seguro Nacional de Salud y suscribe un contrato de gestión con los prestadores..."
+  },
+  {
+    q: "El BPS realiza afiliaciones de oficio en prestadores de salud para asegurar la cobertura cuando un trabajador ingresa al sistema por primera vez.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Al detectar nuevos beneficiarios de SNIS o cambios de contexto o de categoría de los usuarios, BPS realiza afiliaciones de oficio para asegurar la cobertura de salud. Esto sucede cuando un trabajador ingresa al sistema por primera vez..."
+  },
+  {
+    q: "Según el régimen general de asignaciones familiares (Decreto-Ley 15.084), ¿hasta qué edad se extiende la prestación si la persona beneficiaria cursa estudios de nivel secundario?",
+    o: ["14 años", "15 años", "16 años", "18 años"],
+    a: "18 años",
+    r: "Se extiende hasta los dieciocho años si cursa estudios de nivel secundario en institutos públicos o privados habilitados."
+  },
+  {
+    q: "La asignación familiar brindada por el Plan de Equidad (Ley 18.227) se considera una prestación estrictamente contributiva.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Plan de equidad, Ley 18.227, que determina una prestación no contributiva para niños, niñas y adolescentes que integren hogares en situación de vulnerabilidad socioeconómica..."
+  },
+  {
+    q: "En el caso de la Pensión vejez, de existir ingresos compatibles (como rentas o actividad), ¿qué porcentaje de dichos ingresos será descontado de la prestación?",
+    o: ["50%", "10%", "33%", "70%"],
+    a: "50%",
+    r: "De tener ingresos, el 50% de estos será descontado de la prestación."
+  },
+  {
+    q: "La asignación familiar por embarazos y nacimientos múltiples (Ley 17.474 y Ley 20.365) se genera de manera independiente a la existencia de una relación laboral formal.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "El beneficio se genera independientemente de la existencia de una relación laboral formal y será abonado hasta los dieciocho años..."
+  },
+  {
+    q: "Según el catálogo de prestaciones sanitarias, ¿cada cuánto tiempo pueden renovarse los lentes comunes provistos por el BPS?",
+    o: ["6 meses", "1 año", "5 años", "2 años"],
+    a: "2 años",
+    r: "En el caso de los lentes comunes, los valores estipulados serán reajustados semestralmente en enero y julio de cada año. La renovación es cada dos años..."
+  },
+  {
+    q: "Las causales de robo, rotura o extravío son perfectamente válidas para que BPS autorice la renovación de prótesis o lentes antes del período estipulado.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Las causales de robo, rotura o extravío no son válidas para autorizar la renovación antes de lo estipulado."
+  },
+  {
+    q: "¿En qué año se promulgó la Ley 16.713 que sentó las bases del sistema mixto de otorgamiento de prestaciones de pasividad?",
+    o: ["1979", "2008", "1995", "1996"],
+    a: "1995",
+    r: "En setiembre de 1995 se promulgó la Ley 16.713, que establece un régimen de seguridad social con vigencia desde el 1/4/1996."
+  },
+  {
+    q: "La Ley 18.395 permite a las mujeres computar un año adicional de servicios por cada hijo/a nacido/a vivo/a o adoptado/a de manera ilimitada (sin máximo de años).",
+    o: ["Falso", "Verdadero"],
+    a: "Falso",
+    r: "La Ley 18.395 estableció que las mujeres tendrán derecho a computar un año adicional de servicios por cada hijo/a nacido/a vivo/a o adoptado/a (menor de edad o con discapacidad al momento de la adopción), con un máximo de cinco años."
+  },
+  {
+    q: "Según el Sistema Previsional Común (Ley 20.130), ¿cuál será la edad de jubilación normal para las personas nacidas de 1977 en adelante?",
+    o: ["60 años", "63 años", "65 años", "64 años"],
+    a: "65 años",
+    r: "1977 en adelante | 65 años de edad"
+  },
+  {
+    q: "En el régimen de transición (Ley 16.713), las AFAP operan como el único agente administrador de los aportes de las personas.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Régimen de transición: [...] El BPS es el único agente del sistema previsional. Los aportes de las personas son administrados exclusivamente por el BPS."
+  },
+  {
+    q: "Si una persona no reúne los 30 años de trabajo requeridos pero alcanza los 65 años de edad jubilatoria bajo la Ley 20.130, ¿cuál es el tiempo mínimo de trabajo registrado para configurar causal?",
+    o: ["25 años", "15 años", "21 años", "30 años"],
+    a: "25 años",
+    r: "65 años de edad | 25 años"
+  },
+  {
+    q: "El subsidio transitorio por incapacidad parcial se otorga por un período máximo de tres años o hasta que se configuren los requisitos para otra causal jubilatoria.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Se otorga por un período máximo de tres años o hasta que la persona cumpla con los requisitos de edad y servicios necesarios para configurar otra causal jubilatoria por servicios de la misma afiliación."
+  },
+  {
+    q: "¿A qué porcentaje del promedio mensual nominal equivale el monto abonado por el Subsidio especial por inactividad compensada?",
+    o: ["50%", "66%", "70%", "40%"],
+    a: "40%",
+    r: "El monto del subsidio especial por inactividad compensada será el equivalente al 40% del promedio mensual de las remuneraciones nominales que la persona recibió en los 6 meses de trabajo efectivo inmediatamente previos al cese."
+  },
+  {
+    q: "Para generar el derecho a la Pensión por sobrevivencia por fallecimiento en el trabajo (o a causa de este), siempre se requiere un mínimo de dos años de actividad previa.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Sin mínimo de actividad, independientemente de quienes sean beneficiarios de la pensión, si el fallecimiento o desaparición ocurre en el trabajo o a causa de este."
+  },
+  {
+    q: "Para acceder a la Pensión por sobrevivencia en caso de concubinato sin hijos en común, ¿cuántos años de vínculo se exigen como requisito?",
+    o: ["2 años", "5 años", "3 años", "10 años"],
+    a: "5 años",
+    r: "Dos años de vínculo matrimonial para personas viudas o divorciadas y cinco años en el caso de concubinato..."
+  },
+  {
+    q: "Los hijos o hijas de entre 21 y 23 años tienen derecho a la pensión por sobrevivencia si cursan estudios terciarios de manera habitual y carecen de medios de vida propios.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Mayores de 21 años de edad y hasta los 23, siempre que se acredite cursar estudios terciarios de manera habitual y que no dispongan de medios de vida propios."
+  },
+  {
+    q: "¿Qué prestación cubre los costos de salas velatorias o traslados a cementerios públicos cuando la persona fallecida ya contaba con cobertura fúnebre previa?",
+    o: ["Subsidio por expensas funerarias", "Asignación familiar especial", "Gastos complementarios", "Ayuda extraordinaria"],
+    a: "Gastos complementarios",
+    r: "Los gastos complementarios son aquellos que se generan aun cuando la persona fallecida tenga cobertura fúnebre, por concepto de salas velatorias o traslado del cuerpo a cementerios públicos."
+  },
+  {
+    q: "La Pensión a las víctimas de delitos violentos (Ley 19.039) es compatible con cualquier otra prestación de la seguridad social, sin excepciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Es incompatible con cualquier otra prestación de seguridad social pública o privada, a excepción de la Asignación familiar que se brinda al amparo de la Ley 18.850 y la renta previsional de AFAP."
+  },
+  {
+    q: "¿Hasta qué edad se deposita en una cuenta del BROU la asignación familiar especial para hijas e hijos de personas fallecidas por violencia doméstica (Ley 18.850)?",
+    o: ["14 años", "16 años", "21 años", "18 años"],
+    a: "18 años",
+    r: "Se otorga, además, una asignación familiar especial de carácter mensual, que será depositada por BPS hasta que cumpla los 18 años de edad."
+  },
+  {
+    q: "Para tener derecho a la Pensión vejez, la persona debe tener al menos 70 años de edad y carecer de recursos para cubrir sus necesidades vitales.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Tienen derecho las personas de 70 años de edad que carecen de recursos para cubrir sus necesidades vitales."
+  },
+  {
+    q: "¿Qué rango de edad es requisito para acceder a la Pensión vejez por cuidados?",
+    o: ["Entre 60 y 65 años", "Más de 70 años", "Entre 65 y 70 años", "Más de 75 años"],
+    a: "Entre 65 y 70 años",
+    r: "Tienen derecho las personas de entre 65 y 70 años de edad que carecen de recursos para cubrir sus necesidades vitales, y que acrediten haber estado al cuidado directo..."
+  },
+  {
+    q: "Para obtener la Pensión invalidez, si la persona cuenta con un dictamen médico severo y cumple el requisito de residencia, la prestación se otorga sin requerir evaluación de carencia de recursos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Si el dictamen es severo y cumple con la residencia, se otorga la prestación sin otra gestión."
+  },
+  {
+    q: "¿A qué grupo etario se encuentra dirigido el subsidio de Asistencia a la vejez amparado por la Ley 18.241?",
+    o: ["Personas de 50 a 60 años", "Personas de 65 a 70 años", "Personas de 60 a 65 años", "Personas mayores de 70 años"],
+    a: "Personas de 65 a 70 años",
+    r: "Esta ley determina un subsidio para personas de 65 a 70 años que carezcan de recursos para cubrir a sus necesidades e integren hogares con carencia en sus condiciones de vida."
+  },
+  {
+    q: "El Centro de Referencia Nacional en Defectos Congénitos y Enfermedades Raras se conoce bajo las siglas Crenadecer.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Crenadecer. Es el Centro de Referencia Nacional en Defectos Congénitos y Enfermedades Raras..."
+  },
+  {
+    q: "¿En qué año el Ministerio de Salud Pública decretó la obligatoriedad de detección de otras patologías mediante la pesquisa neonatal, sumándose al hipotiroidismo congénito?",
+    o: ["1990", "1994", "2024", "2007"],
+    a: "2007",
+    r: "En 2007, el MSP decreta la obligatoriedad de detección de otras patologías."
+  },
+  {
+    q: "El Centro Recolector de Leche Materna de BPS inició sus funciones en el año 2025.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Desde 2025 BPS tiene el Centro Recolector de Leche Materna."
+  },
+  {
+    q: "¿Hasta qué edad límite se pueden gestionar inicialmente las órdenes de asistencia (OASIS) para asistencia odontológica infantil preventiva clínica y quirúrgica?",
+    o: ["8 años 11 meses y 29 días", "5 años 11 meses y 29 días", "9 años 11 meses y 29 días", "14 años"],
+    a: "8 años 11 meses y 29 días",
+    r: "Las órdenes de asistencia odontológica infantil preventiva, clínica y quirúrgica se pueden gestionar hasta los 8 años 11 meses y 29 días de edad."
+  },
+  {
+    q: "En el tratamiento de ortodoncia infantil tramitado por orden de asistencia (OASIS), BPS cubre íntegramente tanto el costo del tratamiento como el costo del aparato necesario.",
+    o: ["Falso", "Verdadero"],
+    a: "Falso",
+    r: "Cubre el costo del tratamiento y el costo del aparato está a cargo de las personas usuarias."
+  },
+  {
+    q: "¿En qué mes del año tienen lugar las 'Actividades de verano' que son financiadas mediante las Ayudas extraordinarias (AYEX)?",
+    o: ["Diciembre", "Febrero", "Enero", "Marzo"],
+    a: "Enero",
+    r: "Actividades de verano. Comprende únicamente al mes de enero y está dirigida a personas beneficiarias con evaluación técnica vigente..."
+  },
+  {
+    q: "Las Ayudas extraordinarias (AYEX) pueden ser utilizadas para financiar el transporte contratado para el traslado de las personas desde y hacia instituciones de rehabilitación.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Esta prestación está destinada a contribuir con el costo de escuelas, instituciones de rehabilitación o instituciones recreativas o deportivas, transporte contratado para el traslado desde y hacia las instituciones, boletos para acompañantes."
+  },
+  {
+    q: "¿Qué programa social busca promover la mejora en la calidad de vida y optimizar la capacidad de autogestión de las organizaciones privadas sin fines de lucro adheridas a BPS?",
+    o: ["Turismo social", "Soluciones habitacionales", "Fortalecimiento de la sociedad civil organizada", "Actividades culturales"],
+    a: "Fortalecimiento de la sociedad civil organizada",
+    r: "Este programa tiene como objetivo favorecer el desarrollo de la sociedad civil organizada, con el fin de promover la mejora de la calidad de vida... así como optimizar la capacidad de autogestión de las organizaciones privadas sin fines de lucro adheridas a los programas sociales del BPS."
+  },
+  {
+    q: "Los hogares de ancianos y los clubes de personas mayores forman parte de las organizaciones sin fines de lucro que apoya el BPS a través de sus programas sociales.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Estas organizaciones sin fines de lucro están categorizadas como: Hogares de ancianos. [...] Clubes de personas mayores."
+  },
+  {
+    q: "Para calcular el subsidio por desempleo por despido, ¿cuántos meses de remuneraciones inmediatas anteriores a la configuración de la causal se utilizan para realizar el promedio?",
+    o: ["3 meses", "12 meses", "6 meses", "24 meses"],
+    a: "6 meses",
+    r: "Para el cálculo del subsidio se realiza un promedio de las remuneraciones gravadas (incluyendo el aguinaldo) correspondientes a los seis meses inmediatos anteriores al mes en el que se configura la causal y se realiza un promedio."
+  },
+  {
+    q: "Si la empresa empleadora se encuentra atrasada en el pago de sus aportes a la seguridad social, las trabajadoras dependientes pierden automáticamente su derecho al cobro del subsidio por maternidad.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Si la empresa de la cual depende la trabajadora no está al día con los aportes, la persona cobra de todas maneras."
+  },
+  {
+    q: "En una situación de multiempleo, si un trabajador es suspendido en una de sus actividades y continúa trabajando en otra, ¿cómo se liquida el subsidio por desempleo?",
+    o: ["Pierde automáticamente el derecho al subsidio", "Lo cobra íntegro sin descuentos", "Solo recibe el 20% del valor total", "Se le descuenta el monto que recibe por la actividad que continúa trabajando"],
+    a: "Se le descuenta el monto que recibe por la actividad que continúa trabajando",
+    r: "Se habilita a percibir el subsidio por desempleo por la actividad en que fue despedida o suspendida, sin que tenga que cesar la otra y se descuenta el monto que recibe por la que continúa trabajando."
+  },
+  {
+    q: "Las prestaciones de actividad de carácter 'complementarias' (como asignaciones familiares o lentes) están gravadas y se les descuenta el aporte jubilatorio y Fonasa.",
+    o: ["Falso", "Verdadero"],
+    a: "Falso",
+    r: "A las prestaciones complementarias no se les aplican estos descuentos."
+  },
+  {
+    q: "En el caso del Plan de Equidad, si un menor está internado en el INAU a tiempo completo, ¿a quién le deposita el BPS el dinero correspondiente a la asignación familiar?",
+    o: ["A una cuenta a nombre de la institución", "Directamente al Mides", "A la madre o padre biológico", "Se entrega en efectivo al tutor legal"],
+    a: "A una cuenta a nombre de la institución",
+    r: "BPS deposita el dinero de los niños, niñas o adolescentes en una cuenta a nombre de la institución, que será la encargada de gestionarlo y administrarlo."
+  },
+  {
+    q: "Para otorgar la Pensión invalidez mediante un dictamen común, es obligatorio realizar un estudio para determinar la carencia de recursos de la persona solicitante y de sus familiares legalmente obligados.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Para el dictamen común, se deberá determinar carencia de recursos mediante el estudio de los ingresos propios y de sus familiares legalmente obligados (padre, madre, hijos/as, cónyuge o concubino/a y hermanos/as cuando son convivientes)."
+  },
+    { q: "¿Es el BPS un ente autónomo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS es un ente autónomo creado en el artículo 195 de la Constitución de la República Oriental del Uruguay del año 1967." },
+    { q: "¿En enero de 2025 el BPS otorgó más de 1.3 millones de prestaciones?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "En enero 2025, el Instituto ha otorgado 1.376.110 prestaciones." },
+    { q: "¿El BPS recauda el aporte de más de 1.5 millones de puestos cotizantes?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "En enero 2025 el Instituto recaudó el aporte de 1.579.795 puestos cotizantes." },
+    { q: "¿Es el CRENADECER un área encargada de enfermedades raras?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS atiende a personas con enfermedades raras a través del CRENADECER." },
+    { q: "¿El programa Ibirapitá es gestionado por el BPS?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS implementa los programas de inclusión digital para adultos mayores (Ibirapitá)." },
+    { q: "¿El Plan Estratégico cubre el período 2025-2030?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El documento presentado es el Plan Estratégico 2025-2030." },
+    { q: "¿La misión incluye garantizar el acceso a derechos de Seguridad Social?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La misión es garantizar el acceso a los derechos de las personas y el cumplimiento de las obligaciones de Seguridad Social." },
+    { q: "¿La visión del BPS incluye ser un instituto de gestión transparente?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La visión es ser un Instituto cercano y de gestión transparente." },
+    { q: "¿La transparencia es uno de los valores institucionales?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La transparencia es uno de los valores que definen el accionar del BPS." },
+    { q: "¿El envejecimiento demográfico es una variable que incide en el sistema?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El envejecimiento demográfico incide negativamente en el coeficiente de dependencia del sistema." },
+    { q: "¿La Ley 20.130 introdujo cambios que el BPS debe implementar?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS debe continuar con la implementación de los cambios introducidos por la Ley 20.130." },
+    { q: "¿El BPS tiene una estructura organizacional rígida según el FODA?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se identifica como debilidad una estructura organizacional rígida y vertical que dificulta la comunicación." },
+    { q: "¿Es una fortaleza del BPS la existencia de una estructura multicanal?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La existencia de estructura multicanal para la información y la atención es una fortaleza." },
+    { q: "¿Los ciberataques son una amenaza identificada?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Los ciberataques se clasifican como una amenaza para el organismo." },
+    { q: "¿El BPS busca promover el conocimiento sobre Seguridad Social?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Promover el conocimiento sobre Seguridad Social es uno de los lineamientos estratégicos." },
+    { q: "¿El diálogo social es una oportunidad para el BPS?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El diálogo social es una oportunidad para el análisis y diseño de mejoras en las políticas." },
+    { q: "¿Se busca aumentar la capacidad de asesoramiento en todo el país?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Uno de los objetivos es aumentar la capacidad y calidad del asesoramiento brindado en todo el país." },
+    { q: "¿El BPS pretende reducir los tiempos de espera del ciudadano?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El objetivo es establecer mecanismos que minimicen el tiempo de espera del ciudadano." },
+    { q: "¿Se planea potenciar la atención personalizada con referentes identificables?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS busca desarrollar atención personalizada y de seguimiento mediante referentes." },
+    { q: "¿El BPS usa IA para fiscalización?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El organismo aplicará modelos de Inteligencia Artificial en funciones clave como la fiscalización." },
+    { q: "¿La meta de trámites digitales para 2030 es superior al 90%?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La meta para 2030 es alcanzar un porcentaje de trámites digitales ≥91%." },
+    { q: "¿El BPS tiene el objetivo de certificar procesos con IA?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS busca desarrollar capacidades en inteligencia artificial para mejorar la eficiencia." },
+    { q: "¿Se considera la ciberresiliencia un objetivo estratégico?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Fortalecer la Ciberresiliencia y la seguridad de la información es un objetivo estratégico." },
+    { q: "¿Se busca fortalecer la cultura de planificación de gestión?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Es un objetivo estratégico fortalecer la cultura de planificación y control de gestión." },
+    { q: "¿El BPS cuenta con un área de salud ocupacional?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Existe un área de salud ocupacional para asesorar en la mejora de procesos." },
+    { q: "¿El BPS debe cumplir con el Marco de Ciberseguridad de AGESIC?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El organismo debe cumplir con el Marco de Ciberseguridad de AGESIC (Decreto 66/2025)." },
+    { q: "¿Se busca reducir el stock de expedientes con atraso?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Es un desafío a corto plazo abatir el stock de expedientes de solicitud de pasividad con atraso." },
+    { q: "¿El BPS colabora con el MIDES?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS implementa políticas mediante ventanilla única con el MIDES." },
+    { q: "¿El BPS tiene presencia en todo el país?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Una fortaleza es la presencia del BPS en todo el país." },
+    { q: "¿Se busca fomentar el uso de datos abiertos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El plan busca consolidar una estrategia de datos abiertos, confiables y reutilizables." },
+    { q: "¿Es la solidaridad un valor institucional?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La solidaridad es un valor central que promueve la cohesión social." },
+    { q: "¿El ausentismo laboral es controlado por el BPS?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Administrar el Sistema Nacional de Certificación Laboral permite abordar el ausentismo." },
+    { q: "¿Existe un plan para abordar la obsolescencia tecnológica?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se busca abordar la obsolescencia tecnológica mediante estrategias de actualización." },
+    { q: "¿Se pretende minimizar el tiempo de resolución de trámites?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS busca minimizar el tiempo de gestión entre solicitud y resolución." },
+    { q: "¿Se promueve el uso de metodologías de gestión de proyectos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se promueve el uso de metodologías de gestión de proyectos para mejorar la planificación." },
+    { q: "¿Los trabajadores del BPS se consideran una fortaleza?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Los trabajadores comprometidos, capacitados y especializados son una fortaleza institucional." },
+    { q: "¿Se deben fortalecer los controles internos?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Fortalecer los controles internos de la organización es un objetivo estratégico." },
+    { q: "¿El BPS coordina soluciones habitacionales con el MVOT?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS implementa programas de soluciones habitacionales en coordinación con el MVOT." },
+    { q: "¿El BPS tiene un área de turismo social?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS implementa programas de turismo social, en especial en la Colonia de Raigón." },
+    { q: "¿La participación de la sociedad civil es valorada?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Fomentar el diálogo y la participación activa de los interlocutores sociales es un valor." },
+    { q: "¿El BPS realiza proyecciones financiero actuariales?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Disponer de proyecciones financiero actuariales es fundamental para el diseño de políticas." },
+    { q: "¿La atención virtual es el único canal priorizado?", o: ["Verdadero", "Falso"], a: "Falso", r: "Se busca complementar el modelo virtual con la atención presencial." },
+    { q: "¿Se considera la falta de proactividad una debilidad?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se identifica como debilidad la falta de proactividad en la atención y asesoramiento." },
+    { q: "¿La comunicación distorsiva externa es una amenaza?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "La comunicación distorsiva sobre cambios normativos puede generar desconfianza." },
+    { q: "¿El BPS trabaja en la mejora de la infraestructura laboral?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se busca mejorar el bienestar laboral y la infraestructura." },
+    { q: "¿El BPS carece de un área de auditoría interna?", o: ["Verdadero", "Falso"], a: "Falso", r: "Se promueve la participación de Auditoría Interna en actividades de consultoría." },
+    { q: "¿Es un objetivo fortalecer los servicios de salud?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Fortalecer los servicios de salud es un objetivo estratégico del BPS." },
+    { q: "¿Se busca aumentar la percepción de riesgo en la fiscalización?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se busca incrementar la percepción de riesgo efectivo para evitar el incumplimiento." },
+    { q: "¿El BPS es responsable de la planilla unificada de trabajo?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "El BPS implementa políticas con el MTSS a través de la planilla unificada de trabajo." },
+    { q: "¿La gestión de cobro busca ser proactiva?", o: ["Verdadero", "Falso"], a: "Verdadero", r: "Se debe realizar una gestión proactiva, segmentada y eficiente de la cartera." },
+    { q: "¿Cuál es el cometido central del BPS?", o: ["A) Gestionar el turismo social exclusivamente", "B) Coordinar los servicios de previsión social y organizar la Seguridad Social", "C) Recaudar impuestos de todo tipo para el Estado", "D) Gestionar únicamente el sistema de salud privado"], a: "B) Coordinar los servicios de previsión social y organizar la Seguridad Social", r: "Su cometido central es coordinar los servicios estatales de previsión social y organizar la Seguridad Social." },
+    { q: "¿Bajo qué artículo de la Constitución de 1967 fue creado el BPS?", o: ["A) Art. 195", "B) Art. 150", "C) Art. 180", "D) Art. 200"], a: "A) Art. 195", r: "El BPS es un ente autónomo creado en el artículo 195 de la Constitución de 1967." },
+    { q: "¿Cuántas prestaciones otorgó el BPS en enero 2025?", o: ["A) 1.579.795", "B) 1.250.000", "C) 1.376.110", "D) 91.859"], a: "C) 1.376.110", r: "En enero 2025, el Instituto ha otorgado 1.376.110 prestaciones." },
+    { q: "¿Cuántos puestos cotizantes recaudó el BPS en enero 2025?", o: ["A) 1.376.110", "B) 1.579.795", "C) 466.302", "D) 226.366"], a: "B) 1.579.795", r: "En enero 2025 el Instituto recaudó el aporte de 1.579.795 puestos cotizantes." },
+    { q: "¿Cuál es la prestación con mayor cantidad de beneficiarios según el gráfico?", o: ["A) Pensiones asistenciales", "B) Subsidio Desempleo", "C) AFAM", "D) Jubilaciones"], a: "D) Jubilaciones", r: "El gráfico muestra que las Jubilaciones cuentan con 496.802 beneficiarios." },
+    { q: "¿Qué valor es fundamental para la equidad y redistribución?", o: ["A) Eficiencia técnica", "B) Solidaridad", "C) Innovación", "D) Verticalidad"], a: "B) Solidaridad", r: "La solidaridad se concibe como un compromiso colectivo para la cohesión social y redistribución." },
+    { q: "¿Qué es el CRENADECER?", o: ["A) Un sistema de cobro", "B) Un centro de enfermedades raras", "C) Un plan de turismo", "D) Una herramienta de IA"], a: "B) Un centro de enfermedades raras", r: "Es el Centro de Referencia Nacional de Enfermedades Raras." },
+    { q: "¿Qué busca el lineamiento sobre la transformación digital?", o: ["A) Eliminar la presencialidad", "B) Potenciar la transformación digital y su gobernanza", "C) Reducir el gasto en hardware", "D) Solo digitalizar expedientes"], a: "B) Potenciar la transformación digital y su gobernanza", r: "El lineamiento 8 se enfoca en potenciar la transformación digital y la gobernanza de instrumentos." },
+    { q: "¿Cuál es una amenaza identificada en el FODA?", o: ["A) Ciberataques", "B) Personal capacitado", "C) Estructura multicanal", "D) Reputación"], a: "A) Ciberataques", r: "Los ciberataques se clasifican explícitamente como una amenaza." },
+    { q: "¿Qué debilidad se menciona sobre la estructura organizacional?", o: ["A) Es demasiado horizontal", "B) Es rígida y vertical", "C) Falta de personal", "D) Exceso de autonomía"], a: "B) Es rígida y vertical", r: "Se identifica como debilidad una estructura organizacional rígida y vertical." },
+    { q: "¿Qué meta de trámites digitales se espera para 2030?", o: ["A) ≥82%", "B) ≥73%", "C) ≥91%", "D) ≥50%"], a: "C) ≥91%", r: "La meta para 2030 es alcanzar un porcentaje ≥91%." },
+    { q: "¿Qué porcentaje de funcionarios se espera que complete 12h de capacitación en 2030?", o: ["A) ≥73%", "B) ≥85%", "C) ≥80%", "D) ≥82%"], a: "B) ≥85%", r: "El indicador 5.1 establece una meta de ≥85% para 2030." },
+    { q: "¿Qué valor se asigna a la transparencia?", o: ["A) Gestión de recursos públicos con integridad e imparcialidad", "B) Ahorro máximo de recursos", "C) Aceleración de procesos sin control", "D) Digitalización total"], a: "A) Gestión de recursos públicos con integridad e imparcialidad", r: "La transparencia implica integridad e imparcialidad en la gestión de recursos públicos." },
+    { q: "¿Con qué organismo coordina el BPS soluciones habitacionales?", o: ["A) MIDES", "B) MVOT", "C) ANEP", "D) DGI"], a: "B) MVOT", r: "El BPS coordina soluciones habitacionales con el MVOT." },
+    { q: "¿Qué busca el objetivo 1.1?", o: ["A) Optimizar la información disponible", "B) Reducir el personal", "C) Aumentar los impuestos", "D) Eliminar trámites"], a: "A) Optimizar la información disponible", r: "El objetivo 1.1 es optimizar la información disponible." },
+    { q: "¿Qué ley introdujo cambios que el BPS debe implementar?", o: ["A) Ley 19.999", "B) Ley 20.130", "C) Ley 18.000", "D) Ley 20.500"], a: "B) Ley 20.130", r: "Se deben continuar con los cambios introducidos por la Ley 20.130." },
+    { q: "¿Qué se busca minimizar en la atención presencial?", o: ["A) La cantidad de funcionarios", "B) El tiempo de espera", "C) La calidad del servicio", "D) La digitalización"], a: "B) El tiempo de espera", r: "Se busca establecer mecanismos que minimicen el tiempo de espera." },
+    { q: "¿Cómo se define la atención del BPS en el plan?", o: ["A) Exclusivamente digital", "B) Multicanal", "C) Solo presencial", "D) Limitada a oficinas centrales"], a: "B) Multicanal", r: "Se destaca la existencia de una estructura multicanal." },
+    { q: "¿Qué indicador mide el objetivo de ciberseguridad?", o: ["A) Nivel de satisfacción", "B) Cumplimiento de estándares (0-4)", "C) Número de incidentes", "D) Velocidad de red"], a: "B) Cumplimiento de estándares (0-4)", r: "El indicador 8.2 mide el cumplimiento de estándares de ciberseguridad." },
+    { q: "¿Qué se espera de la gestión de cobro?", o: ["A) Ser pasiva", "B) Ser proactiva, segmentada y eficiente", "C) Ser tercerizada totalmente", "D) Eliminar la judicialización"], a: "B) Ser proactiva, segmentada y eficiente", r: "Se busca realizar una gestión proactiva, segmentada y eficiente." },
+    { q: "¿Qué se promueve para las personas que trabajan en el BPS?", o: ["A) Movilidad interna", "B) Reducción salarial", "C) Capacitación continua", "D) A y C son correctas"], a: "D) A y C son correctas", r: "Se promueve el desarrollo de competencias, movilidad interna y formación continua." },
+    { q: "¿Cuál es el valor base del tiempo de espera en soluciones habitacionales?", o: ["A) 30 meses", "B) 45 meses", "C) 20 meses", "D) 12 meses"], a: "B) 45 meses", r: "El valor base es de 45 meses." },
+    { q: "¿Qué significa la 'Articulación interinstitucional'?", o: ["A) Trabajar solos", "B) Coordinar esfuerzos con otros organismos", "C) Competir con otros entes", "D) Centralizar todo en BPS"], a: "B) Coordinar esfuerzos con otros organismos", r: "Articulamos con otras instituciones como forma de coordinar esfuerzos." },
+    { q: "¿Qué herramienta tecnológica se aplicará en fiscalización?", o: ["A) Excel básico", "B) Inteligencia Artificial", "C) Papel", "D) Solo llamadas telefónicas"], a: "B) Inteligencia Artificial", r: "Se aplicará Inteligencia Artificial en funciones clave como la fiscalización." },
+    { q: "¿Cuál es el valor esperado de cumplimiento de ciberseguridad en 2030?", o: ["A) 2,7", "B) 2,9", "C) 3,5", "D) 4,0"], a: "B) 2,9", r: "La meta para 2030 es 2,9." },
+    { q: "¿Qué permite el Sistema Nacional de Certificación Laboral?", o: ["A) Aumentar el ausentismo", "B) Abordar de forma integral el ausentismo", "C) Ignorar las licencias médicas", "D) Eliminar aportes"], a: "B) Abordar de forma integral el ausentismo", r: "Permite abordar de forma integral el ausentismo laboral." },
+    { q: "¿Qué se considera una debilidad en la web del BPS?", o: ["A) Diseño no adaptado a necesidades actuales", "B) Exceso de velocidad", "C) Muy intuitiva", "D) Demasiada seguridad"], a: "A) Diseño no adaptado a necesidades actuales", r: "El diseño de la Web no está adaptado a las necesidades de comunicación actuales." },
+    { q: "¿Qué es el Ibirapitá?", o: ["A) Inclusión digital para adultos mayores", "B) Un programa de salud", "C) Un plan de construcción", "D) Un impuesto"], a: "A) Inclusión digital para adultos mayores", r: "Es un programa de inclusión digital para adultos mayores." },
+    { q: "¿Qué decreto regula el Marco de Ciberseguridad?", o: ["A) Decreto 10/2020", "B) Decreto 66/2025", "C) Decreto 50/2022", "D) Ninguno"], a: "B) Decreto 66/2025", r: "Se debe cumplir con el Decreto 66/2025." },
+    { q: "¿Cuál es la visión del Instituto?", o: ["A) Ser un instituto cercano y de gestión transparente", "B) Ser el más grande de América", "C) Ser privado", "D) Eliminar toda la burocracia en un año"], a: "A) Ser un instituto cercano y de gestión transparente", r: "Ser un Instituto cercano y de gestión transparente." },
+    { q: "¿Cuál es el valor base de la demora para el pago de Jubilación Común (dic/2024)?", o: ["A) 60 días", "B) 90 días", "C) 120 días", "D) 150 días"], a: "B) 90 días", r: "El valor base era de 90 días en diciembre de 2024." },
+    { q: "¿Qué se busca fortalecer en los servicios sociales del BPS?", o: ["A) La eliminación de viviendas", "B) Las modalidades de soluciones habitacionales", "C) El cobro de alquileres", "D) El cierre de colonias de vacaciones"], a: "B) Las modalidades de soluciones habitacionales", r: "Se busca potenciar las modalidades de soluciones habitacionales." },
+    { q: "¿Qué porcentaje de certificaciones de Subsidio de Enfermedad se espera controlar en 2030?", o: ["A) ≥70%", "B) ≥80%", "C) ≥90%", "D) ≥60%"], a: "C) ≥90%", r: "La meta para 2030 es ≥90%." },
+    { q: "¿Qué significa que el BPS sea el 'brazo ejecutor' de políticas?", o: ["A) Que no toma decisiones", "B) Que implementa políticas de protección social relevantes", "C) Que solo paga salarios", "D) Que diseña leyes"], a: "B) Que implementa políticas de protección social relevantes", r: "Es brazo ejecutor de políticas de protección social relevantes." },
+    { q: "¿Cuál es el valor base de la demora para el pago de Pensión por Invalidez (dic/2024)?", o: ["A) 177 días", "B) 208 días", "C) 30 días", "D) 90 días"], a: "A) 177 días", r: "El valor base era de 177 días." },
+    { q: "¿Qué se busca al fomentar la participación de la sociedad civil?", o: ["A) Menos control ciudadano", "B) Fortalecer la legitimidad institucional", "C) Evitar rendir cuentas", "D) Centralizar decisiones"], a: "B) Fortalecer la legitimidad institucional", r: "Fomentar la participación fortalece la legitimidad institucional." },
+    { q: "¿Qué aspecto es fundamental para la gestión de recursos humanos según el plan?", o: ["A) Rotación constante de personal", "B) Desarrollo de la carrera funcional", "C) Eliminación de capacitación", "D) Aislamiento de las áreas"], a: "B) Desarrollo de la carrera funcional", r: "Se promueve el desarrollo de la carrera funcional." },
+    { q: "¿Qué se debe hacer con los expedientes de pasividad con atraso?", o: ["A) Archivarlos", "B) Abatir el stock", "C) Ignorarlos", "D) Solo atender los nuevos"], a: "B) Abatir el stock", r: "El desafío es abatir el stock de expedientes con atraso." },
+    { q: "¿Cuál es el valor base del indicador de auditorías implementadas?", o: ["A) 30%", "B) 40%", "C) 50%", "D) 60%"], a: "B) 40%", r: "El valor base (plan 2023) era del 40%." },
+    { q: "¿Qué objetivo tiene la ventanilla única con el MIDES?", o: ["A) Solo trámites jubilatorios", "B) Implementar políticas de protección social como AFAM", "C) No tiene objetivo", "D) Cobrar impuestos"], a: "B) Implementar políticas de protección social como AFAM", r: "Se implementan políticas como Asignación Familiar o Tarjeta Uruguay Social." },
+    { q: "¿Cómo se califica el contexto demográfico actual del país?", o: ["A) Crecimiento explosivo", "B) Proceso de envejecimiento demográfico", "C) Población joven predominante", "D) Sin cambios"], a: "B) Proceso de envejecimiento demográfico", r: "Uruguay atraviesa un proceso de envejecimiento demográfico." },
+    { q: "¿Qué debe hacer el BPS ante el diálogo social?", o: ["A) Ignorarlo", "B) Estar preparado para respuestas ágiles y de calidad", "C) Bloquearlo", "D) Delegarlo a empresas privadas"], a: "B) Estar preparado para respuestas ágiles y de calidad", r: "El organismo debe estar preparado para ofrecer respuestas ágiles y de calidad." },
+    { q: "¿Qué busca el lineamiento sobre la transformación interna?", o: ["A) Poner foco en el usuario", "B) Poner foco en la burocracia", "C) Poner foco en los proveedores", "D) Ninguno"], a: "A) Poner foco en el usuario", r: "El lineamiento 4 propone transformar la gestión poniendo foco en el usuario." },
+    { q: "¿Qué es el 'derecho a entender'?", o: ["A) Un impuesto", "B) Un enfoque para la información en el sitio web", "C) Una ley de salud", "D) Un tipo de pensión"], a: "B) Un enfoque para la información en el sitio web", r: "Se menciona como enfoque para actualizar la información en la web." },
+    { q: "¿Qué rol cumple el CESSA?", o: ["A) Centro de Estudios en Seguridad Social, Salud y Administración", "B) Una oficina de cobro", "C) Un sistema de jubilación", "D) Ninguno"], a: "A) Centro de Estudios en Seguridad Social, Salud y Administración", r: "Es el Centro de Estudios en Seguridad Social, Salud y Administración." },
+    { q: "¿Qué meta de iniciativas educativas en escuelas se propone para 2030?", o: ["A) ≥12", "B) ≥16", "C) ≥20", "D) ≥24"], a: "D) ≥24", r: "La meta para 2030 es ≥24." },
+    { q: "¿Qué se busca con las acciones de promoción cultural?", o: ["A) Gastar el presupuesto", "B) Promover acciones culturales y recreativas", "C) Solo para funcionarios", "D) Ninguna"], a: "B) Promover acciones culturales y recreativas", r: "Se busca promover acciones culturales y recreativas con instituciones." },
+    { q: "¿Cuál es el valor base de las publicaciones anuales (año 2025)?", o: ["A) 25", "B) 30", "C) 35", "D) 40"], a: "C) 35", r: "El valor base establecido es de 35." },
+    { q: "¿Qué se busca mitigar mediante los modelos de control?", o: ["A) El ahorro", "B) El riesgo de fraude", "C) El exceso de trabajadores", "D) La digitalización"], a: "B) El riesgo de fraude", r: "Se busca prevenir y controlar el fraude mediante la integración de información." },
+    { q: "¿Qué es la 'georreferenciación' en el plan?", o: ["A) Una técnica para planificar soluciones habitacionales", "B) Un tipo de pensión", "C) Un sistema de salud", "D) Un error del sistema"], a: "A) Una técnica para planificar soluciones habitacionales", r: "Se incorporan técnicas de georreferenciación para planificar soluciones habitacionales." },
+  {
+    q: "¿Cuál es el objetivo principal de la seguridad social?",
+    o: ["Garantizar ingresos mínimos", "Favorecer la especulación financiera", "Reducir impuestos", "Eliminar el trabajo asalariado"],
+    a: "Garantizar ingresos mínimos",
+    r: "La seguridad social busca garantizar niveles mínimos de bienestar o pisos mínimos de protección."
+  },
+  {
+    q: "La seguridad social se financia únicamente con aportes de trabajadores.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El documento indica que se financia de forma tripartita: Estado, trabajadores y empleadores."
+  },
+  {
+    q: "¿Qué país fue pionero en crear un programa de seguro social en el siglo XIX?",
+    o: ["Francia", "Alemania", "Inglaterra", "Estados Unidos"],
+    a: "Alemania",
+    r: "Alemania, bajo Otto von Bismarck, creó el primer programa de seguro social en la década de 1880."
+  },
+  {
+    q: "El principio de solidaridad implica que todos aportan según su capacidad y reciben según sus necesidades.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La solidaridad se describe como redistribución de la riqueza con justicia social."
+  },
+  {
+    q: "¿Qué informe británico de 1942 fue clave en el desarrollo de la seguridad social?",
+    o: ["Informe Keynes", "Informe Beveridge", "Informe Marshall", "Informe Smith"],
+    a: "Informe Beveridge",
+    r: "El Informe Beveridge fue fundamental para los sistemas públicos universales."
+  },
+  {
+    q: "La universalidad objetiva refiere a cubrir todas las contingencias sociales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La universalidad objetiva implica cubrir todas las contingencias a las que está expuesto el ser humano."
+  },
+  {
+    q: "¿Qué organismo internacional define la seguridad social como medidas públicas para compensar la falta de ingresos?",
+    o: ["ONU", "OIT", "OMS", "UNESCO"],
+    a: "OIT",
+    r: "La OIT define la seguridad social como medidas públicas para compensar la falta o reducción de ingresos."
+  },
+  {
+    q: "El principio de igualdad implica que todas las personas deben estar amparadas de forma igualitaria ante los mismos riesgos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El principio de igualdad asegura idéntica protección ante situaciones iguales."
+  },
+  {
+    q: "¿Qué convenio de la OIT de 1952 estableció estándares mínimos de protección social?",
+    o: ["Convenio 87", "Convenio 102", "Convenio 189", "Convenio 29"],
+    a: "Convenio 102",
+    r: "El Convenio 102 de la OIT establece estándares mínimos de protección social."
+  },
+  {
+    q: "La suficiencia o integridad señala que las prestaciones deben ser suficientes para atender la contingencia social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La suficiencia implica que la protección debe ser equitativa, completa y adecuada."
+  },
+  {
+    q: "¿Qué economista impulsó la reforma social en Inglaterra en 1942?",
+    o: ["Adam Smith", "William Beveridge", "Karl Marx", "John Maynard Keynes"],
+    a: "William Beveridge",
+    r: "La reforma social fue impulsada por William Beveridge en 1942."
+  },
+  {
+    q: "La participación implica que la sociedad debe involucrarse en la administración de la seguridad social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El principio de participación involucra a todos los sectores interesados en la formulación de políticas."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial está cubierta por algún tipo de protección social según el documento?",
+    o: ["25 %", "52 %", "75 %", "90 %"],
+    a: "52 %",
+    r: "El documento indica que el 52 % de la población mundial está cubierta por algún tipo de protección social."
+  },
+  {
+    q: "El principio de obligatoriedad implica que las normas de la seguridad social son imperativas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las normas de la seguridad social son imperativas y no voluntarias."
+  },
+  {
+    q: "¿Qué países latinoamericanos fueron pioneros en crear seguros de invalidez, vejez y muerte?",
+    o: ["Argentina, Chile, Cuba y Uruguay", "México, Brasil, Perú y Bolivia", "Colombia, Costa Rica y Venezuela", "Paraguay, Ecuador y Honduras"],
+    a: "Argentina, Chile, Cuba y Uruguay",
+    r: "Los países pioneros fueron Argentina, Chile, Cuba y Uruguay en los años veinte y treinta."
+  },
+  {
+    q: "El principio de unidad supone la implantación de un sistema coordinado para evitar duplicación de recursos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El principio de unidad busca coordinación para evitar duplicación de recursos humanos y materiales."
+  },
+  {
+    q: "¿Qué declaración de 1948 reconoció el derecho de todas las personas a la seguridad social?",
+    o: ["Declaración de Filadelfia", "Declaración Universal de los Derechos Humanos", "Carta de la ONU", "Pacto de San José"],
+    a: "Declaración Universal de los Derechos Humanos",
+    r: "La Declaración Universal de los Derechos Humanos de 1948 reconoció el derecho a la seguridad social."
+  },
+  {
+    q: "La equidad colectiva supone que la proporción entre prestaciones y contribuciones esperadas sea la misma para todos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La equidad colectiva asegura igualdad en la proporción entre prestaciones y contribuciones."
+  },
+  {
+    q: "¿Qué organismo creó el Código Iberoamericano de Seguridad Social en 1995?",
+    o: ["OIT", "OISS", "ONU", "OMS"],
+    a: "OISS",
+    r: "El Código Iberoamericano de Seguridad Social fue creado por la OISS en 1995."
+  },
+  {
+    q: "El respeto de los derechos adquiridos implica proteger beneficios ya obtenidos o próximos a adquirirse.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Este principio protege derechos adquiridos o en curso de adquisición."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial sigue estando totalmente desprotegida según el documento?",
+    o: ["1.2 mil millones", "2.5 mil millones", "3.8 mil millones", "5 mil millones"],
+    a: "3.8 mil millones",
+    r: "El documento indica que 3.8 mil millones de personas siguen estando totalmente desprotegidas."
+  },
+  {
+    q: "La asistencia social implica acceso a medidas de protección para personas en vulnerabilidad sin aportes.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La asistencia social otorga prestaciones no contributivas a personas en vulnerabilidad."
+  },
+  {
+    q: "¿Qué pacto internacional de 1966 reconoció el derecho de todas las personas a la seguridad social?",
+    o: ["Pacto Internacional de Derechos Civiles y Políticos", "Pacto Internacional de Derechos Económicos, Sociales y Culturales", "Carta de la ONU", "Convenio Europeo de Derechos Humanos"],
+    a: "Pacto Internacional de Derechos Económicos, Sociales y Culturales",
+    r: "El artículo 9 del Pacto Internacional de 1966 reconoce el derecho a la seguridad social."
+  },
+  {
+    q: "La protección social incluye acciones públicas y privadas destinadas a proteger a las personas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El concepto de protección social es amplio e incluye acciones públicas y privadas."
+  },
+  {
+    q: "¿Qué presidente de Estados Unidos promulgó la Ley de Seguridad Social en 1935?",
+    o: ["Franklin D. Roosevelt", "John F. Kennedy", "Harry Truman", "Woodrow Wilson"],
+    a: "Franklin D. Roosevelt",
+    r: "La Ley de Seguridad Social fue promulgada por Franklin D. Roosevelt en 1935."
+  },
+  {
+    q: "El principio de responsabilidad del Estado deriva de la naturaleza del derecho humano a la seguridad social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Estado tiene responsabilidad en garantizar la seguridad social."
+  },
+  {
+    q: "¿Qué documento de 1944 reafirmó la seguridad social como derecho y responsabilidad del Estado?",
+    o: ["Declaración de Filadelfia", "Carta de la ONU", "Declaración Universal de Derechos Humanos", "Convenio 102 de la OIT"],
+    a: "Declaración de Filadelfia",
+    r: "La Declaración de Filadelfia de 1944 reafirmó la seguridad social como derecho y responsabilidad del Estado."
+  },
+  {
+    q: "La equidad individual supone equivalencia entre el monto esperado de las prestaciones y las contribuciones de una persona.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La equidad individual busca equivalencia entre prestaciones y contribuciones de cada persona."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial carece de protección social según el documento?",
+    o: ["25 %", "48 %", "52 %", "70 %"],
+    a: "48 %",
+    r: "El documento indica que cerca de la mitad de la población mundial carece de protección social."
+  },
+  {
+    q: "La asistencia social se conoce también como prestaciones no contributivas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La asistencia social incluye prestaciones no contributivas en dinero o servicios."
+  },
+  {
+    q: "¿Qué países latinoamericanos desarrollaron sistemas centralizados en los años cuarenta?",
+    o: ["Colombia, Costa Rica y México", "Argentina, Chile y Uruguay", "Brasil, Perú y Bolivia", "Paraguay y Ecuador"],
+    a: "Colombia, Costa Rica y México",
+    r: "Colombia, Costa Rica y México desarrollaron sistemas centralizados siguiendo recomendaciones de la OIT."
+  },
+  {
+    q: "El principio de universalidad subjetiva refiere a que todas las personas deben ser amparadas por la seguridad social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La universalidad subjetiva implica que todas las personas deben ser amparadas sin discriminación."
+  },
+  {
+    q: "¿Qué organismo internacional promueve un mínimo de protección social universal?",
+    o: ["ONU", "OIT", "OMS", "OISS"],
+    a: "OIT",
+    r: "La OIT promueve establecer un mínimo de protección social universal como instrumento de dignidad y estabilidad."
+  },
+  {
+    q: "El principio de suficiencia exige que las prestaciones lleguen a tiempo y sean adecuadas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La suficiencia implica que las prestaciones sean equitativas, completas y oportunas."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial está cubierta por al menos una prestación de seguridad social?",
+    o: ["25 %", "52 %", "65 %", "80 %"],
+    a: "52 %",
+    r: "El documento señala que el 52 % de la población mundial está cubierta por al menos una prestación."
+  },
+  {
+    q: "La solidaridad puede ser intergeneracional (jóvenes con ancianos) o intrageneracional (ricos con pobres).",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La solidaridad se expresa tanto entre generaciones como entre diferentes niveles de ingresos."
+  },
+  {
+    q: "¿Qué países latinoamericanos comenzaron a crear sistemas de seguridad social en las décadas de 1950 y 1960?",
+    o: ["Países de América Central y Caribe", "Argentina y Chile", "México y Brasil", "Colombia y Perú"],
+    a: "Países de América Central y Caribe",
+    r: "En América Central y parte del Caribe la cobertura continúa siendo limitada y desigual."
+  },
+  {
+    q: "El principio de participación incluye representación de trabajadores, empleadores y jubilados.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "En Uruguay se incluye representación de trabajadores, empleadores y jubilados en la administración."
+  },
+  {
+    q: "¿Qué año se promulgó la Ley de Seguridad Social en Estados Unidos?",
+    o: ["1929", "1935", "1942", "1952"],
+    a: "1935",
+    r: "La Ley de Seguridad Social fue promulgada en 1935 por Franklin D. Roosevelt."
+  },
+  {
+    q: "El principio de unidad busca coordinación entre instituciones para evitar duplicación de recursos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El principio de unidad supone coordinación para evitar duplicación de recursos humanos y materiales."
+  },
+  {
+    q: "¿Qué documento de 1919 introdujo el concepto moderno de seguridad social?",
+    o: ["Preámbulo de la Constitución de la OIT", "Convenio 102", "Declaración Universal de Derechos Humanos", "Informe Beveridge"],
+    a: "Preámbulo de la Constitución de la OIT",
+    r: "El concepto moderno de seguridad social comenzó con el Preámbulo de la Constitución de la OIT en 1919."
+  },
+  {
+    q: "La obligatoriedad implica que el ingreso al sistema de seguridad social no es voluntario.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las normas de la seguridad social son imperativas y obligatorias."
+  },
+  {
+    q: "¿Qué organismo internacional elaboró el Convenio 102 en 1952?",
+    o: ["ONU", "OIT", "OMS", "OISS"],
+    a: "OIT",
+    r: "El Convenio 102 fue elaborado por la OIT en 1952."
+  },
+  {
+    q: "La equidad colectiva asegura que todos reciban prestaciones proporcionales independientemente de sus aportes.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La equidad colectiva busca igualdad en la proporción entre prestaciones y contribuciones."
+  },
+  {
+    q: "¿Qué año se creó el Código Iberoamericano de Seguridad Social?",
+    o: ["1944", "1952", "1995", "2000"],
+    a: "1995",
+    r: "El Código Iberoamericano de Seguridad Social fue creado en 1995 por la OISS."
+  },
+  {
+    q: "El respeto de los derechos adquiridos protege beneficios ya obtenidos o próximos a adquirirse.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Este principio protege derechos adquiridos o en curso de adquisición."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial sigue desprotegida según el documento?",
+    o: ["1.2 mil millones", "2.5 mil millones", "3.8 mil millones", "5 mil millones"],
+    a: "3.8 mil millones",
+    r: "El documento indica que 3.8 mil millones de personas siguen estando totalmente desprotegidas."
+  },
+  {
+    q: "La asistencia social otorga prestaciones en dinero o servicios a quienes no realizan aportes.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La asistencia social está destinada a personas en vulnerabilidad sin aportes."
+  },
+  {
+    q: "¿Qué principio asegura acceso universal a servicios de asistencia médica?",
+    o: ["Solidaridad", "Universalidad", "Igualdad", "Suficiencia"],
+    a: "Universalidad",
+    r: "La universalidad asegura acceso universal a servicios de asistencia médica."
+  },
+  {
+    q: "La protección social incluye programas de alimentación, vivienda e inclusión social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La protección social incluye programas vinculados al bienestar social como alimentación y vivienda."
+  },
+  {
+    q: "¿Qué economista británico elaboró el Informe Beveridge?",
+    o: ["William Beveridge", "Adam Smith", "John Keynes", "Karl Marx"],
+    a: "William Beveridge",
+    r: "El Informe Beveridge fue elaborado por William Beveridge en 1942."
+  },
+  {
+    q: "La solidaridad es considerada el principio fundador de la seguridad social.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La solidaridad constituye el principio fundador de la seguridad social."
+  },
+  {
+    q: "¿Qué organismo internacional define la protección social como conjunto de políticas y programas?",
+    o: ["ONU", "OIT", "OMS", "OISS"],
+    a: "OIT",
+    r: "La OIT define la protección social como conjunto de políticas y programas gubernamentales y privados."
+  },
+  {
+    q: "El principio de equidad puede ser individual o colectiva.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La equidad individual supone equivalencia entre aportes y prestaciones; la colectiva asegura igualdad proporcional para todos."
+  },
+  {
+    q: "¿Qué organismo internacional reafirmó en 1948 el derecho de todas las personas a la seguridad social?",
+    o: ["ONU", "OIT", "OMS", "OISS"],
+    a: "ONU",
+    r: "La Declaración Universal de los Derechos Humanos de 1948, elaborada por la ONU, reconoció el derecho a la seguridad social."
+  },
+  {
+    q: "La protección social está dirigida a toda la población, sin importar si realizan aportes o tienen empleo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El documento señala que la protección social incluye programas y acciones para toda la población, independientemente de aportes."
+  },
+  {
+    q: "¿Qué porcentaje de la población mundial sigue sin beneficiarse de un nivel de protección adecuado?",
+    o: ["25 %", "40 %", "48 %", "50 %"],
+    a: "48 %",
+    r: "El texto indica que cerca de la mitad de la población mundial todavía carece de protección adecuada."
+  },
+  {
+    q: "La seguridad social busca también la redistribución de la riqueza, tanto horizontal como vertical.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El documento explica que la redistribución puede ser horizontal (entre trabajadores) o vertical (de sectores con mayores ingresos hacia los de menores)."
+  },
+  {
+    q: "¿Cuál es la duración mínima de la licencia anual remunerada?",
+    o: ["15 días hábiles", "20 días hábiles", "25 días hábiles", "30 días hábiles"],
+    a: "20 días hábiles",
+    r: "El Art. 2 establece que todo funcionario tiene derecho a una licencia anual remunerada de veinte días hábiles como mínimo."
+  },
+  {
+    q: "La licencia anual debe hacerse efectiva en un solo período, salvo autorización de fraccionamiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Según el Art. 2, la licencia debe hacerse efectiva en un solo período, aunque puede fraccionarse si no afecta el servicio."
+  },
+  {
+    q: "¿Cada cuántos años de antigüedad se otorga un día complementario de licencia?",
+    o: ["Cada 2 años", "Cada 3 años", "Cada 4 años", "Cada 5 años"],
+    a: "Cada 4 años",
+    r: "El Art. 3 indica que corresponde un día complementario por cada cuatro años de antigüedad."
+  },
+  {
+    q: "Para tener derecho a la licencia anual, el funcionario debe haber trabajado al menos 12 meses o su equivalente en quincenas o semanas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 4 establece que se requieren 12 meses, 24 quincenas o 52 semanas de trabajo."
+  },
+  {
+    q: "¿Cuál es el coeficiente aplicado para calcular la licencia proporcional por mes trabajado?",
+    o: ["1,25", "1,50", "1,67", "2,00"],
+    a: "1,67",
+    r: "El Art. 9 dispone que se aplica un coeficiente de 1,67 por cada mes trabajado o fracción."
+  },
+  {
+    q: "Las licencias denegadas pueden acumularse indefinidamente.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 6 aclara que no pueden acumularse más de dos períodos anuales."
+  },
+  {
+    q: "¿Cuántos días de licencia corresponden por matrimonio?",
+    o: ["10 días corridos", "12 días corridos", "15 días corridos", "20 días corridos"],
+    a: "15 días corridos",
+    r: "El Art. 11 establece que por matrimonio corresponde una licencia de quince días corridos."
+  },
+  {
+    q: "La licencia por maternidad tiene una duración estándar de 14 semanas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 12 indica que la licencia por maternidad es de 14 semanas, ampliable en casos especiales."
+  },
+  {
+    q: "¿Cuántos días de licencia por paternidad se reconocen?",
+    o: ["5 días hábiles", "7 días hábiles", "10 días hábiles", "15 días hábiles"],
+    a: "10 días hábiles",
+    r: "El Art. 17 establece que la licencia por paternidad es de diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción tiene una duración de seis semanas continuas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 18 dispone que corresponde una licencia especial de seis semanas continuas."
+  },
+  {
+    q: "¿Qué documentación debe presentar la funcionaria para acceder a la licencia por maternidad?",
+    o: ["Constancia de INAU", "Certificado médico con fecha presunta de parto", "Partida de nacimiento", "Resolución del Directorio"],
+    a: "Certificado médico con fecha presunta de parto",
+    r: "El Art. 12 establece que la funcionaria embarazada debe presentar certificado médico indicando la fecha presunta de parto."
+  },
+  {
+    q: "La licencia por maternidad puede extenderse a 18 semanas en casos de nacimientos múltiples o con discapacidad.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 12 indica que en nacimientos múltiples, pretérminos o con discapacidad la licencia será de 18 semanas."
+  },
+  {
+    q: "¿Qué documento acredita el nacimiento del niño para la licencia por maternidad?",
+    o: ["Constancia médica", "Testimonio de partida de nacimiento", "Resolución judicial", "Carné de salud"],
+    a: "Testimonio de partida de nacimiento",
+    r: "El Art. 13 establece que el nacimiento debe acreditarse mediante testimonio de partida de nacimiento."
+  },
+  {
+    q: "Si el parto ocurre después de la fecha presunta, la licencia pre-parto se prolonga hasta el alumbramiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 14 inciso a) indica que la licencia tomada anteriormente se prolonga hasta la fecha del alumbramiento."
+  },
+  {
+    q: "¿Cuánto tiempo dura la reducción horaria para madres luego de la licencia por maternidad?",
+    o: ["3 meses", "6 meses", "9 meses", "12 meses"],
+    a: "6 meses",
+    r: "El Art. 16 establece que la reducción horaria se extiende por seis meses, prorrogable hasta un año si amamanta."
+  },
+  {
+    q: "Las funcionarias con reducción horaria pueden realizar horas extraordinarias.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 16 aclara que durante la reducción horaria no se puede realizar horario extraordinario."
+  },
+  {
+    q: "¿Cuántos días de licencia por paternidad se otorgan según el reglamento?",
+    o: ["5 días", "7 días", "10 días", "12 días"],
+    a: "10 días",
+    r: "El Art. 17 establece que corresponde una licencia por paternidad de diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción se otorga a partir de la entrega efectiva del menor.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 18 indica que la licencia especial de seis semanas se ejerce desde la entrega efectiva del menor."
+  },
+  {
+    q: "¿Cuántos días de licencia recibe el otro cónyuge si uno ya usufructuó la licencia por adopción?",
+    o: ["5 días hábiles", "7 días hábiles", "10 días hábiles", "15 días hábiles"],
+    a: "10 días hábiles",
+    r: "El Art. 19 establece que el otro cónyuge tendrá derecho a diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción puede sustituirse por salario.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 21 indica que la licencia especial debe gozarse efectivamente y no puede sustituirse por salario."
+  },
+  {
+    q: "¿Cuánto tiempo dura la reducción horaria luego de la licencia por adopción?",
+    o: ["3 meses", "6 meses", "9 meses", "12 meses"],
+    a: "6 meses",
+    r: "El Art. 22 establece que la reducción horaria se extiende por seis meses."
+  },
+  {
+    q: "La licencia por enfermedad incluye afecciones físicas o psíquicas que impidan el desempeño laboral.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 23 define la causal de licencia por enfermedad como toda afección física o psíquica que impida trabajar."
+  },
+  {
+    q: "¿En cuánto tiempo debe avisar el funcionario que no puede concurrir por enfermedad?",
+    o: ["1 hora", "2 horas", "4 horas", "6 horas"],
+    a: "2 horas",
+    r: "El Art. 24 establece que debe dar aviso dentro de las dos horas siguientes al comienzo del horario de labor."
+  },
+  {
+    q: "El funcionario en licencia por enfermedad debe procurarse asistencia médica y cumplir tratamientos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 25 establece el deber de procurarse asistencia médica y cumplir tratamientos prescriptos."
+  },
+  {
+    q: "¿Quién certifica la licencia médica del funcionario?",
+    o: ["El jerarca", "El médico del prestador integral de salud", "El Directorio", "El INAU"],
+    a: "El médico del prestador integral de salud",
+    r: "El Art. 26 establece que el médico del prestador integral de salud certifica la licencia médica."
+  },
+  {
+    q: "Los servicios médicos del organismo pueden modificar o suspender certificaciones médicas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 27 otorga facultades a los servicios médicos para modificar o suspender certificaciones."
+  },
+  {
+    q: "¿Cuál es el máximo de horas anuales autorizadas para comisiones especiales por hijos enfermos?",
+    o: ["10 horas", "15 horas", "20 horas", "25 horas"],
+    a: "20 horas",
+    r: "El Art. 28 establece un máximo de 20 horas anuales por funcionario."
+  },
+  {
+    q: "El funcionario en licencia por enfermedad debe permanecer en su domicilio salvo autorización médica.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 29 establece la obligación de permanecer en el domicilio salvo autorización médica."
+  },
+  {
+    q: "¿Qué debe presentar el funcionario al regresar de una licencia médica en el exterior?",
+    o: ["Constancia del jerarca", "Certificado original traducido y legalizado", "Carné de salud", "Resolución del Directorio"],
+    a: "Certificado original traducido y legalizado",
+    r: "El Art. 31 establece que debe presentar certificado original traducido y legalizado o apostillado."
+  },
+  {
+    q: "La licencia por enfermedad es compatible con cualquier actividad laboral.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 32 establece que la licencia por enfermedad es incompatible con cualquier actividad laboral."
+  },
+  {
+    q: "¿Cuál es la duración mínima de la licencia anual remunerada?",
+    o: ["15 días hábiles", "20 días hábiles", "25 días hábiles", "30 días hábiles"],
+    a: "20 días hábiles",
+    r: "El Art. 2 establece que todo funcionario tiene derecho a una licencia anual remunerada de veinte días hábiles como mínimo."
+  },
+  {
+    q: "La licencia anual debe hacerse efectiva en un solo período, salvo autorización de fraccionamiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Según el Art. 2, la licencia debe hacerse efectiva en un solo período, aunque puede fraccionarse si no afecta el servicio."
+  },
+  {
+    q: "¿Cada cuántos años de antigüedad se otorga un día complementario de licencia?",
+    o: ["Cada 2 años", "Cada 3 años", "Cada 4 años", "Cada 5 años"],
+    a: "Cada 4 años",
+    r: "El Art. 3 indica que corresponde un día complementario por cada cuatro años de antigüedad."
+  },
+  {
+    q: "Para tener derecho a la licencia anual, el funcionario debe haber trabajado al menos 12 meses o su equivalente en quincenas o semanas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 4 establece que se requieren 12 meses, 24 quincenas o 52 semanas de trabajo."
+  },
+  {
+    q: "¿Cuál es el coeficiente aplicado para calcular la licencia proporcional por mes trabajado?",
+    o: ["1,25", "1,50", "1,67", "2,00"],
+    a: "1,67",
+    r: "El Art. 9 dispone que se aplica un coeficiente de 1,67 por cada mes trabajado o fracción."
+  },
+  {
+    q: "Las licencias denegadas pueden acumularse indefinidamente.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 6 aclara que no pueden acumularse más de dos períodos anuales."
+  },
+  {
+    q: "¿Cuántos días de licencia corresponden por matrimonio?",
+    o: ["10 días corridos", "12 días corridos", "15 días corridos", "20 días corridos"],
+    a: "15 días corridos",
+    r: "El Art. 11 establece que por matrimonio corresponde una licencia de quince días corridos."
+  },
+  {
+    q: "La licencia por maternidad tiene una duración estándar de 14 semanas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 12 indica que la licencia por maternidad es de 14 semanas, ampliable en casos especiales."
+  },
+  {
+    q: "¿Cuántos días de licencia por paternidad se reconocen?",
+    o: ["5 días hábiles", "7 días hábiles", "10 días hábiles", "15 días hábiles"],
+    a: "10 días hábiles",
+    r: "El Art. 17 establece que la licencia por paternidad es de diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción tiene una duración de seis semanas continuas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 18 dispone que corresponde una licencia especial de seis semanas continuas."
+  },
+  {
+    q: "¿Qué documentación debe presentar la funcionaria para acceder a la licencia por maternidad?",
+    o: ["Constancia de INAU", "Certificado médico con fecha presunta de parto", "Partida de nacimiento", "Resolución del Directorio"],
+    a: "Certificado médico con fecha presunta de parto",
+    r: "El Art. 12 establece que la funcionaria embarazada debe presentar certificado médico indicando la fecha presunta de parto."
+  },
+  {
+    q: "La licencia por maternidad puede extenderse a 18 semanas en casos de nacimientos múltiples o con discapacidad.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 12 indica que en nacimientos múltiples, pretérminos o con discapacidad la licencia será de 18 semanas."
+  },
+  {
+    q: "¿Qué documento acredita el nacimiento del niño para la licencia por maternidad?",
+    o: ["Constancia médica", "Testimonio de partida de nacimiento", "Resolución judicial", "Carné de salud"],
+    a: "Testimonio de partida de nacimiento",
+    r: "El Art. 13 establece que el nacimiento debe acreditarse mediante testimonio de partida de nacimiento."
+  },
+  {
+    q: "Si el parto ocurre después de la fecha presunta, la licencia pre-parto se prolonga hasta el alumbramiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 14 inciso a) indica que la licencia tomada anteriormente se prolonga hasta la fecha del alumbramiento."
+  },
+  {
+    q: "¿Cuánto tiempo dura la reducción horaria para madres luego de la licencia por maternidad?",
+    o: ["3 meses", "6 meses", "9 meses", "12 meses"],
+    a: "6 meses",
+    r: "El Art. 16 establece que la reducción horaria se extiende por seis meses, prorrogable hasta un año si amamanta."
+  },
+  {
+    q: "Las funcionarias con reducción horaria pueden realizar horas extraordinarias.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 16 aclara que durante la reducción horaria no se puede realizar horario extraordinario."
+  },
+  {
+    q: "¿Cuántos días de licencia por paternidad se otorgan según el reglamento?",
+    o: ["5 días", "7 días", "10 días", "12 días"],
+    a: "10 días",
+    r: "El Art. 17 establece que corresponde una licencia por paternidad de diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción se otorga a partir de la entrega efectiva del menor.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 18 indica que la licencia especial de seis semanas se ejerce desde la entrega efectiva del menor."
+  },
+  {
+    q: "¿Cuántos días de licencia recibe el otro cónyuge si uno ya usufructuó la licencia por adopción?",
+    o: ["5 días hábiles", "7 días hábiles", "10 días hábiles", "15 días hábiles"],
+    a: "10 días hábiles",
+    r: "El Art. 19 establece que el otro cónyuge tendrá derecho a diez días hábiles."
+  },
+  {
+    q: "La licencia por adopción puede sustituirse por salario.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "El Art. 21 indica que la licencia especial debe gozarse efectivamente y no puede sustituirse por salario."
+  },
+  {
+    q: "¿Cuánto tiempo dura la reducción horaria luego de la licencia por adopción?",
+    o: ["3 meses", "6 meses", "9 meses", "12 meses"],
+    a: "6 meses",
+    r: "El Art. 22 establece que la reducción horaria se extiende por seis meses."
+  },
+  {
+    q: "La licencia por enfermedad incluye afecciones físicas o psíquicas que impidan el desempeño laboral.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 23 define la causal de licencia por enfermedad como toda afección física o psíquica que impida trabajar."
+  },
+  {
+    q: "¿En cuánto tiempo debe avisar el funcionario que no puede concurrir por enfermedad?",
+    o: ["1 hora", "2 horas", "4 horas", "6 horas"],
+    a: "2 horas",
+    r: "El Art. 24 establece que debe dar aviso dentro de las dos horas siguientes al comienzo del horario de labor."
+  },
+  {
+    q: "El funcionario en licencia por enfermedad debe procurarse asistencia médica y cumplir tratamientos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Art. 25 establece el deber de procurarse asistencia médica y cumplir tratamientos prescriptos."
+  },
+  {
+    q: "¿Quién certifica la licencia médica del funcionario?",
+    o: ["El jerarca", "El médico del prestador integral de salud", "El Directorio", "El INAU"],
+    a: "El médico del prestador integral de salud",
+    r: "El Art. 26 establece que el médico del prestador integral de salud certifica la licencia médica."
+  },
+    {
+    q: "¿A qué procedimientos alcanza este reglamento?",
+    o: ["Procesos legislativos", "Trámites privados", "Al procedimiento administrativo común", "Procedimientos judiciales"],
+    a: "Al procedimiento administrativo común",
+    r: "Art. 1: Las disposiciones alcanzan al procedimiento administrativo común en la actividad del Banco de Previsión Social."
+  },
+  {
+    q: "El Banco de Previsión Social debe servir con objetividad los intereses generales.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 2: El BPS debe servir con objetividad los intereses generales con sometimiento pleno al Derecho."
+  },
+  {
+    q: "¿Cuál de los siguientes es un principio general del procedimiento administrativo?",
+    o: ["Arbitrariedad", "Imparcialidad", "Interés particular", "Confidencialidad absoluta"],
+    a: "Imparcialidad",
+    r: "Art. 2: Se establece la imparcialidad como principio general."
+  },
+  {
+    q: "Los funcionarios deben excusarse si existe afecto o enemistad hacia las partes.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 3: Los funcionarios deben excusarse cuando exista afecto o enemistad en relación a las partes."
+  },
+  {
+    q: "¿Qué principio obliga al BPS a investigar los hechos aunque no sean alegados por las partes?",
+    o: ["Verdad material", "Formalismo", "Delegación", "Confidencialidad"],
+    a: "Verdad material",
+    r: "Art. 4: El BPS está obligado a ajustarse a la verdad material de los hechos."
+  },
+  {
+    q: "Los interesados gozan de todos los derechos y garantías inherentes al debido proceso.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 5: Los interesados gozarán de todos los derechos y garantías inherentes al debido proceso."
+  },
+  {
+    q: "¿Qué valores deben guiar la conducta de las partes y funcionarios en el procedimiento?",
+    o: ["Respeto mutuo, lealtad y buena fe", "Competencia y rivalidad", "Neutralidad absoluta", "Confidencialidad total"],
+    a: "Respeto mutuo, lealtad y buena fe",
+    r: "Art. 6: Todos los partícipes ajustarán su conducta al respeto mutuo, lealtad y buena fe."
+  },
+  {
+    q: "Los vicios de forma siempre causan nulidad del acto.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Art. 7: Los vicios de forma no causan nulidad si cumplen con el fin y no disminuyen garantías."
+  },
+  {
+    q: "¿Qué principios deben asegurarse en el procedimiento administrativo?",
+    o: ["Formalismo estricto", "Secreto absoluto", "Celeridad, simplicidad y economía", "Arbitrariedad"],
+    a: "Celeridad, simplicidad y economía",
+    r: "Art. 8: Se debe asegurar la celeridad, simplicidad y economía del procedimiento."
+  },
+  {
+    q: "El informalismo en favor del administrado aplica cuando se trata de exigencias formales no esenciales.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 9: Se aplicará el principio del informalismo en favor del administrado en exigencias no esenciales."
+  },
+  {
+    q: "¿Qué asuntos resuelven las dependencias del BPS sin necesidad de delegación?",
+    o: ["Resoluciones judiciales", "Confrontación de hechos o aplicación automática de normas", "Reformas legislativas", "Decisiones políticas"],
+    a: "Confrontación de hechos o aplicación automática de normas",
+    r: "Art. 10: Corresponde a las dependencias resolver asuntos de simple confrontación de hechos o aplicación automática de normas."
+  },
+  {
+    q: "Las dependencias pueden rechazar escritos presentados por los interesados.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Art. 11: No podrán rechazar escritos ni negar acceso a las actuaciones administrativas."
+  },
+  {
+    q: "El órgano superior puede suspender el trámite y avocarse al conocimiento de las actuaciones.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 12: El órgano superior puede suspender el trámite y avocarse al conocimiento."
+  },
+  {
+    q: "¿Qué tipo de intercambio de información es de interés público?",
+    o: ["Exclusivamente por memorandos", "Secreto absoluto", "Intercambio permanente y directo entre dependencias", "Solo comunicación verbal"],
+    a: "Intercambio permanente y directo entre dependencias",
+    r: "Art. 13: Es de interés público el intercambio permanente y directo de datos e información."
+  },
+  {
+    q: "El procedimiento administrativo puede iniciarse de oficio.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 14: El procedimiento puede iniciarse a petición de persona interesada o de oficio."
+  },
+  {
+    q: "¿Qué medidas puede adoptar la autoridad competente al inicio del procedimiento?",
+    o: ["Resoluciones definitivas", "Medidas provisionales", "Sanciones disciplinarias", "Reformas legales"],
+    a: "Medidas provisionales",
+    r: "Art. 15: La autoridad puede adoptar medidas provisionales para asegurar la eficacia de la resolución."
+  },
+  {
+    q: "Si la decisión afecta a otras personas, deben ser notificadas.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 16: Se notificará a otras personas cuyos derechos puedan verse afectados."
+  },
+  {
+    q: "¿Cómo pueden comparecer varios interesados en un procedimiento?",
+    o: ["No pueden comparecer juntos", "Solo mediante abogado", "Cada uno por separado", "Conjuntamente por un solo escrito"],
+    a: "Conjuntamente por un solo escrito",
+    r: "Art. 17: Varios interesados pueden comparecer conjuntamente por un solo escrito."
+  },
+  {
+    q: "Toda petición ante un órgano administrativo debe efectuarse por escrito.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 18: Toda petición se efectuará por escrito."
+  },
+  {
+    q: "¿Qué deben expresar los apoderados en sus escritos?",
+    o: ["El número de expediente", "La fecha de presentación", "La calidad de tales y el nombre de los representados", "Solo la firma"],
+    a: "La calidad de tales y el nombre de los representados",
+    r: "Art. 19: Los apoderados deben expresar su calidad y el nombre de quienes representan."
+  },
+  {
+    q: "Los particulares deben firmar sus escritos con su firma usual.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Art. 20: Los particulares suscribirán sus escritos con su firma usual."
+  },
+  {
+    q: "¿Qué debe acompañar todo escrito presentado?",
+    o: ["Respaldo digital", "Memorando", "Solo original", "Copia o fotocopia firmada"],
+    a: "Copia o fotocopia firmada",
+    r: "Art. 21: Todo escrito debe acompañarse de copia o fotocopia firmada."
+  },
+  {
+    q: "Los documentos pueden presentarse en fotocopia certificada por el funcionario receptor.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 22: Los documentos podrán presentarse en fotocopia certificada por el funcionario receptor."
+  },
+  {
+    q: "¿Qué debe acompañar un escrito presentado en representación de otro?",
+    o: ["Circular", "Firma digital", "Mandato o documento que acredite representación", "Memorando"],
+    a: "Mandato o documento que acredite representación",
+    r: "Art. 23: Se acompañará mandato o documento que acredite representación."
+  },
+  {
+    q: "El funcionario receptor debe anotar fecha y número de fojas en el escrito recibido.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 24: Todo funcionario debe anotar fecha, número de fojas y documentos acompañados."
+  },
+  {
+    q: "¿Por cuánto tiempo pueden retirarse los expedientes por las partes?",
+    o: ["10 días", "3 días", "5 días", "15 días"],
+    a: "5 días",
+    r: "Art. 70: Los expedientes podrán ser retirados por un máximo de cinco días, previa autorización."
+  },
+  {
+    q: "Los documentos pueden ser calificados como secretos o reservados.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 71: Los documentos podrán ser calificados como secretos, confidenciales o reservados."
+  },
+  {
+    q: "¿Qué carácter adquiere el abogado patrocinante mediante escrito o acta administrativa?",
+    o: ["Representante de la parte interesada", "Testigo", "Funcionario público", "Perito"],
+    a: "Representante de la parte interesada",
+    r: "Art. 72: El abogado patrocinante queda investido como representante de la parte interesada."
+  },
+  {
+    q: "El interesado puede reclamar contra defectos de tramitación en cualquier etapa.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 73: El interesado podrá reclamar contra defectos de tramitación en cualquier etapa."
+  },
+  {
+    q: "¿Qué debe hacer la autoridad competente una vez concluida la sustanciación del expediente?",
+    o: ["Dictar resolución", "Archivar el expediente", "Solicitar informes", "Notificar a terceros"],
+    a: "Dictar resolución",
+    r: "Art. 74: Una vez concluida la sustanciación, la autoridad competente debe dictar resolución."
+  },
+  {
+    q: "Todo interesado puede desistir de su petición o renunciar a su derecho.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 75: Todo interesado podrá desistir de su petición o renunciar a su derecho."
+  },
+  {
+    q: "¿Cómo puede hacerse el desistimiento o la renuncia?",
+    o: ["Por escrito o verbalmente", "Solo por escrito", "Solo por fax", "Mediante circular"],
+    a: "Por escrito o verbalmente",
+    r: "Art. 76: Tanto el desistimiento como la renuncia podrán hacerse por escrito o verbalmente."
+  },
+  {
+    q: "El BPS aceptará de plano el desistimiento y declarará concluido el procedimiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 77: El BPS aceptará de plano el desistimiento y declarará concluido el procedimiento."
+  },
+  {
+    q: "¿Qué plazo se concede al interesado cuando se paraliza un trámite por su causa?",
+    o: ["15 días", "20 días", "30 días", "60 días"],
+    a: "30 días",
+    r: "Art. 78: La Administración intimará su comparecencia en un plazo prudencial no mayor de 30 días."
+  },
+  {
+    q: "Las copias fotográficas o escaneadas de expedientes tienen igual validez que los originales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 79: Dichas copias tendrán igual validez que los antecedentes originales si son autenticadas."
+  },
+  {
+    q: "¿En qué plazo deben practicarse las notificaciones?",
+    o: ["10 días hábiles", "5 días hábiles", "15 días hábiles", "20 días hábiles"],
+    a: "5 días hábiles",
+    r: "Art. 80: Las notificaciones se practicarán en el plazo máximo de 5 días hábiles."
+  },
+  {
+    q: "El administrado puede acceder a la información por medios electrónicos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 81: El administrado podrá acceder a la información disponible por medios electrónicos."
+  },
+  {
+    q: "¿Qué debe constar en toda notificación o citación?",
+    o: ["Fecha y hora de recepción", "Firma del jerarca", "Número de expediente", "Nombre del abogado"],
+    a: "Fecha y hora de recepción",
+    r: "Art. 82: Debe constar la fecha, hora de recepción o acceso y seguridad de la diligencia."
+  },
+  {
+    q: "Si se desconoce el domicilio, la notificación se hará por publicación en el Diario Oficial.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 83: Se notificará mediante publicación en el Diario Oficial durante tres días seguidos."
+  },
+  {
+    q: "¿Qué parte del acto debe reproducirse en las notificaciones?",
+    o: ["La parte dispositiva", "El visto", "Los considerandos", "El atento"],
+    a: "La parte dispositiva",
+    r: "Art. 84: En las notificaciones se reproducirá la parte dispositiva del acto."
+  },
+  {
+    q: "Las citaciones y notificaciones deben ser firmadas o contener claves informáticas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 85: Las citaciones y notificaciones deberán ser firmadas o contener claves informáticas."
+  },
+  {
+    q: "¿Qué ocurre si el interesado no sabe firmar?",
+    o: ["Firma un testigo", "Se rechaza la notificación", "Debe usar sello", "Se posterga la diligencia"],
+    a: "Firma un testigo",
+    r: "Art. 86: Si el interesado no supiera firmar, lo expresará así y firmará un testigo."
+  },
+  {
+    q: "Las notificaciones en zonas rurales pueden practicarse por la policía.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 87: El BPS podrá disponer que las notificaciones en zonas rurales se practiquen por la policía."
+  },
+  {
+    q: "¿Cuándo surten efecto las notificaciones defectuosas?",
+    o: ["Cuando lo manifieste el interesado", "Nunca", "Al cabo de 30 días", "Solo si hay recurso"],
+    a: "Cuando lo manifieste el interesado",
+    r: "Art. 88: Surten efecto desde la manifestación expresa del interesado o recurso pertinente."
+  },
+  {
+    q: "El peticionario puede autorizar a un letrado para examinar el expediente sin su presencia.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 89: Todo peticionario podrá autorizar a un letrado para examinar el expediente sin su presencia."
+  },
+  {
+    q: "¿Cuál es el plazo máximo para decidir sobre una petición?",
+    o: ["60 días", "90 días", "120 días", "150 días"],
+    a: "120 días",
+    r: "Art. 90: La autoridad debe decidir en un término de 120 días."
+  },
+  {
+    q: "Si la autoridad no resuelve en 120 días, se entiende desechada la petición.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 90: Se entenderá desechada la petición si la autoridad no resolviera en el término indicado."
+  },
+  {
+    q: "¿Cuál es el plazo para cumplir trámites de instrucción en peticiones?",
+    o: ["15 días", "20 días", "30 días", "60 días"],
+    a: "30 días",
+    r: "Art. 91: Los trámites deben cumplirse dentro de 30 días."
+  },
+  {
+    q: "Las peticiones se tendrán por desechadas si no se dicta resolución en 150 días.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 92: Se tendrán por desechadas si en 150 días no se dicta resolución expresa."
+  },
+  {
+    q: "¿Cómo se cuentan los plazos señalados en el reglamento?",
+    o: ["Por días corridos", "Por días hábiles", "Por semanas", "Por meses"],
+    a: "Por días corridos",
+    r: "Art. 93: Los plazos se cuentan por días corridos y se computan sin interrupción."
+  },
+  {
+    q: "¿Qué regula el procedimiento disciplinario?",
+    o: ["Trámites judiciales", "Formalidades del BPS", "Procesos legislativos", "Normas privadas"],
+    a: "Formalidades del BPS",
+    r: "Art. 135: El procedimiento disciplinario regula trámites y formalidades del Banco de Previsión Social."
+  },
+  {
+    q: "Una falta disciplinaria puede ser un acto u omisión culposo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 136: La falta disciplinaria es todo acto u omisión intencional o culposo que viole deberes funcionales."
+  },
+  {
+    q: "¿Qué derecho tiene el funcionario sometido a procedimiento disciplinario?",
+    o: ["Respeto de su honra y dignidad", "Acceso a beneficios", "Suspensión inmediata", "Exoneración automática"],
+    a: "Respeto de su honra y dignidad",
+    r: "Art. 137: El funcionario tiene derecho al respeto de su honra y dignidad, presumiéndose su inocencia."
+  },
+  {
+    q: "La autoridad debe dar oportunidad de defensa incluso si el hecho es notorio.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 138: La notoriedad del hecho no exime de dar oportunidad de defensa."
+  },
+  {
+    q: "¿Qué principio impide sancionar dos veces por el mismo hecho?",
+    o: ["Non bis in idem", "Verdad material", "Debido proceso", "Legalidad"],
+    a: "Non bis in idem",
+    r: "Art. 139: Ningún funcionario será llamado a responsabilidad disciplinaria más de una vez por el mismo hecho."
+  },
+  {
+    q: "Todos los procedimientos disciplinarios son de carácter secreto.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 140: Todos los procedimientos disciplinarios serán de carácter secreto."
+  },
+  {
+    q: "¿Qué obligación tiene todo funcionario respecto a irregularidades?",
+    o: ["Denunciarlas", "Ignorarlas", "Archivarlas", "Delegarlas"],
+    a: "Denunciarlas",
+    r: "Art. 141: Todo funcionario está obligado a denunciar las irregularidades de que tenga conocimiento."
+  },
+  {
+    q: "La omisión de denuncia configura falta grave.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 143: La omisión de denuncia administrativa, policial o judicial configura falta grave."
+  },
+  {
+    q: "¿Cómo puede presentarse una denuncia?",
+    o: ["Escrita o verbal", "Solo escrita", "Solo verbal", "Por fax"],
+    a: "Escrita o verbal",
+    r: "Art. 144: La denuncia podrá ser escrita o verbal."
+  },
+  {
+    q: "La información de urgencia busca evitar la dispersión de la prueba.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 146: La información de urgencia busca individualizar autores y evitar la dispersión de la prueba."
+  },
+  {
+    q: "¿En qué plazo debe comunicarse la denuncia con información de urgencia a la Gerencia General?",
+    o: ["24 horas", "48 horas", "72 horas", "5 días"],
+    a: "48 horas",
+    r: "Art. 147: La denuncia con información de urgencia debe comunicarse en 48 horas."
+  },
+  {
+    q: "La investigación administrativa busca comprobar actos irregulares o ilícitos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 148: La investigación administrativa busca comprobar actos irregulares o ilícitos."
+  },
+  {
+    q: "¿Qué determina el sumario administrativo?",
+    o: ["Responsabilidad de funcionarios", "Validez de leyes", "Competencia de jueces", "Normas privadas"],
+    a: "Responsabilidad de funcionarios",
+    r: "Art. 149: El sumario administrativo determina la responsabilidad de los funcionarios imputados."
+  },
+  {
+    q: "El sumario se inicia con resolución fundada del Directorio o jerarca.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 151: Todo sumario se inicia con resolución fundada del Directorio o jerarca."
+  },
+  {
+    q: "¿Qué medida puede acompañar la resolución que decreta un sumario?",
+    o: ["Suspensión preventiva", "Destitución inmediata", "Archivo del expediente", "Exoneración"],
+    a: "Suspensión preventiva",
+    r: "Art. 152: Al decretarse un sumario, el jerarca puede disponer la suspensión preventiva."
+  },
+  {
+    q: "La suspensión preventiva es obligatoria cuando los hechos constituyen falta grave.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 153: La suspensión preventiva es preceptiva cuando los hechos constituyen falta grave."
+  },
+  {
+    q: "¿Cuál es el plazo máximo de suspensión preventiva y retención de haberes?",
+    o: ["3 meses", "6 meses", "12 meses", "18 meses"],
+    a: "6 meses",
+    r: "Art. 153: La suspensión preventiva y retención de haberes no podrá exceder de seis meses."
+  },
+  {
+    q: "Los funcionarios suspendidos no pueden entrar en las oficinas sin autorización.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 156: Los funcionarios suspendidos no podrán entrar en las oficinas sin autorización."
+  },
+  {
+    q: "¿En qué plazo deben realizarse las notificaciones del sumario?",
+    o: ["3 días", "5 días", "10 días", "15 días"],
+    a: "5 días",
+    r: "Art. 157: Todas las notificaciones deben realizarse dentro del término de cinco días."
+  },
+  {
+    q: "El instructor puede llamar a los sumariados y testigos cuantas veces sea necesario.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 162: El instructor podrá llamar cuantas veces crea necesario a los sumariados y testigos."
+  },
+  {
+    q: "¿Qué plazo máximo tiene la instrucción de un sumario?",
+    o: ["30 días", "60 días", "90 días", "120 días"],
+    a: "60 días",
+    r: "Art. 178: Toda instrucción de sumario debe terminarse en el plazo de 60 días corridos."
+  },
+  {
+    q: "La Gerencia de Recursos Humanos debe remitir la foja de servicios en 5 días.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 180: La Gerencia de Recursos Humanos debe remitir la foja de servicios en cinco días."
+  },
+  {
+    q: "¿Qué plazo tiene el instructor para realizar el informe final tras la instrucción?",
+    o: ["5 días", "10 días", "15 días", "20 días"],
+    a: "10 días",
+    r: "Art. 181: Concluida la instrucción, el instructor dispone de 10 días para realizar el informe."
+  },
+  {
+    q: "La Comisión Nacional del Servicio Civil se pronuncia sobre destituciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 187: Compete a la Comisión Nacional del Servicio Civil pronunciarse sobre destituciones."
+  },
+  {
+    q: "¿Cuál es el plazo máximo para que la Administración decida sobre el fondo de un sumario?",
+    o: ["1 año", "2 años", "3 años", "6 meses"],
+    a: "2 años",
+    r: "Art. 191: Los procedimientos se clausurarán si la Administración no decide en el plazo de dos años."
+  },
+  {
+    q: "¿A qué procedimientos alcanza el Libro III?",
+    o: ["Procesos judiciales", "Trámites privados", "Procedimientos administrativos electrónicos", "Normas legislativas"],
+    a: "Procedimientos administrativos electrónicos",
+    r: "Art. 200: Las disposiciones alcanzan a todo procedimiento administrativo electrónico desarrollado en el BPS."
+  },
+  {
+    q: "Una actuación administrativa electrónica puede incluir actos de trámite y resolutorios.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 201: Se entiende por actuación administrativa electrónica aquella que incluye actos de trámite y resolutorios."
+  },
+  {
+    q: "¿Qué es la constancia electrónica?",
+    o: ["Documento físico", "Acta notarial", "Registro emitido por medios electrónicos", "Circular interna"],
+    a: "Registro emitido por medios electrónicos",
+    r: "Art. 201: La constancia electrónica es emitida por medios electrónicos con fecha, hora, lugar y firma."
+  },
+  {
+    q: "El procedimiento administrativo electrónico se documenta en expediente electrónico.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 202: El procedimiento se documentará en un expediente electrónico."
+  },
+  {
+    q: "¿Dónde informará el BPS los medios electrónicos admitidos?",
+    o: ["En circulares internas", "En la sede electrónica", "En comunicados impresos", "En memorandos"],
+    a: "En la sede electrónica",
+    r: "Art. 203: El BPS informará en su sede electrónica los medios admitidos."
+  },
+  {
+    q: "El procedimiento administrativo electrónico comprende iniciación, sustanciación, finalización y archivo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 204: Comprende las etapas de iniciación, sustanciación, finalización y archivo."
+  },
+  {
+    q: "¿Cómo puede iniciarse el procedimiento administrativo electrónico?",
+    o: ["Solo de oficio", "Solo por escrito físico", "A petición de interesado o de oficio", "Por circular interna"],
+    a: "A petición de interesado o de oficio",
+    r: "Art. 205: Puede iniciarse a petición de persona interesada o de oficio."
+  },
+  {
+    q: "Los documentos electrónicos deben presentarse en formatos abiertos con firma electrónica.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 206: Se utilizarán formatos abiertos suscritos con firma electrónica conforme a la Ley 18.600."
+  },
+  {
+    q: "¿Qué debe hacer el funcionario cuando se presentan documentos en soporte no electrónico?",
+    o: ["Digitalizarlos", "Archivarlos sin constancia", "Rechazarlos", "Remitirlos a otra oficina"],
+    a: "Digitalizarlos",
+    r: "Art. 207: El funcionario debe digitalizarlos para incorporarlos al expediente electrónico."
+  },
+  {
+    q: "Si la petición electrónica carece de requisitos, se concede un plazo de 10 días para subsanar.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 208: Se concede un plazo de diez días hábiles para subsanar omisiones."
+  },
+  {
+    q: "¿Qué se emite de toda actuación electrónica del interesado?",
+    o: ["Circular", "Constancia de presentación", "Memorando", "Resolución"],
+    a: "Constancia de presentación",
+    r: "Art. 209: De toda actuación electrónica se emitirá constancia de presentación."
+  },
+  {
+    q: "La sustanciación del procedimiento electrónico se realiza de oficio.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 210: La sustanciación se realizará de oficio, registrándose en el sistema informático."
+  },
+  {
+    q: "¿Cómo se computan los plazos de sustanciación?",
+    o: ["Desde la notificación", "Desde la firma del jerarca", "Desde la recepción efectiva", "Desde la publicación en prensa"],
+    a: "Desde la recepción efectiva",
+    r: "Art. 212: Los plazos se computan desde la recepción efectiva por el funcionario."
+  },
+  {
+    q: "Los actos que ponen fin al procedimiento electrónico se dictan por medios electrónicos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 213: Los actos que ponen fin al procedimiento se dictan por medios electrónicos."
+  },
+  {
+    q: "¿Qué debe contener la carátula de un expediente electrónico?",
+    o: ["Nombre del interesado, asunto y fecha", "Solo número de expediente", "Firma del jerarca", "Número de oficio"],
+    a: "Nombre del interesado, asunto y fecha",
+    r: "Art. 214: La carátula debe contener nombre del interesado, asunto, fecha y otros datos identificatorios."
+  },
+  {
+    q: "Las actuaciones electrónicas deben identificarse con número correlativo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 215: Las actuaciones electrónicas se identificarán con número correlativo."
+  },
+  {
+    q: "¿Qué requisito deben cumplir todas las actuaciones electrónicas?",
+    o: ["Firma electrónica", "Firma manuscrita", "Sello físico", "Circular interna"],
+    a: "Firma electrónica",
+    r: "Art. 216: Todas las actuaciones deben contar con firma electrónica conforme a la Ley 18.600."
+  },
+  {
+    q: "La exhibición de expedientes electrónicos se realiza por medios electrónicos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 217: La exhibición se realiza por medios electrónicos conforme a la Ley 18.381."
+  },
+  {
+    q: "¿Qué carácter tienen las copias electrónicas de documentos electrónicos?",
+    o: ["Copias simples", "Copias auténticas", "Copias informativas", "Copias privadas"],
+    a: "Copias auténticas",
+    r: "Art. 220: Las copias electrónicas tendrán carácter de copias auténticas."
+  },
+  {
+    q: "Las copias electrónicas de documentos en papel pueden ser auténticas si se deja constancia.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 221: Las copias de documentos en papel serán auténticas si se deja constancia de identidad con el original."
+  },
+  {
+    q: "¿Qué requisito deben cumplir las copias en papel de documentos electrónicos?",
+    o: ["Incluir código de verificación", "Firma manuscrita", "Sello físico", "Circular interna"],
+    a: "Incluir código de verificación",
+    r: "Art. 222: Las copias en papel serán auténticas si incluyen código generado electrónicamente."
+  },
+  {
+    q: "Todos los documentos electrónicos deben archivarse por medios electrónicos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 223: Todos los documentos y expedientes electrónicos deben archivarse por medios electrónicos."
+  },
+  {
+    q: "¿Qué modalidades de notificación electrónica se admiten?",
+    o: ["Sede electrónica, correo electrónico, otros mecanismos idóneos", "Solo correo postal", "Solo fax", "Solo telegrama"],
+    a: "Sede electrónica, correo electrónico, otros mecanismos idóneos",
+    r: "Art. 226: Se admiten sede electrónica, correo electrónico y otros mecanismos idóneos."
+  },
+  {
+    q: "La divulgación de claves o contraseñas constituye falta grave.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 234: La divulgación de claves o contraseñas personales constituye falta grave."
+  },
+  {
+    q: "¿Cuándo entró en vigor el reglamento?",
+    o: ["1° de enero de 2015", "1° de agosto de 2015", "1° de diciembre de 2015", "1° de julio de 2015"],
+    a: "1° de agosto de 2015",
+    r: "Art. 237: El reglamento entró en vigor a partir del 1° de agosto de 2015."
+  },
+    {
+    q: "¿Quién fija el horario de trabajo de los funcionarios del BPS?",
+    o: ["El Directorio o Gerencia General", "Los propios funcionarios", "El Ministerio de Trabajo", "El sindicato"],
+    a: "El Directorio o Gerencia General",
+    r: "Art. 1: El Directorio o la Gerencia General fijará el horario de trabajo."
+  },
+  {
+    q: "Los funcionarios están obligados a cumplir íntegramente el horario establecido.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 2: Los funcionarios deben concurrir puntualmente y permanecer en sus oficinas."
+  },
+  {
+    q: "¿Cuánto tiempo de descanso intermedio tienen los funcionarios de 8 horas?",
+    o: ["15 minutos", "30 minutos", "45 minutos", "1 hora"],
+    a: "30 minutos",
+    r: "Art. 3: Los funcionarios en régimen de 8 horas tienen 30 minutos de descanso intermedio."
+  },
+  {
+    q: "Las faltas sin aviso generan sanciones más severas que las faltas con aviso.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 4: Las faltas sin aviso implican suspensión desde el primer día."
+  },
+  {
+    q: "¿A partir de cuántas inasistencias se instruye sumario administrativo?",
+    o: ["5", "9", "10", "15"],
+    a: "10",
+    r: "Art. 4: A partir de 10 inasistencias se instruirá sumario administrativo."
+  },
+  {
+    q: "Existe una tolerancia mensual de hasta 30 minutos para llegadas tarde.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 5: Se establece una tolerancia mensual de hasta 30 minutos."
+  },
+  {
+    q: "¿Qué ocurre si un funcionario excede 241 minutos en un trimestre?",
+    o: ["Se descuenta tiempo", "Se inicia procedimiento disciplinario", "Se archiva la falta", "Se otorga licencia"],
+    a: "Se inicia procedimiento disciplinario",
+    r: "Art. 5: A partir de 241 minutos excedidos se inicia procedimiento disciplinario."
+  },
+  {
+    q: "Las omisiones de registro de asistencia pueden configurar falta administrativa.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 6: A partir de la quinta omisión en un año puede configurarse falta administrativa."
+  },
+  {
+    q: "¿Qué sanción corresponde por 8 a 10 omisiones de registro?",
+    o: ["Observación escrita", "1 día de suspensión", "2 días de suspensión", "Archivo"],
+    a: "1 día de suspensión",
+    r: "Art. 6: Entre 8 y 10 omisiones corresponde 1 día de suspensión."
+  },
+  {
+    q: "El jerarca puede solicitar subsanar omisiones de registro en casos fundados.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 7: El jerarca podrá solicitar subsanar omisiones en forma excepcional."
+  },
+  {
+    q: "¿A partir de cuántas solicitudes fuera de plazo puede configurarse falta administrativa?",
+    o: ["3", "5", "10", "15"],
+    a: "5",
+    r: "Art. 8: A partir de la quinta solicitud fuera de plazo puede configurarse falta administrativa."
+  },
+  {
+    q: "Las autorizaciones fuera de plazo entre 31 y 55 generan 1 día de suspensión.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 8: Entre 31 y 55 autorizaciones fuera de plazo corresponde 1 día de suspensión."
+  },
+  {
+    q: "¿Qué ocurre si un funcionario acumula cinco días de inasistencias continuas sin aviso?",
+    o: ["Se descuenta salario", "Se inicia sumario", "Se configura renuncia tácita", "Se otorga licencia"],
+    a: "Se configura renuncia tácita",
+    r: "Art. 9: Cinco días de inasistencias continuas sin aviso configuran renuncia tácita."
+  },
+  {
+    q: "El uso de horas particulares es mensual y no acumulativo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 10: Los funcionarios podrán ser autorizados a usar horas particulares mensuales no acumulativas."
+  },
+  {
+    q: "¿Cuántas horas particulares tienen los funcionarios de 8 horas diarias?",
+    o: ["2 horas", "3 horas", "4 horas", "5 horas"],
+    a: "4 horas",
+    r: "Art. 10: Los funcionarios de 8 horas tienen derecho a 4 horas particulares."
+  },
+  {
+    q: "Las comisiones médicas pueden ser autorizadas por el jerarca respectivo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 11: Los funcionarios podrán solicitar comisión médica al jerarca respectivo."
+  },
+  {
+    q: "¿Qué tipo de comisión permite asistir a cursos o congresos?",
+    o: ["Comisión simple", "Comisión de servicio", "Comisión médica", "Comisión por lactancia"],
+    a: "Comisión de servicio",
+    r: "Art. 11: La comisión de servicio permite asistir a cursos, pasantías o congresos."
+  },
+  {
+    q: "Las faltas administrativas pueden ser leves, semi-graves o graves.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 13: Las faltas administrativas se clasifican en leves, semi-graves y graves."
+  },
+  {
+    q: "¿Cuál de las siguientes es una falta leve?",
+    o: ["Observar conducta irrespetuosa", "Concurrir ebrio", "Encubrir delitos", "Omitir denuncias"],
+    a: "Observar conducta irrespetuosa",
+    r: "Art. 14: Observar conducta irrespetuosa constituye falta leve."
+  },
+  {
+    q: "Concurrir al trabajo en estado de ebriedad es una falta semi-grave.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 15: Concurrir en estado de ebriedad constituye falta semi-grave."
+  },
+  {
+    q: "¿Cuál de las siguientes es una falta grave?",
+    o: ["Ejecutar tareas tardías", "No cumplir capacitación", "Encubrir delitos", "Observar conducta irrespetuosa"],
+    a: "Encubrir delitos",
+    r: "Art. 16: Encubrir la comisión de un presunto delito constituye falta grave."
+  },
+  {
+    q: "La destitución puede aplicarse por faltas graves.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 16: Las faltas graves pueden sancionarse hasta con destitución."
+  },
+  {
+    q: "¿Qué sanción puede aplicar el Directorio?",
+    o: ["Observación escrita, suspensión hasta 180 días, destitución", "Solo observación escrita", "Suspensión hasta 10 días", "Archivo"],
+    a: "Observación escrita, suspensión hasta 180 días, destitución",
+    r: "Art. 18: El Directorio puede aplicar observación, suspensión hasta 180 días y destitución."
+  },
+  {
+    q: "Las faltas leves de apreciación directa no requieren sumario.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 19: Las faltas leves y semi-graves de apreciación directa no requieren sumario."
+  },
+  {
+    q: "¿Cuál es el plazo de prescripción de faltas administrativas que no constituyen delito?",
+    o: ["5 años", "8 años", "10 años", "15 años"],
+    a: "8 años",
+    r: "Art. 21: Las faltas administrativas prescriben a los 8 años si no constituyen delito."
+  },
+  {
+    q: "La reiteración de faltas es considerada circunstancia agravante.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 22: La reiteración se considera circunstancia agravante."
+  },
+  {
+    q: "¿Qué se considera circunstancia atenuante?",
+    o: ["Reincidencia", "Premeditación", "Confesión de la falta", "Abuso de autoridad"],
+    a: "Confesión de la falta",
+    r: "Art. 22: La confesión de la falta y/o la reparación del daño causado."
+  },
+  {
+    q: "La sanción disciplinaria puede ser una observación escrita.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 17: La observación escrita es una sanción disciplinaria."
+  },
+  {
+    q: "¿Qué sanciones puede aplicar la Gerencia General?",
+    o: ["Observación escrita y suspensión hasta 30 días", "Solo destitución", "Suspensión hasta 180 días", "Archivo de la falta"],
+    a: "Observación escrita y suspensión hasta 30 días",
+    r: "Art. 18: La Gerencia General puede aplicar observación escrita y suspensión hasta 30 días."
+  },
+  {
+    q: "Los jefes pueden aplicar suspensiones de hasta tres días.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 18: Los jefes pueden aplicar observación escrita y suspensión de hasta tres días."
+  },
+  {
+    q: "¿Qué faltas requieren investigación administrativa o sumario?",
+    o: ["Leves de apreciación directa", "Semi-graves no directas y graves", "Solo leves", "Solo semi-graves"],
+    a: "Semi-graves no directas y graves",
+    r: "Art. 20: Las faltas semi-graves que no sean de apreciación directa y las graves requieren investigación o sumario."
+  },
+  {
+    q: "Las faltas administrativas prescriben a los 8 años si no constituyen delito.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 21: Las faltas administrativas prescriben a los 8 años cuando no constituyen delito."
+  },
+  {
+    q: "¿Qué circunstancia puede atenuar la sanción?",
+    o: ["Premeditación", "Confesión de la falta", "Reincidencia", "Abuso de autoridad"],
+    a: "Confesión de la falta",
+    r: "Art. 22: La confesión de la falta y/o reparación del daño es circunstancia atenuante."
+  },
+  {
+    q: "La reincidencia es considerada circunstancia agravante.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 22: La reincidencia se considera circunstancia agravante."
+  },
+  {
+    q: "¿Qué debe imputarse a la sanción definitiva cuando hubo suspensión preventiva?",
+    o: ["Solo el tiempo", "Tiempo y haberes", "Nada", "Solo los haberes"],
+    a: "Tiempo y haberes",
+    r: "Art. 23: Debe imputarse a la sanción definitiva el tiempo de suspensión y los haberes."
+  },
+  {
+    q: "Las faltas leves y semi-graves de apreciación directa pueden sancionarse sin sumario.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 19: Estas faltas pueden sancionarse sin necesidad de sumario."
+  },
+  {
+    q: "¿Qué órgano dispone la destitución por faltas graves?",
+    o: ["Gerencia General", "Directorio", "Jefes", "Gerentes de unidad"],
+    a: "Directorio",
+    r: "Art. 17: La destitución por falta grave es dispuesta por el Directorio con cuatro votos conformes."
+  },
+  {
+    q: "¿Qué debe imputarse a la sanción definitiva cuando hubo suspensión preventiva?",
+    o: ["Solo tiempo", "Tiempo y haberes", "Nada", "Solo haberes"],
+    a: "Tiempo y haberes",
+    r: "Art. 23: Se imputan tiempo y haberes retenidos."
+  },
+  {
+    q: "Cuando el sumario termina en destitución, los haberes retenidos se devuelven.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Art. 23: No corresponde devolver los haberes retenidos en caso de destitución."
+  },
+  {
+    q: "¿Qué beneficios sociales no se descuentan en caso de suspensión?",
+    o: ["Prima por Hogar Constituido y Asignación Familiar", "Prima por antigüedad", "Prima por productividad", "Ninguno"],
+    a: "Prima por Hogar Constituido y Asignación Familiar",
+    r: "Art. 24: Estos beneficios no se descuentan ni retienen."
+  },
+  {
+    q: "La Prima por Hogar Constituido se mantiene aunque haya suspensión.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 24: La Prima por Hogar Constituido no se descuenta."
+  },
+  {
+    q: "¿Qué ocurre con los descuentos por asistencia y horario cuando hay sanción disciplinaria?",
+    o: ["Se eliminan", "Se aplican igualmente", "Se duplican", "Se suspenden"],
+    a: "Se aplican igualmente",
+    r: "Art. 25: Se aplican sin perjuicio de la sanción disciplinaria."
+  },
+  {
+    q: "Las sanciones por asistencia se aplican además de los descuentos reglamentarios.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 25: Se aplican sin perjuicio de los descuentos por asistencia."
+  },
+  {
+    q: "¿Qué régimen se aplica al personal médico y técnico del área de salud?",
+    o: ["Régimen de equivalencias", "Régimen general", "Régimen especial de licencias", "Régimen de guardias"],
+    a: "Régimen de equivalencias",
+    r: "Art. 26: Se aplica el régimen de equivalencias según horas presenciales semanales."
+  },
+  {
+    q: "El régimen de equivalencias aplica al personal médico y técnico.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Art. 26: Se aplica régimen de equivalencias para cómputo de faltas y sanciones."
+  },
+  {
+    q: "¿A qué situaciones se aplica el reglamento?",
+    o: ["Solo anteriores a su vigencia", "Solo a casos médicos", "Todas posteriores a su vigencia", "Solo a faltas graves"],
+    a: "Todas posteriores a su vigencia",
+    r: "Art. 27: Se aplica a todas las situaciones ocurridas con posterioridad a su vigencia."
+  },
+  {
+    q: "El reglamento se aplica a hechos ocurridos antes de su vigencia.",
+    o: ["Verdadero", "Falso"],
+    a: "Falso",
+    r: "Art. 27: Se aplica solo a situaciones posteriores a su vigencia."
+  },
+  {
+    q: "¿Qué debe hacer el jerarca al constatar una falta leve de apreciación directa?",
+    o: ["Iniciar sumario", "Labrar acta con datos y sanción sugerida", "Solicitar al Directorio", "Archivar la falta"],
+    a: "Labrar acta con datos y sanción sugerida",
+    r: "Anexo I, Paso 1: El jerarca labra acta con datos y sanción sugerida."
+  },
+  {
+    q: "El funcionario tiene derecho a vista de las actuaciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Anexo I, Paso 2: Se otorga vista al funcionario de las actuaciones."
+  },
+  {
+    q: "¿Qué puede presentar el funcionario al evacuar la vista?",
+    o: ["Descargos y probanzas", "Solo firma", "Nada", "Solicitud de archivo"],
+    a: "Descargos y probanzas",
+    r: "Anexo I, Paso 3: Puede presentar descargos y probanzas."
+  },
+  {
+    q: "El jerarca debe considerar los descargos antes de resolver.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Anexo I, Paso 4: El jerarca considera descargos y prueba antes de resolver."
+  },
+  {
+    q: "¿Qué se hace una vez dictada la resolución de sanción?",
+    o: ["Se archiva", "Se eleva a RRHH para constancia en legajo", "Se publica en Diario Oficial", "Se notifica al sindicato"],
+    a: "Se eleva a RRHH para constancia en legajo",
+    r: "Anexo I, Paso 5: Se elevan antecedentes a RRHH para constancia en legajo."
+  },
+  {
+    q: "El acto administrativo puede ser impugnado con recurso de revocación y jerárquico.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Anexo I, Paso 6: Puede impugnarse con recurso de revocación y jerárquico."
+  },
+  {
+    q: "¿Cuál es el plazo para interponer recursos administrativos contra la sanción?",
+    o: ["5 días", "10 días", "15 días", "30 días"],
+    a: "10 días",
+    r: "Anexo I, Paso 6: El recurso debe interponerse dentro de 10 días corridos."
+  },
+  {
+    q: "Los recursos administrativos deben llevar firma letrada.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Anexo I, Paso 7: Los escritos de recursos deben llevar firma letrada."
+  },
+  {
+    q: "¿Qué ocurre si el recurso no tiene firma letrada?",
+    o: ["Se admite igual", "Se rechaza automáticamente", "Se requiere subsanar en 10 días", "Se archiva sin trámite"],
+    a: "Se requiere subsanar en 10 días",
+    r: "Anexo I, Paso 7: Se requiere subsanar la omisión en 10 días hábiles."
+  },
+  {
+    q: "Si el recurso se mantiene, las actuaciones pasan a la Gerencia de Sumarios.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Anexo I, Paso 7: Si se mantiene el acto recurrido, las actuaciones pasan a Gerencia de Sumarios."
+  },
+    {
+    q: "¿Qué promueve el Convenio 187 de la OIT?",
+    o: ["Solo sanciones", "Una cultura de prevención", "Trabajo informal", "Reducción de derechos"],
+    a: "Una cultura de prevención",
+    r: "Introducción: El Convenio 187 promueve una cultura de seguridad y salud con prioridad en la prevención."
+  },
+  {
+    q: "La corresponsabilidad en seguridad laboral implica participación de trabajadores y empleadores.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Cultura de seguridad: La corresponsabilidad implica participación activa de trabajadores y empleadores."
+  },
+  {
+    q: "¿Qué acciones ayudan a reducir factores de estrés?",
+    o: ["Ignorar problemas", "Organización del tiempo y comunicación abierta", "Trabajar más horas", "Evitar descansos"],
+    a: "Organización del tiempo y comunicación abierta",
+    r: "Cultura de seguridad: Organización del tiempo y comunicación abierta reducen factores de estrés."
+  },
+  {
+    q: "El trabajo trasciende la noción de empleo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Trabajo y empleo: El trabajo trasciende el empleo y abarca toda actividad productiva o creativa."
+  },
+  {
+    q: "¿Qué diferencia al empleo del trabajo?",
+    o: ["Creatividad", "Contrato y remuneración", "Voluntariado", "Actividades domésticas"],
+    a: "Contrato y remuneración",
+    r: "Trabajo y empleo: El empleo requiere contrato y remuneración, el trabajo es más amplio."
+  },
+  {
+    q: "La salud fue definida por la OMS en 1946 como completo bienestar físico, mental y social.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Salud: OMS definió salud como completo bienestar físico, mental y social."
+  },
+  {
+    q: "¿Qué busca la salud ocupacional?",
+    o: ["Reducir salarios", "Promover y proteger la salud de los trabajadores", "Eliminar contratos", "Aumentar horas de trabajo"],
+    a: "Promover y proteger la salud de los trabajadores",
+    r: "Salud ocupacional: Busca promover y proteger la salud mediante prevención y control."
+  },
+  {
+    q: "Las CYMAT incluyen factores físicos, químicos, biológicos, ergonómicos y psicosociales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "CYMAT: Incluyen factores físicos, químicos, biológicos, ergonómicos y psicosociales."
+  },
+  {
+    q: "¿Qué significa psicosocial?",
+    o: ["Solo emociones", "Interacción entre aspectos psicológicos y sociales", "Solo economía", "Solo biología"],
+    a: "Interacción entre aspectos psicológicos y sociales",
+    r: "CYMAT: Psicosocial refiere a interacción entre aspectos psicológicos y sociales."
+  },
+  {
+    q: "Los riesgos psicosociales se definen como hechos con alta probabilidad de dañar la salud.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Riesgos psicosociales: Definidos como hechos con alta probabilidad de dañar la salud."
+  },
+  {
+    q: "¿Qué diferencia a los factores psicosociales de los riesgos?",
+    o: ["Son hechos puntuales", "Son condiciones presentes en la organización", "Son accidentes", "Son enfermedades"],
+    a: "Son condiciones presentes en la organización",
+    r: "Factores psicosociales: Son condiciones presentes, no hechos puntuales."
+  },
+  {
+    q: "Los riesgos psicosociales pueden disminuir rendimiento y aumentar ausentismo.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Riesgos: Pueden disminuir rendimiento y aumentar ausentismo."
+  },
+  {
+    q: "¿Cuál es el principal riesgo psicosocial según Moreno y Báez?",
+    o: ["Violencia", "Estrés laboral", "Acoso sexual", "Burnout"],
+    a: "Estrés laboral",
+    r: "Estrés: Es el principal riesgo psicosocial, respuesta general ante los demás riesgos."
+  },
+  {
+    q: "El estrés laboral perjudica tanto a las personas como a la organización.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Estrés: Perjudica rendimiento individual y organizacional."
+  },
+  {
+    q: "¿Cómo define la OIT la violencia laboral?",
+    o: ["Solo insultos", "Solo robos", "Toda acción que agreda, amenace o humille", "Solo golpes físicos"],
+    a: "Toda acción que agreda, amenace o humille",
+    r: "Violencia: OIT define violencia laboral como acción que agrede, amenaza o humilla."
+  },
+  {
+    q: "El mobbing es un tipo de acoso laboral sistemático y hostil.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Acoso laboral: Mobbing es trato hostil sostenido en el trabajo."
+  },
+  {
+    q: "¿Qué ley uruguaya regula el acoso sexual laboral?",
+    o: ["Ley 15.965", "Ley 18.561", "Ley 17.292", "Ley 16.170"],
+    a: "Ley 18.561",
+    r: "Acoso sexual: Regulada por Ley 18.561 en Uruguay."
+  },
+  {
+    q: "El chantaje sexual es solicitar favores a cambio de beneficios o evitar sanciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Acoso sexual: Chantaje sexual implica solicitud de favores a cambio de beneficios."
+  },
+  {
+    q: "¿Qué pueden ser factores psicosociales positivos?",
+    o: ["Violencia", "Relaciones interpersonales", "Acoso", "Estrés"],
+    a: "Relaciones interpersonales",
+    r: "Factores psicosociales: Relaciones interpersonales pueden ser protectoras."
+  },
+  {
+    q: "Los factores psicosociales no siempre tienen consecuencias negativas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Factores psicosociales: No siempre tienen consecuencias negativas."
+  },
+  {
+    q: "¿Qué artículos de la Constitución uruguaya protegen la salud en el trabajo?",
+    o: ["1, 2, 3 y 4", "10, 20, 30 y 40", "7, 44, 53 y 54", "60, 61, 62 y 63"],
+    a: "7, 44, 53 y 54",
+    r: "Marco normativo: Constitución protege salud en el trabajo en artículos 7, 44, 53 y 54."
+  },
+  {
+    q: "La Ley 15.965 ratificó convenios internacionales sobre medio ambiente y salud laboral.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Marco normativo: Ley 15.965 ratificó convenios internacionales sobre salud laboral."
+  },
+  {
+    q: "¿Qué decreto reglamenta el Convenio 155 de la OIT?",
+    o: ["452/009", "291/007", "211/986", "40-10/2025"],
+    a: "291/007",
+    r: "Marco normativo: Decreto 291/007 reglamenta el Convenio 155."
+  },
+  {
+    q: "El organismo de contralor en Uruguay es el Ministerio de Trabajo y Seguridad Social.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Marco normativo: MTSS es el organismo de contralor."
+  },
+  {
+    q: "¿Qué artículo del Estatuto del Funcionario de BPS menciona higiene y seguridad?",
+    o: ["50", "22", "34", "66"],
+    a: "34",
+    r: "Normativa BPS: Artículo 34 menciona higiene, salubridad y seguridad."
+  },
+  {
+    q: "El artículo 50 del Estatuto protege a los funcionarios de ataques e injurias.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Normativa BPS: Artículo 50 protege a los funcionarios de ataques e injurias."
+  },
+  {
+    q: "¿Qué área de BPS atiende problemáticas de clima laboral?",
+    o: ["Salud Ocupacional", "Gerencia General", "Dirección Técnica", "Asuntos Laborales"],
+    a: "Asuntos Laborales",
+    r: "Áreas BPS: Asuntos Laborales atiende problemáticas de clima laboral."
+  },
+  {
+    q: "La Gerencia de Asuntos Laborales participa en comisiones bipartitas.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Áreas BPS: Participa en comisiones bipartitas y convoca representantes de trabajadores."
+  },
+  {
+    q: "¿Qué área recomienda medidas de control y prevención de riesgos laborales?",
+    o: ["Asuntos Laborales", "Gerencia General", "Salud Ocupacional", "Dirección Técnica"],
+    a: "Salud Ocupacional",
+    r: "Áreas BPS: Salud Ocupacional recomienda medidas de control y prevención."
+  },
+  {
+    q: "Salud Ocupacional depende de la Gerencia de Prestaciones de Salud.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Áreas BPS: Salud Ocupacional depende de la Gerencia de Prestaciones de Salud."
+  },
+  {
+    q: "¿Qué función cumple Salud Ocupacional respecto a los puestos de trabajo?",
+    o: ["Eliminar puestos", "Readecuación o readaptación", "Reducir salarios", "Suspender contratos"],
+    a: "Readecuación o readaptación",
+    r: "Áreas BPS: Recomienda readecuación o readaptación de puestos según limitaciones."
+  },
+  {
+    q: "La vigilancia de la salud y del ambiente de trabajo es función de Salud Ocupacional.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Áreas BPS: Realiza vigilancia de salud y ambiente de trabajo."
+  },
+  {
+    q: "¿Qué plan implementó BPS en 2007?",
+    o: ["Plan de Capacitación", "Plan de Bienestar Social", "Plan de Recursos Humanos", "Plan de Salud y Seguridad Laboral"],
+    a: "Plan de Salud y Seguridad Laboral",
+    r: "Programas BPS: Desde 2007 cuenta con el Plan de Salud y Seguridad Laboral."
+  },
+  {
+    q: "El Plan de Salud y Seguridad Laboral busca preservar y mejorar la salud individual y colectiva.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Programas BPS: Busca preservar y mejorar la salud individual y colectiva."
+  },
+  {
+    q: "¿Qué objetivo central tiene el Plan de Salud y Seguridad Laboral?",
+    o: ["Suspender licencias", "Reducir salarios", "Eliminar contratos", "Identificar, evaluar y controlar riesgos laborales"],
+    a: "Identificar, evaluar y controlar riesgos laborales",
+    r: "Programas BPS: Objetivo central es identificar, evaluar y controlar riesgos laborales."
+  },
+  {
+    q: "El plan promueve ámbitos de discusión bipartitos con la ATSS.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Programas BPS: Promueve ámbitos de discusión bipartitos con ATSS."
+  },
+  {
+    q: "¿Qué riesgos psicosociales menciona Moreno y Báez además del estrés?",
+    o: ["Solo violencia", "Solo acoso sexual", "Violencia, acoso laboral, acoso sexual, inseguridad laboral, burnout", "Solo estrés"],
+    a: "Violencia, acoso laboral, acoso sexual, inseguridad laboral, burnout",
+    r: "Riesgos: Moreno y Báez mencionan violencia, acoso laboral, acoso sexual, inseguridad laboral y burnout."
+  },
+  {
+    q: "El acoso sexual es el único riesgo psicosocial con cobertura legal en Uruguay.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Acoso sexual: Es el único riesgo psicosocial con cobertura legal en Uruguay (Ley 18.561)."
+  },
+  {
+    q: "¿Qué tipo de violencia laboral puede provenir de clientes o usuarios?",
+    o: ["Accidentes", "Reclamos por servicios", "Robos externos", "Errores administrativos"],
+    a: "Reclamos por servicios",
+    r: "Violencia: Puede provenir de clientes o usuarios vinculados a reclamos por servicios."
+  },
+  {
+    q: "El abuso emocional es menos sistemático que el acoso laboral.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Acoso laboral: El abuso emocional es menos sistemático que el acoso."
+  },
+  {
+    q: "¿Qué organismos internacionales se mencionan en el marco normativo?",
+    o: ["FAO, UNESCO, BID, FMI", "UE, OTAN, OMC, OCDE", "Ninguno", "ONU, OEA, OPS, Mercosur"],
+    a: "ONU, OEA, OPS, Mercosur",
+    r: "Marco normativo: Se mencionan ONU, OEA, OPS y Mercosur."
+  },
+  {
+    q: "El Decreto 291/007 establece disposiciones mínimas obligatorias para la prevención de riesgos laborales.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Marco normativo: Decreto 291/007 establece disposiciones mínimas obligatorias."
+  },
+  {
+    q: "¿Qué artículo del Estatuto del Funcionario de BPS protege a los funcionarios de ataques e injurias?",
+    o: ["22", "34", "66", "50"],
+    a: "50",
+    r: "Normativa BPS: Artículo 50 protege a los funcionarios de ataques e injurias."
+  },
+  {
+    q: "El organismo debe asumir la defensa de un funcionario detenido por ejercicio regular de su cargo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Normativa BPS: El organismo debe asumir defensa de funcionario detenido por ejercicio regular."
+  },
+  {
+    q: "¿Qué riesgos relacionados con estilos de vida aborda Salud Ocupacional?",
+    o: ["Solo violencia", "Solo ergonomía", "Solo estrés", "Adicciones y salud cardiovascular"],
+    a: "Adicciones y salud cardiovascular",
+    r: "Áreas BPS: Salud Ocupacional aborda riesgos como adicciones y salud cardiovascular."
+  },
+  {
+    q: "Salud Ocupacional participa en la investigación de accidentes de trabajo.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Áreas BPS: Participa en investigación de accidentes de trabajo."
+  },
+  {
+    q: "¿Qué programa busca promover cultura de seguridad y salud en el trabajo?",
+    o: ["Plan de Recursos Humanos", "Plan de Bienestar Social", "Plan de Capacitación", "Plan de Salud y Seguridad Laboral"],
+    a: "Plan de Salud y Seguridad Laboral",
+    r: "Programas BPS: Busca promover cultura de seguridad y salud en el trabajo."
+  },
+  {
+    q: "El plan fomenta la actualización de normativa y reglamentación.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Programas BPS: Fomenta actualización de normativa y reglamentación."
+  },
+  {
+    q: "¿Qué objetivo tiene la promoción de ámbitos bipartitos con ATSS?",
+    o: ["Suspender contratos", "Eliminar licencias", "Reducir salarios", "Acordar estrategias de prevención"],
+    a: "Acordar estrategias de prevención",
+    r: "Programas BPS: Busca acordar estrategias de prevención con ATSS."
+  },
+  {
+    q: "La salud ocupacional permite enriquecimiento humano y profesional en el trabajo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Salud ocupacional: Permite enriquecimiento humano y profesional en el trabajo."
+  },
+  {
+    q: "¿Qué consecuencias puede tener el estrés laboral?",
+    o: ["Mayor productividad", "Reducción de accidentes", "Mejora del clima laboral", "Disminución del rendimiento y aumento del ausentismo"],
+    a: "Disminución del rendimiento y aumento del ausentismo",
+    r: "Estrés: Puede disminuir rendimiento y aumentar ausentismo."
+  },
+  {
+    q: "El acoso sexual puede consistir en chantaje o ambiente hostil.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Acoso sexual: Puede consistir en chantaje o ambiente hostil."
+  },
+  {
+    q: "¿Qué factores psicosociales pueden ser protectores para la salud?",
+    o: ["Violencia", "Acoso", "Estrés", "Relaciones interpersonales"],
+    a: "Relaciones interpersonales",
+    r: "veremos que las relaciones interpersonales constituyen uno de los factores psicosociales;.."
+  },
+  {
+    q: "¿Qué factores psicosociales pueden ser protectores para la salud?",
+    o: ["Acoso", "Estrés", "Relaciones interpersonales", "Violencia"],
+    a: "Relaciones interpersonales",
+    r: "Factores psicosociales: Las relaciones interpersonales pueden ser protectoras para la salud."
+  },
+  {
+    q: "El Plan de Salud y Seguridad Laboral busca concientización y comunicación en todos los niveles de la organización.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Programas BPS: El plan busca concientización y comunicación para promover cultura de seguridad."
+  },
+  {
+    q: "¿Qué objetivos centrales tiene el programa de salud laboral de BPS?",
+    o: ["Reducir salarios", "Suspender contratos","Identificar riesgos, adecuar ambientes y definir acciones preventivas", "Eliminar licencias"],
+    a: "Identificar riesgos, adecuar ambientes y definir acciones preventivas",
+    r: "Programas BPS: Objetivos centrales son identificar riesgos, adecuar ambientes y definir acciones preventivas."
+  },
+    {
+    q: "¿Qué principio básico guía la seguridad de la información?",
+    o: ["Disponibilidad", "Integridad", "Confidencialidad", "Transparencia"],
+    a: "Confidencialidad",
+    r: "La seguridad de la información se basa en la tríada: confidencialidad, integridad y disponibilidad."
+  },
+  {
+    q: "La integridad asegura que la información no sea alterada sin autorización.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "La integridad protege la exactitud y completitud de los datos."
+  },
+  {
+    q: "¿Qué significa disponibilidad en seguridad de la información?",
+    o: ["Acceso oportuno a la información", "Protección contra virus", "Uso de contraseñas", "Cifrado de datos"],
+    a: "Acceso oportuno a la información",
+    r: "Disponibilidad implica que la información esté accesible cuando se necesite."
+  },
+  {
+    q: "El uso de contraseñas fuertes es una medida de seguridad.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las contraseñas robustas reducen el riesgo de accesos no autorizados."
+  },
+  {
+    q: "¿Qué técnica protege la información durante la transmisión?",
+    o: ["Cifrado", "Firewall", "Antivirus", "Backup"],
+    a: "Cifrado",
+    r: "El cifrado protege la información en tránsito contra accesos indebidos."
+  },
+  {
+    q: "Un firewall controla el tráfico de red según reglas definidas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El firewall filtra conexiones entrantes y salientes."
+  },
+  {
+    q: "¿Qué es phishing?",
+    o: ["Suplantación para obtener datos", "Ataque físico", "Error humano", "Fallo eléctrico"],
+    a: "Suplantación para obtener datos",
+    r: "Phishing es un intento de engaño para robar información confidencial."
+  },
+  {
+    q: "El malware incluye virus, troyanos y ransomware.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Malware es software malicioso que afecta sistemas y datos."
+  },
+  {
+    q: "¿Qué medida protege contra pérdida de datos?",
+    o: ["Backup", "Phishing", "Spam", "Cookies"],
+    a: "Backup",
+    r: "Las copias de seguridad permiten recuperar información perdida."
+  },
+  {
+    q: "El principio de mínimo privilegio limita accesos solo a lo necesario.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Este principio reduce riesgos de abuso de permisos."
+  },
+  {
+    q: "¿Qué es ingeniería social?",
+    o: ["Manipulación psicológica para obtener información", "Uso de software", "Ataque físico", "Error técnico"],
+    a: "Manipulación psicológica para obtener información",
+    r: "La ingeniería social explota la confianza de las personas."
+  },
+  {
+    q: "El ransomware bloquea archivos y exige pago.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El ransomware cifra datos y pide rescate para liberarlos."
+  },
+  {
+    q: "¿Qué documento define políticas de seguridad en una organización?",
+    o: ["Política de seguridad", "Manual de usuario", "Contrato laboral", "Informe financiero"],
+    a: "Política de seguridad",
+    r: "La política de seguridad establece normas y responsabilidades."
+  },
+  {
+    q: "El antivirus detecta y elimina software malicioso.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "El antivirus protege contra virus y otras amenazas."
+  },
+  {
+    q: "¿Qué es autenticación multifactor?",
+    o: ["Uso de varios métodos de verificación", "Un solo password", "Acceso libre", "Cifrado básico"],
+    a: "Uso de varios métodos de verificación",
+    r: "La autenticación multifactor combina contraseña, token, biometría, etc."
+  },
+  {
+    q: "La confidencialidad protege la información contra accesos no autorizados.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Confidencialidad asegura que solo personas autorizadas accedan a los datos."
+  },
+  {
+    q: "¿Qué es un ataque DDoS?",
+    o: ["Saturación de un servicio con múltiples solicitudes", "Phishing", "Malware", "Error humano"],
+    a: "Saturación de un servicio con múltiples solicitudes",
+    r: "Un ataque DDoS busca colapsar un servicio con tráfico excesivo."
+  },
+  {
+    q: "El control de acceso físico es parte de la seguridad de la información.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Controlar quién entra a instalaciones protege equipos y datos."
+  },
+  {
+    q: "¿Qué es un certificado digital?",
+    o: ["Documento que valida identidad en internet", "Contrato laboral", "Archivo de texto", "Clave privada"],
+    a: "Documento que valida identidad en internet",
+    r: "Los certificados digitales autentican usuarios y sitios web."
+  },
+  {
+    q: "El spam es correo electrónico no deseado.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "El spam puede incluir publicidad o intentos de fraude."
+  },
+  {
+    q: "¿Qué es un incidente de seguridad?",
+    o: ["Evento que compromete la información", "Actualización de software", "Cambio de contraseña", "Instalación de hardware"],
+    a: "Evento que compromete la información",
+    r: "Un incidente de seguridad afecta la confidencialidad, integridad o disponibilidad."
+  },
+  {
+    q: "La disponibilidad garantiza que los sistemas funcionen cuando se necesiten.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Disponibilidad asegura acceso oportuno a la información."
+  },
+  {
+    q: "¿Qué es un log de auditoría?",
+    o: ["Registro de actividades en sistemas", "Contrato laboral", "Archivo multimedia", "Clave pública"],
+    a: "Registro de actividades en sistemas",
+    r: "Los logs permiten rastrear acciones y detectar anomalías."
+  },
+  {
+    q: "El cifrado protege datos en tránsito y en reposo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El cifrado asegura que los datos no sean legibles sin clave."
+  },
+  {
+    q: "¿Qué es un ataque de fuerza bruta?",
+    o: ["Intento sistemático de adivinar contraseñas", "Phishing", "Malware", "Error humano"],
+    a: "Intento sistemático de adivinar contraseñas",
+    r: "El ataque de fuerza bruta prueba múltiples combinaciones hasta acertar."
+  },
+  {
+    q: "El principio de integridad asegura que los datos sean exactos y completos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Integridad protege contra modificaciones no autorizadas."
+  },
+  {
+    q: "¿Qué es un token de seguridad?",
+    o: ["Dispositivo o código que valida identidad", "Archivo multimedia", "Contrato laboral", "Clave pública"],
+    a: "Dispositivo o código que valida identidad",
+    r: "El token se usa en autenticación multifactor."
+  },
+  {
+    q: "El insider threat proviene de personas dentro de la organización.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Amenaza interna: empleados o contratistas con acceso legítimo."
+  },
+  {
+    q: "¿Qué es un plan de continuidad del negocio?",
+    o: ["Estrategia para mantener operaciones ante incidentes", "Contrato laboral", "Manual de usuario", "Informe financiero"],
+    a: "Estrategia para mantener operaciones ante incidentes",
+    r: "El plan asegura continuidad de servicios críticos."
+  },
+  {
+    q: "La seguridad física protege instalaciones y equipos.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "La seguridad física es parte integral de la seguridad de la información."
+  },
+  {
+    q: "¿Qué es un honeypot?",
+    o: ["Sistema señuelo para atraer atacantes", "Contrato laboral", "Archivo multimedia", "Clave privada"],
+    a: "Sistema señuelo para atraer atacantes",
+    r: "Un honeypot permite estudiar ataques y proteger sistemas reales."
+  },
+  {
+    q: "El monitoreo constante ayuda a detectar incidentes de seguridad.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El monitoreo permite identificar anomalías y responder a tiempo."
+  },
+  {
+    q: "¿Qué es la autenticación biométrica?",
+    o: ["Uso de huellas, rostro o voz para validar identidad", "Clave pública", "Contrato laboral", "Archivo multimedia"],
+    a: "Uso de huellas, rostro o voz para validar identidad",
+    r: "La autenticación biométrica utiliza características físicas únicas para verificar identidad."
+  },
+  {
+    q: "¿Qué garantiza el control de acceso?",
+    o: ["Integridad", "Disponibilidad", "Confidencialidad", "Transparencia"],
+    a: "Confidencialidad",
+    r: "El control de acceso protege la confidencialidad, integridad y disponibilidad de la información."
+  },
+  {
+    q: "Los respaldos preservan la integridad y disponibilidad de la información.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Los respaldos garantizan recuperación efectiva e íntegra de la información."
+  },
+  {
+    q: "¿Dónde deben almacenarse los respaldos?",
+    o: ["En diferentes ubicaciones", "En un solo servidor", "En la nube pública", "En discos personales"],
+    a: "En diferentes ubicaciones",
+    r: "Los respaldos deben almacenarse en diferentes ubicaciones para disminuir riesgos."
+  },
+  {
+    q: "El cifrado protege la confidencialidad y la integridad de la información.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El cifrado asegura que los datos sean ilegibles sin la clave."
+  },
+  {
+    q: "¿Qué metodología aplica el SGSI?",
+    o: ["PHVA", "ISO 9001", "RGPD", "PCI DSS"],
+    a: "PHVA",
+    r: "El SGSI aplica la metodología PHVA: Planificar, Hacer, Verificar, Actuar."
+  },
+  {
+    q: "El SGSI busca evaluar riesgos y establecer medidas de control.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El SGSI evalúa riesgos y establece medidas de control adecuadas."
+  },
+  {
+    q: "¿Qué significa la etapa 'Planificar' en PHVA?",
+    o: ["Definir políticas y objetivos", "Implementar controles", "Comparar resultados", "Aplicar medidas correctivas"],
+    a: "Definir políticas y objetivos",
+    r: "Planificar implica analizar riesgos y definir políticas, objetivos y procesos."
+  },
+  {
+    q: "La etapa 'Hacer' consiste en implementar y realizar seguimiento.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Hacer implica implementar y dar seguimiento al plan."
+  },
+  {
+    q: "¿Qué implica la etapa 'Verificar' en PHVA?",
+    o: ["Analizar desviaciones", "Definir objetivos", "Aplicar medidas correctivas", "Implementar controles"],
+    a: "Analizar desviaciones",
+    r: "Verificar consiste en comparar resultados obtenidos con los esperados."
+  },
+  {
+    q: "La etapa 'Actuar' busca aplicar medidas correctivas y preventivas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Actuar implica aplicar medidas correctivas y preventivas."
+  },
+  {
+    q: "¿Qué leyes regulan la clasificación de la información en Uruguay?",
+    o: ["Ley 18.381 y Ley 18.331", "Ley 15.965 y Ley 16.170", "Ley 19.670 y Ley 20.327", "Ley 14.306 y Ley 17.292"],
+    a: "Ley 18.381 y Ley 18.331",
+    r: "La clasificación se regula por la Ley 18.381 y la Ley 18.331."
+  },
+  {
+    q: "La información pública puede solicitarse sin justificar razones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El derecho de acceso a la información pública no requiere justificar razones."
+  },
+  {
+    q: "¿Cómo clasifica BPS la información no pública?",
+    o: ["Secreta, reservada o confidencial", "Privada, interna o externa", "General, parcial o total", "Crítica, media o baja"],
+    a: "Secreta, reservada o confidencial",
+    r: "En BPS la información no pública se clasifica como secreta, reservada o confidencial."
+  },
+  {
+    q: "El secreto tributario protege información de contribuyentes.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El secreto tributario protege información de la esfera íntima de los contribuyentes."
+  },
+  {
+    q: "¿Qué norma establece que los procedimientos disciplinarios son secretos?",
+    o: ["Decreto 500/991", "Ley 18.331", "Ley 14.306", "RD 12-1/2012"],
+    a: "Decreto 500/991",
+    r: "El Decreto 500/991 establece que los procedimientos disciplinarios son secretos."
+  },
+  {
+    q: "La violación del secreto administrativo es considerada falta grave.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La violación del secreto administrativo constituye falta grave."
+  },
+  {
+    q: "¿Qué beneficios brindan las políticas de seguridad de la información?",
+    o: ["Mejora continua, cumplimiento legal, mayor seguridad", "Reducir costos, eliminar contratos, suspender licencias", "Aumentar salarios, reducir riesgos, eliminar sanciones", "Solo proteger datos físicos"],
+    a: "Mejora continua, cumplimiento legal, mayor seguridad",
+    r: "Las políticas brindan beneficios como mayor seguridad, planificación y cumplimiento legal."
+  },
+  {
+    q: "Las políticas de seguridad aumentan el involucramiento del personal.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las políticas requieren que tanto personal técnico como funcional se involucren."
+  },
+  {
+    q: "¿Qué norma internacional guía las políticas de seguridad en BPS?",
+    o: ["UNIT-ISO/IEC 27002", "ISO 9001", "PCI DSS", "RGPD"],
+    a: "UNIT-ISO/IEC 27002",
+    r: "Las políticas en BPS se basan en la norma UNIT-ISO/IEC 27002."
+  },
+  {
+    q: "La Política de Seguridad Corporativa incluye seguridad física y lógica.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La Política Corporativa incluye seguridad física y lógica."
+  },
+  {
+    q: "¿Qué gerencia está a cargo de la seguridad física en BPS?",
+    o: ["Gerencia de Administración", "Coordinación de Servicios Informáticos", "Gerencia General", "Dirección Técnica"],
+    a: "Gerencia de Administración",
+    r: "La seguridad física está a cargo de la Gerencia de Administración."
+  },
+  {
+    q: "La seguridad lógica está a cargo de la Coordinación de Servicios Informáticos.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La seguridad lógica está a cargo de la Coordinación de Servicios Informáticos."
+  },
+  {
+    q: "¿Qué principios protegen la información según la política general?",
+    o: ["Confidencialidad, integridad y disponibilidad", "Transparencia, equidad y justicia", "Velocidad, eficiencia y costo", "Legalidad, ética y moral"],
+    a: "Confidencialidad, integridad y disponibilidad",
+    r: "La política protege la información según los principios de confidencialidad, integridad y disponibilidad."
+  },
+  {
+    q: "Todos los funcionarios y contratados son responsables del cumplimiento de la política.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Todos los funcionarios y contratados deben cumplir la política de seguridad."
+  },
+  {
+    q: "¿Qué ley uruguaya regula la protección de datos personales?",
+    o: ["Ley 18.331", "Ley 18.381", "Ley 19.670", "Ley 20.327"],
+    a: "Ley 18.331",
+    r: "La Ley 18.331 regula la protección de datos personales."
+  },
+  {
+    q: "La Ley 19.670 incorpora estándares del RGPD europeo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La Ley 19.670 incorpora estándares del RGPD europeo."
+  },
+  {
+    q: "¿Qué ley tipifica delitos como acceso indebido y daño informático?",
+    o: ["Ley 20.327", "Ley 18.331", "Ley 18.381", "Ley 19.670"],
+    a: "Ley 20.327",
+    r: "La Ley 20.327 tipifica delitos de ciberdelincuencia."
+  },
+  {
+    q: "El Decreto 66/025 establece estándares en ciberseguridad para organismos del Estado.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Decreto 66/025 establece estándares en ciberseguridad para organismos del Estado."
+  },
+   {
+    q: "¿Qué repartición gestiona los servicios de registro, recaudación y fiscalización en BPS?",
+    o: ["AFAP", "Fonasa", "ATYR", "MTSS"],
+    a: "ATYR",
+    r: "La Asesoría Tributaria y Recaudación (ATYR) gestiona registro, recaudación y fiscalización."
+  },
+  {
+    q: "El sistema previsional uruguayo es mixto desde 1996.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Ley 16.713 estableció el sistema mixto administrado por BPS y AFAP."
+  },
+  {
+    q: "¿Qué ley creó el Sistema Previsional Común en 2023?",
+    o: ["Ley 18.211", "Ley 19.690", "Ley 16.713", "Ley 20.130"],
+    a: "Ley 20.130",
+    r: "La Ley 20.130 creó el Sistema Previsional Común en 2023."
+  },
+  {
+    q: "BPS administra el Fondo Nacional de Salud (Fonasa).",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Desde 2008, BPS administra el Fonasa y recauda aportes de salud."
+  },
+  {
+    q: "¿Qué aportes patronales se pagan por actividades bonificadas?",
+    o: ["IRPF", "FRL", "Contribución patronal especial", "IVA"],
+    a: "Contribución patronal especial",
+    r: "Las actividades bonificadas implican una contribución patronal especial."
+  },
+  {
+    q: "El fondo de garantía de créditos laborales se creó en 2018.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Ley 19.690 creó el fondo de garantía de créditos laborales en 2018."
+  },
+  {
+    q: "¿Qué tasa patronal aplica el fondo de garantía de créditos laborales?",
+    o: ["1 %", "0,5 %", "0,025 %", "2 %"],
+    a: "0,025 %",
+    r: "La tasa patronal es 0,025 % sobre remuneraciones privadas."
+  },
+  {
+    q: "BPS colabora con DGI en la recaudación del IRPF desde 2007.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Desde 2007, BPS colabora con DGI en la recaudación del IRPF laboral."
+  },
+  {
+    q: "¿Qué principio establece que todo ingreso gravado es asignación computable?",
+    o: ["Congruencia", "Actividad", "Economía procesal", "Verdad material"],
+    a: "Congruencia",
+    r: "El principio de congruencia establece que todo ingreso gravado es asignación computable."
+  },
+  {
+    q: "El principio de primacía de la remuneración real aplica sobre remuneraciones efectivamente percibidas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las CESS se aplican sobre remuneraciones realmente percibidas."
+  },
+  {
+    q: "¿Qué principio consagra el derecho a garantías en sede administrativa?",
+    o: ["Congruencia", "Verdad material", "Economía procesal", "Debido proceso"],
+    a: "Debido proceso",
+    r: "El principio de debido proceso consagra derechos y garantías en sede administrativa."
+  },
+  {
+    q: "El trabajo dependiente es subordinado, oneroso, personal e intransferible.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "El trabajo dependiente reúne esas características legales."
+  },
+  {
+    q: "¿Cómo se denomina al trabajador que asume riesgo y dirige su empresa?",
+    o: ["Dependiente", "Funcionario público", "No dependiente", "Pasivo"],
+    a: "No dependiente",
+    r: "El trabajador no dependiente asume riesgo y dirige su empresa."
+  },
+  {
+    q: "La oficina de Registro de Contribuyentes y Empresas gestiona inscripciones y clausuras.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El registro gestiona inscripciones, modificaciones y clausuras de empresas."
+  },
+  {
+    q: "¿Qué tipo de contribuyentes realizan actividades gravadas solo por BPS?",
+    o: ["Comunes con DGI", "Autónomos", "Pasivos", "Exclusivos de BPS"],
+    a: "Exclusivos de BPS",
+    r: "Los exclusivos de BPS realizan actividades gravadas solo por BPS."
+  },
+  {
+    q: "Las empresas rurales presentan nóminas en forma cuatrimestral.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las empresas rurales presentan declaraciones y pagos cada cuatro meses."
+  },
+  {
+    q: "¿Qué software proporciona BPS para declaraciones?",
+    o: ["Excel", "SAP", "Atyro", "Oracle"],
+    a: "Atyro",
+    r: "BPS proporciona el software Atyro para declaraciones."
+  },
+  {
+    q: "La historia laboral se conforma con información de nóminas.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "La historia laboral se conforma con datos de nóminas presentadas por empresas."
+  },
+  {
+    q: "¿Qué unidad gestiona la recuperación de montos adeudados?",
+    o: ["Fiscalización", "Certificados", "Gestión de Cobro", "Registro"],
+    a: "Gestión de Cobro",
+    r: "La unidad de Gestión de Cobro recupera montos adeudados."
+  },
+  {
+    q: "La vía judicial implica acciones civiles, penales y ejecutivas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La vía judicial implica acciones civiles, penales, cautelares o ejecutivas."
+  },
+  {
+    q: "¿Qué certificado acredita situación regular de pagos?",
+    o: ["Especial", "Provisorio", "Común", "Temporal"],
+    a: "Común",
+    r: "El certificado común acredita situación regular de pagos."
+  },
+  {
+    q: "El certificado especial acredita que no existen adeudos.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "El certificado especial acredita que no existen adeudos."
+  },
+  {
+    q: "¿Qué base ficta equivale a una unidad reajustable?",
+    o: ["BPC", "UR", "IPC", "BFC"],
+    a: "BFC",
+    r: "La Base Ficta de Contribución equivale a una unidad reajustable."
+  },
+  {
+    q: "La BPC se emplea como base de aportación y prestaciones sociales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La BPC se emplea como base de aportación y prestaciones sociales."
+  },
+  {
+    q: "¿Qué porcentaje de viáticos sin rendición se grava dentro del país?",
+    o: ["25 %", "100 %", "10 %", "50 %"],
+    a: "50 %",
+    r: "Se grava el 50 % de viáticos sin rendición dentro del país."
+  },
+  {
+    q: "Los jornales de licencia efectivamente gozada constituyen materia gravada.",
+    o: ["Falso", "Verdadero"],
+    a: "Verdadero",
+    r: "Los jornales de licencia efectivamente gozada constituyen materia gravada."
+  },
+  {
+    q: "¿Qué ficto se aplica a propinas en gastronomía?",
+    o: ["10 BFC", "1 BPC", "5 UR", "3 BFC"],
+    a: "3 BFC",
+    r: "Las propinas en gastronomía se gravan con un ficto equivalente a 3 BFC."
+  },
+  {
+    q: "La vivienda otorgada al personal se grava con un ficto de 10 BFC.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La vivienda otorgada al personal se grava con un ficto de 10 BFC."
+  },
+  {
+    q: "¿Qué subsidios constituyen materia gravada?",
+    o: ["Propinas", "Vivienda", "Viáticos", "Enfermedad, maternidad, desempleo"],
+    a: "Enfermedad, maternidad, desempleo",
+    r: "Los subsidios por inactividad compensada constituyen materia gravada."
+  },
+  {
+    q: "¿Qué tipo de aportación corresponde a la actividad comercial?",
+    o: ["Civil", "Industria y Comercio", "Rural", "Notarial"],
+    a: "Industria y Comercio",
+    r: "La aportación Industria y Comercio aplica a actividades comerciales."
+  },
+  {
+    q: "La tasa de aporte personal jubilatorio es la misma para todas las personas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La tasa personal jubilatoria es uniforme (15 %)."
+  },
+  {
+    q: "¿Cuál es la tasa de aporte patronal en Industria y Comercio?",
+    o: ["7,5 %", "15 %", "19,5 %", "9 %"],
+    a: "7,5 %",
+    r: "La tasa patronal en Industria y Comercio es 7,5 %."
+  },
+  {
+    q: "Las prestaciones médicas hasta el 20 % del salario nominal solo generan aportes patronales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Ley 16.713 art. 167: prestaciones médicas generan solo aportes patronales."
+  },
+  {
+    q: "¿Qué tasa patronal aplica a Intendencias en aportación civil?",
+    o: ["16,5 %", "19,5 %", "7,5 %", "9 %"],
+    a: "16,5 %",
+    r: "Intendencias municipales aportan 16,5 % patronal."
+  },
+  {
+    q: "El SNIS rige desde el 1 de enero de 2008.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El SNIS comenzó el 1/1/2008 con la Ley 18.211."
+  },
+  {
+    q: "¿Qué organismo administra el Fonasa?",
+    o: ["MTSS", "ASSE", "BPS", "DGI"],
+    a: "BPS",
+    r: "BPS administra el Fondo Nacional de Salud (Fonasa)."
+  },
+  {
+    q: "Los hijos menores de 18 años son beneficiarios del SNIS.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El SNIS cubre hijos menores de 18 o con discapacidad."
+  },
+  {
+    q: "¿Qué mínimo de jornales da derecho a cobertura médica?",
+    o: ["13 jornales", "20 jornales", "25 jornales", "30 jornales"],
+    a: "13 jornales",
+    r: "Se requieren 13 jornales o 104 horas mensuales."
+  },
+  {
+    q: "El aporte patronal básico al Fonasa es del 5 %.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El aporte patronal básico es 5 % más CCM."
+  },
+  {
+    q: "¿Qué año se estableció la devolución de excedentes Fonasa?",
+    o: ["2011", "2008", "2015", "2019"],
+    a: "2011",
+    r: "Desde enero de 2011 se devuelve excedente Fonasa."
+  },
+  {
+    q: "El FRL tiene tasa de 0,10 % personal y patronal.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El FRL se financia con 0,10 % personal y patronal."
+  },
+  {
+    q: "¿Qué impuesto recauda BPS junto con aportes sociales?",
+    o: ["IRPF", "IVA", "Mevir", "IRAE"],
+    a: "Mevir",
+    r: "BPS recauda el impuesto Mevir para vivienda rural."
+  },
+  {
+    q: "La tasa de UBC rural es 0,1004 %.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La tasa vigente para UBC rural es 0,1004 %."
+  },
+  {
+    q: "¿Qué mínimo de aporte rural corresponde?",
+    o: ["15 % de 22 BFC", "10 % de 20 BPC", "5 % de 10 UR", "20 % de 30 BFC"],
+    a: "15 % de 22 BFC",
+    r: "El mínimo rural es 15 % de 22 BFC con reducción del 33 %."
+  },
+  {
+    q: "El impuesto Mevir es trimestral.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El impuesto Mevir se paga trimestralmente."
+  },
+  {
+    q: "¿Qué tasa aplica la cobertura de accidentes del BSE?",
+    o: ["1,87 %", "2 %", "0,5 %", "3 %"],
+    a: "1,87 %",
+    r: "La cobertura del BSE aplica 1,87 % sobre base imponible."
+  },
+  {
+    q: "El trabajo doméstico está regulado por la Ley 18.065.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Ley 18.065 regula el trabajo doméstico desde 2006."
+  },
+  {
+    q: "¿Qué día se celebra la trabajadora doméstica?",
+    o: ["19 de agosto", "1 de mayo", "8 de marzo", "25 de junio"],
+    a: "19 de agosto",
+    r: "El 19 de agosto es feriado pago para trabajadoras domésticas."
+  },
+  {
+    q: "La prima por antigüedad en trabajo doméstico es 0,5 % anual.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La prima por antigüedad es 0,5 % anual hasta 5 %."
+  },
+  {
+    q: "¿Qué compensación nocturna aplica entre 22 y 6 horas?",
+    o: ["15 %", "20 %", "10 %", "5 %"],
+    a: "15 %",
+    r: "La compensación nocturna es 15 %, o 20 % si supera 5 horas."
+  },
+  {
+    q: "El aporte patronal en trabajo doméstico es 7,5 % jubilatorio.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El aporte patronal jubilatorio es 7,5 %."
+  },
+  {
+    q: "¿Qué tasa patronal aplica al FRL en construcción?",
+    o: ["0,10 %", "0,025 %", "1 %", "0,5 %"],
+    a: "0,10 %",
+    r: "El FRL en construcción tiene tasa patronal de 0,10 %."
+  },
+  {
+    q: "El AUC en construcción es 71,8 % de remuneraciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El aporte unificado de construcción es 71,8 %."
+  },
+  {
+    q: "¿Qué tasa patronal aplica al fondo de garantía laboral?",
+    o: ["0,025 %", "0,10 %", "1 %", "0,5 %"],
+    a: "0,025 %",
+    r: "El fondo de garantía laboral aplica 0,025 % patronal."
+  },
+  {
+    q: "El monotributo rige desde 2007.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El monotributo rige desde el 1/7/2007 por Ley 18.083."
+  },
+  {
+    q: "¿Qué tipo de empresa puede acceder al monotributo?",
+    o: ["Unipersonal con hasta un dependiente", "Sociedad anónima", "SAS con directores", "Caja Profesional"],
+    a: "Unipersonal con hasta un dependiente",
+    r: "El monotributo aplica a unipersonales con hasta un dependiente."
+  },
+  {
+    q: "Las sociedades de hecho familiares pueden tener hasta tres socios sin dependientes en monotributo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El monotributo permite sociedades familiares hasta tres socios sin dependientes."
+  },
+  {
+    q: "¿Qué actividades están excluidas del monotributo?",
+    o: ["Socios de SAS y SA", "Unipersonales", "Sociedades de hecho familiares", "Servicios personales"],
+    a: "Socios de SAS y SA",
+    r: "Socios de SAS y SA están excluidos del monotributo."
+  },
+  {
+    q: "¿Qué tasa de aporte personal jubilatorio aplica en Industria y Comercio?",
+    o: ["15 %", "7,5 %", "9 %", "19,5 %"],
+    a: "15 %",
+    r: "El aporte personal jubilatorio en Industria y Comercio es 15 %."
+  },
+  {
+    q: "El aporte patronal en Industria y Comercio es del 7,5 %. ",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La tasa patronal en Industria y Comercio es 7,5 %."
+  },
+  {
+    q: "¿Qué tasa patronal aplica en la Administración Central bajo aportación civil?",
+    o: ["19,5 %", "16,5 %", "7,5 %", "9 %"],
+    a: "19,5 %",
+    r: "La Administración Central aporta 19,5 % patronal en régimen civil."
+  },
+  {
+    q: "Las actividades bonificadas aportan una contribución patronal especial.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Las actividades bonificadas implican contribución patronal especial."
+  },
+  {
+    q: "¿Qué porcentaje patronal se aplica a trabajos a -20 °C?",
+    o: ["13,8 %", "7,5 %", "19,5 %", "15 %"],
+    a: "13,8 %",
+    r: "Trabajos a -20 °C aportan 13,8 % patronal por bonificación."
+  },
+  {
+    q: "El SNIS financia la cobertura médica a través del Fonasa.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El SNIS se financia mediante el Fonasa administrado por BPS."
+  },
+  {
+    q: "¿Qué requisito mínimo da derecho a cobertura médica?",
+    o: ["104 horas mensuales", "50 horas mensuales", "200 horas mensuales", "80 horas mensuales"],
+    a: "104 horas mensuales",
+    r: "Se requieren 13 jornales o 104 horas mensuales."
+  },
+  {
+    q: "El aporte patronal básico al Fonasa es del 5 %. ",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El aporte patronal básico es 5 % más CCM."
+  },
+  {
+    q: "¿Qué año se modificó el régimen de devolución Fonasa?",
+    o: ["2011", "2008", "2015", "2019"],
+    a: "2011",
+    r: "En 2011 se estableció devolución de excedentes Fonasa."
+  },
+  {
+    q: "El FRL financia recapacitación profesional en Inefop.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El FRL financia recapacitación profesional en Inefop."
+  },
+  {
+    q: "¿Qué tasa patronal aplica al FRL?",
+    o: ["0,10 %", "0,025 %", "1 %", "0,5 %"],
+    a: "0,10 %",
+    r: "El FRL aplica tasa patronal de 0,10 %."
+  },
+  {
+    q: "El impuesto Mevir financia viviendas rurales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El impuesto Mevir financia viviendas rurales."
+  },
+  {
+    q: "¿Qué hectáreas coneat obligan a pagar Mevir?",
+    o: ["Más de 500", "Más de 200", "Más de 100", "Más de 50"],
+    a: "Más de 500",
+    r: "Padrones rurales con más de 500 hectáreas coneat deben pagar Mevir."
+  },
+  {
+    q: "La tasa de UBC rural es 0,1004 %. ",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La tasa vigente para UBC rural es 0,1004 %."
+  },
+  {
+    q: "¿Qué mínimo de aporte rural corresponde?",
+    o: ["15 % de 22 BFC", "10 % de 20 BPC", "5 % de 10 UR", "20 % de 30 BFC"],
+    a: "15 % de 22 BFC",
+    r: "El mínimo rural es 15 % de 22 BFC con reducción del 33 %."
+  },
+  {
+    q: "El trabajo doméstico está regulado por la Ley 18.065.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "Ley 18.065 regula el trabajo doméstico desde 2006."
+  },
+  {
+    q: "¿Qué prima por antigüedad aplica en trabajo doméstico?",
+    o: ["0,5 % anual", "1 % anual", "2 % anual", "5 % anual"],
+    a: "0,5 % anual",
+    r: "La prima por antigüedad es 0,5 % anual hasta 5 %."
+  },
+  {
+    q: "La compensación nocturna es 15 % entre 22 y 6 horas.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La compensación nocturna es 15 %, o 20 % si supera 5 horas."
+  },
+  {
+    q: "¿Qué tasa aplica el fondo social del trabajo doméstico?",
+    o: ["0,03 %", "0,10 %", "0,025 %", "0,5 %"],
+    a: "0,03 %",
+    r: "El fondo social aplica 0,03 % personal y patronal."
+  },
+  {
+    q: "La cobertura del BSE aplica 1,87 % sobre base imponible.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "La cobertura del BSE aplica 1,87 % sobre base imponible."
+  },
+  {
+    q: "¿Qué ley regula la construcción?",
+    o: ["Ley 14.411", "Ley 18.065", "Ley 16.713", "Ley 19.313"],
+    a: "Ley 14.411",
+    r: "La construcción está regulada por la Ley 14.411."
+  },
+  {
+    q: "El AUC en construcción es 71,8 % de remuneraciones.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El aporte unificado de construcción es 71,8 %."
+  },
+  {
+    q: "¿Qué tasa patronal aplica al fondo de garantía laboral?",
+    o: ["0,025 %", "0,10 %", "1 %", "0,5 %"],
+    a: "0,025 %",
+    r: "El fondo de garantía laboral aplica 0,025 % patronal."
+  },
+  {
+    q: "El monotributo rige desde 2007.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El monotributo rige desde el 1/7/2007 por Ley 18.083."
+  },
+  {
+    q: "¿Qué tipo de empresa puede acceder al monotributo?",
+    o: ["Sociedad anónima", "SAS con directores", "Unipersonal con hasta un dependiente", "Caja Profesional"],
+    a: "Unipersonal con hasta un dependiente",
+    r: "El monotributo aplica a unipersonales con hasta un dependiente."
+  },
+  {
+    q: "Las sociedades de hecho familiares pueden tener hasta tres socios sin dependientes en monotributo.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El monotributo permite sociedades familiares hasta tres socios sin dependientes."
+  },
+  {
+    q: "¿Qué actividades están excluidas del monotributo?",
+    o: ["Unipersonales", "Socios de SAS y SA", "Sociedades de hecho familiares", "Servicios personales"],
+    a: "Socios de SAS y SA",
+    r: "Socios de SAS y SA están excluidos del monotributo."
+  },
+  {
+    q: "El aporte al Fonasa de servicios personales fuera de dependencia se efectiviza mediante anticipos mensuales.",
+    o: ["Verdadero", "Falso"],
+    a: "Verdadero",
+    r: "El Fonasa se paga mediante anticipos mensuales a cuenta del tributo anual."
+  }
+];

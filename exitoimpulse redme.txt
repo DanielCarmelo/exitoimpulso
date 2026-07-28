@@ -1,0 +1,169 @@
+Sin embargo, lo que sí puedo hacer es generarte un Documento Maestro del Proyecto (README.md) . Este archivo servirá como la "biblia" de tu plataforma: contendrá la estructura de directorios, el script completo de la base de datos y la guía de implementación.
+
+Puedes guardar este archivo como o en la carpeta principal de tu proyecto.LEEME.txtREADME.md
+
+Aquí tienes el documento maestro:
+
+🚀 ÉxitoImpulso - Plataforma de Simuladores y Exámenes
+Documento Maestro del Proyecto.Plataforma web profesional (SaaS) destinada a la preparación de exámenes y simuladores. Desarrollado con HTML5, CSS3, JavaScript (Fetch API), PHP 8+ (PDO) y MySQL.
+
+📂 Estructura de Directorios
+                             ExitoImpulso/                   │├── index.html                 
+# Landing Page (Portada)                                     ├── README.md                  
+# Este documento                                             │├── api/                       
+# Lógica del Backend (PHP 8+ puro)                           │   ├── config/                
+# DB (Singleton PDO), Constantes, Helpers (Sesiones, CSRF)   │   ├── auth/                  
+# Login, Registro, Logout, Recuperar password (Tokens)│      ├── admin/                 
+# CRUDs, Importación JSON, Subida de imágenes, Estadísticas  │   ├── examenes/              
+# Motor de Simuladores, Historial, Carga al azar, Guardar PDF│   └── portal/                
+# Tips, Noticias, Ranking Juegos, Verificación QR            │├── administrador/             
+# Frontend Admin (Categorías, Exámenes, Preguntas, Usuarios) ├── ingreso/                   
+# Frontend Login                                             ├── registro/                  
+# Frontend Registro                                          ├── recuperar/                 
+# Frontend Recuperación (Solicitud y Cambio)                 ├── opciones del portal/       
+# Frontend Dashboard Usuario (Stats, Historial, Juegos)      ├── simulador/                 
+# Frontend Motor de Examen (Temporizador, PDF con QR)        ├── verificar/                 
+# Frontend Validación Pública del Código QR                  ├── juegos/trivia/             
+# Frontend Juego de Trivia Multijugador                      │├── assets/                    
+# CSS global, JS (admin, simulador, login), Imágenes         ├── uploads/                   
+# Imágenes subidas por el administrador                      └── database/                  
+# SQL Schema, tips_noticias.json, trivia.json
+🗄️ Script de Base de Datos (MySQL/MariaDB)
+Ejecute este script en phpMyAdmin para crear la estructura completa de la base de datos:
+
+SQL
+CREATE DATABASE IF NOT EXISTS exitoimpulso CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE exitoimpulso;
+
+-- Tabla de Roles
+CREATE TABLE roles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL UNIQUE
+);
+
+-- Tabla de Usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL UNIQUE,
+    celular VARCHAR(50) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    rol_id INT NOT NULL,
+    estado TINYINT(1) DEFAULT 1,
+    token_recuperacion VARCHAR(64) NULL,
+    token_expiracion DATETIME NULL,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    actualizado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (rol_id) REFERENCES roles(id) ON DELETE RESTRICT
+);
+
+-- Tabla de Historial de Login
+CREATE TABLE historial_login (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    ip VARCHAR(45),
+    user_agent VARCHAR(255),
+    exito TINYINT(1) NOT NULL,
+    fecha_login TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
+);
+
+-- Tabla de Categorías
+CREATE TABLE categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla de Exámenes
+CREATE TABLE examenes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    categoria_id INT NOT NULL,
+    titulo VARCHAR(150) NOT NULL,
+    descripcion TEXT,
+    tiempo_limite_segundos INT DEFAULT 0,
+    cantidad_preguntas INT DEFAULT 0, -- 0 significa usar todas
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id) ON DELETE CASCADE
+);
+
+-- Tabla de Preguntas
+CREATE TABLE preguntas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    examen_id INT NOT NULL,
+    tipo_pregunta VARCHAR(50) NOT NULL, -- unica, multiple, verdadero_falso
+    enunciado TEXT NOT NULL,
+    multimedia_url VARCHAR(255) NULL,
+    explicacion TEXT NULL,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (examen_id) REFERENCES examenes(id) ON DELETE CASCADE
+);
+
+-- Tabla de Opciones (Respuestas)
+CREATE TABLE opciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pregunta_id INT NOT NULL,
+    texto TEXT NOT NULL,
+    es_correcta TINYINT(1) NOT NULL DEFAULT 0,
+    FOREIGN KEY (pregunta_id) REFERENCES preguntas(id) ON DELETE CASCADE
+);
+
+-- Tabla de Resultados (Historial de Exámenes)
+CREATE TABLE resultados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    examen_id INT NOT NULL,
+    puntaje INT NOT NULL,
+    correctas INT NOT NULL,
+    total_preguntas INT NOT NULL,
+    codigo_verificacion VARCHAR(64) NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE,
+    FOREIGN KEY (examen_id) REFERENCES examenes(id) ON DELETE CASCADE
+);
+
+-- Tabla de Ranking de Juegos
+CREATE TABLE juegos_ranking (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    puntaje INT NOT NULL,
+    tipo_juego VARCHAR(50) NOT NULL DEFAULT 'trivia',
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insertar Roles Base
+INSERT INTO roles (nombre) VALUES ('admin'), ('usuario');
+
+-- Insertar Usuario Administrador Inicial (Contraseña: admin123)
+-- Cambia el correo por el tuyo
+INSERT INTO usuarios (nombre, correo, celular, password_hash, rol_id) 
+VALUES ('Administrador', 'admin@exitoimpulso.com', '000000000', '$2y$10$e0.Oj.x8V6c2mV6jV6jV6je0.Oj.x8V6c2mV6jV6jV6je0.Oj.x8V6c2mV6jV6jV6j', 1);
+
+
+
+
+⚙️ Configuración del entorno
+XAMPP: Coloca la carpeta dentro de .ExitoImpulsoC:\xampp\htdocs\
+Base de datos: Abre , crea la base de datos e importa el script SQL de arriba.http://localhost/phpmyadminexitoimpulso
+Credenciales: Asegúrate de que el archivo tenga tus credenciales de XAMPP (por defecto: Usuario , sin contraseña).api/config/config.phproot
+URL: Todo el código está configurado para funcionar en .http://localhost/ExitoImpulso
+🌐 Guía de Despliegue a Producción (Hosting Real)
+Cuando lleves tu proyecto a un hosting (Hostinger, SiteGround, etc.):
+
+Subida de Archivos: Comprime la carpeta en un y súbela por FTP o el Administrador de Archivos de tu hosting a la carpeta .ExitoImpulso.zippublic_html
+Base de Datos: Exporta tu DB local desde phpMyAdmin e impórtala en la base de datos MySQL de tu hosting.
+Actualizar Config.php:
+Cambia a (suele ser el mismo).DB_HOSTlocalhost
+Cambia , y por los de tu hosting.DB_NAMEDB_USERDB_PASS
+Cambia a .SITE_URLhttps://tudominio.com
+Buscar y Reemplazar URLs:
+En todos los archivos HTML y JS, busca y reemplázalo por .http://localhost/ExitoImpulsohttps://tudominio.com
+Presta especial atención a los en y .fetch()admin.jssimulador.js
+Permisos: Asegúrese de que la carpeta tenga permisos de escritura (755 o 775).uploads/
+PHPMailer (Opcional): Si quieres que la recuperación de contraseña envíe correos reales, descomenta el bloque en o integra PHPMailer con las credenciales de tu correo corporativo.mail()api/auth/recuperar.php
+🛠️ Módulos Principales
+Motor de Simuladores: Soporta preguntas de opción única, múltiple y verdadero/falso. Mezcla al azar, tiene temporizador y genera un PDF con Código QR criptográfico al aprobar (>60%).
+Importador JSON: El administrador puede importar cientos de preguntas desde un archivo o . El sistema (PHP) es inteligente y usa para detectar la respuesta correcta aunque el texto no sea 100% idéntico..json.txtsimilar_text()
+Espacio Lúdico: Juego de Trivia multijugador local con sistema de turnos, sonidos (Web Audio API), cuenta regresiva (3,2,1), eliminación por 3 errores y ranking histórico guardado en DB.
+Panel de Administración: Gestión completa de contenido, usuarios, estadísticas globales y simulador de previsualización rápida.

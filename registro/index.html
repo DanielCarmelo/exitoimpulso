@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ÉxitoImpulso</title>
+    <!-- AQUÍ AGREGAS EL ICONO -->
+    <link rel="shortcut icon" href="../assets/img/logo2.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Crear Cuenta en ÉxitoImpulso</h2>
+        <div id="mensaje" class="mensaje-error"></div>
+        
+        <form id="formRegistro">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+            <input type="tel" id="celular" placeholder="Celular" required>
+            <input type="password" id="password" placeholder="Contraseña (Mín 8, 1 mayús, 1 núm)" required>
+            <input type="password" id="confirm_password" placeholder="Confirmar contraseña" required>
+            
+            <button type="submit">Registrarse</button>
+            <p>¿Ya tienes cuenta? <a href="../ingreso/index.html">Iniciar Sesión</a></p>
+        </form>
+    </div>
+
+    <script src="../assets/js/registro.js"></script>
+</body>
+</html>

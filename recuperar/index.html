@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar - ÉxitoImpulso</title>
+    <!-- AQUÍ AGREGAS EL ICONO -->
+    <link rel="shortcut icon" href="../assets/img/logo2.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Recuperar Contraseña</h2>
+        <div id="mensaje" class="mensaje-error"></div>
+        
+        <form id="formRecuperar">
+            <p style="font-size:14px; color:#6b7280; margin-bottom:15px;">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+            <button type="submit">Enviar Enlace</button>
+            <p><a href="../ingreso/index.html">Volver a Iniciar Sesión</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('formRecuperar').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const mensajeDiv = document.getElementById('mensaje');
+            mensajeDiv.style.display = 'none';
+            mensajeDiv.className = '';
+
+            const correo = document.getElementById('correo').value;
+
+            try {
+                const response = await fetch('http://localhost/ExitoImpulso/api/auth/recuperar.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ correo: correo })
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    mensajeDiv.textContent = result.message;
+                    mensajeDiv.classList.add('mensaje-success');
+                    mensajeDiv.style.display = 'block';
+                    
+                    // --- TRAMPA DE DESARROLLO ---
+                    // Si estamos en local, nos devuelve el link para hacer clic
+                    if (result.dev_link) {
+                        mensajeDiv.innerHTML += `<br><br><strong>🔧 MODO DESARROLLO:</strong><br>Haz clic aquí: <a href="${result.dev_link}">${result.dev_link}</a>`;
+                    }
+                } else {
+                    mensajeDiv.textContent = result.error || 'Ocurrió un error.';
+                    mensajeDiv.classList.add('mensaje-error');
+                    mensajeDiv.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
