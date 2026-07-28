@@ -1,0 +1,139 @@
+/* assets/css/style.css */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --error-color: #dc2626;
+    --success-color: #16a34a;
+    --bg-color: #f3f4f6;
+    --text-color: #1f2937;
+    --border-color: #d1d5db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: var(--primary-hover);
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--text-color);
+}
+
+.form-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.mensaje-error, .mensaje-success {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: none;
+}
+
+.mensaje-error {
+    background-color: #fee2e2;
+    color: var(--error-color);
+    border: 1px solid var(--error-color);
+}
+
+.mensaje-success {
+    background-color: #dcfce7;
+    color: var(--success-color);
+    border: 1px solid var(--success-color);
+}
+
+/* Estilos básicos para el Portal */
+.portal-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.btn-logout {
+    background-color: var(--error-color) !important;
+    margin-top: 20px;
+}
+
+        /* Botón Simulador en Sidebar */
+         .sidebar .btn-simulador {
+            margin-top: 20px;
+            background: #3b82f6;
+            color: white;
+            text-align: center;
+            font-weight: 600;
+        }
+        .sidebar .btn-simulador:hover { background: #2563eb; }
+
+        /* Estilos del Modal (Popup) */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: white; padding: 30px; border-radius: 10px; width: 100%; max-width: 450px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .modal-content h3 { margin: 0 0 10px 0; color: #1f2937; }
+        .modal-content select { margin-bottom: 15px; }
+

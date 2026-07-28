@@ -1,0 +1,22 @@
+{
+  "tips": [
+    { "id": 1, "titulo": "Dosifica tu estudio", "texto": "Planifica periodos de estudio no demasiado concentrados. Evita las largas jornadas maratónicas, es mejor la constancia que el agotamiento." },
+    { "id": 2, "titulo": "Descansos activos", "texto": "Toma descansos de media hora luego de 1:30 a 2 horas de concentración. Aprovecha para caminar y relajar la vista." },
+    { "id": 3, "titulo": "Sueño reparador", "texto": "Mantén buenos descansos nocturnos. El cerebro ordena la información y consolida la memoria durante los sueños REM." },
+    { "id": 4, "titulo": "Energía cerebral", "texto": "Consume frutas o golosinas. El cerebro es un órgano de gran demanda energética. Además, masticar nos ayuda a controlar la respiración por la nariz." },
+    { "id": 5, "titulo": "Hidratación constante", "texto": "Ten siempre agua a tu lado. La falta de hidratación leve reduce drásticamente la concentración y causa fatiga mental." },
+    { "id": 6, "titulo": "Recuerdo Activo", "texto": "En lugar de solo leer, intenta explicarle el tema a alguien más (o a ti mismo en voz alta). Es la mejor forma de detectar qué te falta." }
+  ],
+  "noticias": [
+    { "id": 1, "titulo": "¡Nuevo Simulador de Tránsito!", "texto": "Ya está disponible la actualización de señales de tráfico para 2024.", "imagen": "../database/noticias/img1.jpg", "duracion": 8 },
+    { "id": 2, "titulo": "Cupos Limitados", "texto": "Inscribite antes del 30 para acceder a clases de apoyo personalizadas.", "imagen": "../database/noticias/img2.jpg", "duracion": 4 },
+    { "id": 3, "titulo": "¡Joven Talento (17 años)!", "texto": "''Tenía muchas ideas de negocio pero cero estructura. En Exitoimpulsa no solo me ayudaron a aterrizar mi proyecto de e-commerce, sino que me dieron la confianza para presentarlo. ¡Ya lancé mi primera línea de productos!''", "imagen": "../database/noticias/rostro1.jpg", "duracion": 12 },
+    { "id": 4, "titulo": "Joven Profesional (19 años)", "texto": "''A mi edad, la incertidumbre sobre el futuro es grande. La mentoría en Exitoimpulsa me sirvió para definir mi perfil profesional y entender qué habilidades debía desarrollar para el mercado actual. ¡Orientación real!''", "imagen": "../database/noticias/rostro2.jpg", "duracion": 12 },
+    { "id": 5, "titulo": "Joven Emprendedor (29 años)", "texto": "Llevaba tres años estancado. Gracias a Exitoimpulsa y su programa de aceleración, identifiqué mis brechas de liderazgo. Dos meses después, conseguí un puesto gerencial con un aumento importante.", "imagen": "../database/noticias/rostro3.jpg", "duracion": 12 },
+    { "id": 6, "titulo": "Mujer de Negocios (34 años)", "texto": "Decidí emprender y el caos era total. Exitoimpulsa fue mi salvavidas. Ordenamos mis finanzas, definimos mi cliente ideal y tripliqué mi facturación en el primer año.", "imagen": "../database/noticias/rostro4.jpg", "duracion": 12 },
+    { "id": 7, "titulo": "¡Reinvención Profesional (48 años)!", "texto": "Con 20 años de experiencia corporativa, sentía que necesitaba un cambio radical. Exitoimpulsa me ayudó a ver que mi experiencia era mi mayor activo para reinventarme. Hoy tengo mi propia empresa.", "imagen": "../database/noticias/rostro5.jpg", "duracion": 12 },
+    { "id": 8, "titulo": "Empresario Consolidado (55 años)", "texto": "Dirijo una empresa familiar desde hace 15 años. La consultora de Exitoimpulsa nos trajo una visión fresca, digitalizando procesos y abriendo nuevos mercados. ¡Transformación total!", "imagen": "../database/noticias/rostro6.jpg", "duracion": 12 },
+    { "id": 9, "titulo": "¡Impulsa tu carrera profesional sin costo! 🚀 Obtén tu Carnet de Manipulador de Alimentos. Capacítate, cumple con la ley y mejora tu CV. ¡Capacitate ya y pon a prueba tus conocimientos! 👇 [Enlace]", "imagen": "../database/noticias/img3.jpg", "duracion": 12 }
+
+  ]
+}
